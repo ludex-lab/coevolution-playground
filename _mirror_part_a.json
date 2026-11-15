@@ -1,0 +1,10 @@
+{
+  "files_downloaded": 20,
+  "files_failed": [],
+  "excluded": [
+    {
+      "path": "README.md",
+      "reason": "top-level README.md excluded by mirror scope"
+    }
+  ]
+}
