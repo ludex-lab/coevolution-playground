@@ -1,0 +1,15 @@
+Original clean-room method sketch. This sketch does not copy upstream source.
+
+Method/software pointer: YgcCoder/RouteBR
+https://github.com/YgcCoder/RouteBR
+MIT pin: c6c59e48784e6d4e0a368c46e706ce6dc0136bce
+Upstream LICENSE is present: MIT License
+Copyright (c) 2026 +
+No upstream package, dataset, or receipts are redistributed here.
+
+Paper: Cao et al., Route Before Response: Fail-Closed Routing for LLM-Enabled
+Customer-Service Software, arXiv:2611.07534v1
+https://arxiv.org/abs/2611.07534
+Paper license: arXiv.org perpetual non-exclusive license.
+Method-cite only; that does not grant software rights. Software rights and the
+paper license are separate. Not CC BY.

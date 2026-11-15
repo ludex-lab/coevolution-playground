@@ -1,0 +1,33 @@
+w23-scrutiny-not-authority
+--------------------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code, data,
+prompts, labels or weights.
+
+Paper (idea credited)
+---------------------
+Eno Agolli.
+"Can an AI Agent Be Epistemically Akratic? Higher-Order Evidence & the
+Limits of Self-Correction". arXiv:2611.14889, v1, submitted 11 Nov 2026
+(v1 Wed, 11 Nov 2026 01:27:29 UTC = 2026-11-11 10:27:29 KST). Primary
+category cs.AI.
+https://arxiv.org/abs/2611.14889
+Paper licence: arXiv non-exclusive distribution licence,
+http://arxiv.org/licenses/nonexclusive-distrib/1.0/ (the paper is not under
+CC BY; only the abstract is quoted or used).
+
+Upstream code
+-------------
+None. The abs page links no code, and the paper is an argument with no
+empirical code to run. Nothing was cloned or run.
+
+Method only: the doctrine that a negative self-assessment can identify a
+conclusion for further scrutiny without having authority to eliminate it,
+and the abstract's remark that agreement between conclusions and
+assessments can be reached by degrading either one. The case format, the
+independence rule for checks, the four arms, the elimination gate, the
+scoring, the oracle and the fixtures are this sketch's own. No text from
+the paper is copied into the code; the PDF was not read; no model was
+run. The paper's statements appear only in paper_evidence.json, quoted
+verbatim from the abstract and marked UNVERIFIED.

@@ -1,0 +1,108 @@
+# S-Bus version-check — observe phase checklist (pre–hard-reject)
+
+**날짜**: 2026-11-02 · **유형**: rollout 체크리스트 (Markdown only; [02](./02-sbus-version-check-board-rule.md) §4 observe → hard flip **전** 단계)  
+**선행 결정 (main / PR #7 lineage):** artifact **`id` = board pointer ID**; scoped **`rev` bump**; handback **`relied_on` = decision-used subset only** (full `read_set` dump 강제 없음); **observe/log 1–2 cycles → then hard `stale_write_reject`**.
+
+## 1) Purpose
+
+[02](./02-sbus-version-check-board-rule.md)의 version diff는 mismatch 시 **hard reject 전**에 **1–2 cycle** 동안만 **기록·관측**한다. 본 문서는 Checker·OPS가 **매 handback마다 무엇을 로그하고, 언제 hard flip을 켤 수 있는지**를 기계적으로 적는다. **이 단계에서는 reject를 켜지 않는다** (log only).
+
+## 2) “1–2 cycles” — single definition
+
+**정의 (채택):** **동일 ticket**에서 Smith가 Ork/Checker에 **연속으로 제출한 handback** 1회 = **1 cycle**.
+
+| 용어 | 의미 |
+|------|------|
+| **Ticket** | board row / Assignment가 가리키는 **하나의 Smith 작업 단위** (동일 pointer ID 또는 동일 mandate scope row — 팀이 이미 쓰는 ticket 키 하나로 고정). |
+| **1 cycle** | 그 ticket에 대해 Smith→(Ork 경유)→Checker **handback 패킷 1건**이 observe 로그에 **한 줄**로 들어감 (`cycle_index`는 ticket 내 1-based). |
+| **Consecutive** | **같은 ticket**에서 Smith Assignment가 끊기지 않은 채 **다음 handback**이 이전 handback **이후** 제출된 것만 카운트. 다른 ticket handback, Ork-only board edit, 재Assignment 후 **첫** handback은 **observe window를 리셋** (새 ticket 또는 새 Assignment = cycle 1부터 다시). |
+| **1–2 window satisfied** | **옵션 A — 1 cycle:** ticket에서 **cycle 1** observe 로그가 **한 번** 저장됐고, mismatch가 있었다면 `would_stale_reject`/`stale_ids[]`가 **비어 있지 않거나** false/true가 **의도대로** 찍혔음을 human이 확인. **옵션 B — 2 cycles:** **cycle 1과 cycle 2**가 **연속**으로 로그됐고, hard flip 전에 **최소 2번** mismatch 패턴(또는 clean match)을 봤음. **Hard flip:** Jihoon(또는 standing rollout owner)이 board/OPS에 **`version_check_mode: hard`** (또는 동등 플래그)를 켠 **다음 handback부터** §4 hard 규칙 적용 — observe window **직전 cycle까지**는 항상 accept-if-other-gates-pass. |
+
+**Non-counting:** claim-only, Report without handback, Checker 내부 메모, **다른 ticket** handback은 cycle 수에 **포함하지 않음**.
+
+## 3) Per-handback observe log fields (required)
+
+Checker(또는 OPS scribe)는 **observe phase 동안** mismatch가 **있든 없든** version diff 결과를 **한 세트** 남긴다.
+
+| Field | Type | Meaning |
+|-------|------|---------|
+| `ticket_id` | string | Observe window를 묶는 ticket 키 (§2). |
+| `cycle_index` | int | 해당 ticket 내 연속 handback 번호 (1, 2, …). |
+| `handback_id` / timestamp | id + time | 어떤 handback 행인지 (transcript 대체 아님). |
+| `relied_on` | `[{ id, version }]` | Handback에 선언된 **decision-used** subset ([02](./02-sbus-version-check-board-rule.md) §3C — **board pointer ID** + claimed version). |
+| `claimed_vs_current` | `[{ id, claimed, current, match }]` | ∀ entry ∈ `relied_on`: Smith가 선언한 `version` vs **현재** board/forge `(pointer id → version)` ([02](./02-sbus-version-check-board-rule.md) scoped `rev` / head SHA 등). |
+| `would_stale_reject` | bool | **`true`** iff ∃ mismatch in `claimed_vs_current` (**hard phase였다면** reject했을 것). **`false`** iff all match. |
+| `stale_ids[]` | string[] | mismatch인 **board pointer ID** 목록 (`would_stale_reject === false` → `[]`). |
+| `handback_accepted_observe` | bool | **Observe phase:** other gates pass면 **`true`** (mismatch여도 **accept**). Hard phase에는 이 필드 대신 실제 accept/reject verdict. |
+| `version_check_mode` | `observe` \| `hard` | 이 handback 처리 시점 모드 (flip 전은 always `observe`). |
+
+**Storage (sketch):** board/OPS row, handback appendix, 또는 merge 전 수동 표 — **daemon/SQLite/Feishu 불필요** (§6).
+
+**`relied_on` tie-in:** version diff는 **`relied_on`에 있는 pointer만** 검사한다. claim `read_set` 전체가 아니라 **이번 판단에 쓴 ID**만 `claimed_vs_current`에 나타난다 ([02](./02-sbus-version-check-board-rule.md) Decided #3).
+
+## 4) Checker steps — observe vs hard
+
+동일 기계 순서는 [02](./02-sbus-version-check-board-rule.md) §4; **차이는 mismatch 시 verdict만**.
+
+### During **observe** (`version_check_mode: observe`)
+
+1. **Handback schema** — `relied_on` 존재·`ready` 시 non-empty; IDs = **board pointer ID** ([02](./02-sbus-version-check-board-rule.md) §4.1).
+2. **Forge-evidence done gate** — `origin_pr` 등 ([02](./02-sbus-version-check-board-rule.md) §4.2).
+3. **Version diff** — `claimed_vs_current`, `would_stale_reject`, `stale_ids[]` 계산; **§3 로그 필드 전부 기록**.
+4. **Verdict:** mismatch여도 **§3 `handback_accepted_observe: true`** (other gates pass 시). **Do not** tag `stale_write_reject` / **do not** return handback for stale-only reason.
+5. **State-outside-transcript:** OPS/board에 **`would_stale_reject`**, **`stale_ids[]`**, `claimed_vs_current` 요약 남김 — chat만으로 “버전 OK” 처리 금지 ([02](./02-sbus-version-check-board-rule.md) §4.5). Tag: **`observe_stale_would_reject`** (optional) — **`stale_write_reject` 아님**.
+6. **Ownership** — stale **would**-reject 후에도 observe에서는 Smith Assignment 유지; hard flip 후 [02](./02-sbus-version-check-board-rule.md) §4.6 적용.
+
+### After **hard flip** (`version_check_mode: hard`)
+
+1–3. 동일 schema / forge gate / version diff.  
+4. **Verdict:** any mismatch → **`stale_write_reject`** (accept 금지); Smith **재claim** + `read_set` 갱신 후만 재제출 ([02](./02-sbus-version-check-board-rule.md) §4.4 hard phase).  
+5. **State-outside-transcript:** `reject_reason: stale_dependency`, `stale_ids[]` — **`would_stale_reject` 로그는 hard에서도 audit용으로 계산 가능**.  
+6. **Ownership** — [02](./02-sbus-version-check-board-rule.md) §4.6.
+
+## 5) Related notes (light ties)
+
+| Note | Relationship |
+|------|----------------|
+| [01](./01-who-takes-the-lead-handoff-checklist.md) | **누가 턴** — observe는 **Smith handback cycle** 카운트 전제. |
+| [02](./02-sbus-version-check-board-rule.md) | **Board pointer ID**, `relied_on`, rollout **1–2 observe → hard** — 본 문서는 §4의 **operational log**. |
+| [03](./03-board-open-pr-column.md) | **Open PR visibility** (어떤 Origin PR이 아직 열려 있는지) — version **`relied_on`/`head SHA** 검증과 **별개** UI/컬럼; observe checklist **구현·컬럼 추가 없음**. |
+
+## 6) Explicit out-of-scope (this sketch)
+
+- S-Bus **daemon**, **SQLite** store, **Feishu** relay, **DSH** Engine/Outbox, headcount, Autopilot/Tincan/Slack bot 변경.
+- **Hard `stale_write_reject` — not enabled here**; observe/log only until rollout owner flips `version_check_mode: hard` after §2 window.
+- Board UI, Evening Close routine edits, maze UI.
+
+---
+
+**Done when (rollout):** 동일 ticket에서 §2 정의대로 **1–2 consecutive observe cycles** 로그가 쌓였고, mismatch 케이스에서 `would_stale_reject`/`stale_ids[]`/`claimed_vs_current`가 재현 가능 → **then** hard flip ([02](./02-sbus-version-check-board-rule.md) Decided #4).
+
+## 7) Soft caveat — `content_tip` vs `forge_head` (park / next `relied_on` pass)
+
+**다음 park·`relied_on` 정비 pass**에서 Forge PR pointer를 **두 board pointer ID**로 나눠 라벨한다. Observe phase에서는 아래 divergence를 **로그만** 하고, hard `stale_write_reject`의 단독 근거로 쓰지 않는다.
+
+| Label | Meaning |
+|-------|---------|
+| **`content_tip`** | Smith/Checker handback이 주장하는 **ticket·산출물 내용** tip — author가 “이 PR/브랜치 **내용**이 이 SHA다”고 선언하는 **handback content tip** (rebase/force-push로 forge head만 움직였을 때 **불변**일 수 있음). |
+| **`forge_head`** | Forge(Origin)가 **현재** PR/branch에 대해 보고하는 **head SHA** — push/rebase/merge queue 등으로 **pointer chase** 가능. |
+
+**Soft caveat (observe only):**
+
+- `content_tip` ≠ `forge_head` 이면 **`claimed_vs_current`에 둘 다** 남기고, mismatch가 **pointer chase**(forge head만 이동, content tip 동일)인지 **ambiguous label**(둘 중 하나만 `relied_on`에 있거나 같은 `id`에 head/content 혼재)인지 human-readable note 1줄.
+- **`would_stale_reject` / hard flip 전 verdict:** 위 divergence **만으로** `stale_write_reject`를 켜지 **않음** — observe에서는 other gates pass면 accept (§4 observe). Hard phase에서도 **park pass 이후** 두 ID가 분리된 뒤에만, 팀이 정한 equality 규칙으로 reject (본 sketch는 observe soft caveat만).
+- Ambiguous `relied_on`(content vs head 미구분) → observe에서 **reject 사유로 쓰지 말고** scribe에 “label pass 필요”만 기록.
+
+**Minimal `relied_on` example** (board pointer ID = [02](./02-sbus-version-check-board-rule.md) §3 canonical `id`; versions 예시 SHA):
+
+```json
+"relied_on": [
+  { "id": "origin_pr/42/content_tip", "version": "a1b2c3d4e5f6789012345678901234567890abcd" },
+  { "id": "origin_pr/42/forge_head", "version": "f9e8d7c6b5a4321098765432109876543210fedc" },
+  { "id": "forge/main/tip", "version": "9127b5e928e1a0050fa28ebbc110c10d645e870f" }
+]
+```
+
+Observe log when `forge_head` moved but `content_tip` unchanged: `claimed_vs_current`에 `origin_pr/42/forge_head`만 `match: false`, `origin_pr/42/content_tip`은 `match: true` → **`would_stale_reject`는 park pass 전에는 pointer-chase 단독으로 `true`로 올리지 않음** (둘 다 `relied_on`에 있을 때). `forge/main/tip`은 merge base·done gate용으로 별도 diff.
+
+**Out of scope (this §):** daemon/SQLite/Feishu/DSH; hard reject 구현·Cody 필드 — observe soft caveat 및 **다음 pass 라벨링 요구**만.

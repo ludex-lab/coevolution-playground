@@ -1,0 +1,180 @@
+{
+  "paper": {
+    "arxiv_id": "2611.08932",
+    "version": "v1",
+    "title": "ODD+LLM: Specifying LLM-Agent Behavior for Reproducible Social Simulation",
+    "title_source": "abs page citation_title meta",
+    "authors": [
+      "Justin Downes",
+      "Robby Milletich",
+      "Newel Hirst"
+    ],
+    "authors_source": "abs page citation_author meta: 'Downes, Justin', 'Milletich, Robby', 'Hirst, Newel'",
+    "venue_note": "abs page comments: '18 pages, 2 figures, 6 tables. SocialAgent Workshop @ NeurIPS 2026'",
+    "abs_url": "https://arxiv.org/abs/2611.08932",
+    "html_url": "https://arxiv.org/html/2611.08932",
+    "submitted_display": "[Submitted on 6 Nov 2026]",
+    "submitted": "2026-11-06",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "licence_evidence": "abs page 'Rights to this article' link href=\"http://creativecommons.org/licenses/by/4.0/\"",
+    "use": "method-cite only; block names used as headings; short excerpts for evidence only, attributed to the authors"
+  },
+  "fetched": {
+    "fetched_at": "2026-11-09 15:49 JST",
+    "html_path": "/tmp/w18-2611.08932.html",
+    "html_http_status": 200,
+    "html_bytes": 248064,
+    "html_sha256": "d6895e4f2298f77c407339411509e340641416cb6577c1e437afdd82e5e51638",
+    "html_curl": "curl -sL https://arxiv.org/html/2611.08932 -o /tmp/w18-2611.08932.html",
+    "abs_path": "/tmp/w18-abs-2611.08932.html",
+    "abs_http_status": 200,
+    "abs_bytes": 41525,
+    "abs_sha256": "7ed3e989abfb4324b421e1e6283926dc55e8ac5cf0ab8483a6e2e8e49f412d8c",
+    "abs_curl": "curl -sL https://arxiv.org/abs/2611.08932 -o /tmp/w18-abs-2611.08932.html",
+    "note": "independent re-fetch; HTML and abs byte-identical (same sha256) to the earlier reviewer cache copies"
+  },
+  "normalization": {
+    "steps": [
+      "decode utf-8",
+      "re.sub(r'<script\\b.*?</script>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "re.sub(r'<style\\b.*?</style>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "re.sub(r'<math\\b.*?</math>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "html.unescape(t)",
+      "re.sub(r'\\s+', ' ', t)  # not ' '.join(t.split())"
+    ],
+    "remaining_tags": "kept (not stripped); every excerpt lies inside one text run",
+    "offsets": "zero-based Unicode code points into the normalized text, end-exclusive",
+    "normalized_chars": 220821,
+    "window_rule": "normalized[max(0, start-64) : min(len, end+64)], sha256 of its UTF-8 bytes"
+  },
+  "implementation_pin": null,
+  "implementation_pin_note": "No code link in the abs page or HTML for the protocol; nothing pinned, cloned, installed or run.",
+  "instrument_note": "The paper's appendix coding instrument (item list and scoring scale) is not copied into any file here; checklist.json uses the five block names only, with this sketch's own item ids, field names and questions.",
+  "quote_notes": [
+    "Block heading excerpts occur several times (contents list, section heading, appendix); the recorded offset is the section-heading occurrence."
+  ],
+  "excerpts": [
+    {
+      "id": "E1-abstract-missing-vocabulary",
+      "section": "abstract",
+      "excerpt": "it lacks vocabulary for the components that determine LLM-agent behavior: prompt assembly, memory serialization, parsing, and retry logic.",
+      "chars": 138,
+      "normalized_offset": 29182,
+      "end_offset_exclusive": 29320,
+      "occurrences": 1,
+      "source_window_sha256": "f2bcd0c63ace10cf06a324869c3238b92b754acd7be230ddb545cc061aba413a",
+      "status": "FOUND"
+    },
+    {
+      "id": "E2-abstract-five-blocks",
+      "section": "abstract",
+      "excerpt": "a backward-compatible extension adding five documentation blocks grounded in the CoALA cognitive-architecture framework.",
+      "chars": 120,
+      "normalized_offset": 29404,
+      "end_offset_exclusive": 29524,
+      "occurrences": 1,
+      "source_window_sha256": "db146bc1086f40ca5c299ca775dcbc3fb14b1b1fb1a2180fd929b6df93f0ac8e",
+      "status": "FOUND"
+    },
+    {
+      "id": "E3-protocol-adds-five-blocks",
+      "section": "3 The ODD+LLM Protocol",
+      "excerpt": "adds five blocks to the standard ODD template.",
+      "chars": 46,
+      "normalized_offset": 43546,
+      "end_offset_exclusive": 43592,
+      "occurrences": 1,
+      "source_window_sha256": "df3c577098419e89c121493a5421bdf308cfa8da86c7707803bab6d913a15bf4",
+      "status": "FOUND"
+    },
+    {
+      "id": "E4-heading-block-a",
+      "section": "3.1 heading",
+      "excerpt": "Block A: Cognitive Architecture",
+      "chars": 31,
+      "normalized_offset": 44526,
+      "end_offset_exclusive": 44557,
+      "occurrences": 4,
+      "source_window_sha256": "08a61ab8e6d10e9739e48ccc60fbbd192f47d5fc5084d9baaa3e05e07adbd64b",
+      "status": "FOUND",
+      "offset_note": "offset is the section heading (h3) occurrence; the same words also appear in the table of contents and elsewhere"
+    },
+    {
+      "id": "E5-heading-block-b",
+      "section": "3.2 heading",
+      "excerpt": "Block B: Identity",
+      "chars": 17,
+      "normalized_offset": 45212,
+      "end_offset_exclusive": 45229,
+      "occurrences": 4,
+      "source_window_sha256": "fb893a2016bbb5822a008af3d5e269094b98d2a34238034a7d2d522f7d9d0df0",
+      "status": "FOUND",
+      "offset_note": "offset is the section heading (h3) occurrence; the same words also appear in the table of contents and elsewhere"
+    },
+    {
+      "id": "E6-heading-block-c",
+      "section": "3.3 heading",
+      "excerpt": "Block C: Inference Configuration",
+      "chars": 32,
+      "normalized_offset": 45873,
+      "end_offset_exclusive": 45905,
+      "occurrences": 4,
+      "source_window_sha256": "9197adcd1f13aeeb09d289fc13a6226041251d8273fdf268314a47ad3ecfb665",
+      "status": "FOUND",
+      "offset_note": "offset is the section heading (h3) occurrence; the same words also appear in the table of contents and elsewhere"
+    },
+    {
+      "id": "E7-heading-block-d",
+      "section": "3.4 heading",
+      "excerpt": "Block D: Behavioral Submodel",
+      "chars": 28,
+      "normalized_offset": 50008,
+      "end_offset_exclusive": 50036,
+      "occurrences": 8,
+      "source_window_sha256": "7ed261ef25c2a1674917ca42ff3b34669380d98afd6629c158beedf2f3931b6b",
+      "status": "FOUND",
+      "offset_note": "offset is the section heading (h3) occurrence; the same words also appear in the table of contents and elsewhere"
+    },
+    {
+      "id": "E8-heading-block-e",
+      "section": "3.5 heading",
+      "excerpt": "Block E: Validation",
+      "chars": 19,
+      "normalized_offset": 59519,
+      "end_offset_exclusive": 59538,
+      "occurrences": 4,
+      "source_window_sha256": "f385afa70b66cc026bbafdf9f2934a1cb3ce6efaa57efe4ee4ad09755bf20770",
+      "status": "FOUND",
+      "offset_note": "offset is the section heading (h3) occurrence; the same words also appear in the table of contents and elsewhere"
+    },
+    {
+      "id": "E9-block-d-role",
+      "section": "3.4 Block D",
+      "excerpt": "Block D is the ODD Submodels equivalent for LLM agents.",
+      "chars": 55,
+      "normalized_offset": 50114,
+      "end_offset_exclusive": 50169,
+      "occurrences": 1,
+      "source_window_sha256": "a658d5216c91ad9c8fad291323f0b5f226292b1029992ca7430ea37acf739492",
+      "status": "FOUND"
+    }
+  ],
+  "empirical_claims": {
+    "status": "UNVERIFIED",
+    "note": "author-reported results from the HTML abstract; not checked, not reproduced, not results of this sketch; they appear only here",
+    "claims": [
+      {
+        "text": "from 0.35 to 1.00",
+        "found_in_normalized_html": true,
+        "occurrences": 1
+      },
+      {
+        "text": "undetermined in 77% of cases",
+        "found_in_normalized_html": true,
+        "occurrences": 1
+      }
+    ]
+  },
+  "not_results_of_this_sketch": "This sketch reports only its own synthetic fixture outcomes; nothing above is measured here."
+}

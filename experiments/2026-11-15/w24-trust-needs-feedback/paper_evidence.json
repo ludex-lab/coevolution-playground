@@ -1,0 +1,81 @@
+{
+ "paper": {
+  "arxiv_id": "2611.14833",
+  "version": "v1",
+  "title": "Do People Trust AI Assistants Even When They Are Consistently Wrong?",
+  "authors": [
+   "Cameron R. Jones",
+   "Julia Wong",
+   "Aaron S. Cohen",
+   "James Woolley",
+   "Benjamin K. Bergen"
+  ],
+  "primary_category": "cs.HC (cross-listed cs.CL)",
+  "submitted": "v1 Tue, 10 Nov 2026 23:31:26 UTC = 2026-11-11 08:31:26 KST",
+  "abs_url": "https://arxiv.org/abs/2611.14833",
+  "licence": "arXiv.org perpetual, non-exclusive license 1.0, http://arxiv.org/licenses/nonexclusive-distrib/1.0/ (as linked on the abs page)",
+  "comments_field": "51 pages, 14 figures, 11 tables. Preprint, not peer reviewed",
+  "pdf_read": false,
+  "method_source": "abstract only; no section text, figure, table, stimulus or participant data of the paper is used"
+ },
+ "code": {
+  "linked_in_abstract": false,
+  "note": "no code or data link in the abstract or comments; nothing was downloaded, cloned or run"
+ },
+ "sources": [
+  {
+   "file": "2611.14833.abs.txt",
+   "what": "plain-text copy of the abs-page abstract (prefix 'Abstract:'), one line plus a final newline",
+   "sha256": "8aab5cbdcbf93fc8874bf8561c33d42211314accab3ea085eca9b6fa80db1de6",
+   "chars": 1577
+  }
+ ],
+ "env": "W24TNF_SOURCES names the directory holding the source copy; the test skips when it is unset",
+ "status": "UNVERIFIED",
+ "measured_here": "on_unmeasured",
+ "on_unmeasured_note": "This sketch runs no participant, model or experiment and uses no human data. The figures below are the authors' statements, not measured, re-run or re-claimed here; paper_results() returns on_unmeasured. The sketch's own fixture counts are not comparable with them.",
+ "attribution": "The authors' own results as stated in the arXiv abstract. Quote wording is the authors'.",
+ "claims": [
+  {
+   "id": "C1",
+   "what": "design: helpful, unhelpful and mixed advisors over repeated interactions",
+   "quote": "We measure how people's reliance on LLMs' advice changes across repeated interactions, varying whether the AI assistant is helpful (100% accurate), unhelpful (0% accurate), or mixed (50% accurate).",
+   "offset": 208,
+   "length": 197,
+   "values": {
+    "helpful": "100%",
+    "unhelpful": "0%",
+    "mixed": "50%"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; no human data; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C2",
+   "what": "trust tracks accuracy only with external feedback",
+   "quote": "Across 4 experiments, we find people learn to trust helpful models more than unhelpful ones (67% vs 21% of the time), but only when they receive external feedback on the models' accuracy.",
+   "offset": 406,
+   "length": 187,
+   "values": {
+    "experiments": "4",
+    "helpful_trusted": "67%",
+    "unhelpful_trusted": "21%"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; no human data; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C6",
+   "what": "conclusion: timely ground-truth feedback",
+   "quote": "Collectively, the results suggest that people may be swayed by LLM advice, even when it is consistently false, unless they have access to timely ground-truth feedback.",
+   "offset": 1311,
+   "length": 167,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; no human data; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  }
+ ],
+ "quote_policy": "three abstract sentences quoted for attribution only, the ones this sketch's design rests on (C1 the three advisor accuracies, C2 trust tracking accuracy only with external feedback, C6 timely ground-truth feedback); the other abstract sentences are not quoted (the arXiv non-exclusive licence grants no reuse beyond distribution)"
+}

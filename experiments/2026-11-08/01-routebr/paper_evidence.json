@@ -1,0 +1,195 @@
+{
+  "title": "Route Before Response: Fail-Closed Routing for LLM-Enabled Customer-Service Software",
+  "authors": [
+    "Yuchen Cao",
+    "Zhenyu Mao",
+    "Jacky Wai Keung",
+    "Yifei Wang",
+    "Guancheng Lin",
+    "Jingyu Zhang"
+  ],
+  "source_urls": {
+    "abstract": "https://arxiv.org/abs/2611.07534",
+    "html": "https://arxiv.org/html/2611.07534v1",
+    "repo": "https://github.com/YgcCoder/RouteBR"
+  },
+  "paper_version": "2611.07534v1",
+  "citation_date": "2026/11/05",
+  "paper_license": "arXiv.org perpetual non-exclusive license",
+  "normalized_text_method": "HTMLParser.handle_data; join data fragments with spaces; collapse all whitespace",
+  "html_sha256": "28ce09393c884680dc8a094542b1d8d1756951d6a4e76a01aaedf1fb268ab25b",
+  "abstract_html_sha256": "74efb23362d97f6a3140d3872b96983253bf202e3d26a5f0caf6d3c56db6a621",
+  "upstream": {
+    "pin": "c6c59e48784e6d4e0a368c46e706ce6dc0136bce",
+    "parent": "f93cbca48117362d1e1a44bc2b0ba181e4212adc",
+    "commit_message": "Remove manuscript source from code repository",
+    "head_branch": "main",
+    "only_branch": "main",
+    "independent_verification": "GitHub get_commit(main), list_branches, get_repository; pinned archive downloaded and files read",
+    "last_push_jst": "2026-10-13 22:09:05 JST",
+    "license": "MIT",
+    "license_file_present": true,
+    "license_sha256": "2b4fa9d503095cd27733111879fca157c280f64f6e7613e698bc989f85419eb6",
+    "copyright": "Copyright (c) 2026 +",
+    "stub_or_code": "real MIT code (not a coming-soon stub)",
+    "package_version": "1.0.0",
+    "requires_python": ">=3.10",
+    "dependencies": [],
+    "license_excerpt": "MIT License\n\nCopyright (c) 2026 +",
+    "offline_unittest": {
+      "passed": 10,
+      "failed": 0,
+      "exit_code": 0,
+      "output_file": "upstream-unittest.txt"
+    },
+    "offline_validator": {
+      "result": "PASSED",
+      "exit_code": 0,
+      "output_file": "upstream-validator.txt"
+    }
+  },
+  "excerpts": [
+    {
+      "attribution": "Cao et al., arXiv:2611.07534v1",
+      "where": "Abstract",
+      "quote": "We present RouteBR, a controller in which one model call proposes a primary service action and registered object, then deterministic code checks identifiers and versioned rules before dispatch or a specified non-dispatch outcome.",
+      "found": true,
+      "normalized_offset": 5589,
+      "source_window": "his integration problem as boundary-aware pre-response routing . We present RouteBR, a controller in which one model call proposes a primary service action and registered object, then deterministic code checks identifiers and versioned rules before dispatch or a specified non-dispatch outcome. Lower-ranked candidates cannot replace a blocked primary route. ",
+      "source_window_sha256": "077580eb5dd2fb40375ad9cf7a116a053830634dae1b107f9e989b9a32ad1de7"
+    },
+    {
+      "attribution": "Cao et al., arXiv:2611.07534v1",
+      "where": "Abstract",
+      "quote": "Lower-ranked candidates cannot replace a blocked primary route.",
+      "found": true,
+      "normalized_offset": 5819,
+      "source_window": "ioned rules before dispatch or a specified non-dispatch outcome. Lower-ranked candidates cannot replace a blocked primary route. We construct 600 privacy-preserving scenarios from recurring con",
+      "source_window_sha256": "d9698296b43baf58941081e051761e5c573700ef9c4f737f14d0f5dd945eba2e"
+    },
+    {
+      "attribution": "Cao et al., arXiv:2611.07534v1",
+      "where": "III-A Overview and Formulation",
+      "quote": "Consequently, a parseable model output is evidence for semantic selection, not authorization.",
+      "found": true,
+      "normalized_offset": 18840,
+      "source_window": "ontroller’s dispatch return, after all contracts have succeeded. Consequently, a parseable model output is evidence for semantic selection, not authorization. This division also makes configuration changes local: a new rule",
+      "source_window_sha256": "419dd1dd365f2dcb4163eafa2297f9f1b3a4177bcbc68865ef10e99845a24f8c"
+    },
+    {
+      "attribution": "Cao et al., arXiv:2611.07534v1",
+      "where": "III-B Proposal and Primary Commitment",
+      "quote": "It does not reinterpret the lower-ranked advisory candidate as an executable substitute.",
+      "found": true,
+      "normalized_offset": 26467,
+      "source_window": "permission is false, the controller returns the rule’s terminal. It does not reinterpret the lower-ranked advisory candidate as an executable substitute. This prevents semantic ranking from becoming an implicit policy-",
+      "source_window_sha256": "36a51c292ca15e8a525be863990806f776a4cee9c1a0120dc4c2616e67295af1"
+    },
+    {
+      "attribution": "Cao et al., arXiv:2611.07534v1",
+      "where": "III-B Proposal and Primary Commitment",
+      "quote": "It permits one format-only repair that receives the invalid output and validation errors but may not replace semantic evidence or closed identifiers.",
+      "found": true,
+      "normalized_offset": 24697,
+      "source_window": " objects, and object types incompatible with the primary action. It permits one format-only repair that receives the invalid output and validation errors but may not replace semantic evidence or closed identifiers. A second failure reaches a configured non-dispatch terminal. The",
+      "source_window_sha256": "8c1d6ae7dcded6e2331c43875178b3ef2b3be409becb65f656b2553281de7670"
+    },
+    {
+      "attribution": "Cao et al., arXiv:2611.07534v1",
+      "where": "III-C Deterministic Enforcement and Object Validation",
+      "quote": "When several rules match, the rule with the smallest priority number determines the routing outcome.",
+      "found": true,
+      "normalized_offset": 27902,
+      "source_window": "are ordered by numeric priority and then stable rule identifier. When several rules match, the rule with the smallest priority number determines the routing outcome. In the evaluated cases, the active non-default predicates cover ",
+      "source_window_sha256": "1b2e87df3b32d85699072a9c7815094ed022e4d0b73c2cac32c7ddec5fe6ed32"
+    },
+    {
+      "attribution": "Cao et al., arXiv:2611.07534v1",
+      "where": "Abstract (UNVERIFIED empirical provenance; non-target)",
+      "quote": "We construct 600 privacy-preserving scenarios from recurring confidential-request patterns at a real financial institution; three engineers jointly reviewed the scenarios and labels.",
+      "found": true,
+      "normalized_offset": 5883,
+      "source_window": " Lower-ranked candidates cannot replace a blocked primary route. We construct 600 privacy-preserving scenarios from recurring confidential-request patterns at a real financial institution; three engineers jointly reviewed the scenarios and labels. On the 200-case CONFIRM MAIN split, RouteBR reaches 97.5% final-",
+      "source_window_sha256": "eba8ed0a0078d7e88ec1cc1d027ae15f5d7dbcf2b8b1061aef89e89f64d907d2"
+    },
+    {
+      "attribution": "Cao et al., arXiv:2611.07534v1",
+      "where": "Abstract (UNVERIFIED empirical provenance; non-target)",
+      "quote": "On the 200-case CONFIRM MAIN split, RouteBR reaches 97.5% final-path exact match.",
+      "found": true,
+      "normalized_offset": 6066,
+      "source_window": "tion; three engineers jointly reviewed the scenarios and labels. On the 200-case CONFIRM MAIN split, RouteBR reaches 97.5% final-path exact match. A matched one-call baseline given the same rules reaches 95.5%, ",
+      "source_window_sha256": "cbef94bc734d4dd21963fdad2687dc60dbbd67b8598ee83896fbb67af9d29918"
+    },
+    {
+      "attribution": "Cao et al., arXiv:2611.07534v1",
+      "where": "Abstract (UNVERIFIED empirical provenance; non-target)",
+      "quote": "A matched one-call baseline given the same rules reaches 95.5%, whereas a diagnostic baseline without the rule program obtains 94.0% action accuracy but only 41.0% final-path exact match.",
+      "found": true,
+      "normalized_offset": 6148,
+      "source_window": "ONFIRM MAIN split, RouteBR reaches 97.5% final-path exact match. A matched one-call baseline given the same rules reaches 95.5%, whereas a diagnostic baseline without the rule program obtains 94.0% action accuracy but only 41.0% final-path exact match. Across 166 non-dispatch MAIN and FLIP cases, RouteBR produces no",
+      "source_window_sha256": "f213d16e4e9bb791ef9ffc6620a5b7d346afefedd4ffd3f4dbd4f32085b52109"
+    },
+    {
+      "attribution": "Cao et al., arXiv:2611.07534v1",
+      "where": "Abstract (UNVERIFIED empirical provenance; non-target)",
+      "quote": "Across 166 non-dispatch MAIN and FLIP cases, RouteBR produces no false dispatch.",
+      "found": true,
+      "normalized_offset": 6336,
+      "source_window": "ins 94.0% action accuracy but only 41.0% final-path exact match. Across 166 non-dispatch MAIN and FLIP cases, RouteBR produces no false dispatch. The artifact pairs all 1,960 prediction rows with raw receipts w",
+      "source_window_sha256": "8b36e9156dc23bbf33f23b521dfe64a2b1ee6baae5762d0c988391d4e206d478"
+    },
+    {
+      "attribution": "Cao et al., arXiv:2611.07534v1",
+      "where": "Abstract (UNVERIFIED empirical provenance; non-target)",
+      "quote": "The artifact pairs all 1,960 prediction rows with raw receipts while excluding gold and reviewer fields from model requests.",
+      "found": true,
+      "normalized_offset": 6417,
+      "source_window": "ispatch MAIN and FLIP cases, RouteBR produces no false dispatch. The artifact pairs all 1,960 prediction rows with raw receipts while excluding gold and reviewer fields from model requests. These results support separating model proposals from code-owned",
+      "source_window_sha256": "eab31dc3567cea4339423f357c66b89e3bbde9fb36f276f5d0526729bcb29285"
+    },
+    {
+      "attribution": "Cao et al., arXiv:2611.07534v1",
+      "where": "HTML front matter",
+      "quote": "License: arXiv.org perpetual non-exclusive license",
+      "found": true,
+      "normalized_offset": 4695,
+      "source_window": "Validity V-C Scope and Generalizability VI Conclusion References License: arXiv.org perpetual non-exclusive license arXiv:2611.07534v1 [cs.SE] 05 Nov 2026 Route Before Response: Fa",
+      "source_window_sha256": "c65beacab6218155cc9c58ebdb8603add11c810cf7bcbc2d3ca2db49f46c358c"
+    }
+  ],
+  "number_hygiene": {
+    "status": "UNVERIFIED paper-reported figures; provenance only, never targets",
+    "banned_distinctive_needles": [
+      "97.5",
+      "95.5",
+      "94.0",
+      "41.0",
+      "1,960",
+      "1960"
+    ],
+    "paper_reported_non_targets": {
+      "scenario_count": 600,
+      "confirm_main_count": 200,
+      "non_dispatch_main_and_flip_count": 166,
+      "false_dispatch_in_that_pool": 0,
+      "routebr_main_final_path_percent": "97.5",
+      "matched_one_call_percent": "95.5",
+      "diagnostic_action_percent": "94.0",
+      "diagnostic_final_path_percent": "41.0",
+      "receipt_rows": "1,960"
+    },
+    "implementation_policy": "Synthetic suite chosen independently; none of the empirical figures are implementation constants or acceptance targets."
+  },
+  "modelling_note": "Synthetic toy method sketch of primary-commitment / fail-closed dispatch. Supplied typed proposals replace the model. One exact per-action conjunction rule replaces the full prioritized rule engine. Lower-ranked pairs are audit-only in the gate; the deliberately unsafe baseline promotes them and omits object checks. Not an upstream benchmark or baseline reproduction.",
+  "not_implemented": [
+    "model proposal generation",
+    "format-only same-primary repair",
+    "prioritized wildcard rule program",
+    "hosted backends and adapters",
+    "receipt replay",
+    "full benchmark",
+    "downstream service execution",
+    "customer-facing response generation"
+  ]
+}

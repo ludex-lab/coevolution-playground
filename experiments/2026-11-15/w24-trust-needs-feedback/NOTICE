@@ -1,0 +1,36 @@
+w24-trust-needs-feedback
+------------------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code, data,
+stimuli, participant responses, prompts, labels or weights.
+
+Paper (method idea credited)
+----------------------------
+Cameron R. Jones, Julia Wong, Aaron S. Cohen, James Woolley, Benjamin K.
+Bergen.
+"Do People Trust AI Assistants Even When They Are Consistently Wrong?".
+arXiv:2611.14833, v1, submitted 10 Nov 2026. Primary category cs.HC,
+cross-listed cs.CL.
+https://arxiv.org/abs/2611.14833
+Paper licence: arXiv.org perpetual, non-exclusive license 1.0,
+http://arxiv.org/licenses/nonexclusive-distrib/1.0/ (as linked on the abs
+page). That licence grants no reuse rights beyond arXiv's own distribution,
+so nothing of the paper is reproduced here except short verbatim abstract
+quotes for attribution in paper_evidence.json. The PDF was not read.
+
+Code and data
+-------------
+The abstract and comments link no code or data. Nothing was downloaded,
+cloned, installed or run. No human data is used.
+
+Method only: the idea that reliance on an advisor should rise only with
+timely external accuracy feedback (not with the advisor's own confidence or
+argument), that evidence of inaccuracy should lower it, and that without
+feedback a consistently wrong advisor can stay persuasive. The declared
+prior, the feedback-acceptance rule, the trust bar, the downgrade rule, the
+pending-decision expiry, the persuadable baseline, the oracle and the
+fixtures (advisors, tracks, events and spoofs) are this sketch's own. No
+text, figures, tables or data from the paper are copied into the code. The
+paper's claims appear only in paper_evidence.json, quoted and marked
+UNVERIFIED.

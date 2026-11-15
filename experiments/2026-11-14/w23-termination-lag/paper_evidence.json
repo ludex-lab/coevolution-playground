@@ -1,0 +1,107 @@
+{
+ "paper": {
+  "arxiv_id": "2611.14960",
+  "version": "v1",
+  "title": "Termination Lag: Coding Agents Solve Early but Stop Late",
+  "authors": [
+   "Musa Cim",
+   "Burak Topcu",
+   "Mahmut Taylan Kandemir"
+  ],
+  "primary_category": "cs.AI (cross-listed cs.CL)",
+  "submitted": "11 Nov 2026 (v1 2026-11-11T03:11:00Z = 2026-11-11 12:11:00 KST)",
+  "listing": "New submission on the Fri 13 Nov 2026 cs.AI listing; the abs dateline, not the listing day, is the v1 date",
+  "abs_url": "https://arxiv.org/abs/2611.14960",
+  "licence": "CC BY 4.0, http://creativecommons.org/licenses/by/4.0/ (paper licence; not a software grant)",
+  "code": "none linked on the abs page; no code was found or used",
+  "pdf_read": false
+ },
+ "sources": [
+  {
+   "file": "2611.14960.abs.txt",
+   "what": "plain-text copy of the abs-page abstract (prefix 'Abstract:')",
+   "sha256": "b20f101d3796e6c02313699562a274f6504cd7c110765052c5419e8e42bf7147",
+   "chars": 956
+  }
+ ],
+ "env": "W23TERMLAG_SOURCES names the directory holding the source copy; the test skips when it is unset",
+ "status": "UNVERIFIED",
+ "measured_here": "on_unmeasured",
+ "on_unmeasured_note": "This sketch runs no agent, model or benchmark. The figures below are the authors' statements, not measured, re-run or re-claimed here; paper_results() returns on_unmeasured. The fixture counts in README.md are not comparable with them.",
+ "attribution": "The authors' own results as stated in the arXiv abstract. Quote wording is the authors'.",
+ "claims": [
+  {
+   "id": "C1",
+   "what": "problem statement",
+   "quote": "Coding agents can solve a task well before they stop working on it.",
+   "offset": 9,
+   "length": 67,
+   "measured_here": "on_unmeasured",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C2",
+   "what": "definition of termination lag and setup",
+   "quote": "We characterize \\emph{termination lag}--the number of steps between an agent's first correct patch and the end of its run--across five models, two agent frameworks, and three SWE-bench datasets by recording and testing every distinct repository patch generated during execution.",
+   "offset": 77,
+   "length": 278,
+   "metric": "setup",
+   "values": {
+    "models": "five",
+    "agent_frameworks": "two",
+    "datasets": "three SWE-bench datasets"
+   },
+   "measured_here": "on_unmeasured",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C3",
+   "what": "share of successful runs correct on the initial edit",
+   "quote": "Our analysis reveals that 38--82% of successful runs achieve a correct solution on their initial source-code edit.",
+   "offset": 356,
+   "length": 114,
+   "metric": "share of successful runs whose initial source-code edit is correct",
+   "values": {
+    "range": "38--82%"
+   },
+   "measured_here": "on_unmeasured",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C4",
+   "what": "post-solution effort",
+   "quote": "However, agents continue to expend substantial effort after correct patches, with post-solution steps accounting for a median of 35--37% for Qwen3-Coder and 54--60% for Laguna-XS.2 in successful runs on SWE-bench Verified and Multilingual.",
+   "offset": 471,
+   "length": 239,
+   "metric": "median share of post-solution steps in successful runs",
+   "values": {
+    "Qwen3-Coder": "35--37%",
+    "Laguna-XS.2": "54--60%"
+   },
+   "measured_here": "on_unmeasured",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C5",
+   "what": "what the extra steps are",
+   "quote": "Agents spend most of these additional steps verifying their work and exploring the repository.",
+   "offset": 711,
+   "length": 94,
+   "measured_here": "on_unmeasured",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C6",
+   "what": "undo of an earlier correct patch",
+   "quote": "In a small fraction of cases (1--8%), this continued activity leads agents to undo their earlier correct patch, leaving the final solution incorrect.",
+   "offset": 806,
+   "length": 149,
+   "metric": "share of cases where continued activity undoes the earlier correct patch",
+   "values": {
+    "range": "1--8%"
+   },
+   "measured_here": "on_unmeasured",
+   "status": "UNVERIFIED"
+  }
+ ]
+}

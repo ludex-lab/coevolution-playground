@@ -1,0 +1,8 @@
+Original independently authored method sketch and synthetic fixtures.
+Method citation: The Memory Trap: Language Agents Overgeneralize from Benign Interactions,
+arXiv:2611.07554, https://arxiv.org/abs/2611.07554.
+Paper: arXiv perpetual non-exclusive license; not CC BY; no software grant.
+License link recorded by the abstract: http://arxiv.org/licenses/nonexclusive-distrib/1.0/.
+Method-cite only; no upstream implementation or substantial paper text copied.
+Code footnote https://github.com/safety-research/memory-trap returned public HTTP 404
+on independent HEAD inspection. No accessible upstream pin or software licence established.

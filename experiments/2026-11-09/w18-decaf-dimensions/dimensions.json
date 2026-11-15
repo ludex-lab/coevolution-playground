@@ -1,0 +1,12 @@
+{
+  "sketch": "w18-decaf-dimensions",
+  "note": "Dimension names and descriptions are this sketch's own; they are not taken from the paper.",
+  "dimensions": [
+    {"name": "instruction_text", "describes": "the written role instructions each agent starts from"},
+    {"name": "handoff_graph", "describes": "which role passes work to which other role"},
+    {"name": "engine_label", "describes": "the model label string assigned to each role"},
+    {"name": "tool_gate", "describes": "which tools each role may call"},
+    {"name": "retry_budget", "describes": "retry counts and timeouts per step"},
+    {"name": "memory_window", "describes": "how much earlier context is carried into a turn"}
+  ]
+}

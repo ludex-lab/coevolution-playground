@@ -1,0 +1,20 @@
+{
+  "lab_phase_budget_extension_fields": {
+    "max_extensions": 3,
+    "max_total_factor": 2.0,
+    "extend_step_ms": 3600000
+  },
+  "pi_toolkit_DEFAULT_BUDGET_at_pin": {
+    "maxExtensions": 3,
+    "maxTotalFactor": 2,
+    "extendStepMs": 3600000,
+    "note": "Shape-only reference from pin 3831a2b — not copied phase timers (queueWaitMs, idleMs, totalMs, …)."
+  },
+  "lab_differs_from_upstream_defaults": {
+    "total_ms": 2400000,
+    "upstream_totalMs": 1800000,
+    "idle_ms": 300000,
+    "upstream_idleMs": 240000,
+    "comment": "Extension triple matches upstream pin for span/grant tests; all per-phase caps are Team OS lab picks."
+  }
+}

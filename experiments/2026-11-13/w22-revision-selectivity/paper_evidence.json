@@ -1,0 +1,145 @@
+{
+ "paper": {
+  "arxiv_id": "2611.16694",
+  "version": "v1",
+  "title": "When Expert Disagreement Hurts: Prestige and Selectivity in LLM Decision Revision",
+  "authors": [
+   "Yupeng Tang",
+   "Mingfeng Lin"
+  ],
+  "primary_category": "cs.AI (cross-listed cs.CL)",
+  "submitted": "12 Nov 2026 (v1 2026-11-12T12:11:03Z = 2026-11-12 21:11 KST)",
+  "comments_field": "Accepted at NeurIPS 2026 (plus the GitHub URL)",
+  "abs_url": "https://arxiv.org/abs/2611.16694",
+  "licence": "CC BY 4.0, http://creativecommons.org/licenses/by/4.0/ (paper licence)",
+  "pdf_read": false
+ },
+ "upstream_code": {
+  "repo": "https://github.com/yupengtang/when-expert-disagreement-hurts",
+  "licence": "MIT (LICENSE at the pin: 'MIT License / Copyright (c) 2026 Yupeng Tang')",
+  "pin": "c511a2a033336248c916dd9b7dc9ba2d72a64bbb",
+  "cloned": false,
+  "run": false,
+  "status": "UNVERIFIED: not cloned, not run; no upstream code, prompt, data or output was used"
+ },
+ "sources": [
+  {
+   "file": "2611.16694.abs.txt",
+   "what": "plain-text copy of the abs-page abstract (prefix 'Abstract:')",
+   "sha256": "673fb25821f532809e9c379a9a303e3ac71499d0416409448055093ade6ae444",
+   "chars": 1359
+  },
+  {
+   "file": "expert-disagreement.README.head.txt",
+   "what": "head of the upstream README.md at the pinned commit, as fetched by the verifier (not cloned)",
+   "sha256": "e0f127ab59cd91c09af745fea787d25ced5f22b5f0b23423e83d774888a6c344",
+   "chars": 3877
+  }
+ ],
+ "env": "W22SELECT_SOURCES names the directory (or os.pathsep separated directories) holding both source files; the source test skips when it is unset and fails when it is set but a file is absent",
+ "status": "UNVERIFIED",
+ "on_unmeasured": [
+  "P4",
+  "P5"
+ ],
+ "attribution": "The authors' own statements from the arXiv abstract and the upstream README head. Not reproduced, re-run or re-claimed here; this folder's fixtures are synthetic and measure nothing about the paper's models or decisions. Quote wording is the authors'. Offsets and lengths count characters of the UTF-8 decoded file.",
+ "claims": [
+  {
+   "id": "P1",
+   "what": "problem statement",
+   "quote": "neither reversal counts nor final accuracy shows whether they are fixing mistakes or abandoning correct answers",
+   "offset": 79,
+   "length": 111,
+   "source": "2611.16694.abs.txt",
+   "status": "UNVERIFIED",
+   "measurement": "on_unmeasured"
+  },
+  {
+   "id": "P2",
+   "what": "the two-pass design (only the revision context varies)",
+   "quote": "We introduce a controlled two-pass audit that holds the question, the evidence, and the model's initial answer fixed and varies only the revision context: neutral reflection, anonymous disagreement, or disagreement attributed to a domain expert.",
+   "offset": 192,
+   "length": 245,
+   "source": "2611.16694.abs.txt",
+   "status": "UNVERIFIED",
+   "measurement": "on_unmeasured"
+  },
+  {
+   "id": "P3",
+   "what": "the paper's binary selectivity bar; NOT imported here (this sketch uses its own declared fixture threshold)",
+   "imported": false,
+   "quote": "For binary decisions the accounting is exact: revision raises accuracy only if it is selective enough, reversing wrong answers more than $a/(1-a)$ times as often as correct ones, where $a$ is initial accuracy (nine times at 90%).",
+   "offset": 438,
+   "length": 229,
+   "source": "2611.16694.abs.txt",
+   "status": "UNVERIFIED",
+   "measurement": "on_unmeasured"
+  },
+  {
+   "id": "P4",
+   "what": "scale and worst accuracy drop under expert disagreement",
+   "models": 5,
+   "decisions": 1989,
+   "max_accuracy_drop_points": 16.1,
+   "quote": "Across five models and 1,989 evidence-grounded decisions in medicine, science, and law, no model clears this bar under expert disagreement, and accuracy falls by up to 16.1 points.",
+   "offset": 668,
+   "length": 180,
+   "source": "2611.16694.abs.txt",
+   "status": "UNVERIFIED",
+   "measurement": "on_unmeasured"
+  },
+  {
+   "id": "P5",
+   "what": "expert label adds reversals; accuracy effect range",
+   "models_with_more_reversals": 4,
+   "accuracy_loss_points": 5.2,
+   "accuracy_gain_points": 2.4,
+   "quote": "The expert label, a prestige cue, adds reversals for four of the five models, yet its effect on accuracy ranges from a 5.2-point loss to a 2.4-point gain, so reversal counts are a poor proxy for harm.",
+   "offset": 849,
+   "length": 200,
+   "source": "2611.16694.abs.txt",
+   "status": "UNVERIFIED",
+   "measurement": "on_unmeasured"
+  },
+  {
+   "id": "P6",
+   "what": "identical-argument analysis",
+   "quote": "With identical arguments from both sources, the label still raises reversal for three proprietary models and in a pooled analysis of four newer models.",
+   "offset": 1050,
+   "length": 151,
+   "source": "2611.16694.abs.txt",
+   "status": "UNVERIFIED",
+   "measurement": "on_unmeasured"
+  },
+  {
+   "id": "P7",
+   "what": "recommendation",
+   "quote": "Revision pipelines should therefore be evaluated with paired, conditional metrics, per model and protocol.",
+   "offset": 1252,
+   "length": 106,
+   "source": "2611.16694.abs.txt",
+   "status": "UNVERIFIED",
+   "measurement": "on_unmeasured"
+  },
+  {
+   "id": "U1",
+   "what": "upstream: released outputs regenerate offline (not run here)",
+   "quote": "The released model outputs suffice to regenerate every reported number, table and figure on a CPU, without credentials or network access.",
+   "offset": 2332,
+   "length": 137,
+   "source": "expert-disagreement.README.head.txt",
+   "status": "UNVERIFIED",
+   "measurement": "on_unmeasured"
+  },
+  {
+   "id": "U2",
+   "what": "upstream: re-running the experiments needs a paid API key (path not taken here)",
+   "quote": "Running the experiments requires an OpenRouter API key",
+   "offset": 3597,
+   "length": 54,
+   "source": "expert-disagreement.README.head.txt",
+   "status": "UNVERIFIED",
+   "measurement": "on_unmeasured"
+  }
+ ]
+}

@@ -1,0 +1,24 @@
+w20-plan-change-notice
+----------------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code.
+
+Paper (method idea credited)
+----------------------------
+Joon-Seok Kim, Eugene Agichtein, Kai Shu, Liang Zhao and Andreas Züfle.
+"When the Plan Changes: A Strategic World Testbed for Dynamic Multi-Agent
+Coordination". arXiv:2611.10011, submitted 4 Nov 2026.
+https://arxiv.org/abs/2611.10011
+Licence: arXiv.org perpetual, non-exclusive license to distribute
+(http://arxiv.org/licenses/nonexclusive-distrib/1.0/). That licence is a
+grant to arXiv; it gives no reuse rights to others, so only the method idea
+is used here.
+
+Method only: the idea of holding the authoritative objective, the local plan,
+notice receipt and consequential action as separate records, and of a guard
+that handles pending notices before local work. No text, figures, tables,
+prompts or data from the paper are copied into this directory. No code was
+released with the paper and none is used. The paper's own figures are
+recorded only as number tokens with offsets in paper_evidence.json and are
+marked UNVERIFIED.

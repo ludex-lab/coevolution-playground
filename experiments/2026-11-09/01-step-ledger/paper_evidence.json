@@ -1,0 +1,191 @@
+{
+  "paper": {
+    "arxiv_id": "2611.08144",
+    "version": "v1",
+    "title": "Detecting Silent Faults at the Environment–Trainer Boundary in Reinforcement Learning",
+    "authors": [
+      "Zuo Gou",
+      "Chenhao Lu"
+    ],
+    "affiliation": "Tsinghua University (per HTML author block)",
+    "abs_url": "https://arxiv.org/abs/2611.08144",
+    "html_url": "https://arxiv.org/html/2611.08144",
+    "primary_category": "cs.RO",
+    "submitted_display": "[Submitted on 5 Nov 2026]",
+    "submitted": "2026-11-05",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "licence_evidence": "abs page 'Rights to this article' link to creativecommons.org/licenses/by/4.0/",
+    "use": "method-cite only; short excerpts for evidence only, attributed to the authors"
+  },
+  "fetched": {
+    "fetched_at": "2026-11-09 08:20 JST",
+    "html_path": "/tmp/mb1109-2611.08144.html",
+    "html_http_status": 200,
+    "html_bytes": 165510,
+    "html_sha256": "1212cf73c8767b1f87b76c24e3890a8889162eefdf7c66a7f2c7b4a22b9752da",
+    "abs_path": "/tmp/mb1109-2611.08144-abs.html",
+    "abs_http_status": 200,
+    "abs_bytes": 42193,
+    "abs_sha256": "fe7642676533d065945fbfde568f860e0e3a1fc9a2a7d54cbbad0cca2f206191",
+    "note": "independent re-fetch on 2026-11-09 matched the cached copies byte for byte"
+  },
+  "normalization": {
+    "steps": [
+      "decode utf-8",
+      "re.sub(r'<script\\b.*?</script>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "re.sub(r'<style\\b.*?</style>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "re.sub(r'<math\\b.*?</math>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "html.unescape(t)",
+      "re.sub(r'\\s+', ' ', t)  # not ' '.join(t.split()); leading space kept so offsets do not shift"
+    ],
+    "remaining_tags": "kept (not stripped); every excerpt lies inside one text run",
+    "offsets": "zero-based Unicode code points into the normalized text, end-exclusive",
+    "normalized_chars": 148232,
+    "window_rule": "normalized[max(0, start-64) : min(len, end+64)], sha256 of its UTF-8 bytes"
+  },
+  "implementation_pin": {
+    "url": "https://github.com/PlugRL/step-ledger",
+    "commit": "0b4a1417854289ecfb25607bc6c51eb0dc586bdd",
+    "commit_date": "2026-11-08T01:47:14Z (2026-11-08 10:47 JST)",
+    "licence": "Apache-2.0",
+    "licence_evidence": "raw LICENSE at the commit (HTTP 200, header 'Apache License Version 2.0, January 2004'); GitHub license API ref=commit: key apache-2.0, spdx_id Apache-2.0",
+    "pin_scope": "cite-only / illustration only; not cloned; no source copied",
+    "observed": "GitHub commits API returned HTTP 200 with that sha; only sha, date and licence fields were read; no .py source, wrappers or tests were fetched"
+  },
+  "excerpts": [
+    {
+      "id": "E1-silent-faults",
+      "kind": "method",
+      "excerpt": "Many faults at this boundary raise no error.",
+      "chars": 44,
+      "normalized_offset": 17502,
+      "end_offset_exclusive": 17546,
+      "occurrences": 1,
+      "source_window_sha256": "3631c25b3731d1d6197a8a7fce18172220f27c5fa949509b2433efb82baf25f3",
+      "status": "FOUND"
+    },
+    {
+      "id": "E2-wire-protocol",
+      "kind": "method",
+      "excerpt": "We make the boundary a wire protocol and ask what notices a fault in it.",
+      "chars": 72,
+      "normalized_offset": 17547,
+      "end_offset_exclusive": 17619,
+      "occurrences": 1,
+      "source_window_sha256": "42062cd0f67639e808a6c0dd77efa76c007d6e51d18902e138988c8a1d661692",
+      "status": "FOUND"
+    },
+    {
+      "id": "E3-env-side-role",
+      "kind": "method",
+      "excerpt": "The environment side sends observations, applies the actions it gets back, and feeds back rewards and episode ends.",
+      "chars": 115,
+      "normalized_offset": 21685,
+      "end_offset_exclusive": 21800,
+      "occurrences": 1,
+      "source_window_sha256": "987c999ef41cd9c5c0a5f10a7be21dd9e5aaaf68601320fcb1cc9ed473b3db01",
+      "status": "FOUND"
+    },
+    {
+      "id": "E4-two-sided-record",
+      "kind": "method",
+      "excerpt": "a record on each side of the boundary, compared step by step (the step ledger), disagrees at that step.",
+      "chars": 103,
+      "normalized_offset": 15776,
+      "end_offset_exclusive": 15879,
+      "occurrences": 1,
+      "source_window_sha256": "8249ec3f5576a0a2726cad5bbc2d576875483832085d7ebed8fdbed13e0233ee",
+      "status": "FOUND"
+    },
+    {
+      "id": "E5-float16-fault",
+      "kind": "method",
+      "excerpt": "rounded through float16",
+      "chars": 23,
+      "normalized_offset": 32223,
+      "end_offset_exclusive": 32246,
+      "occurrences": 1,
+      "source_window_sha256": "43e4d9a3b2fc3a866e9e8fdc14d0c020829b705aa1cd41476658607cf26b0cf3",
+      "status": "FOUND"
+    },
+    {
+      "id": "E6-skipped-step-fault",
+      "kind": "method",
+      "excerpt": "Or a step was skipped and its feedback filled in.",
+      "chars": 49,
+      "normalized_offset": 32484,
+      "end_offset_exclusive": 32533,
+      "occurrences": 1,
+      "source_window_sha256": "1ed8520e2a7ba381053495003d5bfebc912a35a9b0d5d82f495b87737ceab771",
+      "status": "FOUND"
+    },
+    {
+      "id": "E7-run-not-outcome",
+      "kind": "method",
+      "excerpt": "Checks of the run itself, not of its outcome, saw every fault.",
+      "chars": 62,
+      "normalized_offset": 18306,
+      "end_offset_exclusive": 18368,
+      "occurrences": 1,
+      "source_window_sha256": "a947e564fda91b92132399869b29b68642cb44a3e5fe97cfdfcd7615af9c7bdb",
+      "status": "FOUND"
+    },
+    {
+      "id": "E8-curve-not-evidence",
+      "kind": "method",
+      "excerpt": "Do not take a learning curve alone as evidence that the boundary is right",
+      "chars": 73,
+      "normalized_offset": 60253,
+      "end_offset_exclusive": 60326,
+      "occurrences": 1,
+      "source_window_sha256": "48e4132db5e758577164ed7da564e41993318b2fddfa5ab04281ce430da7bc9d",
+      "status": "FOUND"
+    },
+    {
+      "id": "E9-keep-step-ledger",
+      "kind": "method",
+      "excerpt": "Keep a step ledger.",
+      "chars": 19,
+      "normalized_offset": 60828,
+      "end_offset_exclusive": 60847,
+      "occurrences": 1,
+      "source_window_sha256": "63c334ec5ffec7ba57cd2cd1933c0e99f253e4e441d5f2273dec287bb5a0215c",
+      "status": "FOUND"
+    },
+    {
+      "id": "E10-curve-and-eval-miss",
+      "kind": "paper_empirical_claim_UNVERIFIED_not_a_result_of_this_sketch",
+      "excerpt": "Neither a learning curve nor a clean evaluation shows most boundary faults",
+      "chars": 74,
+      "normalized_offset": 23243,
+      "end_offset_exclusive": 23317,
+      "occurrences": 1,
+      "source_window_sha256": "dec31b63e0f2bd7af729f8087cf3d0c7036ad2b0a6bea89539870fd02a44c137",
+      "status": "FOUND"
+    },
+    {
+      "id": "E11-ledger-caught-every-fault",
+      "kind": "paper_empirical_claim_UNVERIFIED_not_a_result_of_this_sketch",
+      "excerpt": "A step ledger kept on both sides and compared step by step caught and located every fault that crossed",
+      "chars": 102,
+      "normalized_offset": 18369,
+      "end_offset_exclusive": 18471,
+      "occurrences": 1,
+      "source_window_sha256": "2c3ec57ce520e35f478dccfbfdda82f8bbeb0078c45b507988e50ea11256c427",
+      "status": "FOUND"
+    },
+    {
+      "id": "E12-threshold-figure",
+      "kind": "paper_empirical_claim_UNVERIFIED_not_a_result_of_this_sketch",
+      "excerpt": "a learning-curve threshold caught at most one run in ten",
+      "chars": 56,
+      "normalized_offset": 17865,
+      "end_offset_exclusive": 17921,
+      "occurrences": 1,
+      "source_window_sha256": "c9875cd003f3ecc8d36496a6e7e8845a9ace15273ecaed117773933db63eea01",
+      "status": "FOUND"
+    }
+  ],
+  "not_results_of_this_sketch": "E10-E12 and every paper figure are the authors' claims, UNVERIFIED here. The sketch's own numbers are synthetic toy measurements."
+}

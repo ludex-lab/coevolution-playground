@@ -1,0 +1,31 @@
+w23-termination-lag
+-------------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code, data,
+traces, patches or weights.
+
+Paper (method idea credited)
+----------------------------
+Musa Cim, Burak Topcu and Mahmut Taylan Kandemir.
+"Termination Lag: Coding Agents Solve Early but Stop Late".
+arXiv:2611.14960, v1, submitted 11 Nov 2026 (2026-11-11 12:11:00 KST).
+Primary category cs.AI, cross-listed cs.CL.
+https://arxiv.org/abs/2611.14960
+Licence: Creative Commons Attribution 4.0 International (CC BY 4.0),
+http://creativecommons.org/licenses/by/4.0/ (a paper licence, not a
+software grant).
+
+Code: the abs page links no code repository. None was found or used.
+
+Method only: the idea of recording every patch an agent produces during a
+run, testing each one, marking the first correct patch, measuring
+termination lag as the number of steps from that patch to the end of the
+run, and noting that continued activity can undo an earlier correct patch.
+The step gate that refuses a later breaking edit, the rule that protection
+never expires, the stop-at-first-pass arm, the final-state baseline, the
+fixture checks, the oracle and the fixtures are this sketch's own rules,
+not the paper's. No text, figures, tables or data from the paper are copied
+into the code; the PDF was not read; no agent, model or benchmark was run.
+The paper's claims appear only in paper_evidence.json, quoted and marked
+UNVERIFIED.

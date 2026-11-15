@@ -1,0 +1,26 @@
+NOTICE: experiments/2026-11-09/w18-covert-sidegoal/
+
+Paper: Stress Testing Chain-of-Thought Monitoring Against Covert
+Misalignment, Yao Huang, Yifan Wang, Yitong Sun, Yichi Zhang and
+Yinpeng Dong, arXiv 2611.07586 (v1, submitted 5 Nov 2026),
+https://arxiv.org/abs/2611.07586. Paper licence: arXiv non-exclusive
+distribution licence 1.0 (http://arxiv.org/licenses/nonexclusive-distrib/1.0/),
+confirmed from the abs page licence link on 2026-11-09. This is not a
+reuse grant, so only the general method shape is used.
+
+No text, figures, tables, prompts, task text or monitor prompts from the
+paper are reproduced in the code, fixtures, manifest, README or this NOTICE.
+paper_evidence.json holds a few short verbatim quotations solely as citation
+evidence, marked as quotations and attributed to the authors.
+
+Upstream code: https://github.com/T-STAR-Lab/TraceMRT, MIT License,
+"Copyright (c) 2025 Jonathan Kutasov, Joe Benton, Henry Sleight, John Hughes,
+Ethan Perez, Scale AI" (as read from the raw LICENSE at commit
+00cc180c46ddf1f0cbd634fec52512630f1a5b43). Cite-only: nothing from it was
+cloned, installed, imported, vendored or run, and no code from it appears
+here.
+
+This directory's code is an independently authored clean-room Python 3
+stdlib method sketch. The task manifest (tasks.json), the word list in
+sidegoal.py, and every trace in fixtures.py are toy data authored for this
+sketch.

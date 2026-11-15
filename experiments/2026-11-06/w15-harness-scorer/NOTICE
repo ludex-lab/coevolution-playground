@@ -1,0 +1,48 @@
+Adapted ideas from upstream **harness-is-the-model** (clean-room Python in this folder only;
+no upstream modules imported, no policy text or episode traces vendored):
+
+  Paper: https://arxiv.org/abs/2611.06116
+  Repository: https://github.com/mhuyut/harness-is-the-model
+  Pin: 42e2ba3056a6404253e926dfd6be595309379c3a
+
+Upstream split licence (quoted exactly):
+
+  Code (all *.py files): MIT License, Copyright (c) 2026 Mehmet Murat Huyut
+  Data, policy text, cases, traces, labels and documents (everything that is not a *.py file):
+  Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+This day-sketch vendors **neither** `deney/politika.md` **nor** upstream episode traces.
+Synthetic fixtures in `fixtures.py` stand in for CC-BY data; they are playground scaffolding,
+not a CC-BY redistribution of upstream bank policy.
+
+Upstream code licence reference:
+  https://raw.githubusercontent.com/mhuyut/harness-is-the-model/42e2ba3056a6404253e926dfd6be595309379c3a/LICENSE
+
+================================================================================
+MIT License (this folder's *.py — playground clean-room implementation)
+Copyright (c) 2026 coevolution-lab playground contributors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+Non-code files in this folder (README, NOTICE prose outside MIT block, fixture
+metadata descriptions): playground documentation — not upstream CC-BY data.
+
+Upstream data (`politika.md`, labelled traces, cases) remains CC BY 4.0 at the
+pinned repository and is **not** copied here.

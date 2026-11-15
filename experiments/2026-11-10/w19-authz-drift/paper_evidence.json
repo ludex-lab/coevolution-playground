@@ -1,0 +1,180 @@
+{
+ "paper": {
+  "arxiv_id": "2611.09113",
+  "version": "v1",
+  "title": "Authorization Drift in LLM Agents: Evaluating Boundary Compliance in Multi-Step Tool Use",
+  "citation_title": "Authorization Drift in LLM Agents: Evaluating Boundary Compliance in Multi-Step Tool Use",
+  "authors": [
+   "Chuxue Cao",
+   "Jingru Zeng",
+   "Boqin Yin",
+   "Yujin Zhou",
+   "Yidan Huang",
+   "Sujin Chen",
+   "Jinluan Yang",
+   "Haoran Li",
+   "Yike Guo",
+   "Sirui Han"
+  ],
+  "authors_source": "abs page citation_author meta: 'Cao, Chuxue', 'Zeng, Jingru', 'Yin, Boqin', 'Zhou, Yujin', 'Huang, Yidan', 'Chen, Sujin', 'Yang, Jinluan', 'Li, Haoran', 'Guo, Yike', 'Han, Sirui'",
+  "citation_date": "2026/11/06",
+  "method_name": "Authorization Drift Benchmark (ADB)",
+  "abs_url": "https://arxiv.org/abs/2611.09113",
+  "html_url": "https://arxiv.org/html/2611.09113",
+  "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "licence_url": "http://creativecommons.org/licenses/by/4.0/",
+  "licence_evidence": "abs page licence link href=\"http://creativecommons.org/licenses/by/4.0/\" (only creativecommons link on the page), re-fetched 2026-11-10 15:09 JST",
+  "use": "method/shape only; no paper text copied into code, fixtures, README or NOTICE; short excerpts below are for evidence only, attributed to the authors under CC BY 4.0"
+ },
+ "fetched": {
+  "fetched_at": "2026-11-10 15:09 JST",
+  "html_path": "/tmp/w19az-2611.09113.html",
+  "html_bytes": 854147,
+  "html_sha256": "a8de8f2f7ccd289bf32b92b3c1be0300d7d946c015b0012d76a57a7f14a5879d",
+  "html_curl": "curl -sL -A 'Mozilla/5.0' https://arxiv.org/html/2611.09113 -o /tmp/w19az-2611.09113.html",
+  "abs_path": "/tmp/w19az-abs.html",
+  "abs_bytes": 42751,
+  "abs_sha256": "cabca0c12bc8c0f674452f5ab2e2cb678f390b62cb5513854f955b03534f25b9",
+  "abs_curl": "curl -sL -A 'Mozilla/5.0' https://arxiv.org/abs/2611.09113 -o /tmp/w19az-abs.html"
+ },
+ "normalization": {
+  "steps": [
+   "decode utf-8",
+   "re.sub(r'<script\\b.*?</script>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+   "re.sub(r'<style\\b.*?</style>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+   "re.sub(r'<math\\b.*?</math>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+   "html.unescape(t)",
+   "re.sub(r'\\s+', ' ', t)"
+  ],
+  "remaining_tags": "kept (not stripped); every excerpt lies inside one text run",
+  "offsets": "zero-based Unicode code points into the normalized HTML text, end-exclusive",
+  "normalized_chars": 748101,
+  "abs_normalized_chars": 36731,
+  "window_rule": "normalized[max(0, start-64) : min(len, end+64)], sha256 of its UTF-8 bytes"
+ },
+ "implementation_pin": {
+  "repo": "https://github.com/ZJR-FZD/AgentDrift",
+  "commit": "4d69a706e4e47148b51d35077e812260e64f6214",
+  "ref": "HEAD = refs/heads/main (git ls-remote, 2026-11-10 15:10 JST)",
+  "committed_at": "2026-11-09T06:43:49Z (2026-11-09 15:43 JST)",
+  "licence": "MIT",
+  "licence_evidence": "GitHub API spdx_id=MIT, LICENSE blob 8c9a00148981f04147b21aae3c878950da9026fd; raw LICENSE at the pin opens 'MIT License'; no NOTICE file at the pin (raw 404)",
+  "link_source": "paper HTML full text footnote to the abstract's code sentence; the abs page itself shows no code link",
+  "status": "pinned for provenance only; not cloned, installed, imported or run; no upstream code or data copied; UNVERIFIED"
+ },
+ "implementation_pin_note": "Clean-room sketch. The upstream repository was only listed (API metadata, ls-remote, raw LICENSE). Its benchmark, environments and annotations were not read into or used by this directory.",
+ "quote_notes": [
+  "Bold dimension names (Data, Tool, Scope, Time) and the italic 'Data minimization' label sit in their own spans in the HTML, so excerpts E5 and E6 start after them.",
+  "Several abstract figures sit inside <math> blocks that normalization removes, so C3-C5 are counted against the normalized abs page instead of the HTML."
+ ],
+ "excerpts": [
+  {
+   "id": "E1-abstract-no-adversary",
+   "section": "abstract",
+   "excerpt": "LLM agents can exceed their authorization boundaries while pursuing user goals without an adversary.",
+   "chars": 100,
+   "normalized_offset": 41950,
+   "end_offset_exclusive": 42050,
+   "occurrences": 1,
+   "source_window_sha256": "b8fb7d72c5d05495462bff28622a1403858f6714d1596d5399745601fec2015c",
+   "status": "FOUND"
+  },
+  {
+   "id": "E2-abstract-dual-path",
+   "section": "abstract",
+   "excerpt": "each pairing a sufficient compliant path with an attractive unauthorized shortcut",
+   "chars": 81,
+   "normalized_offset": 42291,
+   "end_offset_exclusive": 42372,
+   "occurrences": 1,
+   "source_window_sha256": "f6656630d2d3377e8e0965ad8c7a1802038ceca74210cb1bd4a159312cb8a419",
+   "status": "FOUND"
+  },
+  {
+   "id": "E3-abstract-early-over-collection",
+   "section": "abstract",
+   "excerpt": "Drift is persistent and dominated by early data over-collection",
+   "chars": 63,
+   "normalized_offset": 42898,
+   "end_offset_exclusive": 42961,
+   "occurrences": 1,
+   "source_window_sha256": "822c5b689c5fb525fc0782f563f85cd81c1b03c71e97f6020af52359c3ee5e30",
+   "status": "FOUND"
+  },
+  {
+   "id": "E4-sec1-feasible-within-bounds",
+   "section": "sec. 1 (introduction)",
+   "excerpt": "agents must face useful but unauthorized actions while retaining a feasible way to complete the task within bounds",
+   "chars": 114,
+   "normalized_offset": 46482,
+   "end_offset_exclusive": 46596,
+   "occurrences": 1,
+   "source_window_sha256": "1dae278ab891528a0ef22e97e73162e6200406f136c10e9b42c305e1c977ea2d",
+   "status": "FOUND"
+  },
+  {
+   "id": "E5-sec1-time-window",
+   "section": "sec. 1 (introduction)",
+   "excerpt": "persisting or re-planning beyond the intended execution window",
+   "chars": 62,
+   "normalized_offset": 47794,
+   "end_offset_exclusive": 47856,
+   "occurrences": 1,
+   "source_window_sha256": "27c5a473b1a3bbf1229712a078a7ed0b7fc07cc79bb8fe0775fe3b659cca77f9",
+   "status": "FOUND"
+  },
+  {
+   "id": "E6-appA-data-minimization",
+   "section": "appendix A (formal definitions)",
+   "excerpt": "accessing data clearly beyond what the task requires",
+   "chars": 52,
+   "normalized_offset": 200352,
+   "end_offset_exclusive": 200404,
+   "occurrences": 1,
+   "source_window_sha256": "45035e0dd42e6d230ca1366f85c9c9faf906c99e2ca2527199d3d6dd979806d5",
+   "status": "FOUND"
+  }
+ ],
+ "empirical_claims": {
+  "status": "UNVERIFIED",
+  "note": "Paper figures, recorded as found and not checked by this sketch. They appear only in this file.",
+  "claims": [
+   {
+    "id": "C1-samples-domains",
+    "source": "html",
+    "text": "648 samples across seven domains",
+    "occurrences": 2,
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C2-models-trajectories",
+    "source": "html",
+    "text": "Across 13 LLMs and three frameworks (25,207 trajectories)",
+    "occurrences": 1,
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C3-frontier-drift-rates",
+    "source": "abs",
+    "text": "drift rates of 0.43 to 0.61",
+    "occurrences": 3,
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C4-clean-success-share",
+    "source": "abs",
+    "text": "86.18% of tasks admit an observed clean-success trajectory",
+    "occurrences": 3,
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C5-multi-jurisdiction-share",
+    "source": "abs",
+    "text": "93.5% of legally grounded drifting runs map to multiple jurisdictions",
+    "occurrences": 3,
+    "status": "UNVERIFIED"
+   }
+  ]
+ },
+ "not_results_of_this_sketch": "The grants, tasks, trajectories and every fixture outcome are synthetic. Nothing here reproduces or measures any model, framework, benchmark sample or legal mapping studied in the paper."
+}

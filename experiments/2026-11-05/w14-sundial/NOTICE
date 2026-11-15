@@ -1,0 +1,7 @@
+Sundial method-borrow design note for Ork Team Playground experiments.
+
+Concepts cited from bigjoe-oti/sundial (MIT)
+https://github.com/bigjoe-oti/sundial @ 74ede107762c61a34edcb49f3c8a48e1949685b6
+
+This directory is not a vendor copy of Sundial hooks, presence backends (ioreg/xprintidle),
+launchd watcher, JSON ledger product, or stand-in wake paths.

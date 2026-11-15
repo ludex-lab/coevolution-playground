@@ -1,0 +1,121 @@
+{
+  "paper": "Hard Issue, Weak Model, or Bad Run? Rethinking Failure Prediction for Coding Agents",
+  "captured_at_jst": "2026-11-08T15:33:07.298369+09:00",
+  "licence": "arXiv perpetual non-exclusive; not CC BY; not a software grant; method-cite only",
+  "licence_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "abs_submitted_display": "5 Nov 2026",
+  "abs_instant_jst": "2026-11-06T01:50:11+09:00",
+  "implementation_pin": null,
+  "pin_scope": "No author implementation pin identified. Cited third-party trajectory/tool repositories are not an author implementation pin. No source-control repository fetched.",
+  "normalization": "Python HTMLParser(convert_charrefs=True), append each handle_data including scripts/math, join with spaces, split Unicode whitespace, join with one ASCII space; offsets are zero-based Unicode code points, end-exclusive.",
+  "window_rule": "From max(0,start-64) to min(normalized length,end+64), UTF-8 sha256.",
+  "sources": {
+    "html": {
+      "url": "https://arxiv.org/html/2611.08285",
+      "local_cache": "/tmp/w17-2611.08285.html",
+      "bytes": 134398,
+      "sha256": "0d1f07283fd2e3fde1a26f15362105e141725ef08048e5630d247fbe78d41888"
+    },
+    "abs": {
+      "url": "https://arxiv.org/abs/2611.08285",
+      "local_cache": "/tmp/w17-2611.08285-abs.html",
+      "bytes": 42169,
+      "sha256": "e0c5c85183511e19e35b0cf7f9330414d31a61b927b3209b2bf34a8c3b185fd0"
+    }
+  },
+  "excerpts": [
+    {
+      "id": "E1",
+      "quote": "Rather than proposing another predictor, we question what current predictors predict.",
+      "source": "html",
+      "start": 12236,
+      "end": 12321,
+      "window_start": 12172,
+      "window_end": 12385,
+      "source_window_sha256": "1568d4321e6b2401d2bd4a550817baf94b87264938328713cc7d5c2a9f2bfa58",
+      "status": "FOUND"
+    },
+    {
+      "id": "E2",
+      "quote": "since it relies on outcomes unavailable at deployment, it serves as a diagnostic rather than a practical predictor.",
+      "source": "html",
+      "start": 15219,
+      "end": 15334,
+      "window_start": 15155,
+      "window_end": 15398,
+      "source_window_sha256": "21a52bb186a60bf6fcae0b3908774be3a80b7239edc88cea3e710188450b3393",
+      "status": "FOUND"
+    },
+    {
+      "id": "E3",
+      "quote": "its model’s failure rate on training issues",
+      "source": "html",
+      "start": 15374,
+      "end": 15417,
+      "window_start": 15310,
+      "window_end": 15481,
+      "source_window_sha256": "ea7dac7dfeb45162106560532e345f8cd242437f40ad3adc61af0870917de6b5",
+      "status": "FOUND"
+    },
+    {
+      "id": "E4",
+      "quote": "90% interval of its AUROC gain to lie within a pre-specified",
+      "source": "html",
+      "start": 16380,
+      "end": 16440,
+      "window_start": 16316,
+      "window_end": 16504,
+      "source_window_sha256": "8e9bd6a48a32d988634a4d8504597a1f6aa00d41848180c8e716a12b82dc2a00",
+      "status": "FOUND"
+    },
+    {
+      "id": "E5",
+      "quote": "Holm-corrected over 50 comparisons",
+      "source": "html",
+      "start": 16476,
+      "end": 16510,
+      "window_start": 16412,
+      "window_end": 16574,
+      "source_window_sha256": "a7f7049646748fbdfbb8ed11aa75c32257e16bc511814beeb39860a3988ed43f",
+      "status": "FOUND"
+    },
+    {
+      "id": "E6",
+      "quote": "half B to measure success or check whether the upsets recur.",
+      "source": "html",
+      "start": 17856,
+      "end": 17916,
+      "window_start": 17792,
+      "window_end": 17980,
+      "source_window_sha256": "1c651ebdb4a6d790d4130193fb9dca88368676be776c1fdc50c1efc2156d5881",
+      "status": "FOUND"
+    },
+    {
+      "id": "E7",
+      "quote": "compare actions at equal numbers of attempts.",
+      "source": "html",
+      "start": 27773,
+      "end": 27818,
+      "window_start": 27709,
+      "window_end": 27882,
+      "source_window_sha256": "c0d4556aa69ae549a8f3de558a36be1d4f4a8478eb42ca0f62483189f1206e29",
+      "status": "FOUND"
+    },
+    {
+      "id": "E8",
+      "quote": "non-rejection does not prove that specialization is absent.",
+      "source": "html",
+      "start": 28152,
+      "end": 28211,
+      "window_start": 28088,
+      "window_end": 28275,
+      "source_window_sha256": "c3f15e78fc27eb9da40db9d59288210e4c9b5428e17061136ceba9367c9a43c1",
+      "status": "FOUND"
+    }
+  ],
+  "paper_claim_context_only": {
+    "difficulty_reference": "Table I: 0.924 AUROC; external other-model outcomes, not online eligible. Not a sketch result.",
+    "bounded_test": "90% interval of gain inside ±0.02; Holm over 50 comparisons; bounded equivalence, not universal absence of information. Not implemented here.",
+    "sketch_scope": "No SWE-bench AUROC reproduction; all calculations use original synthetic repeated runs."
+  }
+}

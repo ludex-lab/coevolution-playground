@@ -1,0 +1,35 @@
+w24-threshold-compliance
+------------------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code, data,
+prompts, items, labels, figures or weights.
+
+Paper (method idea credited)
+----------------------------
+Dongsun Moon.
+"Abstention Is Not Threshold Compliance: Stated Scoring Rules in Open
+Language Models".
+arXiv:2611.14661, v1, submitted 10 Nov 2026. Primary category cs.CL,
+cross-listed cs.AI.
+https://arxiv.org/abs/2611.14661
+Paper licence: CC BY 4.0, http://creativecommons.org/licenses/by/4.0/ (as
+linked on the abs page). Only the abstract is quoted or used; the PDF was
+not read.
+
+Code and data
+-------------
+The abstract and comments link no code or data. Nothing was downloaded,
+cloned, installed or run.
+
+Method only: the idea that a stated scoring rule with threshold t asks a
+model to answer only when its probability of being correct exceeds t, that
+a high abstention rate alone is not evidence of compliance, that decisions
+no policy with threshold-independent beliefs could make can be detected
+from decisions alone, and that evaluations should report the abstention
+rate, the response to the threshold and the answered items. The declared
+thresholds, the tie rule, the two audit modes, the rate-only baseline, the
+oracle and the fixtures (items, caller-labelled probabilities and
+policies) are this sketch's own. No text, figures, tables or data from the
+paper are copied into the code; no model was run. The paper's claims appear
+only in paper_evidence.json, quoted and marked UNVERIFIED.

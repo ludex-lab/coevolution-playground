@@ -1,0 +1,49 @@
+This directory is a clean-room method-borrow day-sketch of ideas from:
+
+  Zhonghao Zhan, Javad Forough, Yefan Zhang, Krinos Li, Xiao Ma,
+  and Hamed Haddadi.
+  Airlock: Bounding the Multi-Agent Blast Radius via Selective Online Containment.
+  arXiv:2611.06727v1 (4 November 2026).
+  https://arxiv.org/abs/2611.06727
+  HTML: https://arxiv.org/html/2611.06727
+
+The fetched HTML displays License: CC BY 4.0.
+License terms: https://creativecommons.org/licenses/by/4.0/
+Short paper sentences and fragments in fixtures.py / paper_evidence.json are
+attributed to that paper. They were checked against the fetched HTML on
+2026-11-07 (JST). The code is a new synthetic method sketch, not paper text,
+a reproduction of its evaluation, or an implementation port.
+
+Upstream runtime citation only:
+  https://github.com/EdgeCitadelTeam/EdgeCitadel
+  pin: 4d464fea391d16069f042873fd20213c6ea07533
+
+The paper's Appendix B identifies this as the underlying runtime. It is not
+identified here as an Airlock-controller release. No upstream code was
+cloned, executed, vendored, or ported. No upstream copyright owner is
+claimed or invented for this draft.
+
+Public GitHub page inspection via WebFetch on 2026-11-07 (JST):
+
+- https://github.com/EdgeCitadelTeam/EdgeCitadel/tree/4d464fea391d16069f042873fd20213c6ea07533
+  Root listing has no LICENSE file; rendered README ends with License / MIT.
+- https://github.com/EdgeCitadelTeam/EdgeCitadel/blob/4d464fea391d16069f042873fd20213c6ea07533/README.md
+- https://github.com/EdgeCitadelTeam/EdgeCitadel/blob/4d464fea391d16069f042873fd20213c6ea07533/pyproject.toml
+  These blob fetches returned empty source extracts, not evidence of emptiness.
+- https://github.com/EdgeCitadelTeam/EdgeCitadel/raw/4d464fea391d16069f042873fd20213c6ea07533/README.md
+  Confirms README License / MIT declaration.
+- https://github.com/EdgeCitadelTeam/EdgeCitadel/raw/4d464fea391d16069f042873fd20213c6ea07533/pyproject.toml
+  Confirms license = { text = "MIT" } and MIT classifier.
+- https://github.com/EdgeCitadelTeam/EdgeCitadel/blob/4d464fea391d16069f042873fd20213c6ea07533/LICENSE
+  Returned 404, consistent with the pinned root listing.
+- https://github.com/EdgeCitadelTeam/EdgeCitadel/commit/4d464fea391d16069f042873fd20213c6ea07533
+  Confirms the cited commit pin.
+- https://github.com/EdgeCitadelTeam/EdgeCitadel
+  Summary did not expose GitHub license metadata.
+
+Observed: MIT is declared in README/pyproject.toml, with no LICENSE file at
+the pinned root. This inspection does not prove those are the only declarations
+anywhere in the repository. Expected GitHub license=null is UNVERIFIED from
+these page extracts; no API metadata was fetched. Do not treat an absent
+standalone license text or a declaration as permission to vendor source.
+This sketch borrows the paper's method only and asserts no upstream code rights.

@@ -1,0 +1,113 @@
+{
+ "paper": {
+  "arxiv_id": "2611.17115",
+  "version": "v1",
+  "title": "CapLite: Prompt-Injection Defense for Small Language Model Agents without Model-Written Security Artifacts",
+  "method_name": "CapLite",
+  "authors": [
+   "Zimo Xu",
+   "Wenzhuo Liu",
+   "Hideki Nakayama"
+  ],
+  "primary_category": "cs.AI (cross-listed cs.CL, cs.CR)",
+  "submitted": "12 Nov 2026 (v1 2026-11-12T17:07:22Z = 2026-11-13 02:07:22 KST)",
+  "comments_field": "19 pages, 11 figures, 9 tables",
+  "abs_url": "https://arxiv.org/abs/2611.17115",
+  "licence": "CC BY 4.0, http://creativecommons.org/licenses/by/4.0/ (paper licence, from the abs page licence link)",
+  "code": "none linked on the abs page; no code was found or used",
+  "pdf_read": false
+ },
+ "sources": [
+  {
+   "file": "2611.17115.abs.txt",
+   "what": "plain-text copy of the abs-page abstract (prefix 'Abstract:')",
+   "sha256": "db68f8a29ea2015bfa81aa4c8d24ce0f14836e6d49eb5b5ca4e3c778460f861f",
+   "chars": 1346
+  }
+ ],
+ "env": "W22PRECOMMIT_SOURCES names the directory (or os.pathsep separated directories) holding the source file; the source test skips when it is unset and fails when it is set but the file is absent",
+ "status": "UNVERIFIED",
+ "on_unmeasured": "Every N claim (episode counts, attack results, utility and token figures) is not measured, re-run or re-claimed by this sketch; write_precommit.paper_results() returns on_unmeasured.",
+ "attribution": "The authors' own statements as given in the arXiv abstract. Quote wording is the authors'. Not reproduced here.",
+ "claims": [
+  {
+   "id": "M1",
+   "what": "what the compared defenses ask the model to write",
+   "quote": "ask the agent's own model to write a security artifact (a program, a privilege policy, a dependency graph or a constraint list) that code then enforces",
+   "offset": 100,
+   "length": 151,
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "M2",
+   "what": "method rule (the part this sketch borrows)",
+   "quote": "We present CapLite, which derives its policy from the tool schemas, commits the write calls before any tool result is read, and admits a write only if every argument that decides whom or what it affects is stated in the user's request.",
+   "offset": 631,
+   "length": 235,
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "M3",
+   "what": "write-integrity claim",
+   "quote": "This guarantees write integrity: injected text cannot add a write, and no write reaches a recipient, amount, object or destination that the user did not state.",
+   "offset": 867,
+   "length": 159,
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "N1",
+   "what": "small models writing security artifacts",
+   "numbers": {
+    "models": 15,
+    "small_models": 13,
+    "progent_models_attacked": 14,
+    "ipiguard_models_attacked": 13,
+    "drift_models_attacked": 11,
+    "camel_program_failure_up_to_pct": 68
+   },
+   "quote": "Across 15 open-weight models, 13 of them between 1.7B and 12B parameters, they cannot: the policies, graphs and constraints that the agent's model writes admit attacks on 14 (Progent), 13 (IPIGuard) and 11 (DRIFT) of the models, and CaMeL's programs fail to run in up to 68% of episodes.",
+   "offset": 343,
+   "length": 287,
+   "status": "UNVERIFIED",
+   "here": "on_unmeasured"
+  },
+  {
+   "id": "N2",
+   "what": "attacked episodes with no successful attack",
+   "numbers": {
+    "episodes": 13935
+   },
+   "quote": "No attack succeeds in 13,935 attacked AgentDojo episodes.",
+   "offset": 1027,
+   "length": 57,
+   "status": "UNVERIFIED",
+   "here": "on_unmeasured"
+  },
+  {
+   "id": "N3",
+   "what": "utility under attack vs CaMeL",
+   "numbers": {
+    "caplite_pct": 29.0,
+    "camel_pct": 27.2
+   },
+   "quote": "CapLite reaches utility under attack comparable to CaMeL's (29.0% vs. 27.2%)",
+   "offset": 1085,
+   "length": 76,
+   "status": "UNVERIFIED",
+   "here": "on_unmeasured"
+  },
+  {
+   "id": "N4",
+   "what": "token cost",
+   "numbers": {
+    "tokens_per_episode_k": 17.1,
+    "share_of_camel_pct": 18
+   },
+   "quote": "with fewer tokens than every other enforcement defense and than the undefended agent: 17.1k per episode, 18% of CaMeL's, and the highest utility per token of all enforcement defenses.",
+   "offset": 1162,
+   "length": 183,
+   "status": "UNVERIFIED",
+   "here": "on_unmeasured"
+  }
+ ]
+}

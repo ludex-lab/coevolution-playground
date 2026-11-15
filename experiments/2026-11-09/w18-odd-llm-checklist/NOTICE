@@ -1,0 +1,24 @@
+NOTICE — experiments/2026-11-09/w18-odd-llm-checklist/
+
+Paper: ODD+LLM: Specifying LLM-Agent Behavior for Reproducible Social
+Simulation, Justin Downes, Robby Milletich and Newel Hirst, arXiv 2611.08932
+(v1, submitted 6 Nov 2026), https://arxiv.org/abs/2611.08932. SocialAgent
+Workshop @ NeurIPS 2026 (abs page comments). Paper licence: CC BY 4.0
+(https://creativecommons.org/licenses/by/4.0/), confirmed from the abs page
+"Rights to this article" link on 2026-11-09. Used for method-cite only;
+short quotes appear in paper_evidence.json only, for evidence, with
+attribution to the authors.
+
+The five block names (Cognitive Architecture, Identity, Inference
+Configuration, Behavioral Submodel, Validation) are used as headings only.
+The paper's appendix coding instrument (item list and scoring scale) is
+not copied; item ids, field names and questions here are independently worded.
+
+Upstream code: none. No code link was found in the abs page or HTML; there is
+no upstream code pin, and nothing was cloned, installed, imported or run.
+
+This directory's code is an independently authored clean-room Python 3
+stdlib method sketch.
+
+Synthetic fixtures: the "seed-swap" simulation and every description in
+fixtures.py are toy data authored for this sketch.

@@ -1,0 +1,83 @@
+{
+  "name": "w18-odd-llm-checklist",
+  "kind": "documentation hygiene checklist for LLM-driven agent-based models (method sketch)",
+  "source": "block names follow arXiv 2611.08932; every item id, field and question below is this sketch's own wording and numbering",
+  "placeholder_rule": "a field counts as documented only if its value is a number, a non-empty list or object, or a string that is non-empty after trimming and is not one of the placeholder words (compared case-insensitively, trailing dots and spaces ignored); a missing key or null is missing; booleans count as documented",
+  "placeholders": ["tbd", "todo", "default", "defaults", "see code", "unknown", "n/a", "na", "?", "...", "-", "same as before"],
+  "blocks": [
+    {
+      "id": "A",
+      "name": "Cognitive Architecture",
+      "items": [
+        {"id": "A1", "field": "carried_state", "required": true,
+         "asks": "What the agent keeps from one step to the next, and in what shape."},
+        {"id": "A2", "field": "recall_rule", "required": true,
+         "asks": "How stored items are picked back up for a prompt, including how many."},
+        {"id": "A3", "field": "move_set", "required": true,
+         "asks": "The moves an agent can make in the world, listed."},
+        {"id": "A4", "field": "who_sees_messages", "required": false,
+         "asks": "If agents talk, who can read what is said."}
+      ]
+    },
+    {
+      "id": "B",
+      "name": "Identity",
+      "items": [
+        {"id": "B1", "field": "persona_origin", "required": true,
+         "asks": "Where each persona's text came from (written by hand, sampled, generated)."},
+        {"id": "B2", "field": "persona_wording", "required": true,
+         "asks": "The exact persona text as sent, or a pointer to the file that holds it."},
+        {"id": "B3", "field": "persona_spread", "required": false,
+         "asks": "How personas differ between agents in one run."},
+        {"id": "B4", "field": "persona_over_time", "required": false,
+         "asks": "Whether a persona stays fixed during a run, and if not, what changes it."}
+      ]
+    },
+    {
+      "id": "C",
+      "name": "Inference Configuration",
+      "items": [
+        {"id": "C1", "field": "model_string", "required": true,
+         "asks": "The exact model name and dated version string used for agent turns."},
+        {"id": "C2", "field": "sampling", "required": true,
+         "asks": "Sampling settings by name and value, e.g. temperature and token cap."},
+        {"id": "C3", "field": "seed_or_nondeterminism", "required": true,
+         "asks": "The seed used, or a plain note that the service gives no seed control."},
+        {"id": "C4", "field": "service_and_date", "required": false,
+         "asks": "Which hosted service was called and on what dates."}
+      ]
+    },
+    {
+      "id": "D",
+      "name": "Behavioral Submodel",
+      "items": [
+        {"id": "D1", "field": "standing_prompt_text", "required": true,
+         "asks": "The unchanging instruction text for the main call, word for word."},
+        {"id": "D2", "field": "speaker_stance", "required": true,
+         "asks": "Whose voice the model answers in, e.g. narrator watching the game vs a participant in it."},
+        {"id": "D3", "field": "reply_to_action", "required": true,
+         "asks": "How a raw reply is turned into an in-world move."},
+        {"id": "D4", "field": "bad_reply_handling", "required": true,
+         "asks": "What happens when a reply cannot be used: how many re-asks, then what."},
+        {"id": "D5", "field": "history_trim", "required": false,
+         "asks": "How older history is cut or shortened before it goes into a prompt."}
+      ]
+    },
+    {
+      "id": "E",
+      "name": "Validation",
+      "items": [
+        {"id": "E1", "field": "target_pattern", "required": true,
+         "asks": "The real-world or published pattern the runs are checked against."},
+        {"id": "E2", "field": "runs_per_setting", "required": true,
+         "asks": "How many independent runs were made for each setting."},
+        {"id": "E3", "field": "spread_shown", "required": true,
+         "asks": "How run-to-run spread is shown, and over which unit."},
+        {"id": "E4", "field": "wording_shakeup", "required": false,
+         "asks": "Whether prompt wording was varied to see if outcomes move."},
+        {"id": "E5", "field": "no_llm_baseline", "required": false,
+         "asks": "A comparison run with no language model in the loop, if any."}
+      ]
+    }
+  ]
+}

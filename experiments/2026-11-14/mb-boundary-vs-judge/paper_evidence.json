@@ -1,0 +1,185 @@
+{
+ "paper": {
+  "arxiv_id": "2611.14581",
+  "version": "v1",
+  "title": "When Evaluators of AI Agents Disagree: An Empirical Study of Native Scoring, LLM Judges, and Commit-Boundary Checks on tau2-bench",
+  "authors": [
+   "Sungbin Im"
+  ],
+  "primary_category": "cs.SE (cross-listed cs.AI, cs.CR)",
+  "submitted": "v1 Tue, 10 Nov 2026 05:34:47 UTC = 2026-11-10 14:34:47 KST",
+  "abs_url": "https://arxiv.org/abs/2611.14581",
+  "licence": "arXiv non-exclusive distribution licence, http://arxiv.org/licenses/nonexclusive-distrib/1.0/ (the paper licence; not a software grant)",
+  "comments_field": "38 pages, 3 figures, 11 tables. Submitted to Empirical Software Engineering. Replication package: this https URL. Supplementary material (Online Resource 1) is included as an ancillary file",
+  "pdf_read": false
+ },
+ "replication_package": {
+  "doi": "10.5281/zenodo.23683806",
+  "file": "artifact_v9.zip",
+  "code_licence": "MIT (code/ only; Copyright (c) 2026 Sungbin Im)",
+  "data_licence": "CC BY 4.0 (data/, annotation/, docs/, manifest.csv, release_meta.json)",
+  "read": "README and LICENSE only, during the research pack, for licence facts",
+  "run": false,
+  "note": "No package code, trace, prompt, label or output was copied, opened as data or run for this sketch. The tau2-bench benchmark it cites was not used. UNVERIFIED."
+ },
+ "sources": [
+  {
+   "file": "2611.14581.abs.txt",
+   "what": "plain-text copy of the abs-page abstract (prefix 'Abstract:'), whitespace collapsed",
+   "sha256": "3a41593d708bffc444e40c04dc20cfbfaafb8c2754b6a3dccbc51e61db18f25a",
+   "chars": 1617
+  }
+ ],
+ "env": "MBBOUNDARY_SOURCES names the directory holding the source copy; the test skips when it is unset",
+ "status": "UNVERIFIED",
+ "measured_here": "on_unmeasured",
+ "on_unmeasured_note": "This sketch runs no agent, model, judge or benchmark. The figures below are the author's statements, not measured, re-run or re-claimed here; paper_results() returns on_unmeasured. The sketch's own fixture counts are not comparable with them.",
+ "attribution": "The author's own results as stated in the arXiv abstract. Quote wording is the author's.",
+ "claims": [
+  {
+   "id": "C1",
+   "what": "evaluation setup: episodes and recorded writes",
+   "quote": "We ran 2,160 episodes in tau2-bench's airline and retail domains and recorded every database write.",
+   "offset": 345,
+   "length": 99,
+   "values": {
+    "episodes": "2,160"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C2",
+   "what": "the four evaluators, including the boundary evaluator",
+   "quote": "We scored each episode four ways: native scoring against gold state, an LLM judge, that judge given the policy document, and the boundary evaluator, a minimal rule-based check of whether a write was expected against whether one occurred in the trace.",
+   "offset": 445,
+   "length": 250,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C3",
+   "what": "human labels",
+   "quote": "Two annotators independently labeled 120 episodes for task correctness, policy compliance, and commitment correctness.",
+   "offset": 696,
+   "length": 118,
+   "values": {
+    "labeled_episodes": "120"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C4",
+   "what": "judge consistency vs agreement with native scoring",
+   "quote": "The judge repeated its verdict 98.2% of the time but agreed with native scoring on 56.2%.",
+   "offset": 815,
+   "length": 89,
+   "values": {
+    "judge_repeat": "98.2%",
+    "judge_native_agreement": "56.2%"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C5",
+   "what": "forbidden-write episodes",
+   "quote": "In 11 episodes the agent executed a forbidden write.",
+   "offset": 905,
+   "length": 52,
+   "values": {
+    "forbidden_write_episodes": "11"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C6",
+   "what": "judge passes on forbidden writes",
+   "quote": "The judge passed 10 to 11, with or without the policy or transcript.",
+   "offset": 958,
+   "length": 68,
+   "values": {
+    "judge_passed": "10 to 11"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C7",
+   "what": "stronger judge",
+   "quote": "A stronger judge still passed 6.",
+   "offset": 1027,
+   "length": 32,
+   "values": {
+    "stronger_judge_passed": "6"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C8",
+   "what": "boundary evaluator result",
+   "quote": "The boundary evaluator, with no model call, caught all 11; no judge significantly exceeded it on human labels.",
+   "offset": 1060,
+   "length": 110,
+   "values": {
+    "boundary_caught": "11"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C9",
+   "what": "forbidden-write rate without gates",
+   "quote": "Forbidden writes occurred in 11.1% of episodes without gates.",
+   "offset": 1171,
+   "length": 61,
+   "values": {
+    "forbidden_rate_no_gates": "11.1%"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C10",
+   "what": "gates",
+   "quote": "Verification, correction, and safe-termination gates did not reduce them significantly.",
+   "offset": 1233,
+   "length": 87,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C11",
+   "what": "candidate cause: lossy evidence digest",
+   "quote": "The traces show a candidate cause: the gates' evidence digest dropped the order status and customer authentication, so valid requests were rejected.",
+   "offset": 1321,
+   "length": 148,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C12",
+   "what": "conclusion",
+   "quote": "The choice of evaluator decides the conclusion; the minimal check exposes failures the judges miss.",
+   "offset": 1470,
+   "length": 99,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  }
+ ]
+}

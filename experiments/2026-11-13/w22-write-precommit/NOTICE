@@ -1,0 +1,28 @@
+w22-write-precommit
+-------------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code, data or
+weights; no code copied.
+
+Paper (method idea credited)
+----------------------------
+Zimo Xu, Wenzhuo Liu and Hideki Nakayama.
+"CapLite: Prompt-Injection Defense for Small Language Model Agents without
+Model-Written Security Artifacts". arXiv:2611.17115, v1, submitted 12 Nov
+2026. Primary category cs.AI, cross-listed cs.CL and cs.CR.
+https://arxiv.org/abs/2611.17115
+Licence: CC BY 4.0, http://creativecommons.org/licenses/by/4.0/ (the paper
+licence shown on the abs page).
+
+Code: the abs page links no code. None was found or used.
+
+Method only: the rule that write calls are committed before any tool
+result is read, and that a write is admitted only when every argument that
+decides whom or what it affects is stated in the user's request, with the
+policy derived from tool schemas rather than written by a model. The event
+format, the substring and blank-value rules, the single-use commit, the
+late-commit handling, the oracle and the fixtures are this sketch's own.
+No text, figures, tables or data from the paper are copied into the code;
+the PDF was not read; no benchmark or model was run. The paper's claims
+appear only in paper_evidence.json, quoted and marked UNVERIFIED.

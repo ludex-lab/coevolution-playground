@@ -1,0 +1,26 @@
+This directory is a clean-room method sketch of ideas from:
+
+  Tunçtürk, Burkay; Aslansefat, Koorosh; Papadopoulos, Yiannis; Nguyen, Bao.
+  "More Agents, More Reliable? System-Level Reliability of Multi-Agent
+  LLMs under Operational-Profile Uncertainty."
+  arXiv:2611.07140 (4 November 2026).
+  https://arxiv.org/abs/2611.07140
+  HTML: https://arxiv.org/html/2611.07140
+
+Quoted paper sentences in fixtures.py are attributed to that arXiv HTML
+version and were checked against it on 2026-11-07.
+
+This sketch does not include upstream source. Paper section 7 (Code
+Availability) names:
+
+  https://github.com/Bruhkay/hip-llm-multiagent-reliability
+  https://github.com/koo-ec/HIP_HOPS_LLM
+
+Neither repository is vendored or ported here. This is not a
+reproduction of the paper's 270-call ECHA / LangGraph case study or of
+Table 1(a).
+
+No upstream copyright owner is claimed or invented for this sketch. The
+arXiv HTML page states: "This work has been submitted to the IEEE for
+possible publication. Copyright may be transferred without notice, after
+which this version may no longer be accessible."

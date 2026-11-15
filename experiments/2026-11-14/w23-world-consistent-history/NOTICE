@@ -1,0 +1,35 @@
+w23-world-consistent-history
+----------------------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code, data,
+traces, prompts, worlds, labels or weights.
+
+Paper (method idea credited)
+----------------------------
+Egor Pakhomov, Anurag Koul, Hongjun Liu, Bo Pang, Shafiq Joty, Erik Nijkamp.
+"Cleaning an Agent's History Hurts When the World Still Holds the Error".
+arXiv:2611.14654, v1, submitted 10 Nov 2026 (v1 Tue, 10 Nov 2026 19:06:36
+UTC). Primary category cs.AI, cross-listed cs.CL and cs.LG.
+https://arxiv.org/abs/2611.14654
+Paper licence: CC BY 4.0, http://creativecommons.org/licenses/by/4.0/
+(shown on the abs page). Only the abstract is quoted or used.
+
+Ancillary files
+---------------
+The arXiv comments field says "code and data in ancillary files". They were
+not downloaded, not opened and not run. No code, data, trace, world, label
+or output from them is used. They are UNVERIFIED here.
+
+Method only: the idea that a history edit (compaction, repair or handoff)
+must be judged against the world it describes, the two natural edits named
+in the abstract (a truthful note beside the preserved error, and the
+agent's own completed action), and the receipt-versus-effect contrast
+(a success receipt while the effect is absent or present). The world-check
+rule, the honest baseline, the receiver stub, its decision table, the
+recovery score, the oracle and the fixtures are this sketch's own; no
+receiver model is run. The paper's "database write" setting is borrowed
+only as a generic world-effect value: this is not a database port. No text,
+figures, tables or data from the paper are copied into the code; the PDF
+was not read; no model was run. The paper's claims appear only in
+paper_evidence.json, quoted and marked UNVERIFIED.

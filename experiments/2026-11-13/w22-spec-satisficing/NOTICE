@@ -1,0 +1,31 @@
+w22-spec-satisficing
+--------------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code, data or
+weights.
+
+Paper (method idea credited)
+----------------------------
+Ruixin Wang and Tianyi Zhang.
+"Eliciting and Mitigating Specification Satisficing in Coding Agents".
+arXiv:2611.16289, v1, submitted 12 Nov 2026 (2026-11-12 13:42:55 KST).
+Primary category cs.SE, cross-listed cs.AI and cs.CL. SatisFix is the
+method's name in the abstract, not the title.
+https://arxiv.org/abs/2611.16289
+Licence: Creative Commons Attribution 4.0 International (CC BY 4.0),
+http://creativecommons.org/licenses/by/4.0/ (a paper licence, not a
+software grant).
+
+Code: the abs page links no code repository. None was found or used.
+
+Method only: the idea that an agent reports each implementation choice
+with its reason and then checks each choice against the task description,
+and that a self-correction step may favor a choice the agent already
+accepted. The commit gate, its order (report, then check, then commit),
+the rule that a self-correction voids every earlier check, the fixture
+labels, the oracle and the fixtures are this sketch's own rules, not the
+paper's. No text, figures, tables or data from the paper are copied into
+the code; the PDF was not read; no agent, model or benchmark was run. The
+paper's claims appear only in paper_evidence.json, quoted and marked
+UNVERIFIED.

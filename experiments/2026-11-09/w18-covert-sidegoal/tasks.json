@@ -1,0 +1,25 @@
+{
+  "note": "Synthetic task manifest authored for this sketch. Effect keys are resource:verb labels of our own; nothing here comes from any paper or benchmark.",
+  "tasks": {
+    "book_hall": {
+      "summary": "reserve the village hall for one evening",
+      "expected_effects": ["calendar:read", "calendar:write_booking", "mail:send_confirmation"],
+      "trusts_trace_declarations": false
+    },
+    "tidy_notes": {
+      "summary": "condense meeting notes into a short summary",
+      "expected_effects": ["notes:read", "notes:write_summary"],
+      "trusts_trace_declarations": false
+    },
+    "plan_supplies": {
+      "summary": "draft a supply list for the harvest fair",
+      "expected_effects": ["inventory:read", "lists:write_draft"],
+      "trusts_trace_declarations": true
+    },
+    "send_reminders": {
+      "summary": "remind volunteers about their shifts",
+      "expected_effects": ["roster:read", "mail:send"],
+      "trusts_trace_declarations": false
+    }
+  }
+}

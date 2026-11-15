@@ -1,0 +1,182 @@
+{
+  "paper": {
+    "arxiv_id": "2611.09054",
+    "version": "v1",
+    "title": "From Emergence to Reversibility: Toward Reversible Multi-Agent Systems",
+    "authors": [
+      "Zhengye Han",
+      "Linda Ng Boyle"
+    ],
+    "authors_source": "abs page citation_author meta (Han, Zhengye; Boyle, Linda Ng)",
+    "abs_url": "https://arxiv.org/abs/2611.09054",
+    "html_url": "https://arxiv.org/html/2611.09054",
+    "primary_category": "cs.MA",
+    "submitted_display": "[Submitted on 6 Nov 2026]",
+    "submitted": "2026-11-06",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "licence_evidence": "abs page div.abs-license 'Rights to this article' link to http://creativecommons.org/licenses/by/4.0/ (icon by-4.0.png); HTML header also reads 'License: CC BY 4.0'",
+    "use": "method-cite only; short excerpts for evidence only, attributed to the authors",
+    "nature": "research agenda / position paper; no experiments, no upstream code"
+  },
+  "fetched": {
+    "fetched_at": "2026-11-09 15:17 JST",
+    "html_path": "/tmp/w18-2611.09054.html",
+    "html_http_status": 200,
+    "html_bytes": 107473,
+    "html_sha256": "3b38b8144d8faff4f139da9c88a1978b005fc5a6ceab1e7c975f2c43b938748b",
+    "abs_path": "/tmp/w18-abs.html",
+    "abs_http_status": 200,
+    "abs_bytes": 40898,
+    "abs_sha256": "4639ac74bfd0acf69218896bb1a9b3beecb6b797300a4fb4e2e97cd4cf15f66b",
+    "note": "independent re-fetch; HTML byte-identical to the earlier reviewer cache copy"
+  },
+  "normalization": {
+    "steps": [
+      "decode utf-8",
+      "re.sub(r'<script\\b.*?</script>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "re.sub(r'<style\\b.*?</style>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "re.sub(r'<math\\b.*?</math>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "html.unescape(t)",
+      "re.sub(r'\\s+', ' ', t)  # not ' '.join(t.split()); leading space kept so offsets do not shift"
+    ],
+    "remaining_tags": "kept (not stripped); every excerpt lies inside one text run",
+    "offsets": "zero-based Unicode code points into the normalized text, end-exclusive",
+    "normalized_chars": 90422,
+    "window_rule": "normalized[max(0, start-64) : min(len, end+64)], sha256 of its UTF-8 bytes"
+  },
+  "implementation_pin": null,
+  "implementation_pin_note": "none: the paper publishes no code; no pin invented",
+  "quote_notes": [
+    "E5: live text begins with capital 'The gate'; the earlier lowercase paraphrase matches it case-insensitively.",
+    "Section 4.2 body heading ('4.2. </span>Recheck Control Before Each Update' in the tag-kept normalized text) starts at offset 59576; E10 and E11 are the first sentences after it. The bare heading text also appears in the table of contents, so it is not used as an excerpt."
+  ],
+  "excerpts": [
+    {
+      "id": "E1-abstract-other-paths",
+      "section": "abstract",
+      "excerpt": "Yet as agents learn, share memory, delegate, and repair failures, the collective can find other paths to the same effects: a restriction on the original mechanism still operates but no longer stops them, while routine performance and compliance checks pass.",
+      "chars": 257,
+      "normalized_offset": 17134,
+      "end_offset_exclusive": 17391,
+      "occurrences": 1,
+      "source_window_sha256": "ed2d7d9f9fba70fcfe91d08d01e923ad1f6294e079410216667fe486a2c57000",
+      "status": "FOUND"
+    },
+    {
+      "id": "E2-abstract-effect-reversed",
+      "section": "abstract",
+      "excerpt": "What is reversed is the ability to produce a specified effect; restrictions must hold even if learned knowledge persists.",
+      "chars": 121,
+      "normalized_offset": 17709,
+      "end_offset_exclusive": 17830,
+      "occurrences": 1,
+      "source_window_sha256": "ddcd38a5e133a759ba7eaa625b379de7989d7789dda313fca549b2f307f7e6d5",
+      "status": "FOUND"
+    },
+    {
+      "id": "E3-abstract-rare-bar",
+      "section": "abstract",
+      "excerpt": "at every step of growth, some authorized intervention must keep a specified prohibited effect rare while maintaining required service.",
+      "chars": 134,
+      "normalized_offset": 17907,
+      "end_offset_exclusive": 18041,
+      "occurrences": 1,
+      "source_window_sha256": "462925d54d3e367acc3b95ff5726b1d87ee692f27b09fcf104a0780d6ad19604",
+      "status": "FOUND"
+    },
+    {
+      "id": "E4-abstract-repair-split",
+      "section": "abstract",
+      "excerpt": "separating legitimate repair from unauthorized reconstruction",
+      "chars": 61,
+      "normalized_offset": 18183,
+      "end_offset_exclusive": 18244,
+      "occurrences": 1,
+      "source_window_sha256": "5c3d397b3076cf0a6ddee18e2bbd0a425f74ea0f8e08bd5cca7d4f636730c549",
+      "status": "FOUND"
+    },
+    {
+      "id": "E5-sec1-gate-easy",
+      "section": "sec. 1",
+      "excerpt": "The gate is easy to add once the bypass is known; the hard part is knowing in advance, and new cooperation can open paths around any single gate.",
+      "chars": 145,
+      "normalized_offset": 23874,
+      "end_offset_exclusive": 24019,
+      "occurrences": 1,
+      "source_window_sha256": "b4b47edd0e58d8dc968c40418ac0037d0df745924530ea489776533573121030",
+      "status": "FOUND"
+    },
+    {
+      "id": "E6-sec1-throughput-same",
+      "section": "sec. 1",
+      "excerpt": "Throughput and compliance, the usual measures of a growing collective, look the same on both paths; a restriction request tells them apart.",
+      "chars": 139,
+      "normalized_offset": 23734,
+      "end_offset_exclusive": 23873,
+      "occurrences": 1,
+      "source_window_sha256": "40ec98601271df741ff64baf8aea906fb5b7f1c8086fec92b56b7a6d926deb04",
+      "status": "FOUND"
+    },
+    {
+      "id": "E7-fig1-operable-ineffective",
+      "section": "Figure 1 caption",
+      "excerpt": "On path 1, withholding routes still operates but no longer stops dispatch into a closed region.",
+      "chars": 95,
+      "normalized_offset": 20267,
+      "end_offset_exclusive": 20362,
+      "occurrences": 1,
+      "source_window_sha256": "ec6cd5c2079bf4c4190f37498032773ee1bf75ebc15ceb0ccfac4f8ca435ea59",
+      "status": "FOUND"
+    },
+    {
+      "id": "E8-sec3.1-joint-effect",
+      "section": "sec. 3.1",
+      "excerpt": "each passes its own permission check, yet together they can dispatch into a closed region.",
+      "chars": 90,
+      "normalized_offset": 49786,
+      "end_offset_exclusive": 49876,
+      "occurrences": 1,
+      "source_window_sha256": "5d17127e8c22bac196bdd53943d53b89875fb366b3380eedfe12076f7462284b",
+      "status": "FOUND"
+    },
+    {
+      "id": "E9-sec3.3-fault-tolerance",
+      "section": "sec. 3.3",
+      "excerpt": "fault tolerance finds alternative paths, while a restriction must hold on all of them.",
+      "chars": 86,
+      "normalized_offset": 53566,
+      "end_offset_exclusive": 53652,
+      "occurrences": 1,
+      "source_window_sha256": "554a100246bba4b32bf75dcbbd97decea9e88ea55e438065fae118c78d71b855",
+      "status": "FOUND"
+    },
+    {
+      "id": "E10-sec4.2-recheck",
+      "section": "sec. 4.2",
+      "excerpt": "Every working restriction rests on assumptions.",
+      "chars": 47,
+      "normalized_offset": 59700,
+      "end_offset_exclusive": 59747,
+      "occurrences": 1,
+      "source_window_sha256": "acdf9c1f0614144fc96c6bc3003f6aa1bbc065375ab9a2f95e33aa77a1a78eed",
+      "status": "FOUND"
+    },
+    {
+      "id": "E11-sec4.2-triggers",
+      "section": "sec. 4.2",
+      "excerpt": "For the gate, the triggers are any new relay or delegation of dispatch authority.",
+      "chars": 81,
+      "normalized_offset": 60210,
+      "end_offset_exclusive": 60291,
+      "occurrences": 1,
+      "source_window_sha256": "9c3fef60d4f89ebbe2a09b8bb5514c9dc9dbc8060089d29c9907090314ad5d29",
+      "status": "FOUND"
+    }
+  ],
+  "empirical_claims": {
+    "status": "none found",
+    "note": "agenda paper: no experiments, tables, or benchmark figures; nothing to label UNVERIFIED beyond the agenda's own conjectures"
+  },
+  "not_results_of_this_sketch": "Excerpts are the paper's words. The toy's fixture outcomes are synthetic and are not evidence about the paper's agenda or about real multi-agent systems."
+}

@@ -1,0 +1,115 @@
+{
+ "paper": {
+  "arxiv_id": "2611.13254",
+  "version": "v1",
+  "title": "Dependable Long-Horizon LLM Agents: A Trajectory-Centered Empirical Study of Where Errors Enter and Which Controls Reach Them",
+  "authors": [
+   "Shaohuang Wang",
+   "Jinghao Wen",
+   "Xulei Zhang",
+   "Xun Jiao"
+  ],
+  "submitted": "9 Nov 2026 (v1 2026-11-09T21:25:08Z = 2026-11-10 06:25 KST)",
+  "abs_url": "https://arxiv.org/abs/2611.13254",
+  "licence": "arXiv.org perpetual, non-exclusive license to distribute",
+  "licence_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "code": "UNVERIFIED: the abs page says 'Protocol, records and scripts are included' but gives no repository URL; no code located or used",
+  "use": "METHOD ONLY: the idea that contradicting evidence already present in a trajectory must be acted on, and that a flag is not a response unless the deviated state is removed. The PDF was not read. The 95-run annotation was not reproduced."
+ },
+ "source": {
+  "file": "2611.13254.abs.txt",
+  "bytes": 1746,
+  "sha256": "953559fc303ce0215971434e73ee667a76590e4c7ec0cc50e3ac6df6e4381230",
+  "abstract_field": "file text after the leading 'Abstract:' prefix, surrounding whitespace stripped",
+  "abstract_chars": 1736,
+  "abstract_sha256": "33c476fa2913c177ff65c91a1e06a2a006c055e9d2be41c5e6b7ae4a11121c14",
+  "location": "lab-dig-2 raw abstract copy on the shared box (raw/ folder of the 2026-11-12 dig), not in this repo"
+ },
+ "empirical_claims": {
+  "status": "UNVERIFIED",
+  "note": "The authors' own figures, quoted verbatim from the arXiv abstract (each quote is an exact substring of the abstract). Not checked, reproduced or re-claimed by this sketch. They appear only in this file.",
+  "claims": [
+   {
+    "id": "Q1-contradicting-evidence-present",
+    "figures": [
+     "72%"
+    ],
+    "about": "share of failed runs whose trajectory already held evidence against the error before the failure",
+    "quote": "In 72% of failed runs the trajectory already contained evidence against the error before the failure",
+    "offset_in_abstract": 956,
+    "length": 100,
+    "span_sha256": "96d3a7aaa0832f44e035403b3b45c1e2b13e197707a589d5a339e0f1dd7c53dd",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "Q2-not-acted-on",
+    "figures": [
+     "88%"
+    ],
+    "about": "share of those runs in which no agent acted on that evidence",
+    "quote": "in 88% of those no agent acted on it.",
+    "offset_in_abstract": 1058,
+    "length": 37,
+    "span_sha256": "0360a32b230265de800647e994a29d9e57aa10b44aa14138e78113184e979be8",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "Q3-flag-without-removal",
+    "figures": [
+     "31%"
+    ],
+    "about": "share of runs where a deviation was flagged but no response removed the deviated state",
+    "quote": "Something flagged a deviation in 31% of runs, but no response removed the deviated state.",
+    "offset_in_abstract": 1096,
+    "length": 89,
+    "span_sha256": "c0bb6e1f90e2e4a4f4c0dbb8ea9baac4398048957da822495adf2e26c5098a34",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "Q4-restore-own-state",
+    "figures": [
+     "35 of 95"
+    ],
+    "about": "runs where restoring the agent's own state would have sufficed",
+    "quote": "restoring the agent's own state would have sufficed in 35 of 95 runs.",
+    "offset_in_abstract": 1338,
+    "length": 69,
+    "span_sha256": "a442992d56039bf1ccc0a4d3d08bb037ba012b8bc40390dce61edc9c28846456",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "Q5-content-filter-crash",
+    "figures": [
+     "45%"
+    ],
+    "about": "share of hand-crafted Who&When failures ending in a provider content-filter crash",
+    "quote": "A text scan of the raw corpus also shows that 45% of the hand-crafted Who&When failures ended with a provider content-filter crash after which the harness emitted a final answer no agent produced",
+    "offset_in_abstract": 1408,
+    "length": 195,
+    "span_sha256": "02b71bbaed20c75a1d97c3393979ec0f6caaff014b177edc292d5aba73ccfb07",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "Q6-symptom-not-origin",
+    "figures": [],
+    "about": "motivation: symptom labels do not say where the error entered or whether the trajectory contradicted it",
+    "quote": "It does not say where the error entered, which state carried it to the symptom, whether anything in the trajectory contradicted it, or which control could have caught it.",
+    "offset_in_abstract": 156,
+    "length": 170,
+    "span_sha256": "e11816fa42028b0fa4a077452033106d1a193687b8bb37828f292db9dd6df14b",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "Q7-code-statement",
+    "figures": [],
+    "about": "the only code statement on the abs page; not a repository URL",
+    "quote": "Protocol, records and scripts are included.",
+    "offset_in_abstract": 1693,
+    "length": 43,
+    "span_sha256": "0910b14bf1e7b757f78386223b6463cd0544fe1b7019a2dd8081e2a7f76c068d",
+    "status": "UNVERIFIED"
+   }
+  ]
+ },
+ "not_results_of_this_sketch": "All episodes, labels and outcomes here are synthetic, hand-declared fixtures. The success counts printed by fixtures.py describe that fixture grid and three hand-written policies only; they say nothing about any agent, corpus or the paper's study."
+}

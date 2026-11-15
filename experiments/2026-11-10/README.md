@@ -1,0 +1,8 @@
+# experiments/2026-11-10
+
+- [w19-guardrail-order](w19-guardrail-order/): Silent guardrail-order break: routine plugin ops drop the guardrail from a toy harness's edit decision path while config still lists it active, and an order check over the runtime decision history reports it (method sketch of [arXiv 2611.09088](https://arxiv.org/abs/2611.09088); not a reproduction)
+- [w19-authz-drift](w19-authz-drift/): Authorization drift against an agent's own grant: a trajectory check derives data, tool, scope or time drift from the limit each step exceeded, flags read-only over-collection inside granted tools, scope and window, holds every step past the window, and checks each fixture's compliant path end to end (method sketch of [arXiv 2611.09113](https://arxiv.org/abs/2611.09113); not a reproduction)
+- [w19-engram-release](w19-engram-release/): Verified memory release: a skill's records leave retrieval only after it was admitted and actually trained on, and the student without retrieval scores at least as well as the base with retrieval and clears a strict floor on held-out probes that copying the records cannot answer; any failure or malformed input holds and the records stay retrievable (method sketch of [arXiv 2611.09472](https://arxiv.org/abs/2611.09472); not a reproduction)
+- [w19-workspace-grant](w19-workspace-grant/): One workspace grant issued before the action replaces a prompt per action: a write or egress passes only inside an explicit, unexpired grant's path prefixes and hosts, everything else fails closed, and after the ttl the outcome is only the declared on_expiry (method sketch of [arXiv 2611.08516](https://arxiv.org/abs/2611.08516); not a reproduction)
+
+Do not merge experiment PRs without Ork review.

@@ -1,0 +1,9 @@
+{
+  "report_id": "r-contra-002",
+  "exec_pass": true,
+  "exec_pass_reason": "declared done without running verify",
+  "verify_rc": 1,
+  "accepted": false,
+  "accepted_reason": "",
+  "rework_of": null
+}

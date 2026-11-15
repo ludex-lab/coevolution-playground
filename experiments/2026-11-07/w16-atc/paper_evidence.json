@@ -1,0 +1,127 @@
+{
+  "source_url": "https://arxiv.org/html/2611.04321",
+  "abstract_url": "https://arxiv.org/abs/2611.04321",
+  "version": "2611.04321v1",
+  "title": "ATC: Agent Trajectory Control for Role-Contract Enforcement in Black-Box Multi-Agent Systems",
+  "authors": [
+    "Maisha Maliha",
+    "Vishal Pramanik",
+    "Sumit Kumar Jha"
+  ],
+  "html_sha256": "56e29220e8df6917aa6438234a410ca4eb29cb43bdfc9980049fe5cc78057379",
+  "html_fetched": "2026-11-07 15:37 JST (UTC+9) via curl; saved by the drafter as /tmp/atc.html",
+  "license_line": "License: CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "license_found_in_html": true,
+  "license_scope_note": "CC BY 4.0 covers the paper text; it does not grant software rights to any code.",
+  "upstream_code_pin": "VishalPramanik/ATC @ fd8a2cb4638fe8c9f4e12742d1d5e6c523e25e8d",
+  "stub_readme": "# The code for ATC will be available soon.",
+  "stub_readme_url": "https://raw.githubusercontent.com/VishalPramanik/ATC/fd8a2cb4638fe8c9f4e12742d1d5e6c523e25e8d/README.md",
+  "stub_readme_sha256": "258d9a3e1255efbb366acd9ffed1b0a458591275b20b67403caa61fdba518f1c",
+  "stub_tree_at_pin": [
+    "README.md"
+  ],
+  "stub_commit_message": "Update README.md",
+  "stub_license": null,
+  "stub_license_checks": {
+    "github_api_repo_license_field": null,
+    "github_api_repos_license_endpoint_http": 404,
+    "raw_LICENSE_at_pin_http": 404,
+    "raw_LICENSE_url": "https://raw.githubusercontent.com/VishalPramanik/ATC/fd8a2cb4638fe8c9f4e12742d1d5e6c523e25e8d/LICENSE",
+    "note": "No software licence in the stub. Method-cite only; nothing vendored."
+  },
+  "paper_code_availability_sentence": "Our code and evaluation artifacts are publicly available.",
+  "paper_code_availability_note": "The paper sentence and footnote point to the repository, but at the pin the repository holds only the coming-soon README; no code was available to inspect.",
+  "html_excerpts": [
+    {
+      "section": "Abstract",
+      "text": "enforces it at the point where a message would enter the shared conversation",
+      "found_after_tag_strip_whitespace_collapse": true
+    },
+    {
+      "section": "Abstract",
+      "text": "the revised message is re-checked before admission",
+      "found_after_tag_strip_whitespace_collapse": true
+    },
+    {
+      "section": "1 Introduction",
+      "text": "speech acts the role is not permitted to make",
+      "found_after_tag_strip_whitespace_collapse": true
+    },
+    {
+      "section": "3 Method",
+      "text": "Every agent turn therefore follows one trajectory: encode, score, correct, regenerate, and re-evaluate.",
+      "found_after_tag_strip_whitespace_collapse": true
+    },
+    {
+      "section": "3 Method",
+      "text": "In a black-box deployment, the regeneration operator is a constrained revision call to the same or another model",
+      "found_after_tag_strip_whitespace_collapse": true
+    },
+    {
+      "section": "3.2 Role-Drift Energy",
+      "text": "Each role has an allowed linguistic profile",
+      "found_after_tag_strip_whitespace_collapse": true
+    }
+  ],
+  "not_implemented_paper_components": [
+    "behavior encoder",
+    "role subspaces",
+    "role-drift energy",
+    "cross-role leakage",
+    "linguistic speech-act mapper with confidences",
+    "symbolic logical-contract mapper",
+    "leakage-regularized correction target",
+    "constrained regeneration",
+    "gated correction threshold"
+  ],
+  "number_hygiene": {
+    "not_targets": true,
+    "not_reproduced": true,
+    "quantities": [
+      {
+        "value": "74.6",
+        "kind": "ATC Primary task score",
+        "configuration": "Table 2, S1: Hom-10, EntCollabBench",
+        "caveat": "Benchmark-specific score; not a sketch target."
+      },
+      {
+        "value": "91.8",
+        "kind": "ATC Role Consistency",
+        "configuration": "Table 2, S1: Hom-10, EntCollabBench",
+        "caveat": "Rubric-annotated RC; not an admission rate."
+      },
+      {
+        "value": "76.4",
+        "kind": "Full ATC Primary in ablation",
+        "configuration": "Table 3, EntCollabBench S3: Het-12",
+        "caveat": "Ablation row; not a sketch target."
+      },
+      {
+        "value": "93.5",
+        "kind": "Full ATC Role Consistency in ablation",
+        "configuration": "Table 3, EntCollabBench S3: Het-12",
+        "caveat": "Not an admission rate."
+      },
+      {
+        "value": "0.11",
+        "kind": "Full ATC role-drift energy in ablation",
+        "configuration": "Table 3, EntCollabBench S3: Het-12",
+        "caveat": "Energy is not implemented here."
+      },
+      {
+        "value": "1.47",
+        "kind": "mean role-drift energy of drifted turns",
+        "configuration": "A4.3 citing Table 1",
+        "caveat": "Energy is not implemented here; no threshold used."
+      },
+      {
+        "value": "72.6%",
+        "kind": "fraction of turns corrected by gated variant",
+        "configuration": "A4.3, tau 0.20, EntCollabBench S3: Het-12",
+        "caveat": "Gated correction is not implemented here."
+      }
+    ]
+  },
+  "modelling_note": "This sketch is admission plus re-check only, over a SYNTHETIC frozen table of opaque speech-act tokens with a binary in-contract test. Revisions are externally supplied messages. It is not the full ATC method: no encoder, energy, leakage, logical-contract mapper, correction target, or constrained regeneration. UNVERIFIED against the paper's actual intervention point."
+}

@@ -1,0 +1,155 @@
+{
+  "paper_title": "Who Should Know What? Empirical Information Design for Multi-Agent LLM Economies",
+  "paper_url": "https://arxiv.org/abs/2611.07667",
+  "recorded_at": "2026-11-08T15:32:42.650395+09:00",
+  "timezone": "Asia/Tokyo (JST)",
+  "sources": {
+    "html": {
+      "url": "https://arxiv.org/html/2611.07667",
+      "path": "/tmp/w17-2611.07667.html",
+      "bytes": 650377,
+      "sha256": "12c86acada88e33ad447c4f696fa04ac11bbcbaa366443e015fafc14cbe0067e",
+      "normalized_chars": 112569,
+      "normalized_sha256": "25058374bd136966208263eae4f81a2c482bc6bb4e1bf05ac19c7eb3684726d9"
+    },
+    "abs": {
+      "url": "https://arxiv.org/abs/2611.07667",
+      "path": "/tmp/w17-2611.07667-abs.html",
+      "bytes": 42793,
+      "sha256": "bac1fa3ff5b0f2670778c1e98c3f04b1273ac40aaabdcc5cca56dfbb512a2935",
+      "normalized_chars": 5093,
+      "normalized_sha256": "5baef9f295243faf07798ab925654ded9d4b47de0af66586b958174104b8eae2"
+    }
+  },
+  "normalization": "UTF-8 decode; HTMLParser(convert_charrefs=True); concatenate handle_data with spaces excluding script/style data; collapse all whitespace via split/join. Offsets are zero-based Python Unicode character offsets; end exclusive. Windows extend 80 normalized characters either side; SHA256 over UTF-8 window.",
+  "license": {
+    "name": "arXiv perpetual non-exclusive",
+    "url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "not_cc_by": true,
+    "software_grant": false,
+    "use": "method-cite only"
+  },
+  "implementation": {
+    "url": "https://github.com/meterdogan07/agent-information-design",
+    "command": "curl -sI https://github.com/meterdogan07/agent-information-design",
+    "observed_status_line": "HTTP/2 404",
+    "http_status": 404,
+    "observed_at": "2026-11-08T15:31:36+09:00",
+    "server_date_converted": "2026-11-08 15:31:36 JST",
+    "accessible_pin": null,
+    "caveat": "Public 404; does not distinguish missing from private. No mirror search or author code used."
+  },
+  "excerpts": [
+    {
+      "id": "title",
+      "source": "abs",
+      "excerpt": "Who Should Know What? Empirical Information Design for Multi-Agent LLM Economies",
+      "status": "FOUND",
+      "start": 13,
+      "end": 93,
+      "window_start": 0,
+      "window_end": 173,
+      "source_window_sha256": "03ba58ca7a47554737625ccaba86b8d4bb6584926f5a54b3a7d7ed6e36ef09ee"
+    },
+    {
+      "id": "submitted",
+      "source": "abs",
+      "excerpt": "Submitted on 5 Nov 2026",
+      "status": "FOUND",
+      "start": 262,
+      "end": 285,
+      "window_start": 182,
+      "window_end": 365,
+      "source_window_sha256": "20ad289d0e79a2f7d2bbe66e750229c953a922480958286c7a29cb9ed2b68a42"
+    },
+    {
+      "id": "fixed",
+      "source": "html",
+      "excerpt": "holding interaction rules and models fixed.",
+      "status": "FOUND",
+      "start": 3049,
+      "end": 3092,
+      "window_start": 2969,
+      "window_end": 3172,
+      "source_window_sha256": "ef5f170b4051a54893c791ae8d501d90d9c882202021d75619f4fd69be928164"
+    },
+    {
+      "id": "utilities",
+      "source": "html",
+      "excerpt": "using ground-truth utilities to decouple identified opportunities from realized outcomes.",
+      "status": "FOUND",
+      "start": 3191,
+      "end": 3280,
+      "window_start": 3111,
+      "window_end": 3360,
+      "source_window_sha256": "5a54f0fbde10265c06273c5360469e3ee306bf3f3ac09cf02b438890257c9ab0"
+    },
+    {
+      "id": "heterogeneity",
+      "source": "html",
+      "excerpt": "finer information disclosure yields highly model-dependent results.",
+      "status": "FOUND",
+      "start": 3294,
+      "end": 3361,
+      "window_start": 3214,
+      "window_end": 3441,
+      "source_window_sha256": "33611e758a91542eaf0401eccfdcdaea7e3d604d60a0eb386da4fcdbb28e32a3"
+    },
+    {
+      "id": "candidate",
+      "source": "html",
+      "excerpt": "the best feasible offer proposed in trade and bargaining",
+      "status": "FOUND",
+      "start": 20125,
+      "end": 20181,
+      "window_start": 20045,
+      "window_end": 20261,
+      "source_window_sha256": "4edd70c541fd1d1b8d7008a4130212aec290881997ba309bfb60d62296eff5c9"
+    },
+    {
+      "id": "recipient",
+      "source": "html",
+      "excerpt": "we systematically vary both the precision and recipient of private information",
+      "status": "FOUND",
+      "start": 8661,
+      "end": 8739,
+      "window_start": 8581,
+      "window_end": 8819,
+      "source_window_sha256": "064766f3c8b29ce7b745e6cc57a8329db15e8927ff88decd0cd112ffd411d26c"
+    },
+    {
+      "id": "limits",
+      "source": "html",
+      "excerpt": "Findings may also vary across economic settings, models, and interaction rules.",
+      "status": "FOUND",
+      "start": 41610,
+      "end": 41689,
+      "window_start": 41530,
+      "window_end": 41769,
+      "source_window_sha256": "57e6685ed6f96981a4c99ae25f7bf41bb9e6c85720bccf9d0bfdbb9ece6cc761"
+    },
+    {
+      "id": "footnote",
+      "source": "html",
+      "excerpt": "github.com/meterdogan07/agent-information-design",
+      "status": "FOUND",
+      "start": 4190,
+      "end": 4238,
+      "window_start": 4110,
+      "window_end": 4318,
+      "source_window_sha256": "66928ab1c49880b2c8153d621d1dbd3996bc951f4dcf17b19bdbc65b1021becb"
+    },
+    {
+      "id": "license",
+      "source": "html",
+      "excerpt": "License: arXiv.org perpetual non-exclusive license",
+      "status": "FOUND",
+      "start": 1915,
+      "end": 1965,
+      "window_start": 1835,
+      "window_end": 2045,
+      "source_window_sha256": "5c07324408ee83166455c5ecbdb86f4b9e0f65580f76f29a57d38b73122c7a65"
+    }
+  ],
+  "scope": "Presence evidence only; all paper empirical/model results UNVERIFIED. Original scripted existence example, not a replication."
+}

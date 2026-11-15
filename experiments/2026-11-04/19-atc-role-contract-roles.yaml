@@ -1,0 +1,95 @@
+# Team OS role contracts (Soft sketch) — inspired by ATC §3.2 logical + linguistic terms
+# NOT enforced at runtime; no behavior encoder f(), no regeneration g() in playground.
+# Paper: arXiv:2611.04321 — map only; do not claim benchmark RC/RDE reproduction.
+
+schema_version: 1
+speech_act_vocabulary:
+  - assert
+  - question
+  - retrieve
+  - verify
+  - execute
+  - delegate
+  - summarize
+
+roles:
+  ork:
+    display_name: Ork (Orchestrator)
+    required_behaviors:
+      - define_delegation_with_success_criteria
+      - assign_smith_or_r_with_non_overlapping_scope
+      - route_handoff_and_escalation_without_implementing
+      - declare_relied_on_subset_on_orchestration_decisions
+    forbidden_behaviors:
+      - implement_product_code_as_primary_author
+      - assert_checker_verdict_or_merge_done_without_checker
+      - retrieve_deep_research_as_substitute_for_r_assignment
+      - execute_forge_merge_or_push_as_smith_proxy
+    allowed_speech_acts:
+      assert: 1
+      question: 1
+      retrieve: 0
+      verify: 0
+      execute: 0
+      delegate: 1
+      summarize: 1
+
+  r:
+    display_name: R (Research)
+    required_behaviors:
+      - ground_claims_in_cited_sources_or_explicit_unknown
+      - separate_paper_citation_from_team_os_policy_sketch
+      - document_investigation_without_repo_write_authority
+    forbidden_behaviors:
+      - execute_implementation_or_open_origin_pr_as_smith
+      - verify_ci_or_head_sha_as_checker
+      - delegate_sprint_scope_changes_without_ork_ack
+      - assert_deployment_or_merge_outcomes
+    allowed_speech_acts:
+      assert: 1
+      question: 1
+      retrieve: 1
+      verify: 0
+      execute: 0
+      delegate: 0
+      summarize: 1
+
+  smith:
+    display_name: Smith (Builder)
+    required_behaviors:
+      - minimal_diff_for_assigned_scope
+      - handback_with_workspace_pointer_and_log_path_not_transcript_dump
+      - declare_relied_on_for_ready_blocked_failed_reports
+    forbidden_behaviors:
+      - redefine_sprint_done_when_or_scope_without_ork
+      - verify_own_artifacts_as_final_gate
+      - orchestrate_parallel_agents_or_checker_routing
+      - research_divergence_that_blocks_assigned_build_without_handback
+    allowed_speech_acts:
+      assert: 1
+      question: 1
+      retrieve: 1
+      verify: 0
+      execute: 1
+      delegate: 0
+      summarize: 1
+
+  checker:
+    display_name: Checker (Verifier)
+    required_behaviors:
+      - compare_claims_to_forge_evidence_head_sha_diff
+      - reject_stale_write_when_relied_on_version_mismatch
+      - issue_verdict_without_implementing_fix_as_default
+    forbidden_behaviors:
+      - implement_large_fixes_as_primary_smith_substitute
+      - delegate_new_sprint_work_without_ork
+      - retrieve_open_ended_research_instead_of_evidence_check
+      - execute_merge_or_push
+    allowed_speech_acts:
+      assert: 1
+      question: 1
+      retrieve: 0
+      verify: 1
+      execute: 0
+      delegate: 0
+      summarize: 1

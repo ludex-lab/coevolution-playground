@@ -1,0 +1,171 @@
+{
+ "paper": {
+  "arxiv_id": "2611.14654",
+  "version": "v1",
+  "title": "Cleaning an Agent's History Hurts When the World Still Holds the Error",
+  "authors": [
+   "Egor Pakhomov",
+   "Anurag Koul",
+   "Hongjun Liu",
+   "Bo Pang",
+   "Shafiq Joty",
+   "Erik Nijkamp"
+  ],
+  "primary_category": "cs.AI (cross-listed cs.CL, cs.LG)",
+  "submitted": "abs dateline [Submitted on 10 Nov 2026]; v1 Tue, 10 Nov 2026 19:06:36 UTC = 2026-11-11 04:06:36 KST; first listed as a New submission on the Fri 13 Nov 2026 cs.AI listing (listing day is not the v1 date)",
+  "abs_url": "https://arxiv.org/abs/2611.14654",
+  "licence": "CC BY 4.0, http://creativecommons.org/licenses/by/4.0/ (shown on the abs page)",
+  "comments_field": "23 pages, 6 figures; code and data in ancillary files",
+  "pdf_read": false
+ },
+ "ancillary_files": {
+  "what": "code and data named in the arXiv comments field",
+  "downloaded": false,
+  "run": false,
+  "note": "Not downloaded, not opened, not run; no code, data, trace, world or label from them is used. UNVERIFIED."
+ },
+ "sources": [
+  {
+   "file": "2611.14654.abs.txt",
+   "what": "plain-text copy of the v1 abs-page abstract, one line, final newline",
+   "sha256": "2988ba0d84714425aa36ef80ce87c01951f329cbfb7ea2435d485033094939c9",
+   "chars": 1633
+  }
+ ],
+ "env": "W23WCH_SOURCES names the directory holding the source copy; the test skips when it is unset",
+ "status": "UNVERIFIED",
+ "measured_here": "on_unmeasured",
+ "on_unmeasured_note": "This sketch runs no agent, model, receiver model or benchmark (no AgentCE-Bench, no AppWorld). The figures below are the authors' statements, not measured, re-run or re-claimed here; paper_results() returns on_unmeasured. The sketch's own fixture counts are not comparable with them.",
+ "attribution": "The authors' own results as stated in the arXiv abstract. Quote wording is the authors'.",
+ "claims": [
+  {
+   "id": "C1",
+   "what": "setting: histories of mistakes whose effects stay in the world",
+   "quote": "Tool-using language-model agents accumulate histories of their own mistakes, and a system that compacts, repairs or hands off such a history decides what it says about those mistakes while their effects stay in the world.",
+   "offset": 0,
+   "length": 221,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C2",
+   "what": "prior work: cleaning at a fixed world",
+   "quote": "Prior work cleans the history at a fixed world, where showing a corrected step and saying it is done move together.",
+   "offset": 222,
+   "length": 115,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C3",
+   "what": "question",
+   "quote": "We ask whether the same correct content helps or hurts depending on how the history states it and what the world holds.",
+   "offset": 338,
+   "length": 119,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C4",
+   "what": "method: freeze mid-task, edit history or world, receiver continues",
+   "quote": "We freeze an agent mid-task with its exact world state, edit the history or the world, and let a receiver model continue.",
+   "offset": 458,
+   "length": 121,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C5",
+   "what": "AgentCE-Bench edits: truthful note vs completed action",
+   "quote": "On AgentCE-Bench, after the agent commits a wrong value, we hold the world fixed and add the correct value by two natural edits: a truthful note beside the preserved error or the agent's own completed action.",
+   "offset": 580,
+   "length": 208,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C6",
+   "what": "truthful note vs matched neutral note (recovery)",
+   "quote": "The note raises recovery, the share of remaining targets the receiver gets right, from 51% under a matched neutral note to 66%.",
+   "offset": 789,
+   "length": 127,
+   "values": {
+    "neutral_note_recovery": "51%",
+    "truthful_note_recovery": "66%"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C7",
+   "what": "completed action vs unedited history (recovery)",
+   "quote": "The completed action lowers it below the unedited history, from 50% to 44%, so the value's presence alone does not predict the effect.",
+   "offset": 917,
+   "length": 134,
+   "values": {
+    "unedited_recovery": "50%",
+    "completed_action_recovery": "44%"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C8",
+   "what": "AppWorld: receipt success/failure x effect present/absent",
+   "quote": "On AppWorld, after a database write, we vary whether its receipt reports success or failure and whether its effect is present.",
+   "offset": 1052,
+   "length": 126,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C9",
+   "what": "success receipt vs effect presence (whole-task success)",
+   "quote": "A success receipt lowers whole-task success from 45% to 28% while the effect is absent and raises it from 38% to 49% once present.",
+   "offset": 1179,
+   "length": 130,
+   "values": {
+    "absent_from": "45%",
+    "absent_to": "28%",
+    "present_from": "38%",
+    "present_to": "49%"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C10",
+   "what": "difference between the two effects",
+   "quote": "The two effects differ by 27 points pooled over two receivers, a difference positive in six of eight receivers at 97.5% and seven at 95%.",
+   "offset": 1310,
+   "length": 137,
+   "values": {
+    "difference": "27 points",
+    "receivers_positive_97_5": "six of eight at 97.5%",
+    "receivers_positive_95": "seven at 95%"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C11",
+   "what": "conclusion",
+   "quote": "A history edit's effect thus depends on the world it describes, and a history made to look clean while the world still holds the error can leave an agent worse off than no edit at all.",
+   "offset": 1448,
+   "length": 184,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  }
+ ]
+}

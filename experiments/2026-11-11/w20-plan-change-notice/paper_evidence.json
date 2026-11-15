@@ -1,0 +1,64 @@
+{
+ "paper": {
+  "arxiv_id": "2611.10011",
+  "version": "v1",
+  "title": "When the Plan Changes: A Strategic World Testbed for Dynamic Multi-Agent Coordination",
+  "authors": [
+   "Joon-Seok Kim",
+   "Eugene Agichtein",
+   "Kai Shu",
+   "Liang Zhao",
+   "Andreas Züfle"
+  ],
+  "authors_source": "abs page citation_author meta tags (Kim, Joon-Seok; Agichtein, Eugene; Shu, Kai; Zhao, Liang; Züfle, Andreas)",
+  "submitted": "4 Nov 2026 (citation_date 2026/11/04; abs page 'Submitted on 4 Nov 2026')",
+  "abs_url": "https://arxiv.org/abs/2611.10011",
+  "licence": "arXiv.org perpetual, non-exclusive license to distribute (nonexclusive-distrib 1.0)",
+  "licence_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "code": "none listed on the abs page",
+  "use": "METHOD ONLY: the idea of separating the authoritative objective, the local plan, notice receipt and consequential action, and of a guard that processes pending notices before local work. No paper text, figures, tables or prompts are copied into this directory; this file records locations and number tokens only."
+ },
+ "source": {
+  "file": "/workspace/morning-brief-2026-11-11/raw/2611.10011.html (lab review copy on the shared box, not in this repo)",
+  "bytes": 41535,
+  "sha256": "76eb8dc5e845a06107d93273745619cf08a79c9ac708715280ab2755992aa7cc",
+  "abstract_field": "citation_abstract meta content, HTML-unescaped",
+  "abstract_chars": 1352,
+  "abstract_sha256": "277328cb15065901df199abfafa88d3b5e73e44b82345a205027314e936cb8b6"
+ },
+ "empirical_claims": {
+  "status": "UNVERIFIED",
+  "note": "The paper's own figures, from authors' language-model episodes. Recorded as a number token and its character offset in the abstract field; not checked or reproduced by this sketch. They appear only in this file.",
+  "claims": [
+   {
+    "id": "C1-guard-held-out",
+    "token": "4/4",
+    "offset_in_abstract": 1004,
+    "about": "held-out settings completed by the paper's guard",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C2-baseline-held-out",
+    "token": "1/4",
+    "offset_in_abstract": 1041,
+    "about": "held-out settings completed by the paper's comparison baseline",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C3-episode-count",
+    "token": "16-episode",
+    "offset_in_abstract": 878,
+    "about": "size of the guard comparison",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C4-intervention-families",
+    "token": "Six",
+    "offset_in_abstract": 371,
+    "about": "number of intervention families",
+    "status": "UNVERIFIED"
+   }
+  ]
+ },
+ "not_results_of_this_sketch": "All worlds, objectives, notices, turns, held-out seeds and outcomes here are synthetic and deterministic. The guard and baseline are small Python policies, not language-model actors; nothing here measures or reproduces the paper's episodes."
+}

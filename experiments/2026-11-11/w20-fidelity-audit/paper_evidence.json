@@ -1,0 +1,107 @@
+{
+ "paper": {
+  "arxiv_id": "2611.13042",
+  "version": "v1",
+  "title": "Trust, but verify, audit and attribute: a human-in-the-loop framework for checking AI-produced research results",
+  "authors": [
+   "György Eigner",
+   "Patrik P. Süli",
+   "Roland Hollós"
+  ],
+  "authors_source": "abs page citation_author meta tags (Eigner, György; Süli, Patrik P.; Hollós, Roland)",
+  "submitted": "9 Nov 2026 (citation_date 2026/11/09; abs page 'Submitted on 9 Nov 2026'; v1 11:58:29 UTC = 20:58 JST)",
+  "abs_url": "https://arxiv.org/abs/2611.13042",
+  "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "licence_url": "http://creativecommons.org/licenses/by/4.0/",
+  "code": "none linked on the abs page",
+  "use": "METHOD ONLY: tool checks bound to the artefact checked, a fidelity audit as a separate human decision, a human decision at a fixed point, an explicit split of an ambiguous claim, and a dialog report attributing work to human, AI and tool. The paper's tool layer (computer algebra, numerics, proof assistant; statistics packages) is not used; toy deterministic tools stand in. No paper text, figures, tables or data are copied into this directory: README.md, NOTICE and the code paraphrase the method in their own words, and this file records locations, number tokens and span hashes only (no span text). The PDF was not read."
+ },
+ "source": {
+  "file": "2611.13042.html",
+  "location": "lab-dig-2 Verifier evidence folder abs/ on the shared box (fetched 2026-11-11 15:03 JST), not in this repo",
+  "bytes": 42031,
+  "sha256": "6baa9a24afcf7448f3b42b1027ff5cd51a256c575ad1f24fcdb9642e6f033a29",
+  "abstract_field": "citation_abstract meta content, HTML-unescaped",
+  "abstract_chars": 1300,
+  "abstract_sha256": "a45a783aa2e7564baa05a15f8017ccf491608553ef1f806227164778dcc5fa02"
+ },
+ "empirical_claims": {
+  "status": "UNVERIFIED",
+  "note": "The paper's own figures, recorded as a number token and its character offset in the abstract field; not checked or reproduced. They appear only in this file.",
+  "claims": [
+   {
+    "id": "C1-manuscript-count",
+    "token": "700",
+    "offset_in_abstract": 130,
+    "about": "AI-generated mathematics manuscripts released by one laboratory, per the abstract",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C2-release-year",
+    "token": "2026",
+    "offset_in_abstract": 86,
+    "about": "year of that release, per the abstract (only the year is a number token there)",
+    "status": "UNVERIFIED"
+   }
+  ]
+ },
+ "paper_example": {
+  "status": "UNVERIFIED",
+  "reproduced": false,
+  "note": "The paper applies its mathematics tool layer to a small example with two claims; one claim is ambiguous and is cut into two readings, of which the tools prove one and refute the other. That example, its tools and its outcome are not reproduced or checked here. The design fixture split_one_proved_one_refuted has the same shape on a toy integer identity of this sketch's own choosing.",
+  "spans": [
+   {
+    "id": "E1-example",
+    "offset_in_abstract": 1176,
+    "length": 47,
+    "span_sha256": "94bf4cd3f0259d936412ce850c957e39d6928e539f00e0cb1e4198a6d952e177",
+    "about": "the paper's example run"
+   },
+   {
+    "id": "E2-split",
+    "offset_in_abstract": 1225,
+    "length": 75,
+    "span_sha256": "2251b5495bf4990d0c12dc8a81c4687a82a98ff58f716c3779c68b2227f2f549",
+    "about": "the example's outcome"
+   }
+  ]
+ },
+ "method_spans": [
+  {
+   "id": "M1-artefact",
+   "offset_in_abstract": 300,
+   "length": 61,
+   "span_sha256": "9b0a541cbd672f5945aa4c5ae97dad4e72ed18ec070c9fa7ea02c7e1c654270b",
+   "about": "done-when (a)"
+  },
+  {
+   "id": "M2-undecidable",
+   "offset_in_abstract": 511,
+   "length": 68,
+   "span_sha256": "37f38e1a386d5775ea415f84916910f325b0c5cfa41fbb15994682e4d3bf241e",
+   "about": "done-when (b): no automatic fidelity oracle"
+  },
+  {
+   "id": "M3-audit",
+   "offset_in_abstract": 856,
+   "length": 70,
+   "span_sha256": "fc91bf2739115c020d153a683311fac98b18c36d54b612b4bf2790d712d73670",
+   "about": "done-when (a), (b)"
+  },
+  {
+   "id": "M4-fixed-points",
+   "offset_in_abstract": 928,
+   "length": 33,
+   "span_sha256": "f39a18b7674fa4d5f330e1558bf6f74cf9c98c82b6a700c6727e217a9313ca40",
+   "about": "done-when (c)"
+  },
+  {
+   "id": "M5-report",
+   "offset_in_abstract": 967,
+   "length": 62,
+   "span_sha256": "14c48f73e229e0b067ff95b39ddfd90bafdbdb225908fa0c6fcf3d24a408ca27",
+   "about": "done-when (e)"
+  }
+ ],
+ "not_results_of_this_sketch": "All claims, artefacts, tool results, human records, seeds and outcomes here are synthetic and deterministic. The tools are two toy integer-identity tools; nothing here checks a real proof, manuscript or translation."
+}

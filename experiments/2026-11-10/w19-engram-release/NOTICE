@@ -1,0 +1,29 @@
+NOTICE — experiments/2026-11-10/w19-engram-release/
+
+Paper: ENGRAM: From Agent Experience to Weights through Verified
+Consolidation, Ruiyi Yang, Zechen Li, Lihuan Li, Du Yin, Hao Xue and
+Flora D. Salim, arXiv 2611.09472 (v1, submitted 6 Nov 2026),
+https://arxiv.org/abs/2611.09472.
+Paper licence: Creative Commons Attribution 4.0 International (CC BY 4.0,
+http://creativecommons.org/licenses/by/4.0/), confirmed from the abs page
+licence link on 2026-11-10. Used for method and shape only: no paper text is
+copied into the code, fixtures or this directory's prose. Short attributed
+excerpts appear in paper_evidence.json only, as evidence.
+
+Upstream code: the abs page links http://anonymous.4open.science/r/engram-anonymous.
+As checked on 2026-11-10 (17:20 and 17:30 JST), that page returns HTTP 500,
+while the site's file API lists a source tree (README.md, pyproject.toml,
+configs, engram, scripts, tests) with no LICENSE file (404). Its
+pyproject.toml, read as text only, depends on torch, transformers, peft and
+openai, with an optional anthropic extra. With no licence and those
+dependencies the code is unusable here; it is UNVERIFIED and not used. Only
+the file listing, README.md and pyproject.toml were read as text; nothing
+was cloned, installed, imported or run, and no upstream code or data is
+copied here. There is no upstream pin.
+
+This directory's code is an independently authored clean-room Python 3
+stdlib method sketch, written from the paper text (json, re, html, ast and
+inspect are used only by the tests).
+
+Synthetic fixtures: the skills, rules, records, probes and toy models are
+toy data authored for this sketch.

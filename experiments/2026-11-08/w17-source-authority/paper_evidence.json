@@ -1,0 +1,138 @@
+{
+  "paper": {
+    "arxiv_id": "2611.07640",
+    "title": "Beyond Instruction Override: Benchmarking Indirect Prompt Injection with Task-Tampering Attacks",
+    "abs_url": "https://arxiv.org/abs/2611.07640",
+    "html_url": "https://arxiv.org/html/2611.07640",
+    "submitted": "2026-11-05",
+    "licence": "CC BY 4.0 (per abs page license link creativecommons.org/licenses/by/4.0/ and HTML header)",
+    "use": "method-cite; short excerpts for evidence only"
+  },
+  "fetched": {
+    "fetched_at": "2026-11-08 15:31 JST",
+    "html_path": "/tmp/w17-2611.07640.html",
+    "html_bytes": 908389,
+    "html_sha256": "ce88127b1830db9ad103ec57cd7c3d429959cb64b60b65a49aa2396ad44d55c4",
+    "abs_path": "/tmp/w17-2611.07640-abs.html",
+    "abs_bytes": 43813,
+    "abs_sha256": "67b836692c6dc9a9bdd0cf7e8241d8d30634b97aaf08db3bb8ecf44fe6af519f",
+    "abs_http_status": 200,
+    "html_http_status": 200
+  },
+  "normalization": {
+    "steps": [
+      "decode utf-8",
+      "remove <script>, <style>, <math> elements with contents",
+      "replace remaining tags with a space",
+      "html.unescape",
+      "collapse whitespace runs to one space"
+    ],
+    "normalized_chars": 114366,
+    "window": "normalized[max(0,offset-200) : offset+len(excerpt)+200], sha256 of utf-8"
+  },
+  "repo_pin": {
+    "url": "https://github.com/amazon-science/task-tampering-prompt-injection",
+    "commit": "804b00dd03051c00e5e3000982bbf7ce2b9d9ad5",
+    "licence": "CC BY-NC 4.0 for Amazon-authored code, docs, prompts, and benchmark data (as briefed; GitHub API licence field reports NOASSERTION/Other)",
+    "status": "cite-only; not cloned; not copied; no tree contents downloaded",
+    "observed": {
+      "commit_page_HEAD": "HTTP/2 200 for https://github.com/amazon-science/task-tampering-prompt-injection/commit/804b00dd03051c00e5e3000982bbf7ce2b9d9ad5 (curl -sI, 2026-11-08 15:31 JST)",
+      "api_commit_lookup": "GET api.github.com/repos/amazon-science/task-tampering-prompt-injection/commits/804b00dd... returned sha 804b00dd03051c00e5e3000982bbf7ce2b9d9ad5, committer date 2026-11-06T08:44:16Z (2026-11-06 17:44 JST); only sha/date fields read",
+      "api_repo_lookup": "default_branch main; licence spdx NOASSERTION"
+    },
+    "depends_on": "inspect-ai (upstream); not installed, not imported, not run here"
+  },
+  "excerpts": [
+    {
+      "id": "E1-authority-not-wording",
+      "kind": "method",
+      "excerpt": "We define IPI by authority rather than instruction-like wording",
+      "chars": 63,
+      "normalized_offset": 2258,
+      "occurrences": 1,
+      "source_window_sha256": "67b361d34b3b8f04dde87e79e0fb29e15529187ce9dd6a744b99b613ccec45b0"
+    },
+    {
+      "id": "E2-unauthorized-decision",
+      "kind": "method",
+      "excerpt": "planted content constitutes an attack when it attempts to influence a decision that its source is not authorized to determine",
+      "chars": 125,
+      "normalized_offset": 2323,
+      "occurrences": 1,
+      "source_window_sha256": "09aed6edb711b0938d9e80bcee4ac07e0da7b0d3152c9ee789ae24d18bf0b9b4"
+    },
+    {
+      "id": "E3-request-designates-source",
+      "kind": "method",
+      "excerpt": "the user request specifies the source that resolves the targeted decision",
+      "chars": 73,
+      "normalized_offset": 2576,
+      "occurrences": 1,
+      "source_window_sha256": "39b588361496432051d944e81f387f86094d5d64ab09223507c07fd62b47028e"
+    },
+    {
+      "id": "E4-tamper-not-replace",
+      "kind": "method",
+      "excerpt": "Every attack tampers with a decision required by the benign task rather than replacing that task",
+      "chars": 96,
+      "normalized_offset": 2651,
+      "occurrences": 1,
+      "source_window_sha256": "b4b790a3a58bd9d812d767882e9ebad3120f51feaf67121a4545e573a310e2b1"
+    },
+    {
+      "id": "E5-wording-not-boundary",
+      "kind": "method",
+      "excerpt": "Instruction-like wording cannot itself define the security boundary",
+      "chars": 67,
+      "normalized_offset": 4772,
+      "occurrences": 1,
+      "source_window_sha256": "e628cec456a9346b2c5321acb08590c996aa0a7708a6ac95115f7dffbee321b4"
+    },
+    {
+      "id": "E6-authorized-false-is-misinformation",
+      "kind": "method",
+      "excerpt": "A false claim about a subject that the source is authorized to determine is instead misinformation and ordinarily requires independent evidence to detect",
+      "chars": 153,
+      "normalized_offset": 5433,
+      "occurrences": 1,
+      "source_window_sha256": "2bac13d390b014ba979dbf8deef28b4f072ac92e5f71b16c86ad22d9d77c7903"
+    },
+    {
+      "id": "E7-form-not-authority",
+      "kind": "method",
+      "excerpt": "Neither linguistic form nor relevance to the task establishes authority by itself",
+      "chars": 81,
+      "normalized_offset": 5588,
+      "occurrences": 1,
+      "source_window_sha256": "4dfa66dcb678fa97eac19c9be0cf95dcee18fb4f7d697ccb8865748545498527"
+    },
+    {
+      "id": "E8-boundary-per-decision",
+      "kind": "method",
+      "excerpt": "We define the prompt-injection boundary by the authority a source has over the targeted decision",
+      "chars": 96,
+      "normalized_offset": 14528,
+      "occurrences": 1,
+      "source_window_sha256": "aab39dc56af0d9ba48609e2dfe23a8bfbef352e6750bbc157aaf1f70d34f2a0b"
+    },
+    {
+      "id": "E9-tampered-call-needed-tool",
+      "kind": "method",
+      "excerpt": "a tampered call uses a tool the task needs",
+      "chars": 42,
+      "normalized_offset": 6435,
+      "occurrences": 2,
+      "source_window_sha256": "6940a856d924344c8c223e773274e01a6c5db35c3decf2a1a1e574741e20533a"
+    },
+    {
+      "id": "E10-paper-headline-figure",
+      "kind": "paper_empirical_claim_UNVERIFIED_not_a_result_of_this_sketch",
+      "excerpt": "A tool-policy defense still allows 15.4% attack success, close to 17.0% without a defense",
+      "chars": 89,
+      "normalized_offset": 3379,
+      "occurrences": 1,
+      "source_window_sha256": "d81e1de84f7079ed5046cb061784634d5216c04d79f8165bbf8d91f7524669e5"
+    }
+  ],
+  "not_results_of_this_sketch": "E10 and every paper percentage are paper claims only and UNVERIFIED here; the sketch computes no attack metrics."
+}

@@ -1,0 +1,35 @@
+mb-creg-belief-scoring
+----------------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code, data or
+weights.
+
+Paper (method idea credited)
+----------------------------
+Ranulfo Bezerra and Kimitoshi Yamazaki.
+"A Benchmark and Layered Evaluation Protocol for Evidence-Grounded Shared
+Belief Updating in Connected Robotics". arXiv:2611.11842, v1, submitted
+9 Nov 2026. Primary category cs.RO, cross-listed cs.AI, cs.CL and cs.MA.
+CREG (Connected Robotics Evidence Graph) Benchmark is the benchmark's name
+in the abstract, not the title.
+https://arxiv.org/abs/2611.11842 (project page https://creg-bench.github.io/)
+Licence: arXiv non-exclusive distribution licence,
+http://arxiv.org/licenses/nonexclusive-distrib/1.0/ (a paper licence, not a
+software grant).
+
+Code: the project page links the GitHub repository
+RanulfoBezerra/Evidence-Graph-Toolkit and names an MIT License in its
+footer. That repository returned GitHub 404 when fetched on 2026-11-13, so
+its licence file, HEAD SHA and contents are UNVERIFIED. No upstream code,
+scenario, reference, prompt or data was used.
+
+Method only: the idea of scoring an evidence-to-belief trajectory at every
+evidence prefix (posterior, support and contradict sets, contradiction
+flag, admissible next action) against an independently computed normative
+reference, and of a relation-content ablation. The update, staleness,
+supersession, contradiction, action and expiry rules, the oracle, the
+fixtures and the baselines are this sketch's own. No text, figures, tables
+or data from the paper are copied into the code; the PDF was not read; no
+model or benchmark run was re-run. The paper's claims appear only in
+paper_evidence.json, quoted and marked UNVERIFIED.

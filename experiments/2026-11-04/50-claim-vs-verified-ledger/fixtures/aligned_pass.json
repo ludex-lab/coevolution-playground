@@ -1,0 +1,9 @@
+{
+  "report_id": "r-aligned-001",
+  "exec_pass": true,
+  "exec_pass_reason": "tests green locally",
+  "verify_rc": 0,
+  "accepted": false,
+  "accepted_reason": "",
+  "rework_of": null
+}

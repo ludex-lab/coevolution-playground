@@ -1,0 +1,16 @@
+RouteBR dataset validation
+cases: 600
+splits: {'DEV': 120, 'ENTITY': 60, 'FLIP': 120, 'MAIN': 300}
+actions: {'A1_ADVISORY': 123, 'A2_INFO_LOOKUP': 123, 'A3_ACCOUNT_ANALYSIS': 123, 'A4_SUPPORT_RESPONSE': 108, 'A5_PROTECTED_ACTION': 123}
+boundaries: {'ALLOW': 262, 'CLARIFY': 128, 'DEFER': 75, 'HANDOFF': 75, 'REJECT': 60}
+object difficulty: {'ANAPHORA': 115, 'CODE_ONLY': 116, 'CONFLICTING': 72, 'EXPLICIT_NAME': 113, 'NONE': 108, 'UNDERSPECIFIED': 76}
+review_mode: joint practitioner review
+independent-annotation agreement: not applicable
+cases_sha256: f7911a548f2063c48e85688de278068deb2594c25de99c897e45f7ecea2c1075
+catalog_sha256: f82606a3f652fc77dd609014ab238de65064fccfb2ad1e0f73e6a4f087ad631a
+rules_sha256: 3613d23aee0e633e4202882a16d81f9870173f4ea2dbcc4e9aaa286de1a6ee67
+entities_sha256: 96254be4e1df92e5f4390710052ee3f2f3497a0ef7193a4b595b4dba330700f9
+
+PASSED
+
+EXIT_CODE=0

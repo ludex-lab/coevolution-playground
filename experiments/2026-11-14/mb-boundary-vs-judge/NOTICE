@@ -1,0 +1,40 @@
+mb-boundary-vs-judge
+--------------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code, data,
+traces, prompts, labels or weights.
+
+Paper (method idea credited)
+----------------------------
+Sungbin Im.
+"When Evaluators of AI Agents Disagree: An Empirical Study of Native
+Scoring, LLM Judges, and Commit-Boundary Checks on tau2-bench".
+arXiv:2611.14581, v1, submitted 10 Nov 2026. Primary category cs.SE,
+cross-listed cs.AI and cs.CR.
+https://arxiv.org/abs/2611.14581
+Paper licence: arXiv non-exclusive distribution licence,
+http://arxiv.org/licenses/nonexclusive-distrib/1.0/ (the paper is not under
+CC BY; only the abstract is quoted or used).
+
+Replication package
+-------------------
+Zenodo, DOI 10.5281/zenodo.23683806 (artifact_v9.zip).
+Licence: code under code/ is MIT ("Copyright (c) 2026 Sungbin Im"); data,
+annotations and documents are CC BY 4.0,
+https://creativecommons.org/licenses/by/4.0/.
+The package was not run. Only its README and LICENSE were read, during the
+research pack, for licence facts. No package code, trace, prompt, label or
+output was copied, consulted or used as data for this sketch, and the
+tau2-bench benchmark it cites was not used. The package is UNVERIFIED here.
+
+Method only: the idea of scoring the same episodes with several evaluators
+(native gold-state scoring, a transcript judge, and a model-free boundary
+check of whether a write was expected against whether one occurred), and
+the abstract's candidate cause that a gate's evidence digest dropped order
+status and customer authentication. The text-only judge stub, its cue rule
+and noise, the boundary classes, the toy gate and its fallback, the oracle
+and the fixtures are this sketch's own; no judge prompt or model is used.
+No text, figures, tables or data from the paper are copied into the code;
+the PDF was not read; no model was run. The paper's claims appear only in
+paper_evidence.json, quoted and marked UNVERIFIED.

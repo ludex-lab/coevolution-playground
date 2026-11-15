@@ -1,0 +1,28 @@
+w21-unused-contradiction
+------------------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code, data or
+weights.
+
+Paper (method idea credited)
+----------------------------
+Shaohuang Wang, Jinghao Wen, Xulei Zhang and Xun Jiao.
+"Dependable Long-Horizon LLM Agents: A Trajectory-Centered Empirical Study
+of Where Errors Enter and Which Controls Reach Them". arXiv:2611.13254, v1,
+submitted 9 Nov 2026.
+https://arxiv.org/abs/2611.13254
+Licence: arXiv.org perpetual, non-exclusive license to distribute,
+http://arxiv.org/licenses/nonexclusive-distrib/1.0/ (a distribution licence
+for the paper, not a grant for software reuse).
+
+Code: UNVERIFIED. The abs page says "Protocol, records and scripts are
+included" but gives no repository URL. No code from the authors was located
+or used.
+
+Method only: the idea that evidence against an error, already present in a
+trajectory, must be acted on before a run closes, and that a flag is not a
+response unless the deviated state is removed. The PDF was not read; the
+authors' 95-run annotation was not reproduced. Short verbatim abstract
+quotes appear only in paper_evidence.json, attributed and marked
+UNVERIFIED.

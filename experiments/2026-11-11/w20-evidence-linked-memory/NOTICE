@@ -1,0 +1,31 @@
+w20-evidence-linked-memory
+--------------------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code.
+
+Paper (method idea credited)
+----------------------------
+Yukyeong Lee, Yumin Choi, Jinheon Baek and Sung Ju Hwang.
+"Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced
+Degradation in LLM Agents". arXiv:2611.14320, v1, submitted 10 Nov 2026.
+https://arxiv.org/abs/2611.14320
+Licence: Creative Commons Attribution 4.0 International (CC BY 4.0),
+http://creativecommons.org/licenses/by/4.0/ , as shown on the abs page.
+This attribution credits the authors; no part of the paper is reproduced
+here, and the sketch is not endorsed by them.
+
+Upstream code (method only, not used)
+-------------------------------------
+WikiTrace, https://github.com/yukyeongleee/wikitrace
+Pin: 9ee357fbb95db9caae09808f3472a9fce6409c90. Licence: Apache License 2.0.
+The repository was not cloned, installed, imported or run, and no file,
+function or text from it is copied here. Its README at the pin asks for
+Docker, Node, uv and an OpenRouter API key, which this repository does not
+use. Status: UNVERIFIED.
+
+Method only: the idea of linking each insight to a summary of its run and to
+the run's trajectory, and of descending through those links before acting on
+an insight that lacks a detail, conflicts with another, or came from a failed
+run. The paper's and README's own figures are recorded only as tokens with
+offsets in paper_evidence.json and are marked UNVERIFIED.

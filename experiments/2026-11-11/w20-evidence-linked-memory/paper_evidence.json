@@ -1,0 +1,82 @@
+{
+ "paper": {
+  "arxiv_id": "2611.14320",
+  "version": "v1",
+  "title": "Don't Just Trust Your Memory: Evidence-Linked Memory Reduces Memory-Induced Degradation in LLM Agents",
+  "authors": [
+   "Yukyeong Lee",
+   "Yumin Choi",
+   "Jinheon Baek",
+   "Sung Ju Hwang"
+  ],
+  "authors_source": "abs page citation_author meta tags (Lee, Yukyeong; Choi, Yumin; Baek, Jinheon; Hwang, Sung Ju)",
+  "submitted": "10 Nov 2026 (citation_date 2026/11/10), v1 only",
+  "abs_url": "https://arxiv.org/abs/2611.14320",
+  "licence": "CC BY 4.0",
+  "licence_url": "http://creativecommons.org/licenses/by/4.0/",
+  "use": "METHOD ONLY: the insight -> summary -> trajectory link and the read-time rule of descending to the trajectory before acting on an insight that lacks a detail, conflicts with another, or comes from a failed run. No paper text, figures or tables are copied into this directory; this file records locations and number tokens only."
+ },
+ "upstream_code": {
+  "repo": "https://github.com/yukyeongleee/wikitrace",
+  "pin": "9ee357fbb95db9caae09808f3472a9fce6409c90",
+  "licence": "Apache-2.0",
+  "status": "UNVERIFIED",
+  "use": "METHOD ONLY. Not cloned, installed, imported or run. Its README at the pin asks for Docker, Node 20, uv and an OpenRouter API key, so nothing from it is ported; no code from it is in this directory."
+ },
+ "sources": [
+  {
+   "name": "abstract",
+   "file": "2611.14320.abs.txt",
+   "note": "lab review copy on the shared box, not in this repo; text after the 'Abstract:' prefix, trailing newline stripped",
+   "file_sha256": "50895bc922069f1ee4ba84e776c56cb2b3524483a93f1d296406a394558a89f0",
+   "chars": 1497,
+   "sha256": "2fd976fa1b64e535739b3d18636b0075131b6787a91cf3996d8dcd69948877c0"
+  },
+  {
+   "name": "upstream_readme_head",
+   "file": "wikitrace.README.head.txt",
+   "note": "lab review copy of the README head at the pin, not in this repo; offsets count characters of the UTF-8 text",
+   "file_sha256": "7c5d797076dc244aba0949ff1a8ba1b4d191dca14b694656b05b8299c34af5e8",
+   "chars": 2664
+  }
+ ],
+ "empirical_claims": {
+  "status": "UNVERIFIED",
+  "note": "The authors' own claims about their language-model agents. Recorded as a token and its character offset in the named source; not checked or reproduced by this sketch. They appear only in this file.",
+  "claims": [
+   {
+    "id": "C1-benchmark-count",
+    "source": "abstract",
+    "token": "five agentic benchmarks",
+    "offset": 1271,
+    "about": "number of benchmarks the paper validates on",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C2-suite-count",
+    "source": "upstream_readme_head",
+    "token": "eight suites",
+    "offset": 1711,
+    "about": "suite count claimed by the upstream README; differs from the abstract's benchmark count",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C3-mean-gain",
+    "source": "upstream_readme_head",
+    "token": "+8.5 points",
+    "offset": 1725,
+    "about": "average gain over the best prior memory method, per the upstream README",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C4-regression",
+    "source": "upstream_readme_head",
+    "token": "4.5%",
+    "offset": 1811,
+    "about": "lowest regression rate, per the upstream README",
+    "status": "UNVERIFIED"
+   }
+  ]
+ },
+ "not_results_of_this_sketch": "Every memory record, task, seed and outcome here is synthetic and deterministic. The three agents are small Python functions, not language-model agents; nothing here measures or reproduces the paper's or the README's results."
+}

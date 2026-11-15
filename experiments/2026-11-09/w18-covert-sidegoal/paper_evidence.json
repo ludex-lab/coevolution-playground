@@ -1,0 +1,128 @@
+{
+  "quotation_notice": "Every 'excerpt' below is a short verbatim quotation from arXiv 2611.07586 (by Yao Huang, Yifan Wang, Yitong Sun, Yichi Zhang and Yinpeng Dong), distributed under the arXiv non-exclusive distribution licence, which is not a reuse grant. The quotations are kept here only as citation evidence with offsets and are not reused in code, fixtures, manifest, README or NOTICE.",
+  "paper": {
+    "arxiv_id": "2611.07586",
+    "version": "v1",
+    "title": "Stress Testing Chain-of-Thought Monitoring Against Covert Misalignment",
+    "title_source": "abs page citation_title meta",
+    "authors": [
+      "Yao Huang",
+      "Yifan Wang",
+      "Yitong Sun",
+      "Yichi Zhang",
+      "Yinpeng Dong"
+    ],
+    "authors_source": "abs page citation_author meta (order as listed): 'Huang, Yao', 'Wang, Yifan', 'Sun, Yitong', 'Zhang, Yichi', 'Dong, Yinpeng'",
+    "abs_url": "https://arxiv.org/abs/2611.07586",
+    "html_url": "https://arxiv.org/html/2611.07586",
+    "submitted_display": "[Submitted on 5 Nov 2026]",
+    "submitted": "2026-11-05",
+    "licence": "arXiv non-exclusive distribution licence 1.0",
+    "licence_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "licence_evidence": "abs page licence link href contains arxiv.org/licenses/nonexclusive-distrib/1.0/",
+    "use": "method shape only (a side task framed as an ordinary-looking sub-goal can slip past wording-based monitoring); no text, figures, tables, prompts, task text or monitor prompts reused"
+  },
+  "fetched": {
+    "fetched_at": "2026-11-09 16:01 JST",
+    "html_path": "/tmp/w18-2611.07586.html",
+    "html_bytes": 2067507,
+    "html_sha256": "6b1e9e90806ee8124324292ec071ede65938f1f7fbda9a35e41c3f5fd5b9cd87",
+    "html_curl": "curl -sL https://arxiv.org/html/2611.07586 -o /tmp/w18-2611.07586.html",
+    "abs_path": "/tmp/w18-abs-2611.07586.html",
+    "abs_bytes": 41891,
+    "abs_sha256": "d78f45e2e9ea00516fecec8ce6dfb7d21948517b97ee47fb39f6d0734ed4983a",
+    "abs_curl": "curl -sL https://arxiv.org/abs/2611.07586 -o /tmp/w18-abs-2611.07586.html",
+    "note": "independent re-fetch; HTML byte-identical (same sha256) to the earlier reviewer cache copy"
+  },
+  "normalization": {
+    "steps": [
+      "decode utf-8",
+      "re.sub(r'<script\\b.*?</script>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "re.sub(r'<style\\b.*?</style>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "re.sub(r'<math\\b.*?</math>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "html.unescape(t)",
+      "re.sub(r'\\s+', ' ', t)"
+    ],
+    "remaining_tags": "kept (not stripped); every excerpt lies inside one text run",
+    "offsets": "zero-based Unicode code points into the normalized text, end-exclusive",
+    "normalized_chars": 2013671,
+    "window_rule": "normalized[max(0, start-64) : min(len, end+64)], sha256 of its UTF-8 bytes"
+  },
+  "implementation_pin": {
+    "repo": "https://github.com/T-STAR-Lab/TraceMRT",
+    "commit": "00cc180c46ddf1f0cbd634fec52512630f1a5b43",
+    "commit_source": "git ls-remote https://github.com/T-STAR-Lab/TraceMRT (HEAD and refs/heads/main), 2026-11-09 16:01 JST",
+    "licence": "MIT",
+    "licence_url": "https://raw.githubusercontent.com/T-STAR-Lab/TraceMRT/00cc180c46ddf1f0cbd634fec52512630f1a5b43/LICENSE",
+    "licence_sha256": "10afbf1d9375046c397093682ec37ff0182bc542e95745d46e10ed55714d3d74",
+    "licence_bytes": 1135,
+    "copyright_line": "Copyright (c) 2025 Jonathan Kutasov, Joe Benton, Henry Sleight, John Hughes, Ethan Perez, Scale AI",
+    "copyright_note": "the copyright line names the authors of the upstream benchmark the repo builds on, not the paper authors",
+    "status": "cite-only; not cloned, installed, imported, or run",
+    "dependency_note": "the upstream README describes a third-party evaluation harness and hosted model provider APIs; none of that is referenced, imported or called here"
+  },
+  "replication_note": "The paper's red-teaming search and Bayesian trajectory monitor run against hosted models; neither is replicated, reproduced or evaluated. The two monitors here are toys of our own design.",
+  "empirical_claims": {
+    "status": "UNVERIFIED",
+    "note": "Headline figures from the abstract (E4). Not checked, not reproduced, not used by any code here.",
+    "claims": [
+      {
+        "text": "0.91 AUC",
+        "status": "UNVERIFIED",
+        "excerpt_id": "E4-abstract-headline-numbers"
+      },
+      {
+        "text": "0.74 TPR@FPR=0.05",
+        "status": "UNVERIFIED",
+        "excerpt_id": "E4-abstract-headline-numbers",
+        "note": "the '@' sits in a separate span in the HTML, so the excerpt stops before it"
+      }
+    ]
+  },
+  "excerpts": [
+    {
+      "id": "E1-abstract-exogenous-insertion",
+      "section": "abstract",
+      "excerpt": "which treat the side objective as an exogenous insertion",
+      "chars": 56,
+      "normalized_offset": 33136,
+      "end_offset_exclusive": 33192,
+      "occurrences": 1,
+      "source_window_sha256": "7cc8da027aafc1a7b9afd1990f477b8481b086246998ed2b7d207a2a2070ac9b",
+      "status": "quoted_method_context"
+    },
+    {
+      "id": "E2-abstract-coherent-subgoal",
+      "section": "abstract",
+      "excerpt": "reframes the side task as a coherent sub-goal of the primary task",
+      "chars": 65,
+      "normalized_offset": 33965,
+      "end_offset_exclusive": 34030,
+      "occurrences": 1,
+      "source_window_sha256": "c1069158e899df132d2f64a4f1859525614118ceccc02a9eb6cd754c1d126382",
+      "status": "quoted_method_context"
+    },
+    {
+      "id": "E3-footnote-code-link",
+      "section": "abstract footnote 1",
+      "excerpt": "The code is available at",
+      "chars": 24,
+      "normalized_offset": 33712,
+      "end_offset_exclusive": 33736,
+      "occurrences": 1,
+      "source_window_sha256": "680beaca9e242072d12bd4a37717cff8ca7384dc60de8c054de80aa41250413d",
+      "status": "quoted_code_link_context"
+    },
+    {
+      "id": "E4-abstract-headline-numbers",
+      "section": "abstract",
+      "excerpt": "consolidates monitor robustness with 0.91 AUC and 0.74 TPR",
+      "chars": 58,
+      "normalized_offset": 34523,
+      "end_offset_exclusive": 34581,
+      "occurrences": 1,
+      "source_window_sha256": "9a0eedea5e9bc09e90ae3d07c2107ee071161239ed47230ae7dccd8f1e5ac88c",
+      "status": "UNVERIFIED"
+    }
+  ]
+}

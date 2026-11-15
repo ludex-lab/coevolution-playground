@@ -1,0 +1,120 @@
+{
+  "quotation_notice": "Every 'excerpt' below is a short verbatim quotation from a CC BY-NC-SA 4.0 source (arXiv 2611.08723, by Divij Handa, Christopher Tensmeyer, Jihyung Kil and Vlad I. Morariu), kept here only as citation evidence with offsets. It is not reused in code, fixtures, README or NOTICE.",
+  "paper": {
+    "arxiv_id": "2611.08723",
+    "version": "v1",
+    "title": "Divide, Diagnose, and Compose: Optimizing Agentic Pipelines and Harnesses",
+    "title_source": "abs page citation_title meta",
+    "authors": [
+      "Divij Handa",
+      "Christopher Tensmeyer",
+      "Jihyung Kil",
+      "Vlad I. Morariu"
+    ],
+    "authors_source": "abs page citation_author meta: 'Handa, Divij', 'Tensmeyer, Christopher', 'Kil, Jihyung', 'Morariu, Vlad I.'",
+    "abs_url": "https://arxiv.org/abs/2611.08723",
+    "html_url": "https://arxiv.org/html/2611.08723",
+    "submitted_display": "[Submitted on 5 Nov 2026]",
+    "submitted": "2026-11-05",
+    "licence": "CC BY-NC-SA 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "licence_evidence": "abs page licence link href contains creativecommons.org/licenses/by-nc-sa/4.0/; HTML header reads 'License: CC BY-NC-SA 4.0'",
+    "use": "method idea only (one dimension per change, evidence trace per change); no text, figures, tables, prompts, dimension definitions or taxonomy wording reused"
+  },
+  "fetched": {
+    "fetched_at": "2026-11-09 15:55 JST",
+    "html_path": "/tmp/w18-2611.08723.html",
+    "html_bytes": 435499,
+    "html_sha256": "f93b4bc1fbc762254704e155e3de490246cb3d1fe1b66449d337a0f1ff19591f",
+    "html_curl": "curl -sL https://arxiv.org/html/2611.08723 -o /tmp/w18-2611.08723.html",
+    "abs_path": "/tmp/w18-abs-2611.08723.html",
+    "abs_bytes": 42079,
+    "abs_sha256": "514bfe0464a06604b53fe0b3332fc975cdeb936c2a48f6f993d2bf636f31564c",
+    "abs_curl": "curl -sL https://arxiv.org/abs/2611.08723 -o /tmp/w18-abs-2611.08723.html",
+    "note": "independent re-fetch; HTML byte-identical (same sha256) to the earlier reviewer cache copy"
+  },
+  "normalization": {
+    "steps": [
+      "decode utf-8",
+      "re.sub(r'<script\\b.*?</script>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "re.sub(r'<style\\b.*?</style>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "re.sub(r'<math\\b.*?</math>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "html.unescape(t)",
+      "re.sub(r'\\s+', ' ', t)"
+    ],
+    "remaining_tags": "kept (not stripped); every excerpt lies inside one text run",
+    "offsets": "zero-based Unicode code points into the normalized text, end-exclusive",
+    "normalized_chars": 386973,
+    "window_rule": "normalized[max(0, start-64) : min(len, end+64)], sha256 of its UTF-8 bytes"
+  },
+  "implementation_pin": null,
+  "implementation_pin_note": "No code link in the abs page or HTML; nothing pinned, cloned, installed or run.",
+  "replication_note": "The paper's method relies on independent coding-agent sessions run against benchmarks; that cannot be replicated offline and is not attempted.",
+  "empirical_claims": {
+    "status": "UNVERIFIED",
+    "note": "Headline figures from the abstract (E4). Not checked, not reproduced, not used by any code here.",
+    "claims": [
+      {
+        "text": "+2.58 percentage points average task performance",
+        "status": "UNVERIFIED",
+        "excerpt_id": "E4-abstract-headline-numbers"
+      },
+      {
+        "text": "-4.30% inference cost",
+        "status": "UNVERIFIED",
+        "excerpt_id": "E4-abstract-headline-numbers"
+      },
+      {
+        "text": "-42.45% end-to-end latency",
+        "status": "UNVERIFIED",
+        "excerpt_id": "E4-abstract-headline-numbers"
+      }
+    ]
+  },
+  "excerpts": [
+    {
+      "id": "E1-abstract-monolithic-edits",
+      "section": "abstract",
+      "excerpt": "modify the pipeline monolithically, or provide little structured evidence for pipeline changes",
+      "chars": 94,
+      "normalized_offset": 24801,
+      "end_offset_exclusive": 24895,
+      "occurrences": 1,
+      "source_window_sha256": "578b9c491e758d148d57d1c61ba16acf4fc1ddff7aae012e97171b87013f6fcc",
+      "status": "quoted_method_context"
+    },
+    {
+      "id": "E2-abstract-per-dimension-traces",
+      "section": "abstract",
+      "excerpt": "optimizes each dimension separately, and generates reasoning traces for every decision",
+      "chars": 86,
+      "normalized_offset": 25127,
+      "end_offset_exclusive": 25213,
+      "occurrences": 1,
+      "source_window_sha256": "4fcd9d05288f8c08a93dcee2ef15ce3967337260916665e8b242c1f1e2dc96c6",
+      "status": "quoted_method_context"
+    },
+    {
+      "id": "E3-abstract-independent-sessions",
+      "section": "abstract",
+      "excerpt": "Independent coding-agent sessions then optimize each dimension under a restricted edit scope",
+      "chars": 92,
+      "normalized_offset": 25458,
+      "end_offset_exclusive": 25550,
+      "occurrences": 1,
+      "source_window_sha256": "84df08f4dd65a0cfb46173240530e88e35b4660ad7d744d39a8982c9ac399cbc",
+      "status": "quoted_method_context_not_replicated_offline"
+    },
+    {
+      "id": "E4-abstract-headline-numbers",
+      "section": "abstract",
+      "excerpt": "improves average task performance by 2.58 percentage points, while reducing inference cost by 4.30% and end-to-end latency by 42.45% compared to the best overall baseline",
+      "chars": 170,
+      "normalized_offset": 26074,
+      "end_offset_exclusive": 26244,
+      "occurrences": 1,
+      "source_window_sha256": "e21c1350f04df76ede074c17002ea9275d2a4f66388b1544761c76a16db90d61",
+      "status": "UNVERIFIED"
+    }
+  ]
+}

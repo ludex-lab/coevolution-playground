@@ -1,0 +1,16 @@
+w21-memory-admission
+
+Original code written for this folder. No third-party code, data or
+weights are included or vendored. Standard library only.
+
+Idea source (method only; no code published with it, code UNVERIFIED):
+Runxuan Tang, Haoyu Gao, Yuyan Ding, Junyi Yao, Zihao Zheng, Zecheng Sheng
+and Liwei Hou. "When Should Agents Remember? Falsification-Gated
+Self-Evolution for LLM Agents". arXiv:2611.14326, v1.
+https://arxiv.org/abs/2611.14326
+Paper licence: arXiv non-exclusive distribution licence,
+http://arxiv.org/licenses/nonexclusive-distrib/1.0/ (a licence to arXiv to
+distribute the paper, not a software grant). Method borrowed only; no text
+beyond short attributed abstract quotes in paper_evidence.json, and no
+figures, tables, code or data from the paper are copied here. The PDF was
+not read.

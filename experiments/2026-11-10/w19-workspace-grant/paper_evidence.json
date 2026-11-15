@@ -1,0 +1,155 @@
+{
+ "paper": {
+  "arxiv_id": "2611.08516",
+  "version": "v1",
+  "title": "Aegis OS: A Transactional Multi-Tenant Operating System Runtime for Eliminating Authorization Fatigue in Autonomous Coding Agents",
+  "authors": [
+   "Hui Zhao"
+  ],
+  "affiliation_on_abs": "Heurion Research",
+  "authors_source": "abs page citation_author meta 'Zhao, Hui'; Authors line 'Hui Zhao (Heurion Research)'",
+  "submitted": "v1 Thu, 22 Oct 2026 08:33:02 UTC (2026-10-22 17:33 JST)",
+  "subjects": "cs.OS; cs.CR; cs.MA; cs.SE",
+  "abs_url": "https://arxiv.org/abs/2611.08516",
+  "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "licence_url": "http://creativecommons.org/licenses/by/4.0/",
+  "licence_evidence": "abs page licence link http://creativecommons.org/licenses/by/4.0/ (only creativecommons link on the page)",
+  "use": "method/shape only (the approval-unit shift); no paper text copied into code, fixtures, README or NOTICE; short excerpts below are for evidence only, attributed under CC BY 4.0"
+ },
+ "upstream_reference": {
+  "repo": "https://github.com/heurion-org/aegis-os",
+  "pin": "14653158e820b0ca46f170e0125c8528b72205c0",
+  "pin_evidence": "git ls-remote HEAD = refs/heads/main = 14653158e820b0ca46f170e0125c8528b72205c0; commits API newest = same sha, committed 2026-11-09T20:56:28Z (2026-11-10 05:56 JST)",
+  "licence": "Apache-2.0 (raw LICENSE 'Apache License / Version 2.0, January 2004', 11358 B; API spdx_id Apache-2.0; licence blob d645695673349e3947e8e5ae42332d0ac3164cd7)",
+  "notice_file": "none at the pin (raw NOTICE returned 404)",
+  "status": "REFERENCE ONLY, UNVERIFIED",
+  "read_as_text": [
+   "README.md at the pin, from the lab review folder (checker/raw-aegis-README.md, sha256 7020343c29ec34b43231d0e09081de7769754ee4dc9112d2ca4f0d26a0b1b29c; first 9034 bytes = raw/aegis-os.README.head.txt, sha256 171f5b90d15d0a3ddc39a6dcd7b2db2570a4de6cd7f7c11eebde372162cef807)",
+   "LICENSE (checker/raw-aegis-LICENSE.txt)",
+   "GitHub API JSON for repo, commits and licence"
+  ],
+  "used": false,
+  "note": "Never cloned, built, installed, run, imported or ported; no upstream code or data is copied. No new fetch was made for this sketch.",
+  "not_borrowed": [
+   "hash-chained audit ledger",
+   "egress proxy and secret injection",
+   "install/session telemetry",
+   "kernel sandbox and CoW shadow workspace",
+   "MCP and A2A servers",
+   "claim fencing and auto-merge",
+   "any daemon or runtime"
+  ]
+ },
+ "sources": {
+  "abs_txt": {
+   "path": "raw/2611.08516.abs.txt",
+   "sha256": "b454a7d8e2999d741d97539931d613c5556a501431c343ac61290f4ffb45d3b8"
+  },
+  "abs_html": {
+   "path": "checker/abs-2611.08516.html",
+   "sha256": "562b5544a01092ada70cddc1a24bfb28d872915f57c1298ece083cb42e858969"
+  },
+  "readme": {
+   "path": "checker/raw-aegis-README.md",
+   "sha256": "7020343c29ec34b43231d0e09081de7769754ee4dc9112d2ca4f0d26a0b1b29c"
+  },
+  "root": "/workspace/lab-dig-2-2026-11-10/ (lab review folder on the shared box, not in this repo)"
+ },
+ "quote_check": "3/3 found verbatim once each (abs quote in the abs text and the normalised abs page; README quotes with their markdown bold, lines 24 and 36)",
+ "excerpts": [
+  {
+   "id": "Q1-abstract-boundary-shift",
+   "source": "abs",
+   "excerpt": "Aegis OS shifts the authorization boundary from individual tool calls to transactional workspace boundaries.",
+   "occurrences": 1,
+   "status": "FOUND"
+  },
+  {
+   "id": "Q2-readme-what-it-is",
+   "source": "README.md at pin, line 24, '## What it is'",
+   "excerpt": "Inside the workspace, agents run with **zero per-action prompts**; host commits and boundary crossings require human approval or a TTL lease.",
+   "occurrences": 1,
+   "status": "FOUND"
+  },
+  {
+   "id": "Q3-readme-security-model",
+   "source": "README.md at pin, line 36, '## Security model'",
+   "excerpt": "**Advisory is not a security boundary.**",
+   "occurrences": 1,
+   "status": "FOUND"
+  }
+ ],
+ "empirical_claims": {
+  "status": "UNVERIFIED",
+  "note": "Paper and README figures, recorded as found and not checked by this sketch. They appear only in this file.",
+  "claims": [
+   {
+    "id": "C1-prompt-rate",
+    "source": "abs",
+    "text": "45%-57%",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C2-prompt-reduction-controlled",
+    "source": "abs",
+    "text": "94.19%-99.88%",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C3-prompt-reduction-real",
+    "source": "abs",
+    "text": "90.7%-97.9%",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C4-ipr",
+    "source": "abs",
+    "text": "1.12% IPR",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C5-attack-success",
+    "source": "abs",
+    "text": "from 100.0% to 0.0%",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C6-call-counts",
+    "source": "abs",
+    "text": "1,500 controlled calls and 28,087 real calls across 52 coding-agent sessions",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C7-attack-set",
+    "source": "abs",
+    "text": "80 attacks in eight categories",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C8-clone-time",
+    "source": "abs",
+    "text": "6.3 ms on APFS and 15.6 ms on btrfs",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C9-merge-conflicts",
+    "source": "abs",
+    "text": "10/10",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C10-readme-overwrite-rate",
+    "source": "README",
+    "text": "41.2%",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C11-readme-auto-merge",
+    "source": "README",
+    "text": "98.7%",
+    "status": "UNVERIFIED"
+   }
+  ]
+ },
+ "not_results_of_this_sketch": "The grants, actions, paths, hosts, claims and every fixture outcome are synthetic. Nothing here measures prompts, attacks, sandboxes or merges, or reproduces any figure above."
+}

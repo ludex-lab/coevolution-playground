@@ -1,0 +1,41 @@
+This directory is a clean-room method-borrow day-sketch of ideas from:
+
+  Chandler Smith, Qi Guo, Cecilia Elena Tilli, Sophia Hatz,
+  David Demitri Africa, Patricia Paskov, Christian Schroeder de Witt,
+  Philip Torr, and Lewis Hammond.
+  Inter-Agent Influence: Evaluating Persuasion, Deception, and Coercion in
+  Multi-Agent Systems. arXiv:2611.04556v1 (3 November 2026). NeurIPS 2026.
+  https://arxiv.org/abs/2611.04556
+  HTML: https://arxiv.org/html/2611.04556
+
+The fetched HTML displays License: CC BY 4.0.
+License terms: https://creativecommons.org/licenses/by/4.0/
+Short paper sentences in fixtures.py / paper_evidence.json are attributed to
+that paper and were checked against the fetched HTML on 2026-11-07 (JST).
+The code is a new synthetic measurement sketch, not paper text, a
+reproduction of its evaluation, or an implementation port.
+
+Upstream citation only:
+  https://github.com/Cooperative-AI-Foundation/inter-agent-influence
+  pin: 2e70dcd171584217fc0cba45662ff7547b369619
+
+No upstream code was cloned, executed, vendored, or ported. No prompts,
+environment documents, released transcripts, or gated Hugging Face dataset
+content (Cooperative-AI-Foundation/inter-agent-influence-eval) were downloaded
+or copied.
+
+Public page inspection on 2026-11-07 (JST):
+
+- https://github.com/Cooperative-AI-Foundation/inter-agent-influence/tree/2e70dcd171584217fc0cba45662ff7547b369619
+  Root listing includes LICENSE; README License section read.
+- https://raw.githubusercontent.com/Cooperative-AI-Foundation/inter-agent-influence/2e70dcd171584217fc0cba45662ff7547b369619/LICENSE
+  "MIT License" / "Copyright (c) 2026 The Inter-Agent Influence Evaluation Authors".
+- README at the pin states: code under the MIT License; environment documents,
+  prompts and released transcripts are data under CC BY 4.0; transcripts and
+  per-sample tables are a gated dataset. It also notes third-party material
+  (E5 adapts an MIT pipeline; E3 adapts two CC BY 4.0 documents).
+- https://github.com/Cooperative-AI-Foundation/inter-agent-influence/commit/2e70dcd171584217fc0cba45662ff7547b369619
+  Confirms the pin ("Inter-Agent Influence: code release").
+
+These declarations are recorded for citation; this sketch asserts no upstream
+code rights and copies no upstream code or data.

@@ -1,0 +1,106 @@
+{
+ "paper": {
+  "arxiv_id": "2611.16289",
+  "version": "v1",
+  "title": "Eliciting and Mitigating Specification Satisficing in Coding Agents",
+  "method_name": "SatisFix (named in the abstract; not the title)",
+  "authors": [
+   "Ruixin Wang",
+   "Tianyi Zhang"
+  ],
+  "primary_category": "cs.SE (cross-listed cs.AI, cs.CL)",
+  "submitted": "12 Nov 2026 (v1 2026-11-12T04:42:55Z = 2026-11-12 13:42:55 KST)",
+  "abs_url": "https://arxiv.org/abs/2611.16289",
+  "licence": "CC BY 4.0, http://creativecommons.org/licenses/by/4.0/ (paper licence; not a software grant)",
+  "comments_field": "12 pages, 2 figures, 7 tables",
+  "code": "none linked on the abs page; no code was found or used",
+  "pdf_read": false
+ },
+ "sources": [
+  {
+   "file": "2611.16289.abs.txt",
+   "what": "plain-text copy of the abs-page abstract (prefix 'Abstract:')",
+   "sha256": "ecf60e0386ed187007042450ffbac0d69e427531c65847d26a52eea93d1ce894",
+   "chars": 1105
+  }
+ ],
+ "env": "W22SATISFICE_SOURCES names the directory holding the source copy; the test skips when it is unset",
+ "status": "UNVERIFIED",
+ "measured_here": "on_unmeasured",
+ "on_unmeasured_note": "This sketch runs no agent, model or benchmark. The pass@1 figures below are the authors' statements, not measured, re-run or re-claimed here; paper_results() returns on_unmeasured.",
+ "attribution": "The authors' own results as stated in the arXiv abstract. Quote wording is the authors'.",
+ "claims": [
+  {
+   "id": "C1",
+   "what": "problem statement: specification satisficing",
+   "quote": "In some of these failures, the agent considers an implementation choice that meets a requirement, but later decides to commit to another one that does not meet the requirement for a reason it finds acceptable. We call this specification satisficing.",
+   "offset": 84,
+   "length": 249,
+   "measured_here": "on_unmeasured",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C2",
+   "what": "why it is hard; self-correction bias",
+   "quote": "It is challenging to identify and mitigate specification satisficing because the agent accepts such choices for its own reasons, and existing self-correction methods are biased toward them.",
+   "offset": 334,
+   "length": 189,
+   "measured_here": "on_unmeasured",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C3",
+   "what": "the method (two steps)",
+   "quote": "We propose SatisFix, which guides a coding agent to report these choices and their reasons, and then check each choice against the task description.",
+   "offset": 524,
+   "length": 148,
+   "measured_here": "on_unmeasured",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C4",
+   "what": "evaluation setup",
+   "quote": "We evaluate SatisFix on DeepSWE and SWE-bench Pro with five LLMs as backbones and two different agent frameworks, and compare it with three self-correction methods.",
+   "offset": 673,
+   "length": 164,
+   "measured_here": "on_unmeasured",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C5",
+   "what": "pass@1 lift over the base agent",
+   "quote": "SatisFix improves the pass@1 of the base agent by an average of 5.09% on DeepSWE and 7.06% on the hard subset of SWE-bench Pro.",
+   "offset": 838,
+   "length": 127,
+   "metric": "pass@1 improvement over base agent",
+   "values": {
+    "DeepSWE_avg": "5.09%",
+    "SWE-bench_Pro_hard_avg": "7.06%"
+   },
+   "measured_here": "on_unmeasured",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C6",
+   "what": "margin over best baseline",
+   "quote": "On DeepSWE, it outperforms the best baseline by 3.98%.",
+   "offset": 966,
+   "length": 54,
+   "metric": "pass@1 margin over best self-correction baseline",
+   "values": {
+    "DeepSWE": "3.98%"
+   },
+   "measured_here": "on_unmeasured",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C7",
+   "what": "ablation",
+   "quote": "Our ablation study shows that both steps of SatisFix contribute to the improvement.",
+   "offset": 1021,
+   "length": 83,
+   "measured_here": "on_unmeasured",
+   "status": "UNVERIFIED"
+  }
+ ]
+}

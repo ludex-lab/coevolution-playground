@@ -1,0 +1,186 @@
+{
+ "paper": {
+  "arxiv_id": "2611.14661",
+  "version": "v1",
+  "title": "Abstention Is Not Threshold Compliance: Stated Scoring Rules in Open Language Models",
+  "authors": [
+   "Dongsun Moon"
+  ],
+  "primary_category": "cs.CL (cross-listed cs.AI)",
+  "submitted": "v1 Tue, 10 Nov 2026 19:13:43 UTC = 2026-11-11 04:13:43 KST",
+  "abs_url": "https://arxiv.org/abs/2611.14661",
+  "licence": "CC BY 4.0, http://creativecommons.org/licenses/by/4.0/ (as linked on the abs page)",
+  "comments_field": "34 pages, 3 figures, 29 tables",
+  "pdf_read": false,
+  "method_source": "abstract only; no section text, figure, table, prompt or item of the paper is used"
+ },
+ "code": {
+  "linked_in_abstract": false,
+  "note": "no code or data link in the abstract or comments; nothing was downloaded, cloned or run"
+ },
+ "sources": [
+  {
+   "file": "2611.14661.abs.txt",
+   "what": "plain-text copy of the abs-page abstract (prefix 'Abstract:'), one line plus a final newline",
+   "sha256": "c2951ef6ea6c955d972ae5f5030984b9ed533efba5d00bc4c4f2100171ff8f26",
+   "chars": 1790
+  }
+ ],
+ "env": "W24THC_SOURCES names the directory holding the source copy; the test skips when it is unset",
+ "status": "UNVERIFIED",
+ "measured_here": "on_unmeasured",
+ "on_unmeasured_note": "This sketch runs no model, checkpoint, prompt, grader or QA benchmark. The figures below are the author's statements, not measured, re-run or re-claimed here; paper_results() returns on_unmeasured. The sketch's own fixture counts are not comparable with them.",
+ "attribution": "The author's own results as stated in the arXiv abstract. Quote wording is the author's.",
+ "claims": [
+  {
+   "id": "C1",
+   "what": "the stated-rule proposal being probed",
+   "quote": "Kalai et al. propose stating the scoring rule in the prompt with an explicit threshold t, so that a model should answer only when its probability of being correct exceeds t.",
+   "offset": 9,
+   "length": 173,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C2",
+   "what": "scope of the probe",
+   "quote": "We probe each requirement of compliance on shared items, in 12 checkpoints from three post-training stages of four fully open 3-8B recipes, with exploratory models up to 32B.",
+   "offset": 183,
+   "length": 174,
+   "values": {
+    "checkpoints": "12",
+    "post_training_stages": "three",
+    "recipes": "four",
+    "recipe_sizes": "3-8B",
+    "exploratory_up_to": "32B"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C3",
+   "what": "the abstention format raises abstention",
+   "quote": "At t = 0.75, a line limiting the reply to an answer or \"I abstain\" (the abstention format) raised the mean abstention rate from 20% to 91%.",
+   "offset": 358,
+   "length": 139,
+   "values": {
+    "threshold": "0.75",
+    "abstention_before": "20%",
+    "abstention_after": "91%"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C4",
+   "what": "abstention barely responds to the threshold within the format",
+   "quote": "Yet within this format, raising t from 0.5 to 0.9 changed it by only -0.8 percentage points.",
+   "offset": 498,
+   "length": 92,
+   "values": {
+    "t_from": "0.5",
+    "t_to": "0.9",
+    "change": "-0.8 percentage points"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C5",
+   "what": "decisions no threshold-independent belief could produce",
+   "quote": "Without the line, the higher threshold even lowered abstention, and up to 40% of a checkpoint's items received decisions that no compliant policy with threshold-independent beliefs could make.",
+   "offset": 591,
+   "length": 192,
+   "values": {
+    "items_inconsistent_up_to": "40%"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C6",
+   "what": "forced-choice probe",
+   "quote": "Given the probability that their answer was correct, the checkpoints barely responded to the threshold in a forced-choice probe.",
+   "offset": 784,
+   "length": 128,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C7",
+   "what": "self-assessment comparisons",
+   "quote": "Comparisons with self-assessment signals such as P(True) depended on the grader and on answer drift between prompts.",
+   "offset": 913,
+   "length": 116,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C8",
+   "what": "external threshold is monotone by construction",
+   "quote": "An external threshold on recalibrated P(True) made coverage non-increasing in t by construction.",
+   "offset": 1030,
+   "length": 96,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C9",
+   "what": "calibration transfer",
+   "quote": "Calibrated on the evaluation distribution (post hoc), it beat the abstention format at t = 0.5; calibrated on TriviaQA and applied to PopQA, however, it fell below that format at 0.75.",
+   "offset": 1127,
+   "length": 184,
+   "values": {
+    "t_beat": "0.5",
+    "t_fell_below": "0.75"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C10",
+   "what": "threshold-conditioned training",
+   "quote": "On OLMo 3 7B, decisions trained on threshold-conditioned targets did not follow unseen thresholds consistently.",
+   "offset": 1312,
+   "length": 111,
+   "values": {
+    "model": "OLMo 3 7B"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C11",
+   "what": "post-hoc variant",
+   "quote": "A post-hoc variant trained at four thresholds answered less as t rose but still failed a pre-specified test, mainly on agreement with its training rule.",
+   "offset": 1424,
+   "length": 152,
+   "values": {
+    "training_thresholds": "four"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C12",
+   "what": "conclusion: report rate, response and items",
+   "quote": "A high abstention rate is not evidence of compliance: evaluations using stated scoring rules should report how often models abstain, whether decisions respond to the stated threshold, and which items they answer.",
+   "offset": 1577,
+   "length": 212,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  }
+ ]
+}

@@ -1,0 +1,21 @@
+{
+  "inputs": {
+    "observed": {
+      "blocker_id": "pytest::integration::429",
+      "blocker_fingerprint": "blocker:pytest-integration-429",
+      "status": "blocked"
+    },
+    "reported": {
+      "blocker_id": "pytest::integration::429",
+      "blocker_fingerprint": "blocker:pytest-integration-429",
+      "status": "in_progress"
+    },
+    "evidence_refs": ["log:/tmp/run1.log"],
+    "prior_fingerprint": "blocker:pytest-integration-429",
+    "streak": 2,
+    "budget": {"remaining": 12}
+  },
+  "expect": {
+    "action": "ESCALATE_TO_HUMAN"
+  }
+}

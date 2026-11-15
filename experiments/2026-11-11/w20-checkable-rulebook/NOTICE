@@ -1,0 +1,28 @@
+w20-checkable-rulebook
+----------------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code.
+
+Paper (method idea credited)
+----------------------------
+Tomas Perez-Acle. "No finite rulebook can certify every safe program: an
+impossibility theorem for gatekeeping AI agents". arXiv:2611.13367, v1,
+submitted 9 Nov 2026. https://arxiv.org/abs/2611.13367
+Licence: Creative Commons Attribution 4.0 International (CC BY 4.0),
+http://creativecommons.org/licenses/by/4.0/ , as shown on the abs page.
+This attribution credits the author; no part of the paper is reproduced
+here, and the sketch is not endorsed by the author. No code is linked from
+the abs page and none is used.
+
+Method only: the split between what a finite record of a program's behaviour
+settles and what it cannot, and the idea of judging a checkable list by what
+it must admit and what it must refuse. No sentence of the paper is quoted.
+The paper's simulation figure is recorded only as a token with its offset in
+paper_evidence.json and is marked UNVERIFIED.
+
+Repository code reused by contract
+----------------------------------
+The expiry behaviour mirrors experiments/2026-11-05/w14-silence-expiry in
+this repository (main). No file from it is copied here; the tests compare the
+mirror with that package when it is present.

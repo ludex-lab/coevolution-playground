@@ -1,0 +1,156 @@
+{
+ "paper": {
+  "arxiv_id": "2611.11842",
+  "version": "v1",
+  "title": "A Benchmark and Layered Evaluation Protocol for Evidence-Grounded Shared Belief Updating in Connected Robotics",
+  "short_name": "CREG (Connected Robotics Evidence Graph) Benchmark",
+  "authors": [
+   "Ranulfo Bezerra",
+   "Kimitoshi Yamazaki"
+  ],
+  "affiliation": "Tohoku University (as stated on the project page)",
+  "primary_category": "cs.RO (cross-listed cs.AI, cs.CL, cs.MA)",
+  "submitted": "9 Nov 2026 (v1 Mon, 9 Nov 2026 03:56:38 UTC = 2026-11-09 12:56 KST)",
+  "comments_field": "15 pages (10 main + 5 supplementary), 6 figures, 4 tables; supplement adds 1 figure and 7 tables. Project page: this https URL",
+  "abs_url": "https://arxiv.org/abs/2611.11842",
+  "project_page": "https://creg-bench.github.io/",
+  "licence": "arXiv non-exclusive distribution licence, http://arxiv.org/licenses/nonexclusive-distrib/1.0/ (paper licence; not a software grant)",
+  "code": "UNVERIFIED: the project page links https://github.com/RanulfoBezerra/Evidence-Graph-Toolkit and names an MIT License in its footer, but that repository returned GitHub 404 when fetched on 2026-11-13, so no licence file, HEAD SHA or code was seen; none was used",
+  "pdf_read": false
+ },
+ "sources": [
+  {
+   "file": "2611.11842.html",
+   "what": "arXiv abs page HTML (abstract, metadata, Comments field, submission history)",
+   "sha256": "785348df810be56785d5d5fc54d486f448d30864351e7822ac48fb4bb01ecc22",
+   "chars": 43516
+  },
+  {
+   "file": "creg.html",
+   "what": "project page HTML, https://creg-bench.github.io/",
+   "sha256": "a89bc619604816a20b54b06be0f6895b29bbf76b2852187585e4dddfd57f3765",
+   "chars": 31893
+  }
+ ],
+ "env": "MB_CREG_SOURCES names the directory (or os.pathsep separated directories) holding both files; the source test skips when it is unset and fails when it is set but a file is absent",
+ "status": "UNVERIFIED",
+ "attribution": "The authors' own statements from the abs page and project page. Not reproduced, re-run or re-claimed here; this folder's fixtures are synthetic and measure nothing about the paper's suite or models. Quote wording is the authors'. Offsets and lengths count characters of the UTF-8 decoded file.",
+ "claims": [
+  {
+   "id": "A1",
+   "what": "framing: score the trajectory, not the final answer",
+   "quote": "We argue that shared reasoning in Connected Robotics should be evaluated as an evidence-to-belief trajectory",
+   "offset": 2927,
+   "length": 108,
+   "status": "UNVERIFIED",
+   "source": "2611.11842.html"
+  },
+  {
+   "id": "A2",
+   "what": "suite size and regimes",
+   "scenarios": 350,
+   "regimes": 7,
+   "quote": "CREG comprises 350 deterministically generated scenarios across seven regimes",
+   "offset": 3142,
+   "length": 77,
+   "status": "UNVERIFIED",
+   "source": "2611.11842.html"
+  },
+  {
+   "id": "A3",
+   "what": "panel evaluated",
+   "models": 4,
+   "baselines": 6,
+   "quote": "Evaluating four open-weight instruction models and six transparent fusion baselines",
+   "offset": 3627,
+   "length": 83,
+   "status": "UNVERIFIED",
+   "source": "2611.11842.html"
+  },
+  {
+   "id": "A4",
+   "what": "relation deletion cost on relation-dependent scenarios",
+   "points": 15.3,
+   "quote": "deleting semantic relations costs 15.3 points of strict belief-state accuracy on relation-dependent scenarios",
+   "offset": 3825,
+   "length": 109,
+   "status": "UNVERIFIED",
+   "source": "2611.11842.html"
+  },
+  {
+   "id": "A5",
+   "what": "structured list vs graph; shuffling",
+   "quote": "but an information-matched structured list outperforms the full graph and shuffling the graph does not hurt",
+   "offset": 3964,
+   "length": 107,
+   "status": "UNVERIFIED",
+   "source": "2611.11842.html"
+  },
+  {
+   "id": "A6",
+   "what": "non-monotonic trajectories",
+   "quote": "belief accuracy is strongly non-monotonic along the evidence sequence, with mid-trajectory failures that endpoint-only evaluation cannot detect",
+   "offset": 4180,
+   "length": 143,
+   "status": "UNVERIFIED",
+   "source": "2611.11842.html"
+  },
+  {
+   "id": "A7",
+   "what": "release claim (not verified: linked repository returned 404)",
+   "quote": "All scenarios, references, prompts, metrics, and analysis code are released for offline, hardware-free reproduction.",
+   "offset": 4325,
+   "length": 116,
+   "status": "UNVERIFIED",
+   "source": "2611.11842.html"
+  },
+  {
+   "id": "P1",
+   "what": "what arrives",
+   "quote": "Reports arrive out of order; some are stale, some correct earlier ones, some contradict each other",
+   "offset": 17355,
+   "length": 98,
+   "status": "UNVERIFIED",
+   "source": "creg.html"
+  },
+  {
+   "id": "P2",
+   "what": "per-prefix outputs",
+   "quote": "After each arrival, the system must state the shared belief over the gauge’s condition as a probability distribution, say which evidence supports and contradicts it, flag any active contradiction, and choose an admissible next action.",
+   "offset": 17568,
+   "length": 234,
+   "status": "UNVERIFIED",
+   "source": "creg.html"
+  },
+  {
+   "id": "P3",
+   "what": "third-prefix collapse",
+   "low": 0.2,
+   "high": 0.25,
+   "prefix": 3,
+   "quote": "Accuracy collapses to 0.20–0.25 at the third prefix and recovers by the fourth.",
+   "offset": 26705,
+   "length": 79,
+   "status": "UNVERIFIED",
+   "source": "creg.html"
+  },
+  {
+   "id": "P4",
+   "what": "example trajectory",
+   "quote": "Watch a contradiction open at step 3 and resolve at step 4 as a delayed correction supersedes the robot’s report.",
+   "offset": 27839,
+   "length": 113,
+   "status": "UNVERIFIED",
+   "source": "creg.html"
+  },
+  {
+   "id": "P5",
+   "what": "licence named in the page footer (repository unreachable, so UNVERIFIED)",
+   "quote": "MIT License",
+   "offset": 31624,
+   "length": 11,
+   "status": "UNVERIFIED",
+   "source": "creg.html"
+  }
+ ]
+}

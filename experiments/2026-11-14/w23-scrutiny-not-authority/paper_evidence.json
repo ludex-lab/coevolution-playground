@@ -1,0 +1,106 @@
+{
+ "paper": {
+  "arxiv_id": "2611.14889",
+  "version": "v1",
+  "title": "Can an AI Agent Be Epistemically Akratic? Higher-Order Evidence & the Limits of Self-Correction",
+  "authors": [
+   "Eno Agolli"
+  ],
+  "primary_category": "cs.AI",
+  "submitted": "[Submitted on 11 Nov 2026]; v1 Wed, 11 Nov 2026 01:27:29 UTC = 2026-11-11 10:27:29 KST",
+  "listing": "New submission on the Fri 13 Nov 2026 cs.AI/new listing (listing day is not the v1 date)",
+  "abs_url": "https://arxiv.org/abs/2611.14889",
+  "licence": "arXiv non-exclusive distribution licence, http://arxiv.org/licenses/nonexclusive-distrib/1.0/ (the paper licence; not a software grant)",
+  "comments_field": null,
+  "code_link": null,
+  "pdf_read": false
+ },
+ "upstream_code": {
+  "repo": null,
+  "note": "The abs page links no code; the paper is an argument with no empirical code. Nothing was cloned or run."
+ },
+ "sources": [
+  {
+   "file": "2611.14889.abs.txt",
+   "what": "plain-text copy of the abs-page abstract (prefix 'Abstract:', trailing newline)",
+   "sha256": "3c2e7fbe8e74895a4aca5f48b029fe9eab8be05e6a8634602d0cf491066bbcc0",
+   "chars": 1207
+  }
+ ],
+ "env": "W23SCRUTINY_SOURCES names the directory (or os.pathsep separated directories) holding the source copy; the quote test skips when it is unset or the file is absent",
+ "status": "UNVERIFIED",
+ "measured_here": "on_unmeasured",
+ "on_unmeasured_note": "This sketch tests a toy decision rule on hand-written fixtures. The paper's claims below are the author's argument, quoted verbatim from the abstract; they are not measured, tested or re-claimed here, and paper_results() returns on_unmeasured.",
+ "paper_numbers": [],
+ "paper_numbers_note": "The abstract states no figure, rate or count. The PDF was not read; any number in it is UNVERIFIED and on_unmeasured.",
+ "not_quoted": "One abstract sentence (on the information the deciding part may rely on and the judging part cannot use) is paraphrased in README.md, not quoted.",
+ "attribution": "The author's own statements as given in the arXiv abstract. Quote wording is the author's.",
+ "claims": [
+  {
+   "id": "C1",
+   "what": "the plausible view the paper questions: abandon a conclusion judged defective",
+   "quote": "When we judge that our reasoning was defective, it seems plausible that we should abandon the conclusion it produced.",
+   "offset": 9,
+   "length": 117,
+   "sketch_use": "the honest baseline arm (obey the rating: a defective self-assessment eliminates)",
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "an argument, not a measurement; not tested, re-run or re-claimed here",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C2",
+   "what": "why it matters for self-correcting agents",
+   "quote": "This thought has special force for AI agents built to assess and correct their own work. Yet obeying such judgments can make an agent worse at distinguishing sound reasoning from defective reasoning.",
+   "offset": 127,
+   "length": 199,
+   "sketch_use": "the sound_lost count of the baseline on noisy-rating fixtures",
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "an argument, not a measurement; not tested, re-run or re-claimed here",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C3",
+   "what": "retaining a conclusion judged unjustified can be competent",
+   "quote": "The agent can then exercise an epistemic competence by retaining conclusions it judges unjustified, even when its self-assessments are generally reliable.",
+   "offset": 520,
+   "length": 154,
+   "sketch_use": "the rule arm retains (HOLD) a flagged conclusion when no independent check refutes it",
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "an argument, not a measurement; not tested, re-run or re-claimed here",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C4",
+   "what": "forced agreement can degrade either side",
+   "quote": "Nor is the difficulty resolved by training the agent to make its conclusions and assessments agree: agreement can be achieved by degrading either one.",
+   "offset": 675,
+   "length": 150,
+   "sketch_use": "the agree_flip (degrade the conclusion) and agree_silence (degrade the assessment) arms; coherence is reported but is not success",
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "an argument, not a measurement; not tested, re-run or re-claimed here",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C5",
+   "what": "the central claim: scrutiny without authority to eliminate",
+   "quote": "Crucially, I argue that a negative assessment can remain valuable by identifying conclusions requiring further scrutiny, without having authority to eliminate them.",
+   "offset": 826,
+   "length": 164,
+   "sketch_use": "the rule arm and request_elimination(): a defective rating flags; only an independent refutation eliminates",
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "an argument, not a measurement; not tested, re-run or re-claimed here",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C6",
+   "what": "the assumption challenged",
+   "quote": "The result challenges a central assumption about AI self-correction: that bringing an agent's beliefs into agreement with its own self-assessment about their justification makes it better at correcting its mistakes.",
+   "offset": 991,
+   "length": 215,
+   "sketch_use": "the coherent count per arm, scored beside gold-label counts",
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "an argument, not a measurement; not tested, re-run or re-claimed here",
+   "status": "UNVERIFIED"
+  }
+ ]
+}

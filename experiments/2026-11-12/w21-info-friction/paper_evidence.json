@@ -1,0 +1,91 @@
+{
+ "paper": {
+  "arxiv_id": "2611.14111",
+  "version": "v1",
+  "title": "Model-Free Runtime Measurement of Task-Relevant Information",
+  "method_name": "Acquisition-State Telemetry (AST) (named in the abstract; not the title)",
+  "authors": [
+   "Dimitris Panagopoulos",
+   "Adolfo Perrusquía",
+   "Yang Xing",
+   "Weisi Guo"
+  ],
+  "primary_category": "cs.RO (cross-listed cs.AI)",
+  "submitted": "10 Nov 2026 (v1 2026-11-10T14:02:31Z = 2026-11-10 23:02 KST)",
+  "abs_url": "https://arxiv.org/abs/2611.14111",
+  "licence": "arXiv non-exclusive distribution licence, http://arxiv.org/licenses/nonexclusive-distrib/1.0/ (paper licence; not a software grant)",
+  "comments_field": "17 pages, 5 figures, 2 extended data tables, appendix included. Code available",
+  "code": "UNVERIFIED and unlocated: the abs Comments field says 'Code available' but the abs page gives no link; no code was found or used",
+  "pdf_read": false
+ },
+ "sources": [
+  {
+   "file": "2611.14111.abs.txt",
+   "what": "plain-text copy of the abs-page abstract (prefix 'Abstract:')",
+   "sha256": "e64cd38dcaf63db0aaeb211c9df1b00ef4ac125c6f314461c618f6c2659c02e7",
+   "chars": 1839
+  },
+  {
+   "file": "2611.14111.abs.html",
+   "what": "abs page HTML; holds the Comments field",
+   "sha256": "9e6c3d8a8249aa1405c2be2c0474adfa270b3bc8eaad47587153404c35ea9320",
+   "chars": 42657,
+   "comments_quote": "Code available"
+  }
+ ],
+ "env": "W21FRICTION_SOURCES names the directory holding both files; the test skips when it is unset",
+ "status": "UNVERIFIED",
+ "attribution": "The authors' own results as stated in the arXiv abstract. Not reproduced, re-run or re-claimed here. Quote wording is the authors'.",
+ "claims": [
+  {
+   "id": "C1",
+   "what": "problem statement",
+   "quote": "current approaches do not monitor whether the live process of information gathering is functioning properly. Consequently, such systems can remain operationally active without resolving outstanding mission requirements.",
+   "offset": 231,
+   "length": 219,
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C2",
+   "what": "the two signals",
+   "quote": "This monitor emits two continuous real time signals that quantify (i) prospective progress across unresolved requirements and (ii) informational friction generated when recurrent evidence yields negligible informational gain.",
+   "offset": 844,
+   "length": 225,
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C3",
+   "what": "evaluation breadth (eight domains)",
+   "domains": 8,
+   "quote": "We evaluated a single, unadjusted monitor configuration across eight diverse domains",
+   "offset": 1070,
+   "length": 84,
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C4",
+   "what": "friction separates stagnation from exploration",
+   "quote": "the friction channel distinguished unproductive stagnation from purposeful exploration prior to task completion, while remaining muted during post completion activity",
+   "offset": 1360,
+   "length": 166,
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C5a",
+   "what": "closed-loop RL result, first fragment",
+   "note": "C5a and C5b are two exact fragments of one sentence; the single word between them is omitted here only because of a repository word rule, and is in the source",
+   "quote": "in closed loop reinforcement learning experiments under early termination constraints, we demonstrate that penalizing informational friction",
+   "offset": 1541,
+   "length": 140,
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C5b",
+   "what": "closed-loop RL result, second fragment",
+   "quote": "agents to sustain high mission success, whereas unpenalized policies and baselines with matched operational costs failed to complete required tasks.",
+   "offset": 1690,
+   "length": 148,
+   "status": "UNVERIFIED"
+  }
+ ]
+}

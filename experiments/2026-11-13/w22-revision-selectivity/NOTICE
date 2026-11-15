@@ -1,0 +1,38 @@
+w22-revision-selectivity
+------------------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code, data or
+weights.
+
+Paper (method idea credited)
+----------------------------
+Yupeng Tang and Mingfeng Lin.
+"When Expert Disagreement Hurts: Prestige and Selectivity in LLM Decision
+Revision". arXiv:2611.16694, v1, submitted 12 Nov 2026. Primary category
+cs.AI, cross-listed cs.CL. Comments field: "Accepted at NeurIPS 2026".
+https://arxiv.org/abs/2611.16694
+Licence: CC BY 4.0, http://creativecommons.org/licenses/by/4.0/ (the paper
+licence).
+
+Upstream code
+-------------
+https://github.com/yupengtang/when-expert-disagreement-hurts
+Licence: MIT ("MIT License / Copyright (c) 2026 Yupeng Tang", LICENSE at the
+pin). Pin: c511a2a033336248c916dd9b7dc9ba2d72a64bbb.
+The repository was not cloned, not run. Only its LICENSE and the head of its
+README at the pin were read, by the verifier, for licence and pin facts. No
+upstream code, prompt, data, released output or figure was copied or
+consulted for this sketch, and its experiment path (which needs a paid
+model API key) was not taken. The upstream code is UNVERIFIED here.
+
+Method only: the idea of a two-pass audit in which only the revision context
+varies (neutral reflection, anonymous disagreement, expert-attributed
+disagreement) over a frozen initial answer, and of judging revision by
+which initial answers it reverses rather than by reversal counts. The
+prestige-blind citation policy, the declared fixture threshold for a help
+claim, the oracle and the fixtures are this sketch's own; the paper's own
+selectivity bar is not imported. No text, figures, tables or data from the
+paper are copied into the code; the PDF was not read; no model was run.
+The paper's claims appear only in paper_evidence.json, quoted and marked
+UNVERIFIED.

@@ -1,0 +1,64 @@
+{
+  "source": "https://arxiv.org/abs/2611.12705",
+  "version": "v1",
+  "title": "Multi-Agent Screening: What Agreement and Acceptance Cannot Tell You",
+  "authors": [
+    "Benjamin Chang",
+    "Dell Zhang"
+  ],
+  "paper_licence": "arXiv non-exclusive distribution licence, http://arxiv.org/licenses/nonexclusive-distrib/1.0/ (not a software grant)",
+  "code": "UNVERIFIED: no code link on the abs page; no code used or ported",
+  "status": "UNVERIFIED",
+  "abstract_copy": {
+    "file": "2611.12705.abs.txt",
+    "bytes": 877,
+    "sha256": "0919ae01a30137f34af0eee80837f38eb638e6037cd66edb3fb28b79e2d5e796",
+    "location": "directory named by $W21SR_SOURCES (abs-page abstract text, not in this repo)",
+    "pdf_read": false
+  },
+  "attribution": "Wording in every quote is the authors', copied verbatim from the arXiv abstract. The abstract states no numeric results. The claims below are the authors' theoretical statements; this folder does not prove, check or reproduce them.",
+  "method_quotes": [
+    {
+      "status": "UNVERIFIED",
+      "used_here": "screening setting",
+      "quote": "only what they pass gets judged."
+    },
+    {
+      "status": "UNVERIFIED",
+      "used_here": "screener agreement never unlocks recall",
+      "quote": "Agreement shows that agents concur, not that they are right, however many there are."
+    },
+    {
+      "status": "UNVERIFIED",
+      "used_here": "precision measured; acceptance-only figure reported as lower_bound",
+      "quote": "Acceptance by the assessor gives precision but only a lower bound on recall."
+    },
+    {
+      "status": "UNVERIFIED",
+      "used_here": "recall estimate only from a judged random sample of not-passed items",
+      "quote": "recall can be pinned down only by judging items they did not pass"
+    }
+  ],
+  "claims": [
+    {
+      "what": "bounds hold even with unlimited data",
+      "status": "UNVERIFIED",
+      "claimed_here": false,
+      "quote": "We show what each kind of evidence can establish about their errors, even with unlimited data."
+    },
+    {
+      "what": "upper bound on recall from which agents found which items, and a cap on one more agent's contribution, under stated assumptions",
+      "status": "UNVERIFIED",
+      "claimed_here": false,
+      "implemented_here": false,
+      "quote": "Knowing which agents found which relevant items gives an upper bound on recall if agents' finds are not negatively correlated, and caps what one more agent can add if agents are interchangeable."
+    },
+    {
+      "what": "sample-size claim: any chosen accuracy, sample size independent of the number of agents",
+      "status": "UNVERIFIED",
+      "claimed_here": false,
+      "note": "This folder computes a point estimate only; it states no accuracy, interval or sample-size guarantee.",
+      "quote": "a random sample of these estimates how many relevant items were missed, to any chosen accuracy, and the sample needed does not grow with the number of agents."
+    }
+  ]
+}

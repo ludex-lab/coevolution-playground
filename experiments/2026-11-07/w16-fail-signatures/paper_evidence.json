@@ -1,0 +1,82 @@
+{
+  "source_url": "https://arxiv.org/html/2611.04142",
+  "abstract_url": "https://arxiv.org/abs/2611.04142",
+  "version": "2611.04142v1",
+  "authors": [
+    "Sergio Talavera",
+    "Magdalini Eirinaki"
+  ],
+  "html_sha256": "f68ec38fa28a48bea8b29f80c8fb8820dc469c576b1470cfdfe02d97569b3d8b",
+  "license_line": "License: CC BY-NC-SA 4.0",
+  "license_url": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "license_found_in_html": true,
+  "upstream_code_pin": null,
+  "upstream_note": "No author repository was found; no upstream code pin. No repository guessed or cloned.",
+  "html_excerpts": [
+    {
+      "section": "2 Methodology",
+      "text": "a pattern is closed if no longer pattern occurs in exactly the same set of traces",
+      "found_after_tag_strip_whitespace_collapse": true
+    },
+    {
+      "section": "2 Methodology",
+      "text": "ordered subsequences (not necessarily contiguous)",
+      "found_after_tag_strip_whitespace_collapse": true
+    },
+    {
+      "section": "3 Experimental Setup",
+      "text": "zero-step error traces (process crashes before any action) and single-step successes",
+      "found_after_tag_strip_whitespace_collapse": true
+    },
+    {
+      "section": "3 Experimental Setup",
+      "text": "Exclude-errors (errors removed; timeouts retained as failures)",
+      "found_after_tag_strip_whitespace_collapse": true
+    },
+    {
+      "section": "3 Experimental Setup",
+      "text": "Variant C (errors and timeouts both removed; natural failures versus successes only)",
+      "found_after_tag_strip_whitespace_collapse": true
+    },
+    {
+      "section": "3 Experimental Setup",
+      "text": "The medium-task corpus avoids the latter by design.",
+      "found_after_tag_strip_whitespace_collapse": true
+    }
+  ],
+  "number_hygiene": {
+    "not_targets": true,
+    "not_reproduced": true,
+    "quantities": [
+      {
+        "value": "0.717",
+        "kind": "best F1 at K=3 among eight methods",
+        "configuration": "class-balanced Exclude-errors",
+        "section": "4 and Appendix A.3",
+        "caveat": "Not best across all K."
+      },
+      {
+        "value": "88%",
+        "kind": "failure library coverage: matches at least one pattern",
+        "configuration": "K=3",
+        "section": "4",
+        "caveat": "Not high-precision policy recall."
+      },
+      {
+        "value": "26.3%",
+        "kind": "overall tokens saved",
+        "configuration": "Table 2: K=5, threshold 0.15, precision 92%, TP=46, FP=4",
+        "section": "4 Table 2",
+        "caveat": "Separate from library coverage."
+      },
+      {
+        "value": "0.380",
+        "kind": "policy recall",
+        "configuration": "Same Table 2 operating point, K=5, threshold 0.15",
+        "section": "4 Table 2",
+        "caveat": "Not library coverage."
+      }
+    ]
+  },
+  "modelling_note": "Full keeps all categories and artifacts. Cleaned named variants remove all errors and <=1-step successes to model medium-task corpus design; Variant C additionally removes timeouts. This combines corpus curation with named filters, not a new fourth filter. Not literal reconstruction of paper corpus or split; UNVERIFIED."
+}

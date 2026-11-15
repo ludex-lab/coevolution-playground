@@ -1,0 +1,40 @@
+{
+ "paper": {
+  "arxiv_id": "2611.13367",
+  "version": "v1",
+  "title": "No finite rulebook can certify every safe program: an impossibility theorem for gatekeeping AI agents",
+  "authors": [
+   "Tomas Perez-Acle"
+  ],
+  "authors_source": "abs page citation_author meta tag (Perez-Acle, Tomas)",
+  "submitted": "9 Nov 2026 (citation_date 2026/11/09), v1 only",
+  "abs_url": "https://arxiv.org/abs/2611.13367",
+  "licence": "CC BY 4.0",
+  "licence_url": "http://creativecommons.org/licenses/by/4.0/",
+  "code": "none linked on the abs page",
+  "use": "METHOD ONLY: the split between what a finite record settles (an observed violation) and what it cannot (a standing never or eventually claim), and the idea of a checkable list judged against what it must admit and what it must refuse. No paper text, figures or tables are copied into this directory; this file records a location and a number token only."
+ },
+ "quotes": [],
+ "quotes_note": "No sentence of the abstract is quoted in this directory. The lab text copy writes the paper's doubled LaTeX quote marks around its two temporal words as HTML-escaped apostrophes, so a quotation with straight double quotes would not be word for word.",
+ "source": {
+  "file": "2611.13367.abs.txt",
+  "note": "lab review copy on the shared box, not in this repo; text after the 'Abstract:' prefix, trailing newline stripped, HTML entities left as they are",
+  "file_sha256": "7d39468ab9787da1dfde7282793b2a7ac64cc29f7e3fd0d88bdc2be99e487952",
+  "chars": 1528,
+  "sha256": "643d4ae87897d9ea4b5a176f09d523e89558bb1c71aa2ce29606f23095075896"
+ },
+ "empirical_claims": {
+  "status": "UNVERIFIED",
+  "note": "The author's own simulation figure. Recorded as a token and its character offset in the abstract text; not checked or reproduced by this sketch. It appears only in this file.",
+  "claims": [
+   {
+    "id": "C1-simulation-size",
+    "token": "2.2 million",
+    "offset": 1311,
+    "about": "number of random programs in the paper's simulations",
+    "status": "UNVERIFIED"
+   }
+  ]
+ },
+ "not_results_of_this_sketch": "Every program, universe, seed and outcome here is synthetic and deterministic. Ground truth comes from the lasso structure of each toy program; nothing here measures, reproduces or tests the paper's theorem or simulations."
+}

@@ -1,0 +1,24 @@
+{
+  "rules": {
+    "low": { "requires_approval": false },
+    "medium": {
+      "requires_approval": true,
+      "ladder": ["primary"],
+      "deadline_s": 300,
+      "on_expiry": "deny"
+    },
+    "high": {
+      "requires_approval": true,
+      "ladder": ["primary", "secondary"],
+      "deadline_s": 60,
+      "on_expiry": "escalate"
+    },
+    "critical": {
+      "requires_approval": true,
+      "ladder": ["a"],
+      "deadline_s": 120,
+      "on_expiry": "hold",
+      "quorum": 1
+    }
+  }
+}

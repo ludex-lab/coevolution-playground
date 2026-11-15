@@ -1,0 +1,135 @@
+{
+ "paper": {
+  "arxiv_id": "2611.09088",
+  "version": "v1",
+  "title": "When Routine Operations Break Architectural Pattern Relationships in LLM Agent Harnesses",
+  "citation_title": "When Routine Operations Break Architectural Pattern Relationships in LLM Agent Harnesses",
+  "authors": [
+   "Boming Xia",
+   "Qinghua Lu",
+   "Dino Sejdinovic",
+   "Liming Zhu"
+  ],
+  "authors_source": "abs page citation_author meta: 'Xia, Boming', 'Lu, Qinghua', 'Sejdinovic, Dino', 'Zhu, Liming'",
+  "citation_date": "2026/11/06",
+  "method_name": "PatternOps",
+  "abs_url": "https://arxiv.org/abs/2611.09088",
+  "html_url": "https://arxiv.org/html/2611.09088",
+  "licence": "arXiv.org perpetual non-exclusive license 1.0",
+  "licence_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "licence_evidence": "abs page licence link href=\"http://arxiv.org/licenses/nonexclusive-distrib/1.0/\"; HTML header 'License: arXiv.org perpetual non-exclusive license'",
+  "use": "method/shape only; no paper text copied into code, fixtures, README or NOTICE; short excerpts below are for evidence only, attributed to the authors"
+ },
+ "fetched": {
+  "fetched_at": "2026-11-10 08:09 JST",
+  "html_path": "/tmp/w19-2611.09088.html",
+  "html_bytes": 124592,
+  "html_sha256": "3d8f54faac1ac54f9a3a6985e12380390ee069af43100e0e7e297828dc1b4a04",
+  "html_curl": "curl -sL https://arxiv.org/html/2611.09088 -o /tmp/w19-2611.09088.html",
+  "abs_path": "/tmp/w19-abs.html",
+  "abs_bytes": 41650,
+  "abs_sha256": "63e557db588a4bc9c36a3a6e451747f2db4b6c5466167d9d0c9b5b6536ffadc6",
+  "abs_curl": "curl -sL https://arxiv.org/abs/2611.09088 -o /tmp/w19-abs.html"
+ },
+ "normalization": {
+  "steps": [
+   "decode utf-8",
+   "re.sub(r'<script\\b.*?</script>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+   "re.sub(r'<style\\b.*?</style>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+   "re.sub(r'<math\\b.*?</math>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+   "html.unescape(t)",
+   "re.sub(r'\\s+', ' ', t)"
+  ],
+  "remaining_tags": "kept (not stripped); every excerpt lies inside one text run",
+  "offsets": "zero-based Unicode code points into the normalized text, end-exclusive",
+  "normalized_chars": 119137,
+  "window_rule": "normalized[max(0, start-64) : min(len, end+64)], sha256 of its UTF-8 bytes"
+ },
+ "implementation_pin": null,
+ "implementation_pin_note": "The paper has no released code for this sketch to pin (the abs page lists no code link); only an anonymised evidence companion is mentioned. Nothing pinned, cloned, installed, imported or run.",
+ "quote_notes": [
+  "A candidate sentence on the policy-participation requirement is split by an inline <em> span in the HTML, so it was left out."
+ ],
+ "excerpts": [
+  {
+   "id": "E1-abstract-runtime-order",
+   "section": "abstract",
+   "excerpt": "Routine operations can change the runtime order or retained state that architectural pattern relationships require, without any code change.",
+   "chars": 140,
+   "normalized_offset": 12247,
+   "end_offset_exclusive": 12387,
+   "occurrences": 1,
+   "source_window_sha256": "66214d76ccbf86cca56e90dbf1220fd5366bf2a681b5023272ca64b3ddc66160",
+   "status": "FOUND"
+  },
+  {
+   "id": "E2-abstract-prohibited-edit",
+   "section": "abstract",
+   "excerpt": "After a policy plugin was reapplied or an edit allow rule was saved, a prohibited edit executed without policy evaluation even though the participating plugins were active.",
+   "chars": 172,
+   "normalized_offset": 12891,
+   "end_offset_exclusive": 13063,
+   "occurrences": 1,
+   "source_window_sha256": "38a712dcfbe7a265a036694d8a520c49ebef7cf40ab5dd0952c34a0e7261e033",
+   "status": "FOUND"
+  },
+  {
+   "id": "E3-abstract-running-system-history",
+   "section": "abstract",
+   "excerpt": "a pattern relationship is a property of the running system and its history, so architects should evaluate it against the decision paths, state lifetimes and operation sequences their deployments use.",
+   "chars": 199,
+   "normalized_offset": 13352,
+   "end_offset_exclusive": 13551,
+   "occurrences": 1,
+   "source_window_sha256": "c65af4313b539dbcb155bc0614981308328b91132e198cf01f2751dcac6da125",
+   "status": "FOUND"
+  },
+  {
+   "id": "E4-sec1-registration-order",
+   "section": "sec. I (introduction)",
+   "excerpt": "by default, they run in registration order until one answers without passing the call on",
+   "chars": 88,
+   "normalized_offset": 16466,
+   "end_offset_exclusive": 16554,
+   "occurrences": 1,
+   "source_window_sha256": "758e385cb89f77e225905126fa26d874c02f58b968f1de455877d08dbe2cb799",
+   "status": "FOUND"
+  },
+  {
+   "id": "E5-sec1-same-plugins-different-coverage",
+   "section": "sec. I (introduction)",
+   "excerpt": "The same enabled plugins and final settings thus gave different policy coverage after different operations",
+   "chars": 106,
+   "normalized_offset": 17093,
+   "end_offset_exclusive": 17199,
+   "occurrences": 1,
+   "source_window_sha256": "259163f3918ad2c835eca48b582b3d074357bc66af7aa3d2aafef53cfa13a02b",
+   "status": "FOUND"
+  }
+ ],
+ "empirical_claims": {
+  "status": "UNVERIFIED",
+  "note": "Paper figures, recorded as found in the HTML and not checked by this sketch. They appear only in this file.",
+  "claims": [
+   {
+    "id": "C1-relationships",
+    "text": "five relationships associated with the Guardrail Enforcement Point",
+    "occurrences": 1,
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C2-harnesses",
+    "text": "across five released harnesses",
+    "occurrences": 2,
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C3-plugins",
+    "text": "analysing a main sample of fourteen independently written plugins",
+    "occurrences": 2,
+    "status": "UNVERIFIED"
+   }
+  ]
+ },
+ "not_results_of_this_sketch": "The toy harness, its ops and every fixture outcome are synthetic. Nothing here reproduces or measures any harness or plugin studied in the paper."
+}

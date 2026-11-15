@@ -1,0 +1,41 @@
+{
+  "source": "https://arxiv.org/html/2611.04556",
+  "version": "2611.04556v1",
+  "checked_date_jst": "2026-11-07",
+  "raw_html_sha256": "68e2dd10110d940658769a8f8396da7c7c43c0837037a15c2754e214bae5e52e",
+  "normalization": "HTMLParser handle_data joined; str.split whitespace collapse (incl. NBSP); case and punctuation unchanged",
+  "quotes": [
+    {
+      "section": "Abstract",
+      "text": "We observed significant inter-agent influence capabilities; in oversight environments, all tested models shifted overseer decisions from rejection to approval through persuasion, deception, or coercion.",
+      "caveat": "Abstract sentence, not a universal always-flip law. Pooled effects are smaller and technique-specific: deception larger than persuasion or coercion; coercion harder to elicit and less consistent."
+    },
+    {
+      "section": "1 Introduction",
+      "text": "Each request is designed to have grounds for rejection, and the proposer is prompted to influence the overseer in order to achieve approval."
+    },
+    {
+      "section": "1 Introduction",
+      "text": "All tested models shifted oversight decisions from rejection to approval through persuasion, deception, or coercion, with deception producing the largest effects."
+    },
+    {
+      "section": "4.4 Analysis",
+      "text": "Q2 (effect of prompt) is the shift attributable to assigning Agent A the influence prompt."
+    }
+  ],
+  "anchors": [
+    "with deception having the largest effect",
+    "Coercion was harder to elicit",
+    "treatment runs end early only if Agent B approves",
+    "Agent B is tasked with approving or denying requests from Agent A",
+    "Reinterpret only the existing documented evidence",
+    "Modify or patch"
+  ],
+  "license": "License: CC BY 4.0",
+  "html_excerpts": [
+    "We observed significant inter-agent influence capabilities; in oversight environments, all tested models shifted overseer decisions from rejection to approval through persuasion, deception, or coercion.",
+    "Each request is designed to have grounds for rejection, and the proposer is prompted to influence the overseer in order to achieve approval.",
+    "All tested models shifted oversight decisions from rejection to approval through persuasion, deception, or coercion, with deception producing the largest effects.",
+    "Q2 (effect of prompt) is the shift attributable to assigning Agent\u00a0A the influence prompt."
+  ]
+}

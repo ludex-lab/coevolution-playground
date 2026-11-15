@@ -1,0 +1,98 @@
+{
+ "paper": {
+  "arxiv_id": "2611.13615",
+  "version": "v1",
+  "title": "Synapse-Control: Making Agent Experience Actionable with Lightweight Runtime Control",
+  "authors": [
+   "Zhiyuan Huang",
+   "Shengan Zheng",
+   "Chenghu Yang",
+   "Song Zhang",
+   "Lingyun Li",
+   "Chen Yu",
+   "Weiquan Huang",
+   "Linpeng Huang"
+  ],
+  "submitted": "10 Nov 2026 (v1 2026-11-10T05:50:12Z = 2026-11-10 14:50 KST)",
+  "abs_url": "https://arxiv.org/abs/2611.13615",
+  "licence": "arXiv.org perpetual, non-exclusive license to distribute",
+  "licence_url": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "code": "UNVERIFIED: no repository URL on the abs page; no code located or used",
+  "use": "METHOD ONLY: rule shortlisting of advice, micro-contracts (required arguments, valid options), and cooldown plus token-budget checks on repeated suggestions. Not a runtime port, no control-plane loop, no classifier. The PDF was not read."
+ },
+ "source": {
+  "file": "2611.13615.abs.txt",
+  "bytes": 1109,
+  "sha256": "553b6ead90a67dc4069e792bc8a556636ca23fda4fc28fe09b34df6efb9fd9d7",
+  "abstract_field": "file text after the leading 'Abstract:' prefix, surrounding whitespace stripped",
+  "abstract_chars": 1099,
+  "abstract_sha256": "55ed3977d1e77cea54aa9975cab9472f270aaf87def733b54dc090e66dbe15b1",
+  "location": "lab-dig-2 raw abstract copy on the shared box (raw/ folder of the 2026-11-12 dig), not in this repo"
+ },
+ "empirical_claims": {
+  "status": "UNVERIFIED",
+  "note": "The authors' own figures, quoted verbatim from the arXiv abstract (each quote is an exact substring of the abstract). Not checked, reproduced or re-claimed by this sketch. They appear only in this file.",
+  "claims": [
+   {
+    "id": "Q1-runtime",
+    "figures": [],
+    "about": "the upstream is an agent runtime with a control plane; this sketch does not port it",
+    "quote": "We present Synapse-Control, an agent runtime whose lightweight control plane selects advice and determines when to send it to the task-executing model.",
+    "offset_in_abstract": 247,
+    "length": 151,
+    "span_sha256": "68467eb6269b23045cef55d853209599ab1b46ef5484b99680e5026e4e38c467",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "Q2-classifier",
+    "figures": [
+     "1.7B"
+    ],
+    "about": "rule shortlist plus a fine-tuned classifier; this sketch borrows the rule shortlist only and has no classifier",
+    "quote": "Rules shortlist relevant advice, and a lightweight 1.7B classifier fine-tuned on teacher-labeled state-suggestion pairs scores those candidates instead of generating a diagnosis.",
+    "offset_in_abstract": 399,
+    "length": 178,
+    "span_sha256": "5b3b1a8e902cd9f5d6fbfb4ccad6ad53b5ccded3e5f7a32f311a9196b0b4b877",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "Q3-micro-contracts",
+    "figures": [],
+    "about": "the micro-contract idea borrowed here (required arguments, valid options)",
+    "quote": "Micro-contracts encode reusable interface checks, such as required arguments or valid options, without prescribing complete task programs.",
+    "offset_in_abstract": 578,
+    "length": 138,
+    "span_sha256": "f3aa54353244d8aa78b42e3e72927a18f4d643ca06b22fe57b7541ef2caa7319",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "Q4-cooldown-budget",
+    "figures": [],
+    "about": "the cooldown and token-budget idea borrowed here",
+    "quote": "A Prompt Value Table records earlier guidance and feedback to limit repeated suggestions through cooldown and token-budget checks.",
+    "offset_in_abstract": 717,
+    "length": 130,
+    "span_sha256": "ad743343ad6511b621b9871521b855dbf9d005b7d54df3f9a271ca5320eba33a",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "Q5-results",
+    "figures": [
+     "1,308",
+     "270",
+     "29.8%",
+     "4,987",
+     "50.2%",
+     "51.0%"
+    ],
+    "about": "the authors' benchmark results (attempts, successes, gain over Base, replaced diagnosis calls, control-time reductions)",
+    "quote": "Across 1,308 attempts per method in AppWorld and WebShop, Synapse-Control achieves 270 successes (29.8% more than Base), replaces 4,987 generative diagnosis calls, and reduces auxiliary control time relative to Sentry by 50.2% and 51.0%, respectively.",
+    "offset_in_abstract": 848,
+    "length": 251,
+    "span_sha256": "93628760b88165ba192190b8c5ece7e52243a26bdd246cdf716130ef779aeb3c",
+    "status": "UNVERIFIED"
+   }
+  ]
+ },
+ "not_results_of_this_sketch": "All tools, contracts, advice, histories, budgets and times here are synthetic, hand-declared fixtures. The timeline counts printed by fixtures.py describe that fixture only; they say nothing about any agent, benchmark or the paper's system."
+}

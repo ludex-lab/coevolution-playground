@@ -1,0 +1,19 @@
+NOTICE — experiments/2026-11-08/w17-source-authority/
+
+Paper: Beyond Instruction Override: Benchmarking Indirect Prompt Injection with
+Task-Tampering Attacks, arXiv 2611.07640, https://arxiv.org/abs/2611.07640.
+Paper licence: CC BY 4.0. Used for method-cite only; short quotes appear in
+paper_evidence.json for evidence only, with attribution to the paper's authors.
+The paper licence is not a licence to the software repository.
+
+Repository pin (cite-only): https://github.com/amazon-science/task-tampering-prompt-injection
+at commit 804b00dd03051c00e5e3000982bbf7ce2b9d9ad5. Amazon-authored code, docs,
+prompts, and benchmark data in that repository are CC BY-NC 4.0. The pin was
+not copied: the repository was not cloned, and no code, data, prompts, or
+benchmark cases were copied, vendored, or paraphrased. Only the commit's existence was checked (HTTP status and commit SHA).
+
+Fixtures are independently authored synthetic toy data.
+
+No inspect-ai: it was not installed, imported, or run.
+
+This directory's own code is a clean-room Python stdlib method sketch.

@@ -1,0 +1,11 @@
+Original clean-room stdlib sketch and original SYNTHETIC scripted fixtures.
+Method citation: Who Should Know What? Empirical Information Design for
+Multi-Agent LLM Economies, https://arxiv.org/abs/2611.07667.
+Paper licence: arXiv perpetual non-exclusive
+(http://arxiv.org/licenses/nonexclusive-distrib/1.0/), not CC BY,
+and not a software grant. Method-cite only.
+No author code, data, prompts, or benchmark cases copied. The paper's github
+footnote https://github.com/meterdogan07/agent-information-design returned
+public HTTP 404 on 2026-11-08 at 15:31:36 JST; no accessible implementation pin.
+This notice does not purport to relicense the paper or any author software.
+No LLM empirical result is reproduced or validated here.

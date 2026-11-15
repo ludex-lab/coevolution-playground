@@ -1,0 +1,153 @@
+{
+  "paper": {
+    "arxiv_id": "2611.08971",
+    "version": "v1",
+    "title": "Phantom Consensus: Measuring Social Reasoning in Multi-Agent LLM Decision-Making",
+    "authors": [
+      "Disha Sheshanarayana",
+      "Rajat Subhra Pal",
+      "Manjira Sinha",
+      "Tirthankar Dasgupta"
+    ],
+    "authors_source": "abs page citation_author meta: 'Sheshanarayana, Disha', 'Pal, Rajat Subhra', 'Sinha, Manjira', 'Dasgupta, Tirthankar'",
+    "venue_note": "abs page comments: 'Accepted at NeurIPS 2026, SocialAgent Workshop'",
+    "abs_url": "https://arxiv.org/abs/2611.08971",
+    "html_url": "https://arxiv.org/html/2611.08971",
+    "submitted_display": "[Submitted on 6 Nov 2026]",
+    "submitted": "2026-11-06",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "licence_evidence": "abs page 'Rights to this article' link href=\"http://creativecommons.org/licenses/by/4.0/\"",
+    "use": "method-cite only; short excerpts for evidence only, attributed to the authors"
+  },
+  "fetched": {
+    "fetched_at": "2026-11-09 15:42 JST",
+    "html_path": "/tmp/w18-2611.08971.html",
+    "html_http_status": 200,
+    "html_bytes": 422207,
+    "html_sha256": "c323f4eb93f1fc275a40409edff346639e05318b48b4912e87b6ffd26ca8b413",
+    "html_curl": "curl -sL https://arxiv.org/html/2611.08971 -o /tmp/w18-2611.08971.html",
+    "abs_path": "/tmp/w18-abs-2611.08971.html",
+    "abs_http_status": 200,
+    "abs_bytes": 42965,
+    "abs_sha256": "88413e2c0d8b18b40b85d17c6063f459ce83d1e5746c997c0deeeb96cb69f9a9",
+    "abs_curl": "curl -sL https://arxiv.org/abs/2611.08971 -o /tmp/w18-abs-2611.08971.html",
+    "note": "independent re-fetch; HTML and abs byte-identical (same sha256) to the earlier reviewer cache copies"
+  },
+  "normalization": {
+    "steps": [
+      "decode utf-8",
+      "re.sub(r'<script\\b.*?</script>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "re.sub(r'<style\\b.*?</style>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "re.sub(r'<math\\b.*?</math>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "html.unescape(t)",
+      "re.sub(r'\\s+', ' ', t)  # not ' '.join(t.split())"
+    ],
+    "remaining_tags": "kept (not stripped); every excerpt lies inside one text run",
+    "offsets": "zero-based Unicode code points into the normalized text, end-exclusive",
+    "normalized_chars": 365195,
+    "window_rule": "normalized[max(0, start-64) : min(len, end+64)], sha256 of its UTF-8 bytes"
+  },
+  "implementation_pin": null,
+  "implementation_pin_note": "No author code for PHANTOM-Bench located in the abs page or HTML; nothing pinned, cloned, installed or run.",
+  "quote_notes": [
+    "Excerpts use the paper's typographic apostrophe (U+2019) as it appears in the HTML.",
+    "A candidate abstract sentence naming the term ('We call this failure phantom consensus ...') is split by an inline span in the HTML, so it is not an exact single-run excerpt and was left out."
+  ],
+  "excerpts": [
+    {
+      "id": "E1-abstract-inaccurate-estimates",
+      "section": "abstract",
+      "excerpt": "reporting inaccurate estimates of what other agents privately judged, even when the group’s recorded private judgments do not support the apparent consensus.",
+      "chars": 157,
+      "normalized_offset": 31604,
+      "end_offset_exclusive": 31761,
+      "occurrences": 1,
+      "source_window_sha256": "8e0c3f49bf5846d455480fc1daa4d279f212059a76bc9da1d9f836205b4a33e9",
+      "status": "FOUND"
+    },
+    {
+      "id": "E3-sec1-compare-recorded",
+      "section": "sec. 1 (introduction)",
+      "excerpt": "This design allows us to compare recorded private decisions with imagined private consensus, directly measuring second-order belief error rather than inferring it only from answer changes.",
+      "chars": 188,
+      "normalized_offset": 39481,
+      "end_offset_exclusive": 39669,
+      "occurrences": 1,
+      "source_window_sha256": "67cd50fcb15ce916f01aed9aa9b4bbac661c6e41f86750f826a77458b255cbae",
+      "status": "FOUND"
+    },
+    {
+      "id": "E4-sec4.3-pbe",
+      "section": "sec. 4.3 (evaluation metrics, Perceived Belief Error)",
+      "excerpt": "PBE measures second-order belief error: the agent’s perceived group-private decision differs from the recorded private majority of the other agents.",
+      "chars": 148,
+      "normalized_offset": 80418,
+      "end_offset_exclusive": 80566,
+      "occurrences": 1,
+      "source_window_sha256": "0469a15bdc5e3a779d2590e8eb43f094a5e79d3ea5f6799bbb55f067df6c5d0b",
+      "status": "FOUND"
+    },
+    {
+      "id": "E5-appC-no-majority",
+      "section": "appendix C (aggregation and tie handling)",
+      "excerpt": "For PBE, the majority is computed over the other three agents’ private decisions; cases with no majority are excluded from the PBE denominator.",
+      "chars": 143,
+      "normalized_offset": 231118,
+      "end_offset_exclusive": 231261,
+      "occurrences": 1,
+      "source_window_sha256": "6aa983f2fb4046ba784b69948fba3a1defce3623ac72b0e3eb17bd97a58bfd5b",
+      "status": "FOUND"
+    },
+    {
+      "id": "E6-sec3-signals",
+      "section": "sec. 3.2 (dataset construction)",
+      "excerpt": "Public signals are written to suggest a possible group tendency without explicitly stating a majority vote or revealing what agents privately decided.",
+      "chars": 150,
+      "normalized_offset": 53481,
+      "end_offset_exclusive": 53631,
+      "occurrences": 1,
+      "source_window_sha256": "ece6ebf28266bbe0097d0571e1e829b5863669684e2221a1eb8aa320d81b4cf2",
+      "status": "FOUND"
+    },
+    {
+      "id": "E7-limitations-operationalize",
+      "section": "appendix G (limitations)",
+      "excerpt": "We operationalize second-order belief behavior as whether an agent’s reported estimate of peers’ private judgments matches their independently recorded private judgments.",
+      "chars": 170,
+      "normalized_offset": 358164,
+      "end_offset_exclusive": 358334,
+      "occurrences": 1,
+      "source_window_sha256": "c11a7f2cc5d042038c7a2464201f4a4cca64a216c22e7ec102b72dfaa4a0e19a",
+      "status": "FOUND"
+    },
+    {
+      "id": "E8-limitations-no-tom",
+      "section": "appendix G (limitations)",
+      "excerpt": "We deliberately make no claim that phantom consensus demonstrates human-like theory of mind.",
+      "chars": 92,
+      "normalized_offset": 358071,
+      "end_offset_exclusive": 358163,
+      "occurrences": 1,
+      "source_window_sha256": "e11ca40f97aef6630b156e34caa242dd8c32ce2ee78a1d63d8fdf4f3721e8e34",
+      "status": "FOUND"
+    }
+  ],
+  "empirical_claims": {
+    "status": "UNVERIFIED",
+    "note": "author-reported results from the HTML abstract; not checked, not reproduced, not results of this sketch; they appear only here",
+    "claims": [
+      {
+        "text": "Public accuracy drops by as much as 47.8 percentage points",
+        "found_in_normalized_html": true,
+        "occurrences": 1
+      },
+      {
+        "text": "collective rationality failures reach 47.3% in the most susceptible setting",
+        "found_in_normalized_html": true,
+        "occurrences": 1
+      }
+    ]
+  },
+  "not_results_of_this_sketch": "This sketch reports only its own synthetic fixture outcomes; nothing above is measured here."
+}

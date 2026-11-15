@@ -1,0 +1,40 @@
+w20-fidelity-audit
+------------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code.
+
+Paper (method idea credited)
+----------------------------
+György Eigner, Patrik P. Süli and Roland Hollós.
+"Trust, but verify, audit and attribute: a human-in-the-loop framework for
+checking AI-produced research results". arXiv:2611.13042, v1, submitted
+9 Nov 2026.
+https://arxiv.org/abs/2611.13042
+Licence: Creative Commons Attribution 4.0 International (CC BY 4.0),
+http://creativecommons.org/licenses/by/4.0/. No code is linked from the abs
+page and none is used.
+
+Method only, in this directory's own words: a tool pass vouches for the one
+artefact it ran on; whether that artefact says what the claim says is a
+separate human record; a person makes the final call at a set point in
+time; a claim with two meanings is cut into readings on purpose; and every
+step is credited to a person, a model or a tool. The paper's tool layer is
+not used; two toy integer-identity tools stand in.
+
+What is and is not taken from the paper: the title above is cited by name.
+No other text from the paper is copied into this directory: README.md, this
+NOTICE and the code paraphrase the method, and no sentence or phrase of the
+abstract is reproduced (a test compares every run of five words against the
+abs-page copy when that copy is present). No figures, tables or data are
+copied; the PDF was not read. The paper's number tokens and its example are
+recorded only in paper_evidence.json, as tokens, offsets and span hashes
+(no span text), and are marked UNVERIFIED.
+
+Neighbours credited (this repository, read only, no code copied):
+experiments/2026-11-04/12-pcm-proof-carrying-handoff-day-sketch.md,
+experiments/2026-11-04/27-pc2-lean-proof-handoff-checklist.md,
+experiments/2026-11-06/w15-evidence-gate/,
+experiments/2026-11-04/50-claim-vs-verified-ledger-design-note.md,
+#78 w14-silence-expiry (merged),
+#109 w19-guardrail-order (merged) and #110 w19-authz-drift (open).

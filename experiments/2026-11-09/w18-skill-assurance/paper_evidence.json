@@ -1,0 +1,158 @@
+{
+  "paper": {
+    "arxiv_id": "2611.07652",
+    "version": "v1",
+    "title": "Don't Prompt Your Agents. Equip Them: Skillware as a Modular Standard for Sovereign, Auditable, and Deterministic Capability Execution for Logical Systems",
+    "authors": [
+      "Vladimiros Peilivanidis"
+    ],
+    "authors_source": "abs page citation_author meta (Peilivanidis, Vladimiros); HTML title block lists the same single author, ARPA Hellenic Logical Systems",
+    "abs_url": "https://arxiv.org/abs/2611.07652",
+    "html_url": "https://arxiv.org/html/2611.07652",
+    "submitted_display": "[Submitted on 5 Nov 2026]",
+    "submitted": "2026-11-05",
+    "licence": "CC BY 4.0",
+    "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+    "licence_evidence": "abs page div.abs-license 'Rights to this article' link to http://creativecommons.org/licenses/by/4.0/",
+    "use": "method-cite only; short excerpts for evidence only, attributed to the author"
+  },
+  "fetched": {
+    "fetched_at": "2026-11-09 15:28 JST",
+    "html_path": "/tmp/w18-2611.07652.html",
+    "html_http_status": 200,
+    "html_bytes": 700143,
+    "html_sha256": "cc11964a40b57c03b075093773e4a0d7799d1af63efaa26f83b0fae3457ca67f",
+    "abs_path": "/tmp/w18-abs-2611.07652.html",
+    "abs_http_status": 200,
+    "abs_bytes": 43946,
+    "abs_sha256": "555eb29fe64070170e23523a6003ac318482fa4016f7b753d0f66cd81639bb11",
+    "note": "independent re-fetch; HTML byte-identical (same sha256) to the earlier reviewer cache copy"
+  },
+  "normalization": {
+    "steps": [
+      "decode utf-8",
+      "re.sub(r'<script\\b.*?</script>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "re.sub(r'<style\\b.*?</style>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "re.sub(r'<math\\b.*?</math>', '', t, flags=re.DOTALL|re.IGNORECASE)",
+      "html.unescape(t)",
+      "re.sub(r'\\s+', ' ', t)  # not ' '.join(t.split())"
+    ],
+    "remaining_tags": "kept (not stripped); every excerpt lies inside one text run",
+    "offsets": "zero-based Unicode code points into the normalized text, end-exclusive",
+    "normalized_chars": 586241,
+    "window_rule": "normalized[max(0, start-64) : min(len, end+64)], sha256 of its UTF-8 bytes"
+  },
+  "implementation_pin": {
+    "repo": "https://github.com/ARPAHLS/skillware",
+    "commit": "25e4cf662a39a907f721455c0f0044444c019465",
+    "ls_remote": "git ls-remote https://github.com/ARPAHLS/skillware HEAD refs/heads/main -> 25e4cf662a39a907f721455c0f0044444c019465 for both (2026-11-09 15:28 JST)",
+    "licence": "MIT",
+    "licence_url": "https://raw.githubusercontent.com/ARPAHLS/skillware/25e4cf662a39a907f721455c0f0044444c019465/LICENSE",
+    "licence_header": "MIT License / Copyright (c) 2026 ARPA Hellenic Logical Systems",
+    "licence_sha256": "c8a5994c22008cc3c9df4f3c6c8a239efc3d1a83f864a4a2c0893e76265bd156",
+    "use": "cite-only; not cloned, not installed, not imported, not run; no code copied",
+    "readme_url": "https://raw.githubusercontent.com/ARPAHLS/skillware/25e4cf662a39a907f721455c0f0044444c019465/README.md",
+    "readme_path": "/tmp/w18-skillware-README.md",
+    "readme_sha256": "0ad68c043d0752e62f17c6be744ee1dc043e8871e4b871383c532151643f6069",
+    "readme_quote": {
+      "line": 49,
+      "raw": "4. **Assurance**: Offline tests that Effect honors Contract before a skill joins the registry.",
+      "section": "## Mission",
+      "note": "raw line keeps markdown bold; words match the reviewer's quote after stripping **"
+    }
+  },
+  "quote_notes": [
+    "The HTML abstract differs slightly from the abs-page abstract (e.g. 'which execute deterministically under fixed world rules rather than conversational negotiation'); excerpts are checked against the HTML only.",
+    "The <math> removal step drops the inline percentages from the HTML abstract (the normalized text reads 'cut token usage by up to , slash inference costs by up to ,'); the figures below therefore cite the abs page."
+  ],
+  "excerpts": [
+    {
+      "id": "E1-abstract-separation",
+      "section": "abstract",
+      "excerpt": "an open architectural framework and capability registry that formally separates what an agent wants to do from how that task is executed.",
+      "chars": 137,
+      "normalized_offset": 46564,
+      "end_offset_exclusive": 46701,
+      "occurrences": 1,
+      "source_window_sha256": "c8c3b366746ecf67644e4b56185747da37f41069a966275596603396dc68d386",
+      "status": "FOUND"
+    },
+    {
+      "id": "E2-abstract-bundles",
+      "section": "abstract",
+      "excerpt": "Skillware equips them with modular, versioned software capability bundles.",
+      "chars": 74,
+      "normalized_offset": 46799,
+      "end_offset_exclusive": 46873,
+      "occurrences": 1,
+      "source_window_sha256": "db3adeb3a1a165333fcc99ec273fb4892dc19ddc2eaa955a2190e9fd2a814f0c",
+      "status": "FOUND"
+    },
+    {
+      "id": "E3-abstract-anatomy",
+      "section": "abstract",
+      "excerpt": "each bundle combines a typed JSON input contract, deterministic Python code, task directives, bundled datasets, and automated unit tests.",
+      "chars": 137,
+      "normalized_offset": 47010,
+      "end_offset_exclusive": 47147,
+      "occurrences": 1,
+      "source_window_sha256": "762e348187455a11245f78d24575d1db047478a2f045b3d530e757f8827c035e",
+      "status": "FOUND"
+    },
+    {
+      "id": "E4-sec3.1-assurance-predicate",
+      "section": "sec. 3.1 (formal definition, item 4)",
+      "excerpt": "an executable predicate guaranteeing that the Effect satisfies the Contract independently of external model APIs",
+      "chars": 112,
+      "normalized_offset": 110179,
+      "end_offset_exclusive": 110291,
+      "occurrences": 1,
+      "source_window_sha256": "00f4c0f69ff8c1ce7e35afc7da6bd56a5e3534fbe503159fee3c94039ebf8d16",
+      "status": "FOUND"
+    },
+    {
+      "id": "E5-sec3.2-offline-tests",
+      "section": "sec. 3.2 (Assurance, item 4)",
+      "excerpt": "Every skill must ship with comprehensive offline tests ensuring that the Effect honors the Contract.",
+      "chars": 100,
+      "normalized_offset": 117420,
+      "end_offset_exclusive": 117520,
+      "occurrences": 1,
+      "source_window_sha256": "b09b38f6021661ad08a7c0e3bcfcfe4cd2ab804e6b153b69188f2a506729ecc6",
+      "status": "FOUND"
+    },
+    {
+      "id": "E6-sec3.2-before-registry",
+      "section": "sec. 3.2 (Assurance, item 4)",
+      "excerpt": "and in continuous integration before any skill is admitted into the registry.",
+      "chars": 77,
+      "normalized_offset": 117660,
+      "end_offset_exclusive": 117737,
+      "occurrences": 1,
+      "source_window_sha256": "0f8af25075612d7b6479cbd1d35052d5fc93bfcc31033ef178e706563348a349",
+      "status": "FOUND"
+    },
+    {
+      "id": "E7-sec1.2-no-runtime-synthesis",
+      "section": "sec. 1.2",
+      "excerpt": "In classical computing, operating systems do not generate utility binaries at runtime; they package pre-compiled, verifiable, and isolated software libraries behind typed system calls.",
+      "chars": 184,
+      "normalized_offset": 57318,
+      "end_offset_exclusive": 57502,
+      "occurrences": 1,
+      "source_window_sha256": "0273e0f7dbd51e4b524c04c42050e5a37dba49b4b37a8cc2241c5a10eef1a08f",
+      "status": "FOUND"
+    }
+  ],
+  "empirical_claims": {
+    "status": "UNVERIFIED",
+    "note": "author-reported results about the author's own framework, quoted from the abs-page abstract; not checked, not reproduced, not results of this sketch",
+    "claims": [
+      "Evaluating 23 frontier and open-weight models across 368 benchmark conditions",
+      "They cut token usage by up to 84.8%",
+      "slash inference costs by up to 97.3%",
+      "and eliminate parameter errors entirely"
+    ]
+  },
+  "not_results_of_this_sketch": "This sketch reports only its own synthetic fixture outcomes; nothing above is measured here."
+}

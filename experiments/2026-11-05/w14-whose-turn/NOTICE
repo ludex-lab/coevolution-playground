@@ -1,0 +1,6 @@
+whose-turn method-borrow design note for Ork Team Playground experiments.
+
+Concepts cited from mke3idiot/whose-turn (MIT)
+https://github.com/mke3idiot/whose-turn @ 291908438b3dcbda09ac1c2d749a0edefba045dc
+
+This directory is not a vendor copy of whoseturn.py, JSON signal files, or gh polling daemons.

@@ -1,0 +1,132 @@
+{
+ "paper": {
+  "arxiv_id": "2611.17123",
+  "version": "v1",
+  "title": "Preserve the Vulnerability, Break the Alert: Testing the Robustness of CodeQL Taint Tracking with Natural Rewrites",
+  "authors": [
+   "Zhezhen Cao",
+   "Weiyuan Ding",
+   "Bowen Xu"
+  ],
+  "primary_category": "cs.CR (cross-listed cs.SE)",
+  "submitted": "v1 Thu, 12 Nov 2026 17:16:08 UTC = 2026-11-13 02:16:08 KST",
+  "abs_url": "https://arxiv.org/abs/2611.17123",
+  "licence": "arXiv.org perpetual, non-exclusive license 1.0, http://arxiv.org/licenses/nonexclusive-distrib/1.0/ (as linked on the abs page)",
+  "comments_field": "23 pages, 2 figures, 7 tables",
+  "pdf_read": false,
+  "method_source": "abstract only; no section text, figure, table, rewrite, prompt, flow, benchmark or code of the paper is used"
+ },
+ "code": {
+  "linked_in_abstract": false,
+  "note": "no code or data link in the abstract or comments; nothing was downloaded, cloned or run"
+ },
+ "not_borrowed": [
+  "the language-model rewriter",
+  "CodeQL and its models",
+  "the combined multi-analyzer comparison",
+  "the npm flows and audits"
+ ],
+ "sources": [
+  {
+   "file": "2611.17123.abs.txt",
+   "what": "plain-text copy of the abs-page abstract (prefix 'Abstract:'), one line plus a final newline",
+   "sha256": "43b895b407e278b259860317b5f363f053a17adc815043a4df75e7e06fc938d3",
+   "chars": 1801
+  }
+ ],
+ "env": "W24ASF_SOURCES names the directory holding the source copy; the test skips when it is unset",
+ "status": "UNVERIFIED",
+ "measured_here": "on_unmeasured",
+ "on_unmeasured_note": "This sketch runs no analyzer other than its own toy, no rewriter and no model. The figures below are the authors' statements, not measured, re-run or re-claimed here; paper_results() returns on_unmeasured. The sketch's own fixture counts are not comparable with them.",
+ "attribution": "The authors' own results as stated in the arXiv abstract. Quote wording is the authors'.",
+ "quote_policy": "seven short abstract sentences quoted for attribution only (the arXiv non-exclusive licence grants no reuse beyond distribution)",
+ "claims": [
+  {
+   "id": "C1",
+   "what": "the reverse reading of a gate: an alert that disappears is taken as a fix",
+   "quote": "When a previously reported alert disappears after a change, developers and the tools around them often take the vulnerability to be gone.",
+   "offset": 176,
+   "length": 137,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C2",
+   "what": "headline silencing rate and cost on real npm flows",
+   "quote": "On 172 flows that CodeQL detects in real npm vulnerabilities, three rewrites per flow silence 26.2% of them, at about USD 0.51 per silenced flow.",
+   "offset": 801,
+   "length": 145,
+   "values": {
+    "flows": "172",
+    "rewrites_per_flow": "three",
+    "silenced": "26.2%",
+    "cost_per_silenced_flow": "USD 0.51"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C3",
+   "what": "refactor-only control silences none",
+   "quote": "The same generator, asked only to refactor the same functions with no knowledge of the alert, silences none of them.",
+   "offset": 947,
+   "length": 116,
+   "values": {
+    "silenced_by_refactor_only": "none"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C4",
+   "what": "silencing traces to library-modelling gaps",
+   "quote": "Every silencing rewrite traces to one of seven gaps at the library-modeling boundary, and 64 of the 70 rewrites cross a gap inside an API CodeQL already models.",
+   "offset": 1064,
+   "length": 160,
+   "values": {
+    "gaps": "seven",
+    "inside_modelled_api": "64 of the 70"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C5",
+   "what": "the largest gap: URL constructor taints query components, not the pathname",
+   "quote": "The largest is the WHATWG URL constructor, which propagates taint to a URL's query components but not to its pathname.",
+   "offset": 1225,
+   "length": 118,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C6",
+   "what": "transfer to other analyzers (not borrowed: no combined arm here)",
+   "quote": "74% of the silencing rewrites also silence an independently built taint analyzer, and 53% escape three analyzers combined.",
+   "offset": 1384,
+   "length": 122,
+   "values": {
+    "also_silence_independent_analyzer": "74%",
+    "escape_three_combined": "53%"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C7",
+   "what": "conclusion: robustness belongs beside detection rate",
+   "quote": "A disappearing alert after an ordinary-looking change is therefore weak evidence that a vulnerability has been fixed, the gaps point SAST developers to narrow and concrete repair targets, and robustness to natural rewrites belongs alongside detection rate in how taint analyzers are evaluated.",
+   "offset": 1507,
+   "length": 293,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  }
+ ]
+}

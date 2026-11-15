@@ -1,0 +1,40 @@
+Clean-room Layer B sketch (institutional-representation-abm @ tag v2.0.0):
+
+  https://github.com/tofuadmiral/institutional-representation-abm
+  Pin: f232d43784484f400bb6634147f389bf50a4f3f4 (annotated tag v2.0.0)
+
+Ideas borrowed (not copied experiment runners):
+
+  - Reviewer disposition enum {retain, replace, escalate} and action-aware
+    apply semantics — informed by upstream
+    experiments/action_aware_reviewer_validation.py at the pin.
+  - Mechanical audit/certificate field schema and gate G checks against task
+    data — informed by upstream
+    experiments/prospective_certificate_gate.py at the pin.
+
+This playground folder does not import upstream modules, vend runners, or
+ship Team OS override law.
+
+Paper: Ali (2026), arXiv:2611.05390 — Evidence-Gated Authority (Layer B only).
+
+================================================================================
+MIT License (upstream institutional-representation-abm @ v2.0.0)
+Copyright (c) 2025-2026 Fuad Ali
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

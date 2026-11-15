@@ -1,0 +1,175 @@
+{
+ "paper": {
+  "arxiv_id": "2611.15543",
+  "version": "v1",
+  "title": "Testing Conversation Preservation Across LLM APIs: A Rule-Based Oracle for Detecting Silent Information Loss",
+  "authors": [
+   "Xin Liu",
+   "Xu Han",
+   "Yuxin Wang",
+   "Haoran Song",
+   "Mingjian Zhao",
+   "Lei Wang"
+  ],
+  "primary_category": "cs.SE (cross-listed cs.AI)",
+  "submitted": "v1 Wed, 11 Nov 2026 14:28:01 UTC = 2026-11-11 23:28:01 KST",
+  "abs_url": "https://arxiv.org/abs/2611.15543",
+  "licence": "CC BY 4.0, https://creativecommons.org/licenses/by/4.0/ (as linked on the abs page)",
+  "comments_field": "Research report",
+  "pdf_read": false,
+  "method_source": "abstract and the research pack's summary only; no section text, figure, table or rule list of the paper is used"
+ },
+ "upstream_repo": {
+  "url": "https://github.com/convpreserve/conv-preserve",
+  "head": "8c34759bb854767e55b80af3016693400f5cb698",
+  "licence": "Apache-2.0 (LICENSE file read during the research pack)",
+  "read": "README and LICENSE only, during the research pack, for licence and scope facts",
+  "run": false,
+  "code_copied": false,
+  "note": "No upstream code, rule list, rule text, fixture or output was copied, consulted as data or run for this sketch; nothing was installed. The rule ids here (CL01-CL21) and their definitions are this sketch's own. UNVERIFIED."
+ },
+ "sources": [
+  {
+   "file": "2611.15543.abs.txt",
+   "what": "plain-text copy of the abs-page abstract (prefix 'Abstract:'), whitespace collapsed",
+   "sha256": "5895531dbd7ac60897e6f8b1aca3c472eda26cbb31fa78c260327ade2e11111e",
+   "chars": 1777
+  }
+ ],
+ "env": "MBCONVLOSS_SOURCES names the directory holding the source copy; the test skips when it is unset",
+ "status": "UNVERIFIED",
+ "measured_here": "on_unmeasured",
+ "on_unmeasured_note": "This sketch runs no translator, gateway, SDK, model or benchmark. The figures below are the authors' statements, not measured, re-run or re-claimed here; paper_results() returns on_unmeasured. The sketch's own fixture counts are not comparable with them.",
+ "attribution": "The authors' own results as stated in the arXiv abstract. Quote wording is the authors'.",
+ "claims": [
+  {
+   "id": "C1",
+   "what": "the problem: accepted but lossy translation",
+   "quote": "Yet a translated request can be accepted by the target API while silently losing information about instruction roles, tool interactions, error states, or generation controls.",
+   "offset": 119,
+   "length": 174,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C2",
+   "what": "the method: isloss over ConvIR with explicit rules",
+   "quote": "It maps source and translated requests and replies to a shared intermediate representation, ConvIR, and applies explicit rules to distinguish legitimate representation changes from information loss.",
+   "offset": 417,
+   "length": 198,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C3",
+   "what": "no reference translation, no model calls",
+   "quote": "Unlike schema validation or reference-based differential testing, isloss requires neither a reference translation nor additional model calls.",
+   "offset": 616,
+   "length": 141,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C4",
+   "what": "avoidable loss vs target limits",
+   "quote": "It also distinguishes avoidable loss from degradation caused by target API limitations.",
+   "offset": 758,
+   "length": 87,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C5",
+   "what": "evaluation methods",
+   "quote": "We evaluate isloss using specification-based fault injection, human review, and experiments on translators, gateways, and client libraries.",
+   "offset": 846,
+   "length": 139,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C6",
+   "what": "held-out detection and false alarms",
+   "quote": "On held-out tests, it detects 95/125 planted faults (76.0%) with 2/100 false alarms (2.0%).",
+   "offset": 986,
+   "length": 91,
+   "values": {
+    "detected": "95/125",
+    "detected_rate": "76.0%",
+    "false_alarms": "2/100",
+    "false_alarm_rate": "2.0%"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C7",
+   "what": "static checks pass avoidable changes",
+   "quote": "Across a synthetic request suite spanning six configurations of five translator codebases, 127/685 completed translations (18.5%) pass static target checks while silently changing prompt, role, or tool information in ways the target API could have preserved.",
+   "offset": 1078,
+   "length": 258,
+   "values": {
+    "silent_avoidable": "127/685",
+    "silent_avoidable_rate": "18.5%"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C8",
+   "what": "reply streams and SDKs",
+   "quote": "In translated replies, 203/558 streams (36.4%) cause exceptions or silent corruption in at least one tested official OpenAI SDK.",
+   "offset": 1337,
+   "length": 128,
+   "values": {
+    "bad_streams": "203/558",
+    "bad_stream_rate": "36.4%"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C9",
+   "what": "behavioural effect",
+   "quote": "Targeted experiments across six models show that translation-induced changes can alter model behaviour when tasks depend on the affected information.",
+   "offset": 1466,
+   "length": 149,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C10",
+   "what": "conclusion",
+   "quote": "These results establish conversation preservation as a distinct correctness requirement for reliable LLM interoperability, agent execution, and model evaluation.",
+   "offset": 1616,
+   "length": 161,
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "not measured, re-run or re-claimed here; the sketch's fixture counts are not comparable",
+   "status": "UNVERIFIED"
+  }
+ ],
+ "upstream_readme_claims": [
+  {
+   "id": "U1",
+   "what": "upstream rule count (repository README, line 7)",
+   "quote": "`convpreserve` compares payloads before and after translation across **27 deterministic rules**—offline in milliseconds, with zero runtime dependencies, no API keys, and no LLM calls.",
+   "length": 183,
+   "source": "conv-preserve README.md at HEAD 8c34759bb854767e55b80af3016693400f5cb698, sha256 d8aa2cc76c72a7efdb99cc198a6b498ad5b4cd71d88473c3c01d4daf0c2b1dfd, read during the research pack; not saved here and not checked by the quote test",
+   "values": {
+    "rules": "27"
+   },
+   "measured_here": "on_unmeasured",
+   "on_unmeasured": "the upstream package was not run; this sketch's 21 rules are its own and are not a subset or count of the upstream rules",
+   "status": "UNVERIFIED"
+  }
+ ]
+}

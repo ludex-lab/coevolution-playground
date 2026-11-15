@@ -1,0 +1,39 @@
+mb-conversation-loss-oracle
+---------------------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code, data,
+rules, rule text, fixtures, prompts, labels or weights.
+
+Paper (method idea credited)
+----------------------------
+Xin Liu, Xu Han, Yuxin Wang, Haoran Song, Mingjian Zhao, Lei Wang.
+"Testing Conversation Preservation Across LLM APIs: A Rule-Based Oracle for
+Detecting Silent Information Loss".
+arXiv:2611.15543, v1, submitted 11 Nov 2026. Primary category cs.SE,
+cross-listed cs.AI.
+https://arxiv.org/abs/2611.15543
+Paper licence: CC BY 4.0, https://creativecommons.org/licenses/by/4.0/ (as
+linked on the abs page). Only the abstract is quoted or used.
+
+Upstream repository
+-------------------
+https://github.com/convpreserve/conv-preserve
+HEAD 8c34759bb854767e55b80af3016693400f5cb698.
+Licence: Apache-2.0 (Apache License, Version 2.0), from its LICENSE file.
+The repository was not run and nothing was installed from it. Only its
+README and LICENSE were read, during the research pack, for licence and
+scope facts. No upstream code, rule list, rule text, fixture or output was
+copied, consulted or used as data for this sketch. The upstream package is
+UNVERIFIED here.
+
+Method only: the idea of mapping a source request and its translated request
+into one shared intermediate record and applying explicit, deterministic
+rules (no reference translation, no model call) that separate legitimate
+representation changes from information loss, and avoidable loss from
+changes forced by target limits. The two toy dialects, the intermediate
+record, the 21 rule ids and their definitions, the target profiles, the toy
+static target check, the oracle and the fixtures are this sketch's own. No
+text, figures, tables or data from the paper are copied into the code; the
+PDF was not read; no model was run. The paper's claims appear only in
+paper_evidence.json, quoted and marked UNVERIFIED.

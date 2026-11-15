@@ -1,0 +1,24 @@
+{
+  "scenarios": [
+    {
+      "name": "cooldown_blocks_rapid_second_send",
+      "budget_max": 3,
+      "cooldown_s": 10.0,
+      "events": [
+        {"t": 0.0, "expect": "allow"},
+        {"t": 1.0, "expect": "deny", "reason": "cooldown"},
+        {"t": 10.0, "expect": "allow"}
+      ]
+    },
+    {
+      "name": "budget_max_exhausted",
+      "budget_max": 2,
+      "cooldown_s": 0.0,
+      "events": [
+        {"t": 0.0, "expect": "allow"},
+        {"t": 0.0, "expect": "allow"},
+        {"t": 0.0, "expect": "deny", "reason": "budget_max"}
+      ]
+    }
+  ]
+}

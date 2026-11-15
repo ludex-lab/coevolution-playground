@@ -1,0 +1,74 @@
+{
+ "paper": {
+  "arxiv_id": "2611.13709",
+  "version": "v1",
+  "title": "Do They Do as They Are Told? Investigating Coding Agents' Adherence to Explicit Instructions in Context Files",
+  "authors": [
+   "Gianmario Voria",
+   "Yutaro Kashiwa",
+   "Gemma Catolino",
+   "Fabio Palomba"
+  ],
+  "authors_source": "abs page citation_author meta tags (Voria, Gianmario; Kashiwa, Yutaro; Catolino, Gemma; Palomba, Fabio)",
+  "submitted": "10 Nov 2026 (citation_date 2026/11/10; abs page 'Submitted on 10 Nov 2026'; v1 08:01:51 UTC = 17:01 JST)",
+  "abs_url": "https://arxiv.org/abs/2611.13709",
+  "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "licence_url": "http://creativecommons.org/licenses/by/4.0/",
+  "code": "none linked on the abs page",
+  "use": "METHOD ONLY: the idea of operationalizing explicit context-file instructions into measurement scripts over commits, reporting instruction-level compliance, and the split between instructions followed consistently and those never respected. No paper text, figures, tables, scripts or data are copied into this directory; this file records locations and span hashes only. The PDF was not read."
+ },
+ "source": {
+  "file": "2611.13709.html",
+  "bytes": 41997,
+  "sha256": "a349c54fbac26391f4d27dfa2a3bf9219b5434594f3bb63a73e03ce689da776c",
+  "abstract_field": "citation_abstract meta content, HTML-unescaped",
+  "abstract_chars": 1467,
+  "abstract_sha256": "3a934bc5c688ea2578f00e362e0ea88981eccbf9f3d82fb5d42644302ac6f32a",
+  "abstract_digits": 0,
+  "location": "lab-dig-2 Verifier evidence folder abs/ on the shared box (fetched 2026-11-11 15:03 JST), not in this repo"
+ },
+ "compliance_rates": {
+  "status": "UNVERIFIED",
+  "values": [],
+  "note": "The abstract states no numeric compliance rate. Any rate in the paper body (PDF unread) is not recorded, checked or reproduced here; nothing in this sketch is a compliance rate of any real agent."
+ },
+ "empirical_claims": {
+  "status": "UNVERIFIED",
+  "note": "Qualitative findings stated in the abstract, from the authors' study of real context-file snapshots and agent-generated commits. Recorded as character offset, length and sha256 of the span in the abstract field; not checked or reproduced by this sketch. They appear only in this file.",
+  "claims": [
+   {
+    "id": "C1-operationalizable",
+    "offset_in_abstract": 853,
+    "length": 51,
+    "span_sha256": "c7b6baf519bd41a8e4c4d5cd81d30caaa47421fa41baa133208925e27e8db980",
+    "about": "share of observable instructions the authors could turn into measurement scripts",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C2-more-often-than-not",
+    "offset_in_abstract": 914,
+    "length": 46,
+    "span_sha256": "7d8690d0dcae4a9236208ff320f432b3139a802b12db2a445208912272104eca",
+    "about": "overall direction of compliance across the authors' commits",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C3-split",
+    "offset_in_abstract": 966,
+    "length": 93,
+    "span_sha256": "6dff6ccc6622e43fc1c47532a4629bf93bdfd89a4778b120aaec53f7c8aeb407",
+    "about": "the always / never split this sketch reports by instruction id",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C4-enforcement",
+    "offset_in_abstract": 1253,
+    "length": 47,
+    "span_sha256": "24cbeb2573674bc8956517ecd908f58368c1f44d26a5e6318bbb16dcd0d2eae3",
+    "about": "motivation for the enforcement hook in this sketch",
+    "status": "UNVERIFIED"
+   }
+  ]
+ },
+ "not_results_of_this_sketch": "All context files, instructions, commits, held-out seeds and outcomes here are synthetic and deterministic. Predicates are small declarative checks over synthetic paths and commands; nothing here measures any coding agent or reproduces the paper's study."
+}

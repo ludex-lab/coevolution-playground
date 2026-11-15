@@ -1,0 +1,6 @@
+Append-only claim board sketch for Ork Team Playground experiments.
+
+Concepts derived from victorkwak/baton (Apache-2.0)
+https://github.com/victorkwak/baton @ 965c8dcd1a9bd8d1805c1b9b90284b8471347eba
+
+This directory is a minimal self-contained sketch, not a vendor copy of upstream.

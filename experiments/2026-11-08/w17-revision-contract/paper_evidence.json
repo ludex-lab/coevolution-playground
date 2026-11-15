@@ -1,0 +1,210 @@
+{
+  "arxiv_id": "2611.06967",
+  "title": "Call-Level Revision Contracts for LLM-Authored Workflows",
+  "authors": [
+    "Chenyang Jiang",
+    "Benyang Pan",
+    "Puqu Wu"
+  ],
+  "submitted": "2026-11-04",
+  "source_urls": {
+    "abs": "https://arxiv.org/abs/2611.06967",
+    "html": "https://arxiv.org/html/2611.06967"
+  },
+  "paper_license": "arXiv.org perpetual non-exclusive license (not CC BY; not a software grant). Method-cite only.",
+  "code_pin": null,
+  "code_pin_note": "The paper refers to the authors' repository and a reproducibility artifact but gives no URL in the fetched HTML; no public code pin verified.",
+  "fetched_html": {
+    "path": "/tmp/w17-2611.06967.html",
+    "bytes": 535748,
+    "sha256": "f02a10e911c75cfc0a062b6179c4c76a249193bdebf7ad7d4942dc0a3ba2cdd5"
+  },
+  "fetched_abs_html": {
+    "path": "/tmp/w17-2611.06967-abs.html",
+    "bytes": 41028,
+    "sha256": "18f15f6a91d8a6254654fc866c4e7ef803d258da1e26aef4fd4adde8b91366ca"
+  },
+  "normalization": "drop <script>/<style>, replace tags with a space, html.unescape, collapse whitespace runs to one space; offsets index that normalized text",
+  "excerpts": [
+    {
+      "id": "identity_triple",
+      "text": "Each capability call carries a structural identity built from its callsite, its fanout position, and its occurrence count",
+      "normalized_offset": 2877,
+      "length": 121,
+      "source_window_sha256": "172cf14e8287a9c21c851c53573e0bdb75636f3d488d8d3455b112ffacfce596",
+      "status": "FOUND"
+    },
+    {
+      "id": "frozen_unit",
+      "text": "The frozen unit is the call expression, and the surrounding code stays writable.",
+      "normalized_offset": 3121,
+      "length": 80,
+      "source_window_sha256": "112b86c9d75a652df24fb8e6f948f1d5dc202865f3478d885ef97682bd557bef",
+      "status": "FOUND"
+    },
+    {
+      "id": "static_gate",
+      "text": "A static gate rejects a rewrite that would change a committed call before a container starts.",
+      "normalized_offset": 3202,
+      "length": 93,
+      "source_window_sha256": "c5df9d7dc4365113a092c65070a939b7b14d9adedec9603be45a85d2a2d7bb9e",
+      "status": "FOUND"
+    },
+    {
+      "id": "runtime_digest",
+      "text": "A runtime digest stops a changed payload at a committed identity",
+      "normalized_offset": 3296,
+      "length": 64,
+      "source_window_sha256": "9db47b124aeef52d03838cd53b0860418821b3a23358ace8478b558bd8c45dbb",
+      "status": "FOUND"
+    },
+    {
+      "id": "reachability_separate",
+      "text": "Reachability and the payload digest are separate checks, because neither can be decided from the source.",
+      "normalized_offset": 28169,
+      "length": 104,
+      "source_window_sha256": "f8aa1c96bcbb006c53ae75d8afeba33d5f9242e98edcc33eea987f57069814ca",
+      "status": "FOUND"
+    },
+    {
+      "id": "data_dependent_edit",
+      "text": "A data-dependent payload edit preserves both and is caught by the runtime digest at dispatch.",
+      "normalized_offset": 22633,
+      "length": 93,
+      "source_window_sha256": "3ffbeed4321f7e3683a502b25e90dc649b0576e4ff819dbdcf5de491de19770b",
+      "status": "FOUND"
+    },
+    {
+      "id": "gate_vs_digest",
+      "text": "The gate catches source-level drift, and the digest catches value-level drift.",
+      "normalized_offset": 22727,
+      "length": 78,
+      "source_window_sha256": "10a9ce902381b6c7253c648fcf2475f20e92b18bdf7a4f5e990912a1a66b1bb9",
+      "status": "FOUND"
+    },
+    {
+      "id": "relocation_stop",
+      "text": "so callsite identity turns a relocation into a pre-spend stop.",
+      "normalized_offset": 3646,
+      "length": 62,
+      "source_window_sha256": "792c20ff91e57d051c80dc4bbd2d1e0693d1672b3e77a8cdf56e8c9d5d230e6d",
+      "status": "FOUND"
+    },
+    {
+      "id": "path_shift",
+      "text": "Inserting a fanout branch ahead of a committed one moves every later branch by one path index.",
+      "normalized_offset": 37768,
+      "length": 94,
+      "source_window_sha256": "1e612de3368f25201e197a0617895f9471e372922d1cb1ee3cfd4115cb5caa37",
+      "status": "FOUND"
+    },
+    {
+      "id": "orphans_after_shrink",
+      "text": "Two committed identities become orphans and the run otherwise succeeds.",
+      "normalized_offset": 91058,
+      "length": 71,
+      "source_window_sha256": "6360b704f849ee570f431164bfa3020e7fe48211139bde1679edf8430293a230",
+      "status": "FOUND"
+    },
+    {
+      "id": "orphan_default_warn",
+      "text": "We keep warn as the default because an orphan is a fidelity event",
+      "normalized_offset": 91244,
+      "length": 65,
+      "source_window_sha256": "1e87cc14f37107a37c075bcb3ac40a1de4e1bfda6bb1035988b2adfa5dd9c78d",
+      "status": "FOUND"
+    },
+    {
+      "id": "store_fail_closed",
+      "text": "Storage errors are fail-closed by default",
+      "normalized_offset": 42348,
+      "length": 41,
+      "source_window_sha256": "e2c68a36fa583f7dea7ea21597acc8779313922e0cbce5ee985cc243e3f3a18d",
+      "status": "FOUND"
+    },
+    {
+      "id": "impl_sqlite",
+      "text": "The implementation is Python 3.11, and the run store is SQLite in WAL mode.",
+      "normalized_offset": 43538,
+      "length": 75,
+      "source_window_sha256": "4a0d5724b8727fa70395a0b1e4bee44cf58a687f1ce7a28ec64cc227ce3e87dd",
+      "status": "FOUND"
+    },
+    {
+      "id": "impl_docker",
+      "text": "The prototype runs the contract inside a networkless Docker sandbox that never sees a provider credential.",
+      "normalized_offset": 43104,
+      "length": 106,
+      "source_window_sha256": "c5044159dd9fef396bdc8bbd64b0409902cfbfc6058990c486a7fd1b0c8268f9",
+      "status": "FOUND"
+    },
+    {
+      "id": "impl_host_service",
+      "text": "A host service accepts a model-authored script as a job",
+      "normalized_offset": 43211,
+      "length": 55,
+      "source_window_sha256": "cd1777073e24b0ad4e21fa92afd1220622c0a3eecfc3ed129ea1847956329fc8",
+      "status": "FOUND"
+    },
+    {
+      "id": "guarantee_scope",
+      "text": "Our guarantee is identity-level, and it covers the calls that a candidate keeps and the identities that it invokes.",
+      "normalized_offset": 91933,
+      "length": 115,
+      "source_window_sha256": "6f1b5b068294541c20f895c1b1b8744ba7fb3e2e7339edf74b1405293d730096",
+      "status": "FOUND"
+    },
+    {
+      "id": "license_line",
+      "text": "License: arXiv.org perpetual non-exclusive license",
+      "normalized_offset": 2281,
+      "length": 50,
+      "source_window_sha256": "b0df2d4beadc475f0b9748fd0953c0ef506d39b46c5b3f95964fb2b59f3bbbb1",
+      "status": "FOUND"
+    },
+    {
+      "id": "repo_no_url",
+      "text": "are in the authors’ repository",
+      "normalized_offset": 47902,
+      "length": 30,
+      "source_window_sha256": "610d05ee7eaa255c9f2767a9c745ff4e30d04b03a0325b19af44095b5759431e",
+      "status": "FOUND"
+    }
+  ],
+  "number_hygiene": {
+    "policy": "Paper empirical numbers are not targets or claims of this sketch. They may appear only here and as ABSENT-needles in tests.",
+    "paper_sentence_FOUND": "22 gate-passed repairs replay 258 committed identities with no duplicate, and a live six-way fanout makes seven paid calls instead of twelve",
+    "paper_sentence_offset": 3729,
+    "banned_needles": [
+      "22 repairs",
+      "22 gate-passed",
+      "258 identities",
+      "258 committed",
+      "seven vs twelve",
+      "7 vs 12",
+      "7 vs. 12",
+      "seven paid calls",
+      "instead of twelve"
+    ],
+    "scanned_files": [
+      "contract.py",
+      "fixtures.py",
+      "README.md",
+      "NOTICE"
+    ]
+  },
+  "modelling_note": "Toy model: callsite path = enclosing function + block kind/ordinal path + ordinal of ctx.run in the innermost block; fanout index pushed by ctx.fanout; occurrence counter per (callsite, path). Call-expression fingerprint = sha256 of ast.dump of the ctx.run call. Payload digest = sha256 of canonical JSON. Ledger is a JSON fixture. Orphan policy warn (default) / stop applied after a completed run, as the paper describes; a stopped run's not-invoked identities are reported as unreached, not orphans. The occurrence ledger is reduced to a same-(site,path,digest) check with warn/stop/auto policy. Sequential toy fanout, so a path shift stops before any dispatch here (the paper's concurrent run may differ).",
+  "not_implemented": [
+    "SQLite WAL run store",
+    "Docker / networkless sandbox",
+    "host service and bounded file RPC",
+    "capability broker grants and per-run nonce",
+    "paid or live providers",
+    "HMAC (payload digest is plain sha256)",
+    "hash-chain certificate",
+    "the paper's thirteen checker rules (only a tiny subset check)",
+    "attempt records and crash-window policies (AttemptUnresolved)",
+    "repair loop / model rewriter",
+    "customer-support study and all evaluation experiments"
+  ]
+}

@@ -1,0 +1,217 @@
+{
+ "paper": {
+  "arxiv_id": "2611.09472",
+  "version": "v1",
+  "title": "ENGRAM: From Agent Experience to Weights through Verified Consolidation",
+  "authors": [
+   "Ruiyi Yang",
+   "Zechen Li",
+   "Lihuan Li",
+   "Du Yin",
+   "Hao Xue",
+   "Flora D. Salim"
+  ],
+  "authors_source": "abs page citation_author meta: 'Yang, Ruiyi', 'Li, Zechen', 'Li, Lihuan', 'Yin, Du', 'Xue, Hao', 'Salim, Flora D.'",
+  "submitted": "v1 Fri, 6 Nov 2026 13:51:02 UTC (2026-11-06 22:51 JST)",
+  "subjects": "cs.AI; cs.IR",
+  "abs_url": "https://arxiv.org/abs/2611.09472",
+  "html_url": "https://arxiv.org/html/2611.09472",
+  "licence": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "licence_url": "http://creativecommons.org/licenses/by/4.0/",
+  "licence_evidence": "abs page licence link http://creativecommons.org/licenses/by/4.0/; HTML full text header 'License: CC BY 4.0'",
+  "use": "method/shape only; no paper text copied into code, fixtures, README or NOTICE; short excerpts below are for evidence only, attributed to the authors under CC BY 4.0",
+  "normalisation_evidence": "App. E: 'For QA, normalized questions are deduplicated across partitions before answers are attached.' and 'Question–answer matching provides an additional check rather than replacing question-level separation.' The paper does not define the normalisation; this sketch's key is its own choice."
+ },
+ "upstream_code": {
+  "url": "http://anonymous.4open.science/r/engram-anonymous",
+  "linked_from": "abs page ('Code is available in this http URL')",
+  "status": "UNVERIFIED",
+  "checked": [
+   {
+    "at": "2026-11-10 17:01 JST",
+    "what": "repo page",
+    "result": "HTTP 500"
+   },
+   {
+    "at": "2026-11-10 17:20 JST",
+    "what": "repo page",
+    "result": "HTTP 500"
+   },
+   {
+    "at": "2026-11-10 17:20 JST",
+    "what": "API https://anonymous.4open.science/api/repo/engram-anonymous/files",
+    "result": "HTTP 200, top-level listing: .gitignore, README.md, configs, engram, pyproject.toml, scripts, tests"
+   },
+   {
+    "at": "2026-11-10 17:20 JST",
+    "what": "LICENSE via the same API",
+    "result": "404 file_not_found"
+   },
+   {
+    "at": "2026-11-10 17:30 JST",
+    "what": "repo page and API listing re-checked",
+    "result": "HTTP 500 and HTTP 200 with the same listing"
+   }
+  ],
+  "dependencies": "pyproject.toml (read as text only) depends on networkx, pyyaml, numpy, torch, transformers, peft, openai and requests, with an optional anthropic extra",
+  "code_licence": "none found (no LICENSE file); unknown",
+  "verdict": "hard-no: the dependencies include paid LLM API clients (openai, optional anthropic) and model-training stacks (torch, transformers, peft), and the code has no licence",
+  "pin": "none",
+  "used": false,
+  "note": "Only the API file listing, README.md and pyproject.toml were read as text. Nothing was cloned, installed, imported or run, and no upstream code or data is copied. The sketch is written from the paper text only."
+ },
+ "fetched": {
+  "fetched_at": "2026-11-10 17:01 JST (abs and HTML); upstream API listing re-checked 2026-11-10 17:30 JST",
+  "abs_path": "/tmp/w19er-abs.html",
+  "abs_bytes": 43019,
+  "abs_sha256": "2c2d87052dc23bd7a9d70ce7da9ba0027eafb73537ff152bcae13082dc46b7fb",
+  "html_path": "/tmp/w19er-2611.09472.html",
+  "html_sha256": "59412827f4250fd50cc4ca4dddaad53207123f1ebcb58efb50d7c53e3deafad9",
+  "normalization": "drop <math> blocks, strip tags, html.unescape, collapse whitespace"
+ },
+ "quote_check": "3/3 abstract excerpts found verbatim, once each, in the live abs page and in the earlier raw abstract text",
+ "excerpts": [
+  {
+   "id": "Q1-abstract-two-decisions",
+   "section": "abstract",
+   "excerpt": "Consolidating stored experience into model weights requires deciding both which experience to train on and when its external records can leave retrieval.",
+   "chars": 153,
+   "normalized_abs_offset": 753,
+   "occurrences_in_abs": 1,
+   "occurrences_in_raw_abs_txt": 1,
+   "status": "FOUND"
+  },
+  {
+   "id": "Q2-abstract-verification-gate",
+   "section": "abstract",
+   "excerpt": "A verification gate then compares the updated model without episodic retrieval against the base model with retrieval on reserved probes.",
+   "chars": 136,
+   "normalized_abs_offset": 1379,
+   "occurrences_in_abs": 1,
+   "occurrences_in_raw_abs_txt": 1,
+   "status": "FOUND"
+  },
+  {
+   "id": "Q3-abstract-release-criteria",
+   "section": "abstract",
+   "excerpt": "Release requires valid training participation and scores meeting both relative and absolute criteria; records for skills that fail verification remain retrievable.",
+   "chars": 163,
+   "normalized_abs_offset": 1516,
+   "occurrences_in_abs": 1,
+   "occurrences_in_raw_abs_txt": 1,
+   "status": "FOUND"
+  }
+ ],
+ "method_excerpts": [
+  {
+   "id": "M1-sec4.3-release-conditions",
+   "source": "html",
+   "excerpt": "Memory release requires valid training participation, nonempty probes, and both relative and absolute performance conditions",
+   "occurrences": 1,
+   "status": "FOUND"
+  },
+  {
+   "id": "M2-sec4.3-no-probes",
+   "source": "html",
+   "excerpt": "Skills with no probes remain ineligible for release",
+   "occurrences": 1,
+   "status": "FOUND"
+  },
+  {
+   "id": "M3-sec4.3-base-pre-release-store",
+   "source": "html",
+   "excerpt": "with retrieval from the pre-release store",
+   "occurrences": 1,
+   "status": "FOUND"
+  },
+  {
+   "id": "M4-sec4.1-participation",
+   "source": "html",
+   "excerpt": "prevents memory release for a skill that contributes no valid examples",
+   "occurrences": 1,
+   "status": "FOUND"
+  },
+  {
+   "id": "M5-training-failure",
+   "source": "html",
+   "excerpt": "Training or loading failure leaves records and existing deployment approvals unchanged",
+   "occurrences": 1,
+   "status": "FOUND"
+  },
+  {
+   "id": "M6-archive",
+   "source": "html",
+   "excerpt": "Moving records to an archive reduces the retrievable footprint but does not reduce total retained storage",
+   "occurrences": 1,
+   "status": "FOUND"
+  },
+  {
+   "id": "M7-appE-episode-separation",
+   "source": "html",
+   "excerpt": "The intended unit of separation is the originating episode",
+   "occurrences": 1,
+   "status": "FOUND"
+  }
+ ],
+ "method_formula": {
+  "source": "html sec. 4.3 eq. (6) alttext",
+  "text": "z = u * b * I[N > 0] * I[A_W - A_M >= delta] * I[A_W > alpha]",
+  "mapping": "u: admission; b: training participation (|D_s| > 0); N: probe count; A_W: candidate without episodic retrieval; A_M: base with retrieval; delta: margin (may be negative); alpha: strict floor"
+ },
+ "empirical_claims": {
+  "status": "UNVERIFIED",
+  "note": "Paper figures, recorded as found and not checked by this sketch. They appear only in this file.",
+  "claims": [
+   {
+    "id": "C1-dev-skills-released",
+    "source": "html",
+    "text": "Three of five skills qualify for release",
+    "occurrences": 1,
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C2-dev-archive-counts",
+    "source": "html",
+    "text": "archive 331 records and leave 269 retrievable, reducing the retrievable footprint by 55.2%",
+    "occurrences": 1,
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C3-qa-probe-threshold",
+    "source": "html",
+    "text": "QA probes use an answer-score threshold of 0.5",
+    "occurrences": 1,
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C4-dev-floor",
+    "source": "html",
+    "text": "Release requires a score strictly above 50%",
+    "occurrences": 1,
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C5-immediate-release",
+    "source": "html",
+    "text": "Immediate release leaves only 13 retrievable records but lowers F1 from 71.1 to 66.8",
+    "occurrences": 1,
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C6-table4-retain-all",
+    "source": "html",
+    "text": "Retain all 54.4 71.1",
+    "occurrences": 1,
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "C7-table4-verified",
+    "source": "html",
+    "text": "Verified release 54.0 70.9",
+    "occurrences": 1,
+    "status": "UNVERIFIED"
+   }
+  ]
+ },
+ "not_results_of_this_sketch": "The skills, records, rules, probes and every fixture outcome are synthetic. Nothing here trains a model, touches weights, or reproduces or measures any benchmark, model, adapter or release policy studied in the paper."
+}

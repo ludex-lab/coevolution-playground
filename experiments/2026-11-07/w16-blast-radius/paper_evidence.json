@@ -1,0 +1,33 @@
+{
+  "source": "https://arxiv.org/html/2611.06727",
+  "version": "2611.06727v1",
+  "checked_date_jst": "2026-11-07",
+  "raw_html_sha256": "34ebf2665d72cfbe0cc789ea046b2bcee267d12f62d1673f22c8a77a852cadb3",
+  "normalization": "HTMLParser handle_data joined; whitespace collapsed; case and punctuation unchanged",
+  "quotes": [
+    {
+      "section": "Abstract",
+      "text": "Meanwhile, an append-only provenance DAG records cross-agent data consumption horizontally."
+    },
+    {
+      "section": "Abstract",
+      "text": "Upon an alert, Airlock traces forward on this DAG to isolate tainted executions and pending actions, and backward to narrow root causes."
+    },
+    {
+      "section": "3.3",
+      "text": "In HomeSvc, full quarantine halts each tainted assistant invocation as it starts while leaving automation running (Fig. 4)."
+    }
+  ],
+  "anchors": [
+    "a default full quarantine tier freezes affected branches without a solver",
+    "permanently holds every artifact version and pending effect",
+    "incidents do not automatically clear when an agent reads a tainted artifact to repair it",
+    "explicit post-incident endorsement to declassify repaired artifacts"
+  ],
+  "license": "License: CC BY 4.0",
+  "html_excerpts": [
+    "Meanwhile, an append-only provenance DAG records cross-agent data consumption horizontally.",
+    "Upon an alert, <span id=\"abstract1.1.4\" class=\"ltx_text ltx_font_smallcaps\">Airlock</span> traces forward on this DAG to isolate tainted executions and pending actions, and backward to narrow root causes.",
+    "In HomeSvc, full quarantine halts each tainted assistant invocation as it starts while leaving automation running (<a href=\"#S4.F4\" title=\"In 4 Assured Containment: Minimum Cut and Fence-then-Prune\" class=\"ltx_ref\"><span class=\"ltx_text ltx_ref_tag\">Fig.</span> <span class=\"ltx_text ltx_ref_tag\">4</span></a>)."
+  ]
+}

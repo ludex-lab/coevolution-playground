@@ -1,0 +1,26 @@
+w24-alert-silence-is-not-fix: credit and licence
+
+This folder is a clean-room method sketch inspired by:
+
+  Zhezhen Cao, Weiyuan Ding, Bowen Xu.
+  "Preserve the Vulnerability, Break the Alert: Testing the Robustness of
+  CodeQL Taint Tracking with Natural Rewrites". arXiv:2611.17123 v1,
+  submitted 12 Nov 2026. https://arxiv.org/abs/2611.17123
+
+Paper licence: arXiv.org perpetual, non-exclusive license 1.0
+(http://arxiv.org/licenses/nonexclusive-distrib/1.0/), as linked on the abs
+page. That licence grants arXiv the right to distribute the paper and grants
+no reuse to anyone else, so nothing of the paper's text is reproduced here
+beyond seven short abstract sentences quoted, for attribution, in
+paper_evidence.json.
+
+Clean-room statement: only the abstract was read. The PDF was not read. No
+code, rewrite, prompt, flow, benchmark, analyzer model or data of the paper
+is used; the abstract links none. CodeQL is not used, ported or modelled,
+no language model is used, and there is no multi-analyzer comparison. The
+toy taint analyzer, its one modelling gap, the executor, the fixtures and
+all code here are this sketch's own, written from the idea that a
+disappearing alert is weak evidence of a fix. No human data is used.
+
+The authors' figures appear only in paper_evidence.json, quoted verbatim,
+marked UNVERIFIED and on_unmeasured.
