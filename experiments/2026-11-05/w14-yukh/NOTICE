@@ -1,0 +1,7 @@
+Yukh coordination method-borrow checklist for Ork Team Playground experiments.
+
+Concepts cited from nomed/yukh-coordination (Apache-2.0)
+https://github.com/nomed/yukh-coordination @ 85eb6a005529e2da6fc7151d7409336c18308986
+
+This directory is markdown only — not a vendor copy of upstream relay runtime,
+Go adapters, SQLite store, NATS/JetStream wiring, or coordination daemon code.

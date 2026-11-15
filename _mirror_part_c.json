@@ -1,0 +1,422 @@
+{
+  "part": "c",
+  "origin_owner": "coevolution-lab",
+  "origin_name": "playground",
+  "ref": "main",
+  "origin_commit": "c02b9b615fc0b02eebcfd70106da93033a1f40dd",
+  "manifest_path": "/tmp/mirror-manifest.json",
+  "path_prefixes": [
+    "experiments/2026-11-05/",
+    "experiments/2026-11-06/",
+    "experiments/2026-11-07/"
+  ],
+  "exclusions": {
+    "dot_env": true,
+    "pycache": true,
+    "max_bytes": 5242880
+  },
+  "skipped": [],
+  "expected_count": 121,
+  "downloaded_count": 38,
+  "total_bytes": 92073,
+  "errors": [
+    {
+      "path": "experiments/2026-11-05/01-coworkos-revision-checked-leases/DESIGN-NOTE.md",
+      "error": "size_mismatch",
+      "expected": 10160,
+      "got": 413
+    },
+    {
+      "path": "experiments/2026-11-05/README.md",
+      "error": "size_mismatch",
+      "expected": 2301,
+      "got": 2304
+    },
+    {
+      "path": "experiments/2026-11-05/w14-arc-grammar/README.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-arc-grammar/arc_grammar/cadence.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-arc-grammar/arc_grammar/validate.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-arc-grammar/conformance/README.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-arc-grammar/conformance/examples/streams.json",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-arc-grammar/conformance/sequence/phase-ordering.json",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-arc-grammar/conformance/sequence/valid.json",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-arc-grammar/conformance/single-event/schema-invalid.json",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-arc-grammar/conformance/single-event/valid.json",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-arc-grammar/tests/test_arc_grammar.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-arc-grammar/tests/test_js_parity.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-phase-deadline/deadline.py",
+      "error": "size_mismatch",
+      "expected": 7176,
+      "got": 7173
+    },
+    {
+      "path": "experiments/2026-11-05/w14-phase-deadline/test_deadline.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-silence-expiry/README.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-silence-expiry/silence_expiry/engine.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-silence-expiry/silence_expiry/policy.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-silence-expiry/tests/test_silence_expiry.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-sundial/DESIGN-NOTE.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-sundial/README.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-sundial/test_unseen_time_sketch.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-sundial/unseen_time_sketch.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-whose-turn/DESIGN-NOTE.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-whose-turn/README.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-whose-turn/session_turn_checklist.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-whose-turn/test_session_turn_checklist.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-yukh/CHECKLIST.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-yukh/DESIGN-NOTE.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-05/w14-yukh/README.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/01-flyhash-agent-memory/README.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/01-flyhash-agent-memory/benchmark.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/01-flyhash-agent-memory/corpus.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/01-flyhash-agent-memory/flyhash.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/01-flyhash-agent-memory/test_benchmark.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-evidence-gate/NOTICE",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-evidence-gate/README.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-evidence-gate/gate.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-evidence-gate/test_evidence_gate.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-handoff-gate/README.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-handoff-gate/gate.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-handoff-gate/packets.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-handoff-gate/test_handoff_gate.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-harness-scorer/NOTICE",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-harness-scorer/README.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-harness-scorer/fixtures.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-harness-scorer/scorer.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-harness-scorer/test_scorer.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-sepm/README.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-sepm/models.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-sepm/test_sepm.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-tooling-memory/NOTICE",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-tooling-memory/README.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-tooling-memory/checklist.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-tooling-memory/fixtures.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-tooling-memory/test_tooling_memory.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-zsc-cfd/NOTICE",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-zsc-cfd/README.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-zsc-cfd/checklist.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-06/w15-zsc-cfd/test_zsc_cfd.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/01-more-agents-reliability/README.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/01-more-agents-reliability/composition.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/01-more-agents-reliability/fixtures.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/01-more-agents-reliability/test_reliability.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-atc/README.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-atc/admission.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-atc/fixtures.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-atc/paper_evidence.json",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-atc/test_admission.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-blast-radius/NOTICE",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-blast-radius/README.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-blast-radius/containment.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-blast-radius/fixtures.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-blast-radius/paper_evidence.json",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-blast-radius/test_containment.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-fail-signatures/README.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-fail-signatures/fixtures.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-fail-signatures/miner.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-fail-signatures/paper_evidence.json",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-fail-signatures/test_fail_signatures.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-overseer-flip/NOTICE",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-overseer-flip/README.md",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-overseer-flip/fixtures.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-overseer-flip/paper_evidence.json",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-overseer-flip/scorer.py",
+      "error": "not_downloaded"
+    },
+    {
+      "path": "experiments/2026-11-07/w16-overseer-flip/test_overseer_flip.py",
+      "error": "not_downloaded"
+    }
+  ],
+  "sha_mismatches": [],
+  "paths_downloaded": [
+    "experiments/2026-11-05/01-coworkos-revision-checked-leases/DESIGN-NOTE.md",
+    "experiments/2026-11-05/01-coworkos-revision-checked-leases/NOTICE",
+    "experiments/2026-11-05/README.md",
+    "experiments/2026-11-05/w14-arc-grammar/LICENSE",
+    "experiments/2026-11-05/w14-arc-grammar/NOTICE",
+    "experiments/2026-11-05/w14-arc-grammar/arc_grammar/__init__.py",
+    "experiments/2026-11-05/w14-arc-grammar/arc_grammar/receipt_liveness.py",
+    "experiments/2026-11-05/w14-arc-grammar/arc_grammar/types.py",
+    "experiments/2026-11-05/w14-arc-grammar/conformance/manifest.json",
+    "experiments/2026-11-05/w14-arc-grammar/conformance/schema/case.schema.json",
+    "experiments/2026-11-05/w14-arc-grammar/conformance/sequence/blocked-rules.json",
+    "experiments/2026-11-05/w14-arc-grammar/conformance/sequence/options.json",
+    "experiments/2026-11-05/w14-arc-grammar/conformance/single-event/divergences.json",
+    "experiments/2026-11-05/w14-arc-grammar/conformance/single-event/extensions.json",
+    "experiments/2026-11-05/w14-arc-grammar/conformance/single-event/field-constraints.json",
+    "experiments/2026-11-05/w14-arc-grammar/run_conformance.py",
+    "experiments/2026-11-05/w14-phase-deadline/NOTICE",
+    "experiments/2026-11-05/w14-phase-deadline/README.md",
+    "experiments/2026-11-05/w14-phase-deadline/deadline.py",
+    "experiments/2026-11-05/w14-phase-deadline/fixtures/extension_triple.json",
+    "experiments/2026-11-05/w14-silence-expiry/fixtures/sample_policy.json",
+    "experiments/2026-11-05/w14-silence-expiry/silence_expiry/__init__.py",
+    "experiments/2026-11-05/w14-silence-expiry/silence_expiry/actions.py",
+    "experiments/2026-11-05/w14-sundial/NOTICE",
+    "experiments/2026-11-05/w14-whose-turn/NOTICE",
+    "experiments/2026-11-05/w14-yukh/NOTICE",
+    "experiments/2026-11-06/01-flyhash-agent-memory/NOTICE",
+    "experiments/2026-11-06/01-flyhash-agent-memory/requirements.txt",
+    "experiments/2026-11-06/README.md",
+    "experiments/2026-11-06/w15-handoff-gate/NOTICE",
+    "experiments/2026-11-06/w15-sepm/NOTICE",
+    "experiments/2026-11-06/w15-sepm/fixtures.py",
+    "experiments/2026-11-06/w15-zsc-cfd/fixtures.py",
+    "experiments/2026-11-07/01-more-agents-reliability/NOTICE",
+    "experiments/2026-11-07/README.md",
+    "experiments/2026-11-07/w16-atc/NOTICE",
+    "experiments/2026-11-07/w16-fail-signatures/NOTICE",
+    "experiments/2026-11-07/w16-overseer-flip/day-README.md"
+  ],
+  "mirror_incomplete": true,
+  "remaining_count": 83,
+  "ingest_tools": [
+    "/tmp/mirror_quick_apply.py",
+    "/tmp/mirror_part_c_ingest_wave_array.py",
+    "/tmp/mirror_persist_mcp_results.py"
+  ]
+}

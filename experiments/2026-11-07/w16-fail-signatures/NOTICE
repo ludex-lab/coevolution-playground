@@ -1,0 +1,12 @@
+Method citation: Sergio Talavera and Magdalini Eirinaki,
+Interpretable Early Termination of Web Navigation Agents via Closed Sequential
+Pattern Mining, arXiv:2611.04142v1, https://arxiv.org/abs/2611.04142.
+Fetched paper HTML states: License: CC BY-NC-SA 4.0.
+https://creativecommons.org/licenses/by-nc-sa/4.0/
+Method-cite only; brief attributed excerpts are in paper_evidence.json with
+section labels. Paper text is not relicensed as MIT. No substantial paper text,
+tables, prompts, captions or traces are copied. Implementation is clean-room
+stdlib code using invented synthetic sequences; not a paper reproduction.
+No author repo was found. No upstream code pin; no repository was guessed or
+cloned. No MiniWoB++ or open-weight collection was downloaded or reproduced.
+No Hugging Face data was downloaded.

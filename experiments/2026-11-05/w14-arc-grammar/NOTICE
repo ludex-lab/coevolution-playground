@@ -1,0 +1,12 @@
+This experiment ports upstream Agent Arc Status reference code and fixtures:
+
+- Python modules derive from ``packages/reference/src/validate.ts`` and
+  ``packages/reference/src/cadence.ts`` (verbatim regex / error strings at pin
+  ``7a3206b0c466a619d066a3a05872340e93a5a618``), plus a cadence fix for §4.5
+  (no heartbeat after ``blocked``).
+- ``conformance/**`` JSON is vendored from the same upstream repository.
+
+Copyright (c) 2026 Joe Fisher — MIT License (see LICENSE).
+
+Team OS playground packaging (README, tests, receipt liveness helper) is
+playground-local; upstream pin is grammar + corpus only.

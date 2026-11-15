@@ -1,0 +1,15 @@
+Method citation: Maisha Maliha, Vishal Pramanik and Sumit Kumar Jha,
+ATC: Agent Trajectory Control for Role-Contract Enforcement in Black-Box
+Multi-Agent Systems, arXiv:2611.04321v1, https://arxiv.org/abs/2611.04321.
+Fetched paper HTML states: License: CC BY 4.0.
+https://creativecommons.org/licenses/by/4.0/
+CC BY 4.0 covers the paper text; it does not relicense the paper as software
+and grants no software rights. Method-cite only; brief attributed excerpts are
+in paper_evidence.json with section labels.
+Upstream pin: VishalPramanik/ATC @ fd8a2cb4638fe8c9f4e12742d1d5e6c523e25e8d.
+At that pin the repository is a coming-soon stub whose README reads
+"The code for ATC will be available soon." It has no software licence
+(GitHub API license field null; LICENSE 404). Nothing was vendored or copied
+from it, and no missing code was reconstructed.
+Implementation is clean-room stdlib code over invented synthetic fixtures.
+No LLM, model weights, benchmark data, or network download is used.
