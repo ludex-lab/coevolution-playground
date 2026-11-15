@@ -1,0 +1,9 @@
+{
+  "missing_on_disk": 391,
+  "experiment_files_on_disk": 140,
+  "target_experiment_files": 531,
+  "top_level_ok": 2,
+  "target_total_excl_readme": 533,
+  "cache_entries": 69,
+  "progress_note": "Mirroring continues via cursor-origin get_file_contents batches + _mirror_agent_persist_mcp.py"
+}

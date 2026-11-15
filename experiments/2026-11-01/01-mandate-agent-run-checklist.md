@@ -1,3 +1,103 @@
+# 실험 스케치: MANDATE × Ork→Smith→Checker 런 채점
+
+**날짜**: 2026-11-01 · **유형**: 당일 체크리스트 (풀 스터디·논문 재현 아님)
+
+## Goal
+
+최근 **Ork → Smith → Checker** 흐름(및 Cursor **Cloud Agent** composer 런) **1–2건**을 골라, [MANDATE](https://arxiv.org/abs/2610.34748)에서 말하는 **agentic delegation failure**와 맞닿는 **실무 subset**으로 빠르게 채점한다. 목적은 논문 분류기를 돌리는 것이 아니라, 위임 시 **성공 기준·증거·handoff**가 명시되었는지, “조용한 실패(empty transcript / claimed success without artifacts)”를 Checker가 잡을 수 있는지 **팀 감각**을 calibrate하는 것이다.
+
+## Non-goals
+
+- Reddit 코퍼스·73인 스터디 재현, LLM 분류기 구축
+- MANDATE 23개 전 카테고리 완전 커버 (오늘은 아래 **실무 subset**만)
+- Cloud Agent 인프라 변경, 새 앱, Vercel/Ludex, 비밀/API 키, 대규모 설치
+- “우리 팀은 MANDATE 점수 X%”처럼 통계적 prevalence 주장
+
+## MANDATE 한 줄 (논문)
+
+**Agentic delegation failure**: 사용자가 위임한 일을 에이전트가 **사용자가 기대한 방식과 다르게** 수행할 때 발생한다. MANDATE는 7그룹·23카테고리 taxonomy이며, 논문은 **심각할수록 눈에 덜 띈다**(severity ↔ noticeability)는 점과 **idle execution** 등 연구 공백을 강조한다.
+
+## 오늘 쓰는 실무 subset (6축)
+
+논문 카테고리와 느슨히 대응; 채점은 **0 / 0.5 / 1** (아래 표).
+
+| 축 | MANDATE 쪽 힌트 | Ork playground에서 보는 신호 |
+|----|-----------------|------------------------------|
+| **Delegation handoff gap** | Planning Failure, Instruction Violation | Ork brief에 Smith/Checker 역할·입력·출력 경로가 한 블록으로 안 넘어감 |
+| **Unclear success criteria** | Adherence Failure | “끝”의 정의 없음 (PR? 파일 2개? 스케치만?) |
+| **Silent failure / empty transcript** | Execution Misrepresentation, Premature Termination | 대시보드에 런은 있는데 transcript/tool 이벤트 거의 없음, 또는 요약만 “완료” |
+| **Retry loops** | Unbounded or Idle Execution, Resource Inefficiency | 같은 실패를 N번 재시도, 큐·follow-up만 쌓임 |
+| **Missing evidence** | Misrepresentation (Execution / Environment) | Checker가 독립 검증할 diff·커밋 SHA·스크린샷·CI 링크 없음 |
+| **Scope creep** | Unauthorized Task Scope Expansion | 요청 밖 README/리팩터/다른 날짜 폴더까지 손댐 |
+
+## 역할 매핑 (Ork → Smith → Checker)
+
+| 역할 | 이 스케치에서 할 일 |
+|------|---------------------|
+| **Ork** | 채점할 런 1–2개 선택, 각 런의 **위임 문장·성공 기준·non-goals**를 스케치 전에 한 번에 적기 |
+| **R** (필요 시) | arXiv 초록 + Appendix A에서 오늘 subset 카테고리 정의 10분 확인 |
+| **Smith** | 선택한 런의 transcript·PR·커밋·아티팩트 링크를 **증거 패킷**으로 모음 (시크릿 제외) |
+| **Checker** | 에이전트/Ork의 “성공” 주장을 **증거 패킷과 대조**; 채점표 작성, 한 줄 verdict |
+
+## 어떤 런을 채점할지 (예시)
+
+아래는 **형식 예시**이다. 실제 run ID·링크는 팀이 가진 최근 기록으로 바꾼다.
+
+| 런 | 가설적 라벨 | 왜 비교용인가 |
+|----|-------------|----------------|
+| **A — “성공 앵커”** | 예: TokWatt 실험 스케치 PR (playground `#3` 또는 `cursor/tokwatt-experiment-sketch-*` 머지) | `experiments/2026-10-31/` 파일·README·PR diff·커밋 SHA가 **위임 범위와 일치** |
+| **B — “실패 앵커”** | 예: 이전 Cloud Agent 런 — **empty transcript** 또는 tool 호출 없이 종료 | 사용자는 follow-up을 줬지만 **재현 가능한 산출물·transcript evidence**가 없음 → Execution Misrepresentation / Premature Termination 후보 |
+
+**채점 절차 (당일 ~45–60분)**
+
+1. Ork: 런 A·B 각각에 대해 위임 당시 **한 문장 goal**과 **성공 기준 3개 이하**를 적는다 (사후 rationalization 최소화 — 가능하면 대시보드 제목·첫 user message 인용).
+2. Smith: 각 런에 **증거 패킷** — PR URL, branch, commit SHA, 변경 파일 목록, transcript에 tool/event가 있는지 Y/N, Checker가 본 독립 검증(테스트·diff review) 한 줄.
+3. Checker: 아래 **채점표** 6축 × 2런 채우기; 축마다 “관찰 한 줄 + 0/0.5/1”.
+4. Ork: 두 런의 **총점 차이**가 handoff/성공 기준/증거 중 어디서 났는지 3문장 회고.
+
+### 채점 척도 (각 축)
+
+- **1** — 문제 없음 또는 의도적 non-goal 준수
+- **0.5** — 부분 충족 (예: PR은 있으나 success criteria 일부 미충족)
+- **0** — 명확한 delegation failure 신호 (subset 정의와 모순)
+
+## Scoring table template
+
+복사해서 런 A / 런 B 각각 한 장.
+
+```text
+run_label: (A success anchor | B empty-transcript | …)
+run_ref: (Cloud Agent URL or PR — no secrets)
+delegation_one_liner:
+success_criteria (max 3):
+---
+| Axis                         | Score 0/0.5/1 | One-line observation |
+|------------------------------|---------------|----------------------|
+| Handoff gap                  |               |                      |
+| Unclear success criteria     |               |                      |
+| Silent failure / empty tx    |               |                      |
+| Retry loops                  |               |                      |
+| Missing evidence             |               |                      |
+| Scope creep                  |               |                      |
+---
+subtotal (/6):
+mandate_groups_touched: (e.g. M-Execution Misrepresentation, T-Unbounded…)
+checker_verdict: pass | revise | abort-delegation
+checker_one_liner:
+```
+
+### 런 A (성공 앵커) — 채점 (TokWatt, PR #3)
+
+```text
+run_label: A success anchor (TokWatt experiment sketch)
+run_ref: PR https://cursor.com/codebase/coevolution-lab/playground/pull/3 · Cloud Agent bc-21290b22 · commit e98fbff · composer-2.5 · +134/-0
+delegation_one_liner: Ork → Smith: `experiments/2026-10-31/`에 TokWatt agent-energy 스케치(markdown only), PR 오픈, 배포·시크릿 없음.
+success_criteria (max 3): (1) `experiments/2026-10-31/README.md` + `01-tokwatt-agent-energy-sketch.md` (2) playground PR URL (3) Ork에 검증 가능한 커밋 SHA·diff
+---
+| Axis                         | Score 0/0.5/1 | One-line observation |
+|------------------------------|---------------|----------------------|
+| Handoff gap                  | 1             | 산출 경로·날짜 폴더·markdown-only가 PR diff 두 파일과 일치. |
+| Unclear success criteria     | 1             | “스케치 2파일 + PR + no deploy”가 PR/커밋으로 독립 확인됨. |
 | Silent failure / empty tx    | 1             | 런이 실제 +134 LOC·PR 오픈으로 종료; empty-transcript 패턴 아님. |
 | Retry loops                  | 1             | 단일 목적 PR(#3); 불필요한 재시도·follow-up 큐 누적 신호 없음. |
 | Missing evidence             | 1             | e98fbff, 변경 경로 2개, PR #3 — Checker가 Origin/PR만으로 대조 가능. |
@@ -80,107 +180,8 @@ checker_one_liner: empty transcript + artifact 부재 상태의 “진행/완료
 ## Status
 
 - [x] Planning (스케치 작성)
-- x] [n Progress ((당일 실행)
+- [x] In Progress (당일 실행)
 - [x] Complete
 - [ ] On Hold
 
-**결론**: TokWatt PR #3는 증거 기반 pass 앵커; 2026-10-30 empty-transcript SPEAR는 동일 MANDATE subset에서 abort 앵커 — handoff 윘 **success criteria + evidence packet** 없이 launch하지 않기.
-# 실험 스케치: MANDATE × Ork→Smith→Checker 런 채점
-
-**날짜**: 2026-11-01 · **유형**: 당일 체크리스트 (풀 스터디·논문 재현 아님)
-
-## Goal
-
-최근 **Ork → Smith → Checker** 흐름(및 Cursor **Cloud Agent** composer 런) **1–2건**을 골라, [MANDATE](https://arxiv.org/abs/2610.34748)에서 말하는 **agentic delegation failure**와 맞닿는 **실무 subset**으로 빠르게 채점한다. 목적은 논문 분류기를 돌리는 것이 아니라, 위임 시 **성공 기준·증거·handoff**가 명시되었는지, “조용한 실패(empty transcript / claimed success without artifacts)”를 Checker가 잡을 수 있는지 **팀 감각**을 calibrate하는 것이다.
-
-## Non-goals
-
-- Reddit 코퍼스·73인 스터디 재현, LLM 분류기 구축
-- MANDATE 23개 전 카테고리 완전 커버 (오늘은 아래 **실무 subset**만)
-- Cloud Agent 인프라 변경, 새 앱, Vercel/Ludex, 비밀/API 키, 대규모 설치
-- “우리 팀은 MANDATE 점수 X%”처럼 통계적 prevalence 주장
-
-## MANDATE 한 줄 (논문)
-
-**Agentic delegation failure**: 사용자가 위임한 일을 에이전트가 **사용자가 기대한 방식과 다르게** 수행할 때 발생한다. MANDATE는 7그룹·23카테고리 taxonomy이며, 논문은 **심각할수록 눈에 덜 띈다**(severity ↔ noticeability)는 점과 **idle execution** 등 연구 공백을 강조한다.
-
-## 오늘 쓰는 실무 subset (6축)
-
-논문 카테고리와 느슨히 대응; 채점은 **0 / 0.5 / 1** (아래 표).
-
-| 축 | MANDATE 쪽 힌트 | Ork playground에서 보는 신호 |
-|----|-----------------|------------------------------|
-| **Delegation handoff gap** | Planning Failure, Instruction Violation | Ork brief에 Smith/Checker 역할·입력·출력 경로가 한 블록으로 안 넘어감 |
-| **Unclear success criteria** | Adherence Failure | “끝”의 정의 없음 (PR? 파일 2개? 스케치만?) |
-| **Silent failure / empty transcript** | Execution Misrepresentation, Premature Termination | 대시보드에 런은 있는데 transcript/tool 이벤트 거의 없음, 또는 요약만 “완료” |
-| **Retry loops** | Unbounded or Idle Execution, Resource Inefficiency | 같은 실패를 N번 재시도, 큐·follow-up만 쌓임 |
-| **Missing evidence** | Misrepresentation (Execution / Environment) | Checker가 독립 검증할 diff·커밋 SHA·스크린샷·CI 링크 없음 |
-| **Scope creep** | Unauthorized Task Scope Expansion | 요청 밖 README/리팩터/다른 날짜 폴더까지 손댐 |
-
-## 역할 매핑 (Ork → Smith → Checker)
-
-| 역할 | 이 스케치에서 할 일 |
-|------|---------------------|
-| **Ork** | 채점할 런 1–2개 선택, 각 런의 **위임 문장·성공 기준·non-goals**를 스케치 전에 한 번에 적기 |
-| **R** (필요 시) | arXiv 초록 + Appendix A에서 오늘 subset 카테고리 정의 10분 확인 |
-| **Smith** | 선택한 런의 transcript·PR·커밋·아티팩트 링크를 **증거 패킷**으로 모음 (시크릿 제외) |
-| **Checker** | 에이전트/Ork의 “성공” 주장을 **증거 패킷과 대조**; 채점표 작성, 한 줄 verdict |
-
-## 어떤 런을 채점할지 (예시)
-
-아래는 **형식 예시**이다. 실제 run ID·링크는 팀이 가진 최근 기록으로 바꾼다.
-
-| 런 | 가설적 라벨 | 왜 비교용인가 |
-|----|-----------------|------------------------------|
-| **A — “성공 앵커”** | 예: TokWatt 실험 스케치 PR (playground `#3` 또는 `cursor/tokwatt-experiment-sketch-*` 머지) | `experiments/2026-10-31/` 파일·README·PR diff·커밋 SHA가 **위임 범위와 일치** |
-| **B — “실패 앵커”** | 예: 이전 Cloud Agent 런 — **empty transcript** 또는 tool 호출 없이 종료 | 사용자는 follow-up을 줬지만 **재현 가능한 산출물·transcript evidence**가 없음 → Execution Misrepresentation / Premature Termination 후보 |
-**채점 절차 (당일 ~45–60분)**
-
-1. Ork: 런 A·B 각각에 대해 위임 당시 **한 문장 goal**과 **성공 기준 3개 이하**를 적는다 (사후 rationalization 최소화 — 가능하면 대시보드 제목·첫 user message 인용).
-2. Smith: 각 런에 **증거 패킷** — PR URL, branch, commit SHA, 변경 파일 목록, transcript에 tool/event가 있는지 Y/N, Checker가 본 독립 검증(테스트·diff review) 한 줄.
-3. Checker: 아래 **채점표** 6축 × 2런 채우기; 축마다 “관찰 한 줄 + 0/0.5/1”.
-4. Ork: 두 런의 **총점 차이**가 handoff/성공 기준/증거 중 어디서 났는지 3문장 회고.
-
-### 채점 척도 (각 축)
-
-- **1** — 문제 없음 또는 의도적 non-goal 준수
-- **0.5** — 부분 충족 (예: PR은 있으나 success criteria 일부 미충족)
-- **0** — 명확한 delegation failure 신호 (subset 정의와 모순)
-
-## Scoring table template
-
-복사해서 런 A / 런 B 각각 한 장.
-
-```text
-run_label: (A success anchor | B empty-transcript | …)
-run_ref: (Cloud Agent URL or PR — no secrets)
-delegation_one_liner:
-success_criteria (max 3):
----
-| Axis                         | Score 0/0.5/1 | One-line observation |
-|------------------------------|---------------|----------------------|
-| Handoff gap                  |               |                      |
-| Unclear success criteria     |               |                      |
-| Silent failure / empty tx    |               |                      |
-| Retry loops                  |               |                      |
-| Missing evidence             |               |                      |
-| Scope creep                  |               |                      |
----
-subtotal (/6):
-mandate_groups_touched: (e.g. M-Execution Misrepresentation, T-Unbounded…)
-checker_verdict: pass | revise | abort-delegation
-checker_one_liner:
-```
-
-### 런 A (성공 앵커) — 채점 (TokWatt, PR #3)
-
-```text
-run_label: A success anchor (TokWatt experiment sketch)
-run_ref: PR https://cursor.com/codebase/coevolution-lab/playground/pull/3 · Cloud Agent bc-21290b22 · commit e98fbff · composer-2.5 · +134/-0
-delegation_one_liner: Ork → Smith: `experiments/2026-10-31/`에 TokWatt agent-energy 스케치(markdown only), PR 오픈, 배포·시크릿 없음.
-success_criteria (max 3): (1) `experiments/2026-10-31/README.md` + `01-tokwatt-agent-energy-sketch.md` (2) playground PR URL (3) Ork에 검증 가능한 커밋 SHA·diff
----
-| Axis                         | Score 0/0.5/1 | One-line observation |
-|------------------------------|---------------|----------------------|
-| Handoff gap                  | 1             | 산출 경로·날짜 폴더·markdown-only가 PR diff 두 파일과 일치. |
-| Unclear success criteria     | 1             | “스케치 2파일 + PR + no deploy”가 PR/커밋으로 독립 확인됨. |
+**결론**: TokWatt PR #3는 증거 기반 pass 앵커; 2026-10-30 empty-transcript SPEAR는 동일 MANDATE subset에서 abort 앵커 — handoff 시 **success criteria + evidence packet** 없이 launch하지 않기.

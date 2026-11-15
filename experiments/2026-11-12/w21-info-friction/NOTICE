@@ -1,0 +1,31 @@
+w21-info-friction
+-----------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code, data or
+weights.
+
+Paper (method idea credited)
+----------------------------
+Dimitris Panagopoulos, Adolfo Perrusquía, Yang Xing and Weisi Guo.
+"Model-Free Runtime Measurement of Task-Relevant Information".
+arXiv:2611.14111, v1, submitted 10 Nov 2026. Primary category cs.RO,
+cross-listed cs.AI. Acquisition-State Telemetry (AST) is the method's name
+in the abstract, not the title.
+https://arxiv.org/abs/2611.14111
+Licence: arXiv non-exclusive distribution licence,
+http://arxiv.org/licenses/nonexclusive-distrib/1.0/ (a paper licence, not a
+software grant).
+
+Code: the abs page Comments field says "Code available", but the abs page
+gives no link. The code is UNVERIFIED and unlocated; none was found or
+used.
+
+Method only: the idea of two signals over information gathering, progress
+across unresolved requirements and friction when recurrent evidence brings
+no gain. The fail-closed stop when friction passes a declared bound, and
+the expiry rule, are this sketch's own rules, not the paper's. No text,
+figures, tables or data from the paper are copied into the code; the PDF
+was not read; no domain or reinforcement learning experiment was re-run.
+The paper's claims appear only in paper_evidence.json, quoted and marked
+UNVERIFIED.

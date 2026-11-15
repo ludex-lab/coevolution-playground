@@ -1,0 +1,9 @@
+{
+  "report_id": "r-selffail-005",
+  "exec_pass": false,
+  "exec_pass_reason": "executor reported fail; host verify green",
+  "verify_rc": 0,
+  "accepted": false,
+  "accepted_reason": "",
+  "rework_of": null
+}

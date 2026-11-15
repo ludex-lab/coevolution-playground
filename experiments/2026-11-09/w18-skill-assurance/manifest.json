@@ -1,0 +1,31 @@
+{
+  "skill_id": "pack_cart",
+  "version": "0.1.0",
+  "description": "Toy mill skill: pack a cart with one crate per sack, plus two spare crates on request, bound for an open bin.",
+  "effect": {
+    "module": "effect",
+    "function": "pack_cart"
+  },
+  "input_contract": {
+    "fields": [
+      {"name": "sacks", "type": "integer", "minimum": 0, "maximum": 8},
+      {"name": "bin", "type": "string", "enum": ["south", "east"]},
+      {"name": "spare", "type": "boolean"}
+    ],
+    "extra_fields": "reject"
+  },
+  "output_contract": {
+    "fields": [
+      {"name": "crates", "type": "integer", "minimum": 0, "maximum": 10},
+      {"name": "bin", "type": "string", "enum": ["south", "east"]}
+    ],
+    "extra_fields": "reject"
+  },
+  "safety_boundary": {
+    "forbidden_output_fields": ["bin_key"],
+    "forbidden_output_values": {"bin": ["north"]},
+    "no_runtime_code_synthesis": true,
+    "no_network_modules": true,
+    "deterministic": true
+  }
+}

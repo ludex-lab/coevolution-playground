@@ -1,0 +1,30 @@
+w19-workspace-grant
+-------------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code.
+
+Paper (method idea credited)
+----------------------------
+Hui Zhao (Heurion Research). "Aegis OS: A Transactional Multi-Tenant Operating
+System Runtime for Eliminating Authorization Fatigue in Autonomous Coding
+Agents". arXiv:2611.08516, v1 submitted 22 Oct 2026.
+https://arxiv.org/abs/2611.08516
+Licence: Creative Commons Attribution 4.0 International (CC BY 4.0),
+https://creativecommons.org/licenses/by/4.0/
+
+Only the method idea is used here: moving the approval unit from each action
+to a workspace grant issued before the actions. Short excerpts quoted in
+paper_evidence.json are attributed to the paper or its upstream README; no
+paper text is reproduced in the code, fixtures or tests, and no changes to
+the paper are implied.
+
+Upstream repository (reference only)
+------------------------------------
+heurion-org/aegis-os, https://github.com/heurion-org/aegis-os
+Licence: Apache License 2.0. Pin: 14653158e820b0ca46f170e0125c8528b72205c0
+Its README was read as text from a copy fetched earlier for review. The
+repository was never cloned, built, installed, run, imported or ported, and
+no code, data or other files from it were copied.
+The upstream has no NOTICE file at that pin, so there is no upstream NOTICE
+text to carry forward.

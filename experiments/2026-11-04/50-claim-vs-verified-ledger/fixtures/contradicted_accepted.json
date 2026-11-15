@@ -1,0 +1,9 @@
+{
+  "report_id": "r-waive-004",
+  "exec_pass": true,
+  "exec_pass_reason": "blocked on external API",
+  "verify_rc": 2,
+  "accepted": true,
+  "accepted_reason": "human waived verify; patch saved",
+  "rework_of": "r-contra-002"
+}

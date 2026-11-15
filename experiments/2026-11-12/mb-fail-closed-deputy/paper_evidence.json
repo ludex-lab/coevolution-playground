@@ -1,0 +1,36 @@
+{
+  "source": "https://arxiv.org/abs/2611.13355",
+  "title": "DEPUTYBENCH: Evaluating Contextual Safety in Enterprise Agents",
+  "status": "UNVERIFIED",
+  "attribution": "Authors' own model results as stated on the arXiv abstract page; not reproduced or re-claimed here. Wording in the quotes below is the authors'.",
+  "claims": [
+    {
+      "what": "restricted execution rate, missing evidence vs explicit non-permission",
+      "missing_evidence_pct": 10.3,
+      "explicit_non_permission_pct": 3.5,
+      "gap_pp": 6.8,
+      "interval_95_pp": [1.9, 13.0],
+      "analysis": "secondary analysis",
+      "matched_tasks": 27,
+      "quote": "restricted execution is more frequent with missing evidence than explicit non-permission: 10.3% versus 3.5% on 27 matched tasks, a 6.8-percentage-point difference (95% interval: 1.9-13.0; secondary analysis)."
+    },
+    {
+      "what": "concentration of masked-condition executions",
+      "analysis": "post-hoc analysis",
+      "masked_condition_executions_in_four_privacy_tasks": 61,
+      "masked_condition_executions_total": 100,
+      "four_privacy_tasks": "requiring complete cumulative counts or person-specific consent",
+      "quote": "A post-hoc analysis locates 61 of 100 masked-condition executions in four privacy tasks requiring complete cumulative counts or person-specific consent."
+    },
+    {
+      "what": "robustness of the gap and its size outside the four tasks",
+      "persists_when_excluded": ["the most error-prone model", "the largest contributing task"],
+      "outside_four_tasks": "much smaller (no figure stated in the abstract)",
+      "quote": "The difference persists when the most error-prone model or the largest contributing task is excluded, but is much smaller outside those four tasks."
+    },
+    {
+      "what": "scope of the concentration analysis",
+      "quote": "The concentration analysis describes task structure and audited outcomes, not an identified internal mechanism."
+    }
+  ]
+}

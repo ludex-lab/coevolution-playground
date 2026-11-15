@@ -11,9 +11,9 @@ Numbers below are **paper-reported** from the public abstract and body ([2610.32
 - **Mostly hands-off:** **58%** of PRs have **no** human intervention (no Human–AI loop); agent work stays in one initial trajectory for the majority.
 - **Intervention is brief when it happens:** Among intervened PRs, **median 2** Human–AI loops (max 25 in data); merge status within intervened PRs does **not** strongly track loop count (both merged and unmerged groups median **2** loops — negligible effect size).
 - **Merge association:** **78%** of **intervened** PRs merge vs **62%** of **non-intervened** (χ², small Cramér’s V ≈ 0.17) — intervention **presence** correlates with merge, not necessarily “more loops = better.”
-- **First intervention reshapes the nett run:** Trajectory **after the first** human intervention drops **~20.8 iterations** and **~8.4 min** vs pre-intervention trajectory; **later** interventions show minimal iteration drop and no significant duration change — most agent effort sits in the **initial** trajectory; follow-ups tend to be smaller, focused requests.
+- **First intervention reshapes the next run:** Trajectory **after the first** human intervention drops **~20.8 iterations** and **~8.4 min** vs pre-intervention trajectory; **later** interventions show minimal iteration drop and no significant duration change — most agent effort sits in the **initial** trajectory; follow-ups tend to be smaller, focused requests.
 - **Initial effort vs outcome:** Merged PRs tend to have **fewer initial trajectory iterations** than unmerged (e.g. median initial **34 vs 39** overall); long initial runs correlate with harder tasks and eventual intervention.
-- **Qualitative patterns:** Common interventions — implementation alternatives, requirement refinement, bug pointers, spec misunderstandings; some developers **delegate** via feedback, others **commit themselves**; repeated / hand-holding loops exist but are not the model case.
+- **Qualitative patterns:** Common interventions — implementation alternatives, requirement refinement, bug pointers, spec misunderstandings; some developers **delegate** via feedback, others **commit themselves**; repeated / hand-holding loops exist but are not the modal case.
 - **Partial public data:** PR metadata and events come from **AIDev v4 (2.7M-PR release)** on Hugging Face; this paper’s **session-level JSON lifecycle encoding** is separate from the bulk HF dump (cite only — do not download the full dataset here).
 
 **Evidence note:** Merge-rate breakdown (78% / 62%) and loop medians are from §RQ1 / Table II in the paper. “~58% no intervention” and “20.8 / 8.4 min after first intervention” match the abstract.
@@ -59,7 +59,7 @@ Treat **2** Human–AI loops as a **planning hint** from Copilot data, **not** a
 1. [ ] Is this the **smallest** feedback that completes one focused sub-task?
 2. [ ] Are we repeating the **same** instruction (risk of repeated loops)?
 3. [ ] Should a **human commit** replace another agent trajectory (paper: developers sometimes commit instead of re-assigning)?
-4. [ ] Update **log row** below and open-PR board if outcome still `open``past timebox.
+4. [ ] Update **log row** below and open-PR board if outcome still `open` past timebox.
 
 ---
 
@@ -68,7 +68,7 @@ Treat **2** Human–AI loops as a **planning hint** from Copilot data, **not** a
 Copy rows per PR lifecycle. `round#` = Human–AI loop index (0 = initial trajectory only, no intervention yet).
 
 | ticket/PR id | agent id | intervened? (Y/N) | round# | reason | outcome (merged/open/abandoned) | notes |
-|--------------|---------|-------------------|--------|--------|----------------------------------|--------|
+|--------------|----------|-------------------|--------|--------|----------------------------------|-------|
 | *(fill)* | *(fill)* | | | | | |
 
 ### Example JSON (schema sketch only — not AIDev / HF export)
@@ -90,8 +90,8 @@ Copy rows per PR lifecycle. `round#` = Human–AI loop index (0 = initial trajec
 ## First log row (2026-11-03 Morning Brief run)
 
 | ticket/PR id | agent id | intervened? (Y/N) | round# | reason | outcome (merged/open/abandoned) | notes |
-|--------------|----------|-------------------|--------|--------|----------------------------------|--------|
-| ``mb-2026-11-03-copilot-trajectories` | *(Smith: cloud run id)* | N | 0 | — | open | Builder markdown under `experiments/2026-11-03/`; no Checker step-in during initial agent trajectory |
+|--------------|----------|-------------------|--------|--------|----------------------------------|-------|
+| `mb-2026-11-03-copilot-trajectories` | *(Smith: cloud run id)* | N | 0 | — | open | Builder markdown under `experiments/2026-11-03/`; no Checker step-in during initial agent trajectory |
 
 ---
 
@@ -102,7 +102,7 @@ Copy rows per PR lifecycle. `round#` = Human–AI loop index (0 = initial trajec
 - No download or local load of **AIDev-2.7M** (HF); cite [AIDev](https://huggingface.co/datasets) / paper data pointer only.
 - No new bots — intervention labels apply to existing Ork / Checker / CloudAgent workflow.
 
-----
+---
 
 ## References
 

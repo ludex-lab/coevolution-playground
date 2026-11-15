@@ -1,0 +1,27 @@
+w21-plan-changing-ask
+---------------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code, data or
+weights.
+
+Paper (method idea credited)
+----------------------------
+Yuhan Tang, Ke Fan, Xinkai Zou, Baichuan Mo, Kangxin Cui, Ao Qu, Ou Zheng,
+Jiangbo Yu, Haris N. Koutsopoulos, Jinhua Zhao and Yuan Zhou.
+"From Questions to Decisions: Benchmarking How LLM Agents Acquire
+Decision-Relevant Information from Human Beings". arXiv:2611.13015, v1,
+submitted 9 Nov 2026. Ask2Decide is the benchmark's name in the abstract.
+https://arxiv.org/abs/2611.13015
+Licence: arXiv non-exclusive distribution licence,
+http://arxiv.org/licenses/nonexclusive-distrib/1.0/ (a paper licence, not a
+software grant). The abstract says: "This is ongoing work and will be
+updated." Code: UNVERIFIED; no code link was found on the abs page and none
+is used.
+
+Method only: the idea of an operator who holds facts missing from the
+agent's request, some of which change the plan and some of which are
+similarly worded but do not. No text, figures, tables, prompts or data from
+the paper are copied into the code; the PDF was not read; the human study
+and the solvers were not re-run. The paper's figures appear only in
+paper_evidence.json, quoted and marked UNVERIFIED.

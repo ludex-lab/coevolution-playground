@@ -11,12 +11,12 @@
 | `escalate_when` | true per [AgentBaton fail≥2](../2026-11-04/01-agentbaton-failure-escalate-handoff.md) → **escalate / park** (not another silent agent loop) |
 | Action | **Park** this PR until Cody (or owner) fills the intervention log row; resume on merge gate after fields + base refresh |
 
-**Rule citation:** Same `failure-id` **two consecutive** failures → stop way run; handoff = **workspace_pointer` + `log_path` only** — ․NOT** full chat transcript ([2610.35959](https://arxiv.org/abs/2610.35959) sketch on main: [01-agentbaton-failure-escalate-handoff.md](../2026-11-04/01-agentbaton-failure-escalate-handoff.md)).
+**Rule citation:** Same `failure-id` **two consecutive** failures → stop weak run; handoff = **`workspace_pointer` + `log_path` only** — **NOT** full chat transcript ([2610.35959](https://arxiv.org/abs/2610.35959) sketch on main: [01-agentbaton-failure-escalate-handoff.md](../2026-11-04/01-agentbaton-failure-escalate-handoff.md)).
 
 ## Handoff artifact (no transcript)
 
 1. **`workspace_pointer`**
-   - Repo: `coevolution-lab/playground` 
+   - Repo: `coevolution-lab/playground`
    - Branch: `cursor/copilot-trajectories-intervention-5eae`
    - PR: #10 — Copilot trajectories intervention checklist under `experiments/2026-11-03/`
    - Head at park note authorship: see **S-Bus `relied_on`** below (updates on each push)

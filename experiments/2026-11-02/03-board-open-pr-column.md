@@ -25,7 +25,7 @@ Optional tie-in (not required for v0 sketch): when a row’s PR head changes, bu
 
 ## How Evening Close / Watchdog reads it
 
-1. **Scan column cardinality:** `open_count``= number of rows (0 vs ≥1).
+1. **Scan column cardinality:** `open_count` = number of rows (0 vs ≥1).
 2. **`open_count = 0`:** One-line close line — **“no open PRs”** (still compatible with “no merges today”; both can be true).
 3. **`open_count ≥ 1`:** Call out **oldest age** and any row with **non-empty blocker** or **CI/mergeable not green**; name PR # + owner. Do not infer merge from chat—use this column + forge.
 

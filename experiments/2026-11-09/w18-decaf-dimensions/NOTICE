@@ -1,0 +1,25 @@
+NOTICE: experiments/2026-11-09/w18-decaf-dimensions/
+
+Paper: Divide, Diagnose, and Compose: Optimizing Agentic Pipelines and
+Harnesses, Divij Handa, Christopher Tensmeyer, Jihyung Kil and
+Vlad I. Morariu, arXiv 2611.08723 (v1, submitted 5 Nov 2026),
+https://arxiv.org/abs/2611.08723. Paper licence: CC BY-NC-SA 4.0
+(https://creativecommons.org/licenses/by-nc-sa/4.0/), confirmed from the abs
+page licence link on 2026-11-09.
+
+Because the paper is NonCommercial-ShareAlike and this folder is MIT, only
+the general method idea is used (one dimension per change, an evidence trace
+per change). No text, figures, tables, prompts, dimension definitions or
+taxonomy wording from the paper are reproduced in the code, fixtures,
+manifest, README or this NOTICE. paper_evidence.json holds a few short
+verbatim quotations solely as citation evidence, marked as quotations from a
+CC BY-NC-SA source and attributed to the authors.
+
+Dimension names in dimensions.json are this sketch's own.
+
+Upstream code: none. No code link was found in the abs page or HTML; there is
+no upstream code pin, and nothing was cloned, installed, imported or run.
+
+This directory's code is an independently authored clean-room Python 3
+stdlib method sketch. Synthetic fixtures: the Cody config, run log and every
+proposal in fixtures.py are toy data authored for this sketch.

@@ -1,0 +1,20 @@
+NOTICE — experiments/2026-11-10/w19-guardrail-order/
+
+Paper: When Routine Operations Break Architectural Pattern Relationships in
+LLM Agent Harnesses, Boming Xia, Qinghua Lu, Dino Sejdinovic and Liming Zhu,
+arXiv 2611.09088 (v1, submitted 6 Nov 2026), https://arxiv.org/abs/2611.09088.
+Paper licence: arXiv.org perpetual non-exclusive license 1.0
+(http://arxiv.org/licenses/nonexclusive-distrib/1.0/), confirmed from the abs
+page license link on 2026-11-10. Used for method and shape only: no paper
+text is copied into the code, fixtures or this directory's prose. Short
+attributed excerpts appear in paper_evidence.json only, as evidence.
+
+Upstream code: none. The abs page lists no code; no upstream code pin,
+nothing cloned, installed, imported, or run.
+
+This directory's code is an independently authored clean-room Python 3
+stdlib method sketch (json is used only to read paper_evidence.json in the
+tests).
+
+Synthetic fixtures: the harness, its stages, its maintenance ops, the file
+paths and event decision record are toy data authored for this sketch.

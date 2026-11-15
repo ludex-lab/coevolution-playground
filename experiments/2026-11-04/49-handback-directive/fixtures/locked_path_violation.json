@@ -1,0 +1,21 @@
+{
+  "inputs": {
+    "observed": {
+      "locked_paths": ["experiments/2026-11-03/"],
+      "changed_paths": ["experiments/2026-11-03/02-agentbaton-park-await-cody-fields.md"],
+      "status": "in_progress"
+    },
+    "reported": {
+      "locked_paths": ["experiments/2026-11-03/"],
+      "changed_paths": [],
+      "status": "in_progress"
+    },
+    "evidence_refs": [],
+    "prior_fingerprint": null,
+    "streak": 0,
+    "budget": null
+  },
+  "expect": {
+    "action": "blocked"
+  }
+}

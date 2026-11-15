@@ -1,0 +1,59 @@
+# BRIDGE execution contract sketch (Team OS / markdown only)
+# Paper: arXiv:2610.17805 — facts/roles/O·R·V; NOT a live runtime contract.
+# Playground: observation + offline lint; no HandoffProbe, no provenance graph daemon.
+
+contract_id: bridge-teamos-sketch-18
+contract_version: 1
+
+# R — role assignments (Ork → Smith → Checker chain analog)
+roles:
+  ork: planner
+  smith: executor
+  checker: verifier
+  jj: human_dest   # optional dest(q) for scope/routing facts
+
+# O — required fact specifications q = (id, desc, owner)
+# owner ∈ R produces; dest(q) resolved from contract + routing
+obligations:
+  - id: fact.scope_paths
+    desc: "Explicit allowed_paths for this delegation revision"
+    owner: ork
+    dest: smith
+
+  - id: fact.workspace_pointer
+    desc: "Branch + head SHA at handoff boundary"
+    owner: smith
+    dest: checker
+
+  - id: fact.handoff_artifact
+    desc: "Mechanical packet workspace_pointer + log_path only (no transcript)"
+    owner: smith
+    dest: checker
+
+  - id: fact.tests_passed_claim
+    desc: "Log-backed tests_passed claim when asserting green (PCM #12 analog when landed)"
+    owner: smith
+    dest: checker
+
+  - id: fact.verified_progress
+    desc: "Observation-backed progress bullets for escalate/park (CARE #6 analog)"
+    owner: smith
+    dest: checker
+
+# V — operational constraints (visibility / capability)
+constraints:
+  - id: v.no_transcript_handoff
+    rule: "Downstream context must not require full chat rehydration"
+  - id: v.public_trace_only
+    rule: "Frontier diagnosis uses public messages + tool logs only (no private agent state)"
+  - id: v.verify_before_commit
+    rule: "Repair releases downstream only if postcondition check passes; else native handoff"
+  - id: v.selective_gate
+    rule: "If utility gate rejects all candidates, forward m_nat unchanged (not always intervene)"
+
+# Example fact routing (fictional demo row)
+routing_hints:
+  fact.scope_paths:
+    dest: smith
+  fact.handoff_artifact:
+    dest: checker

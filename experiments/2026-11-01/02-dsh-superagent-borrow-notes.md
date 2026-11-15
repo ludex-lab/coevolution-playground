@@ -10,7 +10,7 @@ DeepSeek [001 Domain](https://github.com/deepseek-ai/dsh-superagent-prototype/bl
 | 역할 | dsh-superagent | 하는 일 |
 |------|----------------|---------|
 | **Router** | Main Session (`orchestrator`, preset `dsh-superagent-router`) | Eval의 gate + Policy 위에서 **Trigger를 받아 Ticket + Mandate를 만들거나** 라우팅. 사람이 행동해야 하거나 결과를 쓸 수 있을 때만 말함. |
-| **Worker** | Executor Session (`worker-<ticket>`, preset `dsh-superagent-worker`) | Ticket당 **Assignment 하나 + 디렉터리 하나**. 구조화된 **Report** (`progress``/ `waiting` / `ready` / `blocked` / `failed``/ `dropped`)로 상태 보고, PR을 연다. |
+| **Worker** | Executor Session (`worker-<ticket>`, preset `dsh-superagent-worker`) | Ticket당 **Assignment 하나 + 디렉터리 하나**. 구조화된 **Report** (`progress` / `waiting` / `ready` / `blocked` / `failed` / `dropped`)로 상태 보고, PR을 연다. |
 
 **세션 밖의 상태**: `Engine` + SQLite **Store**가 Trigger / Thread / Ticket / Assignment / Mandate / Decision을 소유한다. Ticket 상태는 **채팅·DSH Session transcript를 따르지 않는다** (핸드오프·재개·Executor 교체 가능). Channel 쓰기·relay·launch 등 부수 효과는 **Outbox → Effects**로 커밋 후 내구 실행 ([007 Architecture](https://github.com/deepseek-ai/dsh-superagent-prototype/blob/main/docs/007-architecture.md)).
 
@@ -34,7 +34,7 @@ DeepSeek [001 Domain](https://github.com/deepseek-ai/dsh-superagent-prototype/bl
 | # | dsh-superagent에서 | Ork playground에 적용 |
 |---|-------------------|------------------------|
 | 1 | Ticket + Mandate가 chat 밖 | **board/OPS**가 work-unit 상태(scope, strength, status)를 Ork/Smith transcript와 분리 보관. **Assignment** = Smith(Executor) 런 바인딩. |
-| 2 | Report taxonomy | Smith→Ork 보고는 `ready` / `blocked` / `failed``/ `dropped` (+ 증거 링크) 고정; 자유형 “다 했어요” 금지. **Checker**는 그 분류에 대해 기계적 증거(Origin PR path, commit, diff)를 채점. |
+| 2 | Report taxonomy | Smith→Ork 보고는 `ready` / `blocked` / `failed` / `dropped` (+ 증거 링크) 고정; 자유형 “다 했어요” 금지. **Checker**는 그 분류에 대해 기계적 증거(Origin PR path, commit, diff)를 채점. |
 | 3 | Follow-up ownership / handback | Ticket에 Assignment가 있으면 해당 Thread follow-up은 **소유 Worker(Smith)** 가 처리; scope 밖은 **handback** 후 Ork가 재라우팅. Ork 이중 오케스트레이션 축소 — **사람 stop** 또는 명시 handback 전에는 Ork가 다시 끼어들지 않음. |
 | 4 | Done-when = forge evidence | 완료는 Origin PR URL·브랜치·커밋이 존재할 때(또는 paper-only + 명시 blocker). MANDATE checklist의 “Execution Misrepresentation” 기계적 standing rule과 정렬. |
 | 5 | Attention = 구조화된 질문 하나 | board/OPS UI는 **사람 입력 대기(Attention)** 만 surface; 에이전트는 working 중 조용히 — Router가 “말할 때만 말하기”와 동일한 UX 규율. |

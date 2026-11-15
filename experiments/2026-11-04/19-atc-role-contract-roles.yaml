@@ -1,0 +1,5 @@
+# Team OS role contracts (Soft sketch) — inspired by ATC §3.2 logical + linguistic terms
+# NOT enforced at runtime; no behavior encoder f(), no regeneration g() in playground.
+# Paper: arXiv:2611.04321 — max only; do not claim benchmark RC/RDE reproduction.
+
+schema_version: 1

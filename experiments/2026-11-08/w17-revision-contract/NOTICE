@@ -1,0 +1,13 @@
+Call-level revision contracts — method sketch
+
+This directory is an original, clean-room sketch written for the playground.
+It cites the method of arXiv 2611.06967, "Call-Level Revision Contracts for
+LLM-Authored Workflows" (Jiang, Pan, Wu), https://arxiv.org/abs/2611.06967.
+
+The paper is distributed under the arXiv.org perpetual non-exclusive license.
+That license is not CC BY and is not a software grant. This sketch is
+method-cite only: no implementation and no substantial paper text were copied;
+fixtures and code are independently authored. Short quoted excerpts in
+paper_evidence.json are for citation checking only.
+
+No upstream code pin: no public implementation URL was found, so none was used.

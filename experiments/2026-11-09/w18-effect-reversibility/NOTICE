@@ -1,0 +1,20 @@
+NOTICE — experiments/2026-11-09/w18-effect-reversibility/
+
+Paper: From Emergence to Reversibility: Toward Reversible Multi-Agent
+Systems, Zhengye Han and Linda Ng Boyle, arXiv 2611.09054 (v1, cs.MA,
+submitted 6 Nov 2026), https://arxiv.org/abs/2611.09054. Paper licence:
+CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/), confirmed from the
+abs page "Rights to this article" link on 2026-11-09.
+Used for method-cite only; short quotes appear in paper_evidence.json only, for evidence, with
+attribution to the paper's authors.
+
+The paper is a research agenda. It publishes no code and reports no
+experiments, so there is no upstream code pin and nothing was reproduced.
+Its criterion is that some authorized intervention keeps a specified
+prohibited effect rare while maintaining required service; this sketch does
+not claim more than that.
+
+This directory's code is an independently authored clean-room Python stdlib
+method sketch.
+
+Fixtures are synthetic toy data authored for this sketch.

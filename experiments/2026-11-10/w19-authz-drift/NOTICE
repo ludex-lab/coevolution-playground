@@ -1,0 +1,24 @@
+NOTICE — experiments/2026-11-10/w19-authz-drift/
+
+Paper: Authorization Drift in LLM Agents: Evaluating Boundary Compliance in
+Multi-Step Tool Use, Chuxue Cao, Jingru Zeng, Boqin Yin, Yujin Zhou, Yidan
+Huang, Sujin Chen, Jinluan Yang, Haoran Li, Yike Guo and Sirui Han,
+arXiv 2611.09113 (v1, submitted 6 Nov 2026), https://arxiv.org/abs/2611.09113.
+Paper licence: Creative Commons Attribution 4.0 International (CC BY 4.0,
+http://creativecommons.org/licenses/by/4.0/), confirmed from the abs page
+licence link on 2026-11-10. Used for method and shape only: no paper text is
+copied into the code, fixtures or this directory's prose. Short attributed
+excerpts appear in paper_evidence.json only, as evidence.
+
+Upstream code: https://github.com/ZJR-FZD/AgentDrift (MIT License, no NOTICE
+file at the pin), linked from the paper's full text. Upstream pin:
+4d69a706e4e47148b51d35077e812260e64f6214 (HEAD of main). Pinned for
+provenance only: not cloned, installed, imported or run; no upstream code or
+data is copied here.
+
+This directory's code is an independently authored clean-room Python 3
+stdlib method sketch (json is used only to read paper_evidence.json in the
+tests).
+
+Synthetic fixtures: the grants, tasks, targets, data sources and every
+trajectory are toy data authored for this sketch.

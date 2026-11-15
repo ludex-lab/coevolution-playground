@@ -1,0 +1,115 @@
+{
+ "paper": {
+  "arxiv_id": "2611.13015",
+  "version": "v1",
+  "title": "From Questions to Decisions: Benchmarking How LLM Agents Acquire Decision-Relevant Information from Human Beings",
+  "benchmark_name": "Ask2Decide (named in the abstract; not the title)",
+  "authors": [
+   "Yuhan Tang",
+   "Ke Fan",
+   "Xinkai Zou",
+   "Baichuan Mo",
+   "Kangxin Cui",
+   "Ao Qu",
+   "Ou Zheng",
+   "Jiangbo Yu",
+   "Haris N. Koutsopoulos",
+   "Jinhua Zhao",
+   "Yuan Zhou"
+  ],
+  "submitted": "9 Nov 2026 (v1 2026-11-09T04:22:15Z = 2026-11-09 13:22 KST)",
+  "abs_url": "https://arxiv.org/abs/2611.13015",
+  "licence": "arXiv non-exclusive distribution licence, http://arxiv.org/licenses/nonexclusive-distrib/1.0/ (paper licence; not a software grant)",
+  "code": "UNVERIFIED: no code link was found on the abs page; none is used",
+  "ongoing_work_note": "This is ongoing work and will be updated.",
+   "pdf_read": false
+ },
+ "source": {
+  "file": "2611.130015.abs.txt",
+  "what": "plain-text copy of the abs-page abstract (prefix 'Abstract:'), taken from the lab dig pack",
+  "sha256": "e33e1bfcb61969928d4feedc89583b96b39d453eb33366c44523fda7dc63b63",
+  "chars": 1742,
+  "env": "WZ1ASK_SOURCEs names the directory holding this file; the test skips when it is unset"
+ },
+ "status": "UNVERIFIED",
+"attribution": "The authors' own results as stated in the arXiv abstract. Not reproduced, re-run or re-claimed here. Quote wording is the authors'.",
+ "claims": [
+  {
+   "id": "C1",
+   "what": "benchmark size",
+   "tasks": 43,
+   "quote": "a benchmark of 43 planning tasks",
+   "offset": 454,
+   "length": 32,
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C2",
+   "what": "method: operator-held facts, solver-labelled",
+   "quote": "An operator holds facts absent from the agent's request and records, and optimization solvers determine which facts change the optimal plan.",
+   "offset": 579,
+   "length": 140,
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C3",
+    "what": "human study size",
+   "sessions": 79,
+    "participants": 19,
+    "quote": "We collect 79 interaction sessions from 19 participants",
+    "offset": 876,
+    "length": 55,
+    "status": "UNVERIFIED"
+  },
+  {
+   "id": "C4",
+   "what": "human vs uncalibrated simulated user, correcting fact omitted after an incorrect plan",
+   "human_pct": 43,
+    "simulated_pct": 7,
+    "quote": "human replies omit the correcting fact far more often than replies from an uncalibrated simulated user (43% verus 7%)",
+    "offset": 972,
+    "length": 118,
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C5",
+   "what": "initial-plan infeasibility, missing info vs all facts upfront",
+   "missing_info_pct_range": [
+    58,
+    98
+   ],
+   "all_facts_pct_range": [
+    5,
+    28
+   ],
+   "quote": "their initial plans are infeasible on 58-98% of tasks when information is missing, compared with 5-28% when all facts are provided upfront",
+   "offset": 1244,
+   "length": 138,
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C6",
+   "what": "uncovery rate, plan-changing vs plan-unchanged facts",
+   "plan_changing_pct_range": [
+    39,
+    52
+   ],
+   "unchanged_pct_range": [
+    32,
+    41
+   ],
+   "quote": "Agents uncover facts that change the optimal plan only slightly more often than facts that leave it unchanged (39-52% versus 32-41%).",
+   "offset": 1384,
+   "length": 133,
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "C7",
+   "what": "authors' status note",
+   "quote": "This is ongoing work and will be updated.",
+    "offset": 1647,
+   "length": 41,
+    "status": "UNVERIFIED"
+  }
+ ]
+}

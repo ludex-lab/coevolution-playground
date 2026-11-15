@@ -1,0 +1,24 @@
+NOTICE — experiments/2026-11-09/w18-skill-assurance/
+
+Paper: Don't Prompt Your Agents. Equip Them: Skillware as a Modular Standard
+for Sovereign, Auditable, and Deterministic Capability Execution for Logical
+Systems, Vladimiros Peilivanidis, arXiv 2611.07652 (v1, submitted
+5 Nov 2026), https://arxiv.org/abs/2611.07652. Paper licence: CC BY 4.0
+(https://creativecommons.org/licenses/by/4.0/), confirmed from the abs page
+"Rights to this article" link on 2026-11-09. Used for method-cite only;
+short quotes appear in paper_evidence.json only, for evidence, with
+attribution to the author.
+
+Cite-only pin: https://github.com/ARPAHLS/skillware at commit
+25e4cf662a39a907f721455c0f0044444c019465 (git ls-remote HEAD and
+refs/heads/main both matched on 2026-11-09). License: MIT, "Copyright (c)
+2026 ARPA Hellenic Logical Systems", re-read from the raw LICENSE at that
+commit. The repository was not cloned, not installed, not imported and not
+run; no code was copied. Only LICENSE and README were read.
+
+This directory's code is an independently authored clean-room Python stdlib
+method sketch (json used for the manifest). Its source-token scan is an
+original simple check, not the upstream audit.
+
+Synthetic fixtures: all skills, manifests and inputs are toy data authored
+for this sketch.

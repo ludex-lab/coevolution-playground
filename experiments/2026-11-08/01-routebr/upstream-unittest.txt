@@ -1,0 +1,17 @@
+test_builds_common_json_request_without_logging_key (test_backend.OpenAICompatibleBackendTest.test_builds_common_json_request_without_logging_key) ... ok
+test_repair_prefers_dedicated_frozen_instruction (test_backend.OpenAICompatibleBackendTest.test_repair_prefers_dedicated_frozen_instruction) ... ok
+test_repair_uses_original_frozen_instruction (test_backend.OpenAICompatibleBackendTest.test_repair_uses_original_frozen_instruction) ... ok
+test_blocked_primary_cannot_promote_allowed_secondary (test_controller.RouteBRControllerTest.test_blocked_primary_cannot_promote_allowed_secondary) ... ok
+test_closed_entity_validation_fails_closed_after_repair (test_controller.RouteBRControllerTest.test_closed_entity_validation_fails_closed_after_repair) ... ok
+test_grounding_ablation_forces_bounded_terminal (test_controller.RouteBRControllerTest.test_grounding_ablation_forces_bounded_terminal) ... ok
+test_object_free_action_requires_none (test_controller.RouteBRControllerTest.test_object_free_action_requires_none) ... ok
+test_primary_allow_dispatches (test_controller.RouteBRControllerTest.test_primary_allow_dispatches) ... ok
+test_state_ablation_ignores_blocking_rule (test_controller.RouteBRControllerTest.test_state_ablation_ignores_blocking_rule) ... ok
+test_unresolved_primary_object_clarifies (test_controller.RouteBRControllerTest.test_unresolved_primary_object_clarifies) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+OK
+
+EXIT_CODE=0

@@ -19,7 +19,7 @@ Ork 팀의 **Ork → Smith → Checker** 워크플로(및 Cursor **Cloud Agent**
 |------|---------------------|
 | **Ork** | 오늘 런의 functional unit 정의 (예: “coding-agent 세션 1회”, “PR 1건 위한 Cloud Agent 1 run”), TokWatt에서 쓸 task 라벨 선택, 기록 템플릿 확정 |
 | **R** (필요 시) | arXiv 초록·TokWatt README·계산기 UI에서 boundary/참조값 의미 15분 읽기 |
-| **Smith** | 대시보드/런 로그에서 **입력·출력 토큰 추정**, 계산기 또는 `task_defaults`/`token_factors`로 1l�� Wh 산출 (스프레드시트 또는 아래 기록 블록) |
+| **Smith** | 대시보드/런 로그에서 **입력·출력 토큰 추정**, 계산기 또는 `task_defaults`/`token_factors`로 1차 Wh 산출 (스프레드시트 또는 아래 기록 블록) |
 | **Checker** | 가정·boundary가 TokWatt harmonization(서버+시설)과 맞는지, 범위가 paper/README와 모순 없는지, “single-source task” 경고를 붙였는지 검증 |
 
 ## Inputs (전형적인 Cloud Agent 1 run)
@@ -59,7 +59,7 @@ Cloud Agent PR 작업은 보통 **coding-agent session** 또는 **agent-delegate
 
 ### 3. 토큰 기반 coarse estimate (선택, ~15분)
 
-- [ ] TokWatt README의 `token_factors.csv` 설명을 읽고, *(WH per million input/output tokens** 계수가 있으면 run 토큰 추정치에 곱한다.
+- [ ] TokWatt README의 `token_factors.csv` 설명을 읽고, **Wh per million input/output tokens** 계수가 있으면 run 토큰 추정치에 곱한다.
 - [ ] cache-read 비율 불명이면 paper/README **Known limitations** 그대로 “±큰 unknown”을 기록한다.
 - [ ] agent task **150 Wh** 또는 coding session **321 Wh**와 토큰 추정이 5× 이상 어긋나면, functional unit 정의를 다시 본다 (Ork).
 

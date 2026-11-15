@@ -1,0 +1,27 @@
+w20-acf-adherence
+------------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code.
+
+Paper (method idea credited)
+-------------------------------
+Igianmario Voria, Yutaro Kashiwa, Gemma Catolino and Fabio Palomba.
+DoThey Do as They Are Told? Investigating Coding Agents' Adherence to
+Explicit Instructions in Context Files". arXiv:2611.13709, v1, submitted
+10 Nov 2026.
+https://arxiv.org/abs/2611.13709
+Licence: Creative Commons Attribution 4.0 International (CC BY 4.0),
+http://creativecommons.org/licenses/by/4.0/. No code is linked from the abs
+page and none is used.
+
+Method only: the idea of turning explicit context-file instructions into
+executable measurement scripts over commits, reporting compliance per
+instruction, and separating instructions followed consistently from those
+never respected. No text, figures, tables, scripts or data from the paper
+are copied into this directory; the PDF was not read. The paper's findings
+are recorded only as offsets and span hashes in paper_evidence.json and are
+marked UNVERIFIED.
+
+Neighbours credited (this repository, read only): #109 w19-guardrail-order
+(merged) and #110 w19-authz-drift (open). No code is copied from either.

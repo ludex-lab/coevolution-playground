@@ -1,0 +1,21 @@
+{
+  "inputs": {
+    "observed": {
+      "blocker_id": "missing-dep",
+      "prior_evidence_refs": ["log:/tmp/run1.log"],
+      "status": "blocked"
+    },
+    "reported": {
+      "blocker_id": "missing-dep",
+      "prior_evidence_refs": ["log:/tmp/run1.log"],
+      "status": "blocked"
+    },
+    "evidence_refs": ["log:/tmp/run1.log", "ci:artifact#sha-new"],
+    "prior_fingerprint": "blocker:missing-dep",
+    "streak": 1,
+    "budget": {"remaining": 8}
+  },
+  "expect": {
+    "action": "CONTINUE_AUTOMOMOUSLY"
+  }
+}

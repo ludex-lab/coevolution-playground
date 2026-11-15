@@ -1,0 +1,8 @@
+mb-fail-closed-deputy
+
+Original code written for this folder. No third-party code, data or
+weights are included or vendored. Standard library only.
+
+Idea source (method only, no code published with it):
+arXiv 2611.13355, DEPUTYBENCH: Evaluating Contextual Safety in Enterprise Agents
+https://arxiv.org/abs/2611.13355

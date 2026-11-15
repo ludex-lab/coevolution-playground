@@ -1,0 +1,19 @@
+NOTICE — experiments/2026-11-09/01-step-ledger/
+
+Paper: Detecting Silent Faults at the Environment–Trainer Boundary in
+Reinforcement Learning, Zuo Gou and Chenhao Lu, arXiv 2611.08144,
+https://arxiv.org/abs/2611.08144. Paper licence: CC BY 4.0
+(https://creativecommons.org/licenses/by/4.0/). Used for method-cite only;
+short quotes appear in paper_evidence.json only, for evidence, with
+attribution to the paper's authors.
+
+Upstream illustration (cite-only pin): https://github.com/PlugRL/step-ledger
+at commit 0b4a1417854289ecfb25607bc6c51eb0dc586bdd, SPDX Apache-2.0
+(Apache License, Version 2.0). The LICENSE file at that commit was re-read before this
+notice was written. The repository was not cloned, and no code, tests,
+wrappers, or data were copied, vendored, or paraphrased.
+
+This directory's code is an independently authored clean-room Python stdlib
+method sketch.
+
+Fixtures are synthetic toy data authored for this sketch.
