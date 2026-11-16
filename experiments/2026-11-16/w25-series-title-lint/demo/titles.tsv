@@ -1,0 +1,13 @@
+# Demo sample: a caretaker's pre-upload check of drafted Yeoul titles (authored, not observed),
+# listed together with four past titles copied from fixtures/live_titles.tsv.
+ref	lang	title
+past-w01	en	What Counts as Progress? | Naru Daily Weekly 01
+past-w02	en	What Survives the Next Step? | Ludex Daily Weekly 02
+past-w07	en	Same Answer, Different Process | 같은 정답, 다른 과정 · Ludex Weekly 07
+past-d07	en	조용함의 이유 · 돌봄과 만남 | What Quiet Means · Ludex Village Doc 07
+draft-w08	en	Draft: Tools That Wait Their Turn | Ludex Weekly08
+draft-w09	ko	초안: 기억의 조건 | Naru Daily Weekly 09
+draft-d08	ko	초안: 나루터의 아침 | 루덱스 빌리지 다큐 8화
+draft-o05	ko	초안: 아침 노래 | 루덱스 빌리지 OST 05
+draft-o06e	en	Draft: Evening Song | Ludex Village OST 6
+draft-mv	en	Draft: Two Voices | Luma & ieum · Ludex Village Music Video

@@ -1,0 +1,37 @@
+mb-owned-exceptions
+-------------------
+
+This directory is a clean-room Python 3 standard-library method sketch. It is
+original work for this repository and contains no third-party code, data,
+fixtures, labels or weights.
+
+Paper (method idea credited)
+----------------------------
+John J. O'Hare.
+"Owned Edits to a Shared Decision Rule: Learning Private Exceptions as
+Typed, Gated, Withdrawable Weight Edits".
+arXiv:2611.15917, v1, submitted 11 Nov 2026. Primary category cs.LG,
+cross-listed cs.CY.
+https://arxiv.org/abs/2611.15917
+Paper licence: CC0 1.0, https://creativecommons.org/publicdomain/zero/1.0/
+(as linked on the abs page).
+
+Upstream repository
+-------------------
+None. The abs page links no method repository, and the paper says the two
+other public repositories of the author's group contain neither the
+compiler, the typed learner nor the acceptance test. Nothing was cloned,
+installed or run.
+
+Method only: the idea of a frozen published rule plus owned edits, each a
+typed declaration (subject, scope, form, size) proposed only when the
+owner's records pass a selection-aware evidence gate, re-derived by an
+acceptance body into units reserved for the owner, and withdrawable
+exactly; and the author's remark that on a rule-only base a table of owned
+exceptions makes the same decisions. The domain, the rule, the typed space,
+the gate threshold (a union bound over the typed space, not the paper's
+Monte Carlo p-value), the integer unit encoding, the fixtures, the oracle
+and the tests are this sketch's own. The abstract and parts of sections
+2.1, 2.3 to 2.5 and 9.6 of the arXiv HTML were read; the PDF was not; no
+network was trained and no model was run. The paper's claims appear only in
+paper_evidence.json, quoted and marked UNVERIFIED.

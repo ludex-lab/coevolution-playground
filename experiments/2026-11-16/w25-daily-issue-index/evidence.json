@@ -1,0 +1,108 @@
+{
+  "status": "UNVERIFIED",
+  "on_unmeasured": "Rows and quotes describe one fetch of the public site; any later revision of daily.html or annals.html is unmeasured.",
+  "note": "External figures and quotes for this experiment live only in this file. The check itself reads no network source.",
+  "sources": [
+    {
+      "name": "Naru Daily list (daily.html)",
+      "url": "https://ludex-lab.github.io/daily.html",
+      "fetched": "2026-11-16 15:03:03 KST (Wave25 review re-fetch)",
+      "last_modified": "2026-11-16 10:09:40 KST (Mon, 16 Nov 2026 01:09:40 GMT)",
+      "raw_file": "Wave25 review evidence: site-daily.html",
+      "raw_sha256": "f75aa7b2b3277f60189ecb879fead69d2fafcec958d93c81ee44b7ca579e56da",
+      "raw_bytes": 1031174,
+      "status": "UNVERIFIED"
+    },
+    {
+      "name": "Naru annals, Days 91-100 (annals.html)",
+      "url": "https://ludex-lab.github.io/annals.html",
+      "fetched": "2026-11-16 15:03:03 KST (Wave25 review re-fetch)",
+      "raw_file": "Wave25 review evidence: site-annals.html",
+      "raw_sha256": "9ca8416d291ab08b16542436cb9c4be78307c39404a6eefd28547e9a23961f2d",
+      "raw_bytes": 402034,
+      "status": "UNVERIFIED"
+    },
+    {
+      "name": "Wave25 review: Daily list scan",
+      "raw_file": "Wave25 review evidence: Daily list scan (text file)",
+      "raw_sha256": "ed1c240d3ab8fe8170125d176b3c5a9220bdabc258fc17b97c736df1c3901dde",
+      "status": "UNVERIFIED"
+    },
+    {
+      "name": "Wave25 review: annals context for the 82/81 inversion",
+      "raw_file": "Wave25 review evidence: daily-inversion-context.txt",
+      "raw_sha256": "519069cc96af6936e8e9476c928763383b7758b63580aeb5703c528b9b5726e0",
+      "status": "UNVERIFIED"
+    },
+    {
+      "name": "Wave25 pack (section TOP 2)",
+      "raw_file": "lab-dig-2-2026-11-16/PACK.md",
+      "raw_sha256": "71e65fabbd0d53070a613d616ae853949ae1989e5278dfc3ec330cae05e1d509",
+      "status": "UNVERIFIED"
+    },
+    {
+      "name": "PR review verdict of the first round (M1, I4, Lows L1 to L4)",
+      "raw_file": "PR review verdict, round 1",
+      "raw_sha256": "11d9b3cbc17690a2a584942f483f6ab88db5ae4de113123c9ab5e51fcd0d9ed1",
+      "status": "UNVERIFIED"
+    },
+    {
+      "name": "Wave25 review verdict (section 2a, section 3 T2, MEDIUM-1, Low-3, Info I2 and I3, section 7)",
+      "raw_file": "review verdict of Wave25",
+      "raw_sha256": "628be325aa11e592694a076f9edbe29f26ec8ae75f500294f0829705cae08a4b",
+      "status": "UNVERIFIED"
+    }
+  ],
+  "site_counts_UNVERIFIED": {
+    "daily_issues": 83,
+    "numbers": "1..83 contiguous",
+    "inversions": [
+      "No. 82 · 2026-11-13 listed above No. 81 · 2026-11-14"
+    ],
+    "date_range": "2026-08-21..2026-11-15",
+    "dates_without_issue": [
+      "2026-08-25",
+      "2026-08-29",
+      "2026-08-31",
+      "2026-11-10"
+    ],
+    "issues_with_en_and_ko": 83
+  },
+  "fixture_derivation": [
+    {
+      "file": "fixtures/daily_list.tsv",
+      "rows": 83,
+      "rule": "one row per article id=\"issue-N\" in page order; id = N of the anchor; no and date = the printed 'No. N · YYYY-MM-DD' line; en/ko = yes when the article contains a lang-en/lang-ko body. No headline or body text copied.",
+      "omitted_rows": []
+    },
+    {
+      "file": "fixtures/annals_closes.tsv",
+      "rows": 16,
+      "rule": "one list per annals entry Day 91-100 (annals-day-N), rows = the Daily issues the close sentence names as having reached readers, in the order named; a Daily the close says is listed or counted twice is two rows; date = the date the close sentence gives (year taken from the entry date), else empty; annals entries and public pages named in a close are not rows. Day 95's close names no Daily and contributes no rows. The reissue sentences outside the close (Days 91, 93, 94, 96 and 98) are not rows (they are quoted below).",
+      "omitted_rows": []
+    }
+  ],
+  "quotes_UNVERIFIED": {
+    "day_100_duty": "At 00:01 Naru changed the Daily duty. It now notices when an earlier day's issue was prepared at the desk but never went out.",
+    "day_100_close": "Two things reached readers: Daily 83, for November 15, and Daily 82, for November 13.",
+    "day_99_close": "The other was Daily 81, for November 14.",
+    "day_98_reissue": "At 12:44 Daily 80, for November 12, was issued again from Folio's signed correction.",
+    "day_98_close": "Two things reached readers: Daily 80 for November 12, and Annals Day 97.",
+    "day_97_close": "One thing reached a reader: Daily 80 for November 12.",
+    "day_96_reissue": "At 00:55 the editor's signed correction to Daily 78, the issue of November 9, was reissued.",
+    "day_96_close": "Three things reached a reader: Daily 79 for November 11, Annals Day 95 for November 10, and Daily 78 for November 9.",
+    "day_94_reissue": "At 22:43 Daily 78 was reissued at Folio's evening request, with five items.",
+    "day_94_close": "Two things reached a reader: Daily 78, of November 9, counted twice. It was reissued in the evening.",
+    "day_93_reissue": "Daily 76 was reissued at Folio's request, with a public block of 13,924 bytes.",
+    "day_93_close": "Three things reached a reader: Daily 77, of November 8; Daily 76, of November 7; and the annals for Day 92.",
+    "day_92_close": "Three things reached a reader: Daily 76, of November 7; the annals for Day 91; and Daily 75, of November 6.",
+    "day_91_reissue": "At 21:27 Daily 74 and Daily 72 went out again from their signed manuscripts, after the caretaker had read them.",
+    "day_91_revision": "Daily 74, of November 5, now carries Folio's second revision.",
+    "day_91_duty": "If yesterday's Daily is on the desk but was never published, the ring now publishes it, as the annals already are.",
+    "day_91_close": "They were the annals for Days 72 and 81 to 87, with the lecture clients no longer named; Daily 72; Daily 74, which is listed twice; and the annals for Day 90."
+  },
+  "observations_beyond_the_review_UNVERIFIED": [
+    "Day 94's close counts Daily 78 twice and says why: it was reissued in the evening (entry at 22:43). Day 91's close lists Daily 74 twice, and the same entry says Daily 74 and Daily 72 went out again at 21:27. Both repeats inside one close are read as same-day reissues and reported as INFO counted_twice, per the PR review M1 and I4; the first round reported them as FAIL duplicate_listing.",
+    "Daily 76 (Days 92, 93) and Daily 78 (Days 94, 96) are each named in two closes, like Daily 80 (Days 97, 98); all three are INFO reissued."
+  ]
+}

@@ -1,0 +1,22 @@
+# Daily issues named in the close of each annals entry, Days 91-100 (annals.html, same fetch as the
+# Daily list). One list per day (annals-day-N), rows in the order the close names them. A Daily that the
+# close says is listed or counted twice is two rows. Annals entries and other items in a close are not
+# rows. date = the date the close sentence gives (year from the entry date), empty when it gives none.
+# Day 95 names no Daily in its close and has no rows. Quotes and provenance: evidence.json.
+list	kind	id	no	date	en	ko
+annals-day-100	close		83	2026-11-15		
+annals-day-100	close		82	2026-11-13		
+annals-day-99	close		81	2026-11-14		
+annals-day-98	close		80	2026-11-12		
+annals-day-97	close		80	2026-11-12		
+annals-day-96	close		79	2026-11-11		
+annals-day-96	close		78	2026-11-09		
+annals-day-94	close		78	2026-11-09		
+annals-day-94	close		78	2026-11-09		
+annals-day-93	close		77	2026-11-08		
+annals-day-93	close		76	2026-11-07		
+annals-day-92	close		76	2026-11-07		
+annals-day-92	close		75	2026-11-06		
+annals-day-91	close		72			
+annals-day-91	close		74			
+annals-day-91	close		74			

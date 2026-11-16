@@ -1,0 +1,82 @@
+{
+  "status": "UNVERIFIED",
+  "on_unmeasured": "Counts and titles below describe one fetch of a public page; any later revision of the channel is unmeasured.",
+  "note": "External figures and quotes for this experiment live only in this file. The lint itself reads no network source.",
+  "sources": [
+    {
+      "name": "@LudexVillage videos tab, first page",
+      "url": "https://www.youtube.com/@LudexVillage/videos",
+      "fetched": "2026-11-16 about 14:53-14:58 KST (Wave25 pack run)",
+      "raw_file": "lab-dig-2-2026-11-16/raw/youtube-videos-tab-first-page.tsv",
+      "raw_sha256": "5ce2cee72df469e924653f03c11092c1da62b759ef959942dcf3f43fa4e88705",
+      "raw_bytes": 3101,
+      "status": "UNVERIFIED"
+    },
+    {
+      "name": "Wave25 pack evidence log",
+      "raw_file": "lab-dig-2-2026-11-16/raw/EVIDENCE.txt",
+      "raw_sha256": "ddc3cd89e044ceea08707a338af67d236623277e013962f0b80cfe18629376fa",
+      "status": "UNVERIFIED"
+    },
+    {
+      "name": "Wave25 pack",
+      "raw_file": "lab-dig-2-2026-11-16/PACK.md",
+      "raw_sha256": "71e65fabbd0d53070a613d616ae853949ae1989e5278dfc3ec330cae05e1d509",
+      "status": "UNVERIFIED"
+    },
+    {
+      "name": "Wave25 review VERDICT (section 2c live re-parse, section 3 T1, defects L1 and L2)",
+      "raw_file": "VERDICT.md of the Wave25 review",
+      "raw_sha256": "628be325aa11e592694a076f9edbe29f26ec8ae75f500294f0829705cae08a4b",
+      "note": "The review re-fetched the videos tab at 15:04:24 KST and reports its own parse as byte-identical (id and title) to the raw file.",
+      "status": "UNVERIFIED"
+    }
+  ],
+  "channel_counts_UNVERIFIED": {
+    "videos_on_channel_about_page": 59,
+    "titles_on_first_page": 30,
+    "titles_not_loaded": 29,
+    "note": "As reported by the pack; not re-measured here. The fixture covers the first page only."
+  },
+  "fixture_derivation": {
+    "file": "fixtures/live_titles.tsv",
+    "rule": "id and title columns copied verbatim from raw_file; relative-age and view-count columns dropped; lang column authored (language of the series label segment, else of the first letter).",
+    "rows": 29,
+    "omitted_rows": [
+      {
+        "id": "quBo6kjUgvk",
+        "raw_line_sha256": "0a680d769fa903711df29d9030ca1649527312c3df05ecc99406843524aeae86",
+        "reason": "its title contains a word on this repository's banned-substring list; it carries no series label declared in the catalog (a one-off editing-tips video)"
+      }
+    ]
+  },
+  "quoted_drift_UNVERIFIED": [
+    "Ludex Weekly 07",
+    "Ludex Weekly06",
+    "Ludex Weekly05",
+    "Ludex Weekly 04",
+    "Ludex Weekly 03",
+    "Ludex Daily Weekly 02",
+    "Naru Daily Weekly 01",
+    "Ludex Village Doc 07",
+    "Ludex Village Documentary 06",
+    "Ludex Village Documentary 05",
+    "루덱스 빌리지 다큐 4화",
+    "루덱스 빌리지 다큐 3화",
+    "Ludex Village Documentary · Ep. 2",
+    "Ludex Village OST 04 · Instrumental",
+    "루덱스 빌리지 OST 03",
+    "A Little Room to Rest · Ludex Village OST 02",
+    "Ludex Village OST 01"
+  ],
+  "names_observed_UNVERIFIED": [
+    "Nella",
+    "Milo",
+    "Weft & Rivet",
+    "엘리스 & 코디",
+    "Luma & Ieum",
+    "Luma와 이음",
+    "보로",
+    "Myoha"
+  ]
+}

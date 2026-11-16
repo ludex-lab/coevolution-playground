@@ -1,0 +1,20 @@
+# Demo: a caretaker's draft listing built from the observed Daily rows 74-83 and the observed
+# closes of annals Days 96-98, with planted defects. Planted rows are not observations:
+#   No. 79 removed (missing_number, and Day 96's close now names a number no index lists);
+#   No. 77 typed with id 71 (id_mismatch); No. 76 marked without a ko body (language_missing);
+#   No. 75 printed with fullwidth digits (unicode_field); No. 74 pasted twice (duplicate_listing).
+list	kind	id	no	date	en	ko
+draft	index	83	83	2026-11-15	yes	yes
+draft	index	82	82	2026-11-13	yes	yes
+draft	index	81	81	2026-11-14	yes	yes
+draft	index	80	80	2026-11-12	yes	yes
+draft	index	78	78	2026-11-09	yes	yes
+draft	index	71	77	2026-11-08	yes	yes
+draft	index	76	76	2026-11-07	yes	no
+draft	index	75	７５	2026-11-06	yes	yes
+draft	index	74	74	2026-11-05	yes	yes
+draft	index	74	74	2026-11-05	yes	yes
+annals-day-98	close		80	2026-11-12		
+annals-day-97	close		80	2026-11-12		
+annals-day-96	close		79	2026-11-11		
+annals-day-96	close		78	2026-11-09		

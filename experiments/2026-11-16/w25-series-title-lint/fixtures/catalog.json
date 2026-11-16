@@ -1,0 +1,51 @@
+{
+  "schema": "w25-series-title-lint/catalog-1",
+  "languages": ["en", "ko"],
+  "series": [
+    {
+      "key": "weekly",
+      "first": 1,
+      "labels": {
+        "en": {"label": "Ludex Weekly", "pad": 2, "suffix": ""},
+        "ko": {"label": "Ludex Weekly", "pad": 2, "suffix": ""}
+      },
+      "retired": [
+        {"label": "Naru Daily Weekly", "last": 1, "pad": 2},
+        {"label": "Ludex Daily Weekly", "last": 2, "pad": 2}
+      ],
+      "variants": []
+    },
+    {
+      "key": "documentary",
+      "first": 1,
+      "labels": {
+        "en": {"label": "Ludex Village Documentary", "pad": 2, "suffix": ""},
+        "ko": {"label": "루덱스 빌리지 다큐", "pad": 0, "suffix": "화"}
+      },
+      "retired": [],
+      "variants": [
+        {"label": "Ludex Village Doc", "lang": "en"}
+      ]
+    },
+    {
+      "key": "ost",
+      "first": 1,
+      "labels": {
+        "en": {"label": "Ludex Village OST", "pad": 2, "suffix": ""},
+        "ko": {"label": "루덱스 빌리지 OST", "pad": 2, "suffix": ""}
+      },
+      "retired": [],
+      "variants": []
+    }
+  ],
+  "names": [
+    {"key": "nella", "labels": {"en": "Nella"}, "variants": []},
+    {"key": "milo", "labels": {"en": "Milo"}, "variants": []},
+    {"key": "myoha", "labels": {"en": "Myoha"}, "variants": []},
+    {"key": "luma", "labels": {"en": "Luma", "ko": "Luma"}, "variants": []},
+    {"key": "ieum", "labels": {"en": "Ieum", "ko": "이음"}, "variants": []},
+    {"key": "elis", "labels": {"ko": "엘리스"}, "variants": []},
+    {"key": "kodi", "labels": {"ko": "코디"}, "variants": []},
+    {"key": "boro", "labels": {"ko": "보로"}, "variants": []}
+  ]
+}

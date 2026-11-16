@@ -1,0 +1,34 @@
+# Observed @LudexVillage videos-tab titles (first page only), fetched 2026-11-16 about 14:53-14:58 KST.
+# Source: raw/youtube-videos-tab-first-page.tsv of the Wave25 pack (sha256 in evidence.json); id and title verbatim.
+# One row of that file is omitted (see README, Sources). lang = language of the series label segment;
+# for a title with no series label, the language of its first letter. lang is an authored annotation, not observed.
+ref	lang	title
+BoumvBm6l9Y	en	Same Answer, Different Process | 같은 정답, 다른 과정 · Ludex Weekly 07
+Rcjuf2oD7Lo	ko	작업대의 첫 박자 | The First Beat at the Workbench · Nella
+OI7T4YiBjvQ	en	조용함의 이유 · 돌봄과 만남 | What Quiet Means · Ludex Village Doc 07
+5PmEeWP2i6I	en	What the Agent Actually Gets | Ludex Weekly06
+ul-SOEF7CRQ	en	Same Character, One Shot Changed | Ludex Village Maker Film
+--rKxmXZ7Bg	en	Across Small Distances | Milo · Weft & Rivet · Ludex Village
+ndICufCNVWU	en	A Small Internet: Who Gets to Speak? | Ludex Village Documentary 06
+2PNq9HAiHtQ	en	Better Together? | AI Collaboration Beyond One Score | Ludex Weekly05
+4wJmyvFnX-o	en	A Door That Actually Opens | Building Ludex Village
+gbDI_8VMR9g	en	Small Paths, Open Doors | Ludex Village OST 04 · Instrumental
+X82bijZMoEw	en	The Village Begins to Move | Ludex Village Documentary 05
+PZsX3M1zT54	en	From Looks Right to Works Right | Ludex Weekly 04
+--pWy5YFitc	ko	같은 카페를 다시 찾아가려면 | 루덱스 월드를 만드는 기준
+MaIpArLQjEI	ko	실의 다른 끝에서 | 엘리스 & 코디 · Ludex Village
+kOWkSwqmSj0	ko	다시 돌아올 자리를 만드는 일 | 루덱스 빌리지 다큐 4화
+Znx-oLA8L6w	en	에이전트가 남긴 기억, 믿어도 될까? | Ludex Weekly 03
+fSDFurX5fAQ	ko	영상 속 카페가 공간이 되기까지 | 루덱스 빌리지 3D 공방
+Fn-DlKj2rFc	ko	선을 따라 | 루덱스 빌리지 OST 03
+kSs_qJGXOfA	ko	보로, 그림에서 움직임으로 | 루덱스 빌리지 다큐 3화
+HsNupqme-Is	en	What Survives the Next Step? | Ludex Daily Weekly 02
+kfcF8d8satg	ko	마을은 어떻게 노래를 만들까? | Luma와 이음의 제작 이야기
+ymAxGuLj-zE	en	Leave a Little Light | Luma & Ieum · Ludex Village Music Video
+Ka-uhyudZes	en	The Neighbor Who Never Says Hello | A Fruit-Fly Circuit in Ludex Village
+G7ZfTlY4bmY	en	What Counts as Progress? | Naru Daily Weekly 01
+3luEDexjgPw	en	Measured Breaths | A Little Room to Rest · Ludex Village OST 02
+cFAe8QRvvL8	en	A Hand Across the River | Ludex Village Documentary · Ep. 2
+Z2T9DktKzNA	en	A Village in a Bag | The Morning the Ledger Missed
+sw2scAPEBSU	en	Myoha: Two Tiny Rules | Behind the Workbench
+_pqZ1g-jkMs	en	The Shape of Our Morning | Ludex Village OST 01
