@@ -1,0 +1,49 @@
+{
+  "note": "Fictional bad suite: the abstracted view was never produced before its deadline (expired).",
+  "executions": [
+    {
+      "id": "e4",
+      "task": "add the tea order to the shared list",
+      "trajectory_id": "t-e4",
+      "outcome": "agent replied: added",
+      "ground_truth": "pass",
+      "criterion": [
+        "item_added"
+      ],
+      "steps": [
+        {
+          "id": "s1",
+          "tool": "notes.read",
+          "hidden_by": [
+            "compaction"
+          ],
+          "evidence": {
+            "list_read": true
+          }
+        },
+        {
+          "id": "s2",
+          "tool": "notes.append",
+          "evidence": {
+            "item_added": true
+          }
+        }
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "id": "p1",
+      "native": {
+        "execution": "e4",
+        "verifier": "grounded"
+      },
+      "abstracted": {
+        "execution": "e4",
+        "verifier": "grounded",
+        "boundary": "compaction",
+        "expired": true
+      }
+    }
+  ]
+}

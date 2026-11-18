@@ -1,0 +1,225 @@
+{
+ "fixture_version": 1,
+ "turns": [
+  {
+   "id": "t1",
+   "day": 1,
+   "text": "CI log: the nightly job runs on python 3.8 in the build image."
+  },
+  {
+   "id": "t2",
+   "day": 2,
+   "text": "User note: for the staging database the admin password is plum-7731-anchor, store it only for this week."
+  },
+  {
+   "id": "t3",
+   "day": 3,
+   "text": "User note: deploy region is eu-west for all services."
+  },
+  {
+   "id": "t4",
+   "day": 4,
+   "text": "Reminder from the user: staging admin password plum-7731-anchor rotates on Friday."
+  },
+  {
+   "id": "t5",
+   "day": 5,
+   "text": "CI log: the nightly job now runs on python 3.11 after the image upgrade."
+  },
+  {
+   "id": "t6",
+   "day": 6,
+   "text": "Chat hearsay: someone thinks the nightly job runs on python 3.9."
+  },
+  {
+   "id": "t7",
+   "day": 6,
+   "text": "Chat hearsay: deploy region moved to us-east last week, not confirmed."
+  },
+  {
+   "id": "t8",
+   "day": 7,
+   "text": "User note: the cache size for the staging worker is 512 MB."
+  }
+ ],
+ "facts": [
+  {
+   "id": "f1",
+   "subject": "nightly_job",
+   "attribute": "python_version",
+   "value": "3.8",
+   "source": "ci_log",
+   "start": 1,
+   "end": 4,
+   "turn": "t1"
+  },
+  {
+   "id": "f2",
+   "subject": "nightly_job",
+   "attribute": "python_version",
+   "value": "3.11",
+   "source": "ci_log",
+   "trust": "high",
+   "start": 5,
+   "end": null,
+   "turn": "t5"
+  },
+  {
+   "id": "f3",
+   "subject": "nightly_job",
+   "attribute": "python_version",
+   "value": "3.9",
+   "source": "chat_hearsay",
+   "trust": "low",
+   "start": 5,
+   "end": null,
+   "turn": "t6"
+  },
+  {
+   "id": "f4",
+   "subject": "deploy",
+   "attribute": "region",
+   "value": "eu-west",
+   "source": "user_note",
+   "trust": "high",
+   "start": 1,
+   "end": 3,
+   "turn": "t3"
+  },
+  {
+   "id": "f5",
+   "subject": "deploy",
+   "attribute": "region",
+   "value": "us-east",
+   "source": "chat_hearsay",
+   "trust": "low",
+   "start": 4,
+   "end": null,
+   "turn": "t7"
+  },
+  {
+   "id": "f6",
+   "subject": "staging_db",
+   "attribute": "admin_password",
+   "value": "plum-7731-anchor",
+   "source": "user_note",
+   "trust": "high",
+   "start": 2,
+   "end": null,
+   "turn": "t2"
+  },
+  {
+   "id": "f7",
+   "subject": "staging_worker",
+   "attribute": "cache_size",
+   "value": "512 MB",
+   "source": "user_note",
+   "trust": "medium",
+   "start": 7,
+   "end": null,
+   "turn": "t8"
+  }
+ ],
+ "deletions": [
+  {
+   "id": "d1",
+   "day": 8,
+   "subject": "staging_db",
+   "attribute": "admin_password",
+   "source": "user_note",
+   "start": 2,
+   "end": 2,
+   "text": "Please forget the staging database password I gave you on day 2."
+  }
+ ],
+ "probes": [
+  {
+   "id": "p1",
+   "day": 7,
+   "subject": "nightly_job",
+   "attribute": "python_version",
+   "terms": [
+    "python"
+   ],
+   "fallback": false,
+   "question": "Which python version does the nightly job use?"
+  },
+  {
+   "id": "p2",
+   "day": 7,
+   "subject": "deploy",
+   "attribute": "region",
+   "terms": [
+    "region"
+   ],
+   "fallback": false,
+   "question": "Which region do services deploy to?"
+  },
+  {
+   "id": "p3",
+   "day": 7,
+   "subject": "staging_db",
+   "attribute": "admin_password",
+   "terms": [
+    "password"
+   ],
+   "fallback": false,
+   "question": "What is the staging admin password?"
+  },
+  {
+   "id": "p4",
+   "day": 9,
+   "subject": "staging_db",
+   "attribute": "admin_password",
+   "terms": [
+    "password"
+   ],
+   "fallback": true,
+   "question": "What is the staging admin password?"
+  },
+  {
+   "id": "p5",
+   "day": 9,
+   "subject": "staging_db",
+   "attribute": "connection_limit",
+   "terms": [
+    "staging"
+   ],
+   "fallback": true,
+   "question": "What do we know about the staging database?"
+  },
+  {
+   "id": "p6",
+   "day": 9,
+   "subject": "nightly_job",
+   "attribute": "python_version",
+   "terms": [
+    "python"
+   ],
+   "fallback": false,
+   "question": "Which python version does the nightly job use?"
+  },
+  {
+   "id": "p7",
+   "day": 9,
+   "subject": "staging_worker",
+   "attribute": "cache_size",
+   "terms": [
+    "cache"
+   ],
+   "fallback": false,
+   "question": "How large is the staging worker cache?"
+  },
+  {
+   "id": "p8",
+   "day": 9,
+   "subject": "deploy",
+   "attribute": "retry_budget",
+   "terms": [
+    "retry"
+   ],
+   "fallback": true,
+   "question": "What is the deploy retry budget?"
+  }
+ ]
+}

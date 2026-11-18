@@ -1,0 +1,36 @@
+{
+  "status": "UNVERIFIED",
+  "note": "External figures live only under on_unmeasured. Nothing below was measured, re-run or reproduced here; the paper's answering model, Mem0 and LongMemEval were not used. The module reads no network source.",
+  "paper": {
+    "title": "LEDGER: a rule layer for what is current, whom to trust, and what to forget",
+    "authors": "Islam, Shuvo, Waseem, Abrahamsson",
+    "arxiv_id": "2611.20927",
+    "abs_url": "https://arxiv.org/abs/2611.20927",
+    "licence": "CC BY 4.0 (paper only; no upstream code repository was listed)",
+    "read_here": "research pack summary of the abs page; the full paper was not read for this draft"
+  },
+  "on_unmeasured": {
+    "why": "Reported by the paper for its own answering model, workload and seeds; not comparable with the sketch's counts.",
+    "claims": [
+      {
+        "id": "P1",
+        "what": "answer accuracy, rule layer plus raw-turn search in fallback mode, five development seeds, synthetic coding-agent workload",
+        "value": "94.3%",
+        "status": "UNVERIFIED"
+      },
+      {
+        "id": "P2",
+        "what": "same system, five held-out seeds",
+        "value": "91.1%",
+        "status": "UNVERIFIED"
+      },
+      {
+        "id": "P3",
+        "what": "observed accuracy on a 210-question LongMemEval subset, augment mode, which the authors say matches full replay",
+        "value": "74.8%",
+        "status": "UNVERIFIED"
+      }
+    ]
+  },
+  "measured_here": "See README.md (Results) and the PR body: every count there is computed by ledger.py from fixtures/main.json and asserted by test_ledger.py."
+}

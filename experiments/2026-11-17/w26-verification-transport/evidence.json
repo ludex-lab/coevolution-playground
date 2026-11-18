@@ -1,0 +1,105 @@
+{
+  "status": "UNVERIFIED",
+  "note": "External facts for this experiment live only in this file. Nothing here was measured, re-run or reproduced; the sketch's own counts come only from fixtures/*.json and are not comparable with any figure below. The module reads no network source.",
+  "paper": {
+    "arxiv_id": "2611.18471",
+    "version": "v1",
+    "abs_url": "https://arxiv.org/abs/2611.18471",
+    "title": "Do Verifier Judgments Survive Abstraction? Measuring Verification Transport for LLM Agent Evaluation",
+    "title_note": "full title as shown on the live abs page in the lab review; the r1 entry dropped the last four words",
+    "submitted": "13 Nov 2026 17:44:01 UTC (Sat 14 Nov 2026 02:44:01 KST), per the research pack and lab review",
+    "license": "CC BY 4.0 (per the abs page as read by the research pack)",
+    "read_here": "abstract text only (research pack copy); PDF not read; no upstream code exists or was fetched, copied or run",
+    "method_borrowed": "hold one frozen execution and one verifier fixed, change only the view (native, abstracted, restored), and report verdicts that do not survive the change; report incorrect and abstaining verdicts separately; compare full and lossy provenance restores",
+    "status": "UNVERIFIED"
+  },
+  "on_unmeasured": {
+    "figures": [
+      {
+        "id": "F1",
+        "what": "transport failure under macro abstraction and delegation",
+        "value": "about 31%",
+        "measured_here": "on_unmeasured",
+        "status": "UNVERIFIED"
+      },
+      {
+        "id": "F2",
+        "what": "share of transport failures recovered by restoring execution provenance",
+        "value": "85.5%",
+        "measured_here": "on_unmeasured",
+        "status": "UNVERIFIED"
+      },
+      {
+        "id": "F3",
+        "what": "verifier backbones",
+        "value": "seven",
+        "measured_here": "on_unmeasured",
+        "status": "UNVERIFIED"
+      },
+      {
+        "id": "F4",
+        "what": "agent-evaluation benchmarks",
+        "value": "four",
+        "measured_here": "on_unmeasured",
+        "status": "UNVERIFIED"
+      },
+      {
+        "id": "F5",
+        "what": "verification protocols",
+        "value": "four",
+        "measured_here": "on_unmeasured",
+        "status": "UNVERIFIED"
+      },
+      {
+        "id": "F6",
+        "what": "abstraction boundaries",
+        "value": "three",
+        "measured_here": "on_unmeasured",
+        "status": "UNVERIFIED"
+      }
+    ],
+    "quotes": [
+      {
+        "text": "It therefore remains unclear whether correct verifier judgments persist across such abstraction boundaries.",
+        "source": "arXiv 2611.18471 v1 abstract",
+        "status": "UNVERIFIED"
+      },
+      {
+        "text": "We construct matched native, abstracted, and restored views of the same frozen executions while holding the task, realized trajectory, outcome, ground truth, evaluation criterion, and verifier fixed.",
+        "source": "arXiv 2611.18471 v1 abstract",
+        "status": "UNVERIFIED"
+      },
+      {
+        "text": "Verification protocols exhibit distinct failure modes: direct verification more often produces incorrect verdicts, whereas evidence-grounded and deliberative protocols tend to abstain under limited observability.",
+        "source": "arXiv 2611.18471 v1 abstract",
+        "status": "UNVERIFIED"
+      },
+      {
+        "text": "This suggests that lower transport failure rates do not necessarily imply greater reliability.",
+        "source": "arXiv 2611.18471 v1 abstract",
+        "status": "UNVERIFIED"
+      },
+      {
+        "text": "Restoring the corresponding execution provenance recovers 85.5% of transport failures, while recovery is lower when provenance is lossy or unavailable.",
+        "source": "arXiv 2611.18471 v1 abstract",
+        "status": "UNVERIFIED"
+      },
+      {
+        "text": "These results show that native-view accuracy alone is insufficient to characterize verifier reliability when execution evidence crosses abstraction boundaries.",
+        "source": "arXiv 2611.18471 v1 abstract",
+        "status": "UNVERIFIED"
+      }
+    ]
+  },
+  "not_claimed": [
+    "no paper figure is reproduced or approximated; the fixture has 4 fictional executions and 2 rule-based verifiers, not models",
+    "the fixture verifiers are named after the paper's protocol families only by behaviour (one decides on whatever it sees, one abstains on unseen evidence)"
+  ],
+  "neighbours_in_repo": [
+    "mb-conversation-loss-oracle",
+    "w23-world-consistent-history",
+    "w20-fidelity-audit",
+    "w20-evidence-linked-memory",
+    "w15-evidence-gate"
+  ]
+}

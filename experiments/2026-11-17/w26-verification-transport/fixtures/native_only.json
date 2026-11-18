@@ -1,0 +1,38 @@
+{
+  "note": "Fictional suite scored on native (full) views only: no abstracted view is declared.",
+  "executions": [
+    {
+      "id": "e1",
+      "task": "refund order A-17 and tell the customer",
+      "trajectory_id": "t-e1",
+      "outcome": "agent replied: refund issued",
+      "ground_truth": "fail",
+      "criterion": ["order_found", "refund_posted", "customer_told"],
+      "steps": [
+        {"id": "s1", "tool": "orders.lookup", "evidence": {"order_found": true}},
+        {"id": "s2", "tool": "subagent.refund", "hidden_by": ["delegation"],
+         "summary": {"text": "subagent reports: refund done", "claims": {"refund_posted": true}},
+         "evidence": {"refund_posted": false}},
+        {"id": "s3", "tool": "mail.send", "evidence": {"customer_told": true}}
+      ]
+    },
+    {
+      "id": "e4",
+      "task": "add the tea order to the shared list",
+      "trajectory_id": "t-e4",
+      "outcome": "agent replied: added",
+      "ground_truth": "pass",
+      "criterion": ["item_added"],
+      "steps": [
+        {"id": "s1", "tool": "notes.read", "hidden_by": ["compaction"], "evidence": {"list_read": true}},
+        {"id": "s2", "tool": "notes.append", "evidence": {"item_added": true}}
+      ]
+    }
+  ],
+  "native_only": [
+    {"execution": "e1", "verifier": "direct"},
+    {"execution": "e4", "verifier": "direct"},
+    {"execution": "e1", "verifier": "grounded"},
+    {"execution": "e4", "verifier": "grounded"}
+  ]
+}

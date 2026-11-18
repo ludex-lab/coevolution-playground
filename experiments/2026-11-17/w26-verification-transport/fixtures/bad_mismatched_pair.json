@@ -1,0 +1,107 @@
+{
+  "note": "Fictional bad suite: the abstracted view comes from an execution with a different outcome, so the pair is not matched.",
+  "executions": [
+    {
+      "id": "e1",
+      "task": "refund order A-17 and tell the customer",
+      "trajectory_id": "t-e1",
+      "outcome": "agent replied: refund issued",
+      "ground_truth": "fail",
+      "criterion": [
+        "order_found",
+        "refund_posted",
+        "customer_told"
+      ],
+      "steps": [
+        {
+          "id": "s1",
+          "tool": "orders.lookup",
+          "evidence": {
+            "order_found": true
+          }
+        },
+        {
+          "id": "s2",
+          "tool": "subagent.refund",
+          "hidden_by": [
+            "delegation"
+          ],
+          "summary": {
+            "text": "subagent reports: refund done",
+            "claims": {
+              "refund_posted": true
+            }
+          },
+          "evidence": {
+            "refund_posted": false
+          }
+        },
+        {
+          "id": "s3",
+          "tool": "mail.send",
+          "evidence": {
+            "customer_told": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "e1b",
+      "task": "refund order A-17 and tell the customer",
+      "trajectory_id": "t-e1",
+      "outcome": "agent replied: refund pending",
+      "ground_truth": "fail",
+      "criterion": [
+        "order_found",
+        "refund_posted",
+        "customer_told"
+      ],
+      "steps": [
+        {
+          "id": "s1",
+          "tool": "orders.lookup",
+          "evidence": {
+            "order_found": true
+          }
+        },
+        {
+          "id": "s2",
+          "tool": "subagent.refund",
+          "hidden_by": [
+            "delegation"
+          ],
+          "summary": {
+            "text": "subagent reports: refund done",
+            "claims": {
+              "refund_posted": true
+            }
+          },
+          "evidence": {
+            "refund_posted": false
+          }
+        },
+        {
+          "id": "s3",
+          "tool": "mail.send",
+          "evidence": {
+            "customer_told": true
+          }
+        }
+      ]
+    }
+  ],
+  "pairs": [
+    {
+      "id": "p1",
+      "native": {
+        "execution": "e1",
+        "verifier": "direct"
+      },
+      "abstracted": {
+        "execution": "e1b",
+        "verifier": "direct",
+        "boundary": "delegation"
+      }
+    }
+  ]
+}

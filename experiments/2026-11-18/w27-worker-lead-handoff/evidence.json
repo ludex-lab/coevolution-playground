@@ -1,0 +1,32 @@
+{
+  "status": "UNVERIFIED",
+  "note": "External figures live only under on_unmeasured. Nothing there was measured, re-run or reproduced here; the paper's tasks, models and logs were not used. The module reads no network source.",
+  "paper": {
+    "title": "worker-to-lead handoff and conflict detection in multi-agent LLM teams (title as listed in the research pack)",
+    "arxiv_id": "2611.22245",
+    "abs_url": "https://arxiv.org/abs/2611.22245",
+    "licence": "CC BY 4.0 (method borrowed only; no text or code copied beyond short attributed quotes)",
+    "read_here": "the abstract page only; the full paper, its tasks and its code (none linked) were not read or run"
+  },
+  "on_expiry": "DENY",
+  "packet_rule": "fixture-declared per worker: order the worker's own context by doc id (id_asc or id_desc), report the first budget documents",
+  "measured": {
+    "fixture": "fixtures/main.json (12 docs, 3 planted conflicts, 9 cases, now=10)",
+    "main_totals": {
+      "single_agent": {"cases": 3, "both_retrieved": 3, "lead_detected": 3, "pass": 3, "fail": 0, "deny": 0, "handoff_failure": 0},
+      "delegated_same": {"cases": 3, "both_retrieved": 3, "lead_detected": 2, "pass": 2, "fail": 1, "deny": 0, "handoff_failure": 1},
+      "delegated_split": {"cases": 3, "both_retrieved": 3, "lead_detected": 1, "pass": 1, "fail": 2, "deny": 0, "handoff_failure": 2}
+    },
+    "expired_fixture": "fixtures/expired.json (now=30): 1 expired packet and 1 missing packet give DENY; 2 cases PASS"
+  },
+  "on_unmeasured": {
+    "why": "Reported by the paper for its own tasks and models; not comparable with this sketch's counts, which come from hand-written packet rules on a synthetic fixture.",
+    "claims": [
+      {"id": "P1", "what": "retrieval of both conflicting claims, delegated vs single-agent, percent", "value": "50.2 -> 68.7", "status": "UNVERIFIED"},
+      {"id": "P2", "what": "conflict detection, delegated vs single-agent, percent", "value": "16.2 -> 13.2", "status": "UNVERIFIED"},
+      {"id": "P3", "what": "a further figure listed in the research pack for this paper, percent", "value": "35.2", "status": "UNVERIFIED"},
+      {"id": "P4", "what": "number of models pooled in the paper's rates", "value": "three", "status": "UNVERIFIED"},
+      {"id": "P5", "what": "task family the paper uses", "value": "Harvey LAB document-review tasks", "status": "UNVERIFIED"}
+    ]
+  }
+}

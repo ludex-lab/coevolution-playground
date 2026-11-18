@@ -1,0 +1,347 @@
+{
+ "cases": [
+  {
+   "assign": {
+    "w_solo": [
+     "d_c1a",
+     "d_c1b",
+     "f_c1x",
+     "f_c1y"
+    ]
+   },
+   "attribute": "hq_city",
+   "claims": [
+    "d_c1a",
+    "d_c1b"
+   ],
+   "entity": "acme",
+   "id": "c1_single",
+   "layout": "single_agent",
+   "packets": {}
+  },
+  {
+   "assign": {
+    "w_a": [
+     "d_c1a",
+     "d_c1b",
+     "f_c1x"
+    ],
+    "w_z": [
+     "f_c1y"
+    ]
+   },
+   "attribute": "hq_city",
+   "claims": [
+    "d_c1a",
+    "d_c1b"
+   ],
+   "entity": "acme",
+   "id": "c1_same",
+   "layout": "delegated_same",
+   "packets": {
+    "w_a": {
+     "budget": 2,
+     "expires_at": 20,
+     "issued_at": 5,
+     "rule": "id_asc"
+    },
+    "w_b": {
+     "budget": 1,
+     "expires_at": 20,
+     "issued_at": 5,
+     "rule": "id_asc"
+    }
+   }
+  },
+  {
+   "assign": {
+    "w_a": [
+     "d_c1a",
+     "f_c1x"
+    ],
+    "w_b": [
+     "d_c1b",
+     "f_c1y"
+    ]
+   },
+   "attribute": "hq_city",
+   "claims": [
+    "d_c1a",
+    "d_c1b"
+   ],
+   "entity": "acme",
+   "id": "c1_split",
+   "layout": "delegated_split",
+   "packets": {
+    "w_a": {
+     "budget": 1,
+     "expires_at": 20,
+     "issued_at": 5,
+     "rule": "id_asc"
+    },
+    "w_b": {
+     "budget": 1,
+     "expires_at": 20,
+     "issued_at": 5,
+     "rule": "id_asc"
+    }
+   }
+  },
+  {
+   "assign": {
+    "w_solo": [
+     "d_c2a",
+     "d_c2b",
+     "f_c2x",
+     "f_c2y"
+    ]
+   },
+   "attribute": "ceo",
+   "claims": [
+    "d_c2a",
+    "d_c2b"
+   ],
+   "entity": "borealis",
+   "id": "c2_single",
+   "layout": "single_agent",
+   "packets": {}
+  },
+  {
+   "assign": {
+    "w_a": [
+     "d_c2a",
+     "d_c2b",
+     "f_c2x"
+    ],
+    "w_b": [
+     "f_c2y"
+    ]
+   },
+   "attribute": "ceo",
+   "claims": [
+    "d_c2a",
+    "d_c2b"
+   ],
+   "entity": "borealis",
+   "id": "c2_same",
+   "layout": "delegated_same",
+   "packets": {
+    "w_a": {
+     "budget": 2,
+     "expires_at": 20,
+     "issued_at": 5,
+     "rule": "id_desc"
+    },
+    "w_b": {
+     "budget": 1,
+     "expires_at": 20,
+     "issued_at": 5,
+     "rule": "id_asc"
+    }
+   }
+  },
+  {
+   "assign": {
+    "w_a": [
+     "d_c2a",
+     "f_c2x"
+    ],
+    "w_b": [
+     "d_c2b",
+     "f_c2y"
+    ]
+   },
+   "attribute": "ceo",
+   "claims": [
+    "d_c2a",
+    "d_c2b"
+   ],
+   "entity": "borealis",
+   "id": "c2_split",
+   "layout": "delegated_split",
+   "packets": {
+    "w_a": {
+     "budget": 1,
+     "expires_at": 20,
+     "issued_at": 5,
+     "rule": "id_asc"
+    },
+    "w_b": {
+     "budget": 1,
+     "expires_at": 20,
+     "issued_at": 5,
+     "rule": "id_desc"
+    }
+   }
+  },
+  {
+   "assign": {
+    "w_solo": [
+     "d_c3a",
+     "d_c3b",
+     "f_c3x",
+     "f_c3y"
+    ]
+   },
+   "attribute": "founded",
+   "claims": [
+    "d_c3a",
+    "d_c3b"
+   ],
+   "entity": "cedar",
+   "id": "c3_single",
+   "layout": "single_agent",
+   "packets": {}
+  },
+  {
+   "assign": {
+    "w_a": [
+     "d_c3a",
+     "d_c3b",
+     "f_c3x"
+    ],
+    "w_b": [
+     "f_c3y"
+    ]
+   },
+   "attribute": "founded",
+   "claims": [
+    "d_c3a",
+    "d_c3b"
+   ],
+   "entity": "cedar",
+   "id": "c3_same",
+   "layout": "delegated_same",
+   "packets": {
+    "w_a": {
+     "budget": 3,
+     "expires_at": 20,
+     "issued_at": 5,
+     "rule": "id_desc"
+    },
+    "w_b": {
+     "budget": 1,
+     "expires_at": 20,
+     "issued_at": 5,
+     "rule": "id_asc"
+    }
+   }
+  },
+  {
+   "assign": {
+    "w_a": [
+     "d_c3a",
+     "f_c3x"
+    ],
+    "w_b": [
+     "d_c3b",
+     "f_c3y"
+    ]
+   },
+   "attribute": "founded",
+   "claims": [
+    "d_c3a",
+    "d_c3b"
+   ],
+   "entity": "cedar",
+   "id": "c3_split",
+   "layout": "delegated_split",
+   "packets": {
+    "w_a": {
+     "budget": 1,
+     "expires_at": 20,
+     "issued_at": 5,
+     "rule": "id_desc"
+    },
+    "w_b": {
+     "budget": 1,
+     "expires_at": 20,
+     "issued_at": 5,
+     "rule": "id_desc"
+    }
+   }
+  }
+ ],
+ "docs": [
+  {
+   "attribute": "hq_city",
+   "entity": "acme",
+   "id": "d_c1a",
+   "value": "Oslo"
+  },
+  {
+   "attribute": "hq_city",
+   "entity": "acme",
+   "id": "d_c1b",
+   "value": "Bergen"
+  },
+  {
+   "attribute": "ceo",
+   "entity": "borealis",
+   "id": "d_c2a",
+   "value": "Ana Ruiz"
+  },
+  {
+   "attribute": "ceo",
+   "entity": "borealis",
+   "id": "d_c2b",
+   "value": "Lee Park"
+  },
+  {
+   "attribute": "founded",
+   "entity": "cedar",
+   "id": "d_c3a",
+   "value": "1998"
+  },
+  {
+   "attribute": "founded",
+   "entity": "cedar",
+   "id": "d_c3b",
+   "value": "2003"
+  },
+  {
+   "attribute": "founded",
+   "entity": "acme",
+   "id": "f_c1x",
+   "value": "2001"
+  },
+  {
+   "attribute": "hq_city",
+   "entity": "zeta",
+   "id": "f_c1y",
+   "value": "Rome"
+  },
+  {
+   "attribute": "hq_city",
+   "entity": "borealis",
+   "id": "f_c2x",
+   "value": "Lima"
+  },
+  {
+   "attribute": "ceo",
+   "entity": "zeta",
+   "id": "f_c2y",
+   "value": "Ida Roth"
+  },
+  {
+   "attribute": "ceo",
+   "entity": "cedar",
+   "id": "f_c3x",
+   "value": "Mo Chen"
+  },
+  {
+   "attribute": "founded",
+   "entity": "zeta",
+   "id": "f_c3y",
+   "value": "1990"
+  }
+ ],
+ "fixture_version": 1,
+ "now": 10,
+ "on_expiry": "DENY",
+ "workers": [
+  "w_solo",
+  "w_a",
+  "w_b"
+ ]
+}

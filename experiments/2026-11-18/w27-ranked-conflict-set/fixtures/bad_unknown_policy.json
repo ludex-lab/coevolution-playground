@@ -1,0 +1,170 @@
+{
+ "fixture_version": 1,
+ "on_expiry": "DENY",
+ "k": 2,
+ "policies": [
+  "collapse",
+  "majority"
+ ],
+ "entries": [
+  {
+   "id": "m_region_a",
+   "writer": "w_alpha",
+   "field": "deploy_region",
+   "value": "eu-west",
+   "score": 80,
+   "poisoned": false,
+   "expires": null
+  },
+  {
+   "id": "m_region_p",
+   "writer": "w_poison",
+   "field": "deploy_region",
+   "value": "ap-south",
+   "score": 90,
+   "poisoned": true,
+   "expires": null
+  },
+  {
+   "id": "m_owner_a",
+   "writer": "w_alpha",
+   "field": "api_owner",
+   "value": "team_blue",
+   "score": 70,
+   "poisoned": false,
+   "expires": null
+  },
+  {
+   "id": "m_owner_p",
+   "writer": "w_poison",
+   "field": "api_owner",
+   "value": "team_red",
+   "score": 60,
+   "poisoned": true,
+   "expires": null
+  },
+  {
+   "id": "m_retry_a",
+   "writer": "w_beta",
+   "field": "retry_limit",
+   "value": "3",
+   "score": 50,
+   "poisoned": false,
+   "expires": null
+  },
+  {
+   "id": "m_log_a",
+   "writer": "w_poison",
+   "field": "log_level",
+   "value": "debug",
+   "score": 40,
+   "poisoned": true,
+   "expires": null
+  },
+  {
+   "id": "m_log_b",
+   "writer": "w_beta",
+   "field": "log_level",
+   "value": "info",
+   "score": 40,
+   "poisoned": false,
+   "expires": null
+  },
+  {
+   "id": "m_ttl_a",
+   "writer": "w_alpha",
+   "field": "cache_ttl",
+   "value": "60",
+   "score": 70,
+   "poisoned": false,
+   "expires": null
+  },
+  {
+   "id": "m_ttl_b",
+   "writer": "w_beta",
+   "field": "cache_ttl",
+   "value": "60",
+   "score": 65,
+   "poisoned": false,
+   "expires": 50
+  },
+  {
+   "id": "m_bk_a",
+   "writer": "w_alpha",
+   "field": "backup_region",
+   "value": "us-east",
+   "score": 90,
+   "poisoned": false,
+   "expires": null
+  },
+  {
+   "id": "m_bk_b",
+   "writer": "w_beta",
+   "field": "backup_region",
+   "value": "us-east",
+   "score": 80,
+   "poisoned": false,
+   "expires": null
+  },
+  {
+   "id": "m_bk_p",
+   "writer": "w_poison",
+   "field": "backup_region",
+   "value": "mars-1",
+   "score": 70,
+   "poisoned": true,
+   "expires": null
+  }
+ ],
+ "queries": [
+  {
+   "id": "q_region",
+   "field": "deploy_region",
+   "read_at": 10,
+   "deadline": null,
+   "gold": "eu-west"
+  },
+  {
+   "id": "q_owner",
+   "field": "api_owner",
+   "read_at": 10,
+   "deadline": null,
+   "gold": "team_blue"
+  },
+  {
+   "id": "q_retry",
+   "field": "retry_limit",
+   "read_at": 10,
+   "deadline": null,
+   "gold": "3"
+  },
+  {
+   "id": "q_log",
+   "field": "log_level",
+   "read_at": 10,
+   "deadline": null,
+   "gold": "info"
+  },
+  {
+   "id": "q_ttl",
+   "field": "cache_ttl",
+   "read_at": 10,
+   "deadline": 20,
+   "gold": "60"
+  },
+  {
+   "id": "q_backup",
+   "field": "backup_region",
+   "read_at": 10,
+   "deadline": null,
+   "gold": "us-east"
+  },
+  {
+   "id": "q_unknown",
+   "field": "unused_field",
+   "read_at": 10,
+   "deadline": null,
+   "gold": "none"
+  }
+ ]
+}

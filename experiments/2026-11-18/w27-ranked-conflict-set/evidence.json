@@ -1,0 +1,97 @@
+{
+  "status": "UNVERIFIED",
+  "note": "External figures live only under on_unmeasured. Nothing there was measured, re-run or reproduced here; the paper's harness, models, attack set and logs were not used. The module reads no network source.",
+  "paper": {
+    "title": "Surfacing Disagreement Beats Resolving It: A Gated Ablation Study of Provenance-Weighted Memory for Multi-Agent Debate",
+    "authors": "Khan, Ziaullah; Khalid, Abdul Rehman; Lal, Shrestha Nischal; Vanchhay, Nheng; Mozumder, Md Ariful Islam; Kim, Hee-Cheol",
+    "arxiv_id": "2611.22461",
+    "abs_url": "https://arxiv.org/abs/2611.22461",
+    "licence": "arXiv nonexclusive-distrib 1.0 (method borrowed only; no text or code copied beyond short attributed quotes; no harness was pinned)",
+    "read_here": "the abstract page only; the full paper was not read"
+  },
+  "on_expiry": "DENY",
+  "rank_key": "fixture score descending, then id ascending (not the paper's provenance weighting)",
+  "on_unmeasured": {
+    "why": "Reported by the paper for its own harness, models and attack set; not comparable with this sketch's counts.",
+    "claims": [
+      {
+        "id": "P1",
+        "what": "F1 gain from passing the ranked conflict set instead of a winner",
+        "value": "+0.340",
+        "status": "UNVERIFIED"
+      },
+      {
+        "id": "P2",
+        "what": "attack success on poisoned items",
+        "value": "22 -> 7 of 122",
+        "status": "UNVERIFIED"
+      },
+      {
+        "id": "P3",
+        "what": "a different paper's figure (arXiv 2611.22245, worker-to-lead handoff) listed in the research pack: retrieval of both conflicting claims, percent",
+        "value": "50.2 -> 68.7",
+        "status": "UNVERIFIED"
+      },
+      {
+        "id": "P4",
+        "what": "a different paper's figure (arXiv 2611.22245): conflict detection, percent",
+        "value": "16.2 -> 13.2",
+        "status": "UNVERIFIED"
+      },
+      {
+        "id": "P5",
+        "what": "a different paper's figure (arXiv 2611.22245): retrieved conflicting pairs that workers report in full, percent",
+        "value": "35.2",
+        "status": "UNVERIFIED"
+      }
+    ]
+  },
+  "measured_here": {
+    "k": 2,
+    "main_totals": {
+      "collapse": {
+        "correct": 4,
+        "poisoned": 2,
+        "wrong": 0,
+        "escalated": 0,
+        "held": 1,
+        "denied": 0,
+        "conflict_visible": 0,
+        "queries": 7
+      },
+      "surface": {
+        "correct": 3,
+        "poisoned": 0,
+        "wrong": 0,
+        "escalated": 3,
+        "held": 1,
+        "denied": 0,
+        "conflict_visible": 3,
+        "queries": 7
+      }
+    },
+    "expired_totals": {
+      "collapse": {
+        "correct": 1,
+        "poisoned": 0,
+        "wrong": 0,
+        "escalated": 0,
+        "held": 0,
+        "denied": 2,
+        "conflict_visible": 0,
+        "queries": 3
+      },
+      "surface": {
+        "correct": 1,
+        "poisoned": 0,
+        "wrong": 0,
+        "escalated": 0,
+        "held": 0,
+        "denied": 2,
+        "conflict_visible": 0,
+        "queries": 3
+      }
+    },
+    "note": "Counts are computed by conflict_set.py from fixtures/main.json and fixtures/expired.json and asserted by test_conflict_set.py."
+  }
+}

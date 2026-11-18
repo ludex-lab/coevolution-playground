@@ -1,0 +1,70 @@
+{
+  "note": "Fictional frozen executions. Every task, step and value is invented for this sketch.",
+  "executions": [
+    {
+      "id": "e1",
+      "task": "refund order A-17 and tell the customer",
+      "trajectory_id": "t-e1",
+      "outcome": "agent replied: refund issued",
+      "ground_truth": "fail",
+      "criterion": ["order_found", "refund_posted", "customer_told"],
+      "steps": [
+        {"id": "s1", "tool": "orders.lookup", "evidence": {"order_found": true}},
+        {"id": "s2", "tool": "subagent.refund", "hidden_by": ["delegation"],
+         "summary": {"text": "subagent reports: refund done", "claims": {"refund_posted": true}},
+         "evidence": {"refund_posted": false}},
+        {"id": "s3", "tool": "mail.send", "evidence": {"customer_told": true}}
+      ]
+    },
+    {
+      "id": "e2",
+      "task": "rename three draft files to the dated scheme",
+      "trajectory_id": "t-e2",
+      "outcome": "agent replied: files renamed",
+      "ground_truth": "pass",
+      "criterion": ["renamed_a", "renamed_b", "renamed_c"],
+      "steps": [
+        {"id": "s1", "tool": "fs.rename", "hidden_by": ["composed_tool"],
+         "summary": {"text": "bulk_rename: 3 files renamed", "claims": {"renamed_a": true, "renamed_b": true, "renamed_c": true}},
+         "evidence": {"renamed_a": true, "renamed_b": true}},
+        {"id": "s2", "tool": "fs.rename", "hidden_by": ["composed_tool"],
+         "summary": {"text": "bulk_rename: 3 files renamed", "claims": {"renamed_a": true, "renamed_b": true, "renamed_c": true}},
+         "evidence": {"renamed_c": true}}
+      ]
+    },
+    {
+      "id": "e3",
+      "task": "move the Thursday review to a free slot",
+      "trajectory_id": "t-e3",
+      "outcome": "agent replied: review moved to 15:00",
+      "ground_truth": "pass",
+      "criterion": ["slot_free", "event_moved"],
+      "steps": [
+        {"id": "s1", "tool": "calendar.freebusy", "hidden_by": ["compaction"], "evidence": {"slot_free": true}},
+        {"id": "s2", "tool": "calendar.move", "evidence": {"event_moved": true}}
+      ]
+    },
+    {
+      "id": "e4",
+      "task": "add the tea order to the shared list",
+      "trajectory_id": "t-e4",
+      "outcome": "agent replied: added",
+      "ground_truth": "pass",
+      "criterion": ["item_added"],
+      "steps": [
+        {"id": "s1", "tool": "notes.read", "hidden_by": ["compaction"], "evidence": {"list_read": true}},
+        {"id": "s2", "tool": "notes.append", "evidence": {"item_added": true}}
+      ]
+    }
+  ],
+  "pairs": [
+    {"id": "p1", "native": {"execution": "e1", "verifier": "direct"}, "abstracted": {"execution": "e1", "verifier": "direct", "boundary": "delegation"}},
+    {"id": "p2", "native": {"execution": "e2", "verifier": "direct"}, "abstracted": {"execution": "e2", "verifier": "direct", "boundary": "composed_tool"}},
+    {"id": "p3", "native": {"execution": "e3", "verifier": "direct"}, "abstracted": {"execution": "e3", "verifier": "direct", "boundary": "compaction"}},
+    {"id": "p4", "native": {"execution": "e4", "verifier": "direct"}, "abstracted": {"execution": "e4", "verifier": "direct", "boundary": "compaction"}},
+    {"id": "p5", "native": {"execution": "e1", "verifier": "grounded"}, "abstracted": {"execution": "e1", "verifier": "grounded", "boundary": "delegation"}},
+    {"id": "p6", "native": {"execution": "e2", "verifier": "grounded"}, "abstracted": {"execution": "e2", "verifier": "grounded", "boundary": "composed_tool"}},
+    {"id": "p7", "native": {"execution": "e3", "verifier": "grounded"}, "abstracted": {"execution": "e3", "verifier": "grounded", "boundary": "compaction"}},
+    {"id": "p8", "native": {"execution": "e4", "verifier": "grounded"}, "abstracted": {"execution": "e4", "verifier": "grounded", "boundary": "compaction"}}
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "fixture_version": 1,
+  "vocabulary": {
+    "scopes": ["same_task", "same_topic", "any_task"],
+    "kinds": ["preference_only", "one_off_only", "any_kind"]
+  },
+  "tasks": [
+    {"id": "meal_planning", "topic": "food"},
+    {"id": "grocery_list", "topic": "food"},
+    {"id": "trip_booking", "topic": "travel"},
+    {"id": "gift_ideas", "topic": "shopping"}
+  ],
+  "events": [
+    {"id": "veg", "kind": "preference", "origin_task": "meal_planning", "text": "Mira said she eats vegetarian at home."},
+    {"id": "seat", "kind": "one_off", "origin_task": "trip_booking", "text": "Mira picked an aisle seat for one late train."}
+  ],
+  "uses": [
+    {"id": "u1", "event": "veg", "task": "meal_planning", "audience": "self", "text": "Suggest a vegetarian dinner for this week."},
+    {"id": "u2", "event": "veg", "task": "grocery_list", "audience": "self", "text": "Leave meat off the grocery list."},
+    {"id": "u3", "event": "veg", "task": "trip_booking", "audience": "self", "text": "Ask for a vegetarian meal on the train ticket."},
+    {"id": "u4", "event": "veg", "task": "gift_ideas", "audience": "self", "text": "Skip leather in gift ideas."},
+    {"id": "u5", "event": "seat", "task": "trip_booking", "audience": "self", "text": "Pick an aisle seat on the next train."},
+    {"id": "u6", "event": "seat", "task": "meal_planning", "audience": "self", "text": "Plan a quick meal that fits a late train."},
+    {"id": "u7", "event": "veg", "task": "meal_planning", "audience": "others", "text": "Tell a neighbour that Mira is vegetarian."},
+    {"id": "u8", "event": "seat", "task": "trip_booking", "audience": "others", "text": "Tell the travel group where Mira sat."}
+  ],
+  "intended": {"scope": "same_topic", "kinds": "preference_only"},
+  "previews": [
+    {"id": "weak", "permitted": "u1", "blocked": "u5"},
+    {"id": "transfer", "permitted": "u2", "blocked": "u3"}
+  ]
+}

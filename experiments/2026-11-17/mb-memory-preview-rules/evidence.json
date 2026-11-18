@@ -1,0 +1,77 @@
+{
+  "status": "UNVERIFIED",
+  "on_unmeasured": "Nothing in this file was measured, re-run or reproduced here. The sketch's own counts come only from fixtures/memory_rules.json and are not comparable with any figure below.",
+  "note": "External figures, quotes and links for this experiment live only in this file. The module reads no network source.",
+  "paper": {
+    "arxiv_id": "2611.17874",
+    "abs_url": "https://arxiv.org/abs/2611.17874",
+    "authors": "Tonni and Shahid (as named in the research pack summary)",
+    "submitted": "13 Nov 2026 (research pack)",
+    "read_here": "research pack summary only; the abs page, HTML and PDF were not opened for this draft",
+    "method_borrowed": "enumerate every rule from a specified vocabulary that is compatible with a preview of one permitted and one blocked use; compare a weak default preview with a test of transfer to another task",
+    "status": "UNVERIFIED"
+  },
+  "paper_claims": [
+    {
+      "id": "P1",
+      "what": "under the intended rule, possible permitted/blocked pairs that contain a blocked example no rule permits",
+      "value": "36 of 39",
+      "source": "research pack summary of the abs",
+      "measured_here": "on_unmeasured",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "P2",
+      "what": "pairs that identify the intended rule",
+      "value": "none",
+      "source": "research pack summary of the abs",
+      "measured_here": "on_unmeasured",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "P3",
+      "what": "pilot participants who mispredicted or were unsure about at least one of two uses after a weak preview of a rule they had just chosen",
+      "value": "10 of 20",
+      "source": "research pack summary of the abs",
+      "measured_here": "on_unmeasured",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "P4",
+      "what": "for an explicit preference, two adaptive tests leave all three recommendation scopes open, while one transfer test settles the question",
+      "source": "research pack summary of the abs",
+      "measured_here": "on_unmeasured",
+      "status": "UNVERIFIED"
+    },
+    {
+      "id": "P5",
+      "what": "tests needed: three or four; with dependent permissions a fixed checklist grows to six or nine and adaptive questioning needs at most five or seven",
+      "source": "research pack summary of the abs",
+      "measured_here": "on_unmeasured",
+      "status": "UNVERIFIED"
+    }
+  ],
+  "upstream_repo": {
+    "url": "https://github.com/tonni19/memory-preview-ambiguity",
+    "head": "56a37f9a9ebf21ef4efe202cd1b6113311c45cf5",
+    "license": "MIT (per the research pack, which fetched LICENSE)",
+    "executed": false,
+    "copied": false,
+    "fetched_here": false,
+    "note": "Not vendored, copied, fetched or run; its server was not started. Listed for credit only.",
+    "status": "UNVERIFIED"
+  },
+  "fixture_counts_here": {
+    "source": "computed by preview_rules.py from fixtures/memory_rules.json; asserted in test_preview_rules.py",
+    "rules": 9,
+    "intended_pairs": 12,
+    "pairs_with_blocked_use_no_rule_permits": 4,
+    "pairs_identifying_intended": 0,
+    "weak_preview_compatible_rules": 3,
+    "weak_preview_scopes": 3,
+    "transfer_preview_compatible_rules": 2,
+    "transfer_preview_scopes": 1,
+    "both_previews_compatible_rules": 1,
+    "smallest_identifying_probe_set_size": 3
+  }
+}

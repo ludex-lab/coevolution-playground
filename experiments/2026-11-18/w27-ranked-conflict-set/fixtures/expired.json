@@ -1,0 +1,61 @@
+{
+ "fixture_version": 1,
+ "on_expiry": "DENY",
+ "k": 2,
+ "policies": [
+  "collapse",
+  "surface"
+ ],
+ "entries": [
+  {
+   "id": "x_a",
+   "writer": "w_alpha",
+   "field": "mode",
+   "value": "fast",
+   "score": 60,
+   "poisoned": false,
+   "expires": null
+  },
+  {
+   "id": "x_b",
+   "writer": "w_beta",
+   "field": "mode",
+   "value": "safe",
+   "score": 50,
+   "poisoned": false,
+   "expires": 5
+  },
+  {
+   "id": "x_c",
+   "writer": "w_alpha",
+   "field": "limit",
+   "value": "10",
+   "score": 60,
+   "poisoned": false,
+   "expires": null
+  }
+ ],
+ "queries": [
+  {
+   "id": "q_late",
+   "field": "limit",
+   "read_at": 9,
+   "deadline": 5,
+   "gold": "10"
+  },
+  {
+   "id": "q_stale",
+   "field": "mode",
+   "read_at": 9,
+   "deadline": null,
+   "gold": "fast"
+  },
+  {
+   "id": "q_fresh",
+   "field": "limit",
+   "read_at": 4,
+   "deadline": 5,
+   "gold": "10"
+  }
+ ]
+}
