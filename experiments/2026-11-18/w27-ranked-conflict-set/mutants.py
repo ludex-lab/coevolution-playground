@@ -115,6 +115,7 @@ MUTANTS = [
     ("cli", r'        if len(argv) != 1 or argv[0].startswith("-"):', r'        if len(argv) != 1:'),
     ("cli", r'        if len(argv) != 1 or argv[0].startswith("-"):', r'        if len(argv) < 1:'),
     ("cli", r'        return 2', r'        return 1'),
+    ("cli", r'    return 2 if any(r["decision"]["decision"] == "DENY" for r in report["rows"]) else 0', r'    return 0'),
     ("cli", r'        err.write("DENY %s: %s\n" % (exc.code, exc.detail))', r'        out.write("DENY %s: %s\n" % (exc.code, exc.detail))'),
     ("cli", r'    except (OSError, UnicodeDecodeError) as exc:', r'    except OSError as exc:'),
     ("cli", r'        text = data.decode("utf-8")', r'        text = data.decode("latin-1")'),

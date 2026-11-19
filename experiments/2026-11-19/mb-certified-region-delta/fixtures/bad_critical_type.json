@@ -1,0 +1,64 @@
+{
+ "name": "main",
+ "dims": [
+  {
+   "name": "core_temp_c",
+   "lo": 40,
+   "hi": 70,
+   "hard_lo": 0,
+   "hard_hi": 95,
+   "critical": false
+  },
+  {
+   "name": "sensor_agree_pct",
+   "lo": 90,
+   "hi": 100,
+   "hard_lo": 50,
+   "hard_hi": 100,
+   "critical": "yes"
+  },
+  {
+   "name": "latency_ms",
+   "lo": 20,
+   "hi": 120,
+   "hard_lo": 0,
+   "hard_hi": 500,
+   "critical": false
+  },
+  {
+   "name": "error_rate_pct",
+   "lo": 0,
+   "hi": 2,
+   "hard_lo": 0,
+   "hard_hi": 20,
+   "critical": false
+  }
+ ],
+ "odd": [
+  {
+   "name": "ambient_c",
+   "lo": -10,
+   "hi": 40
+  },
+  {
+   "name": "load_rps",
+   "lo": 0,
+   "hi": 500
+  }
+ ],
+ "observations": [
+  {
+   "id": "o01",
+   "state": {
+    "core_temp_c": 55,
+    "sensor_agree_pct": 97,
+    "latency_ms": 70,
+    "error_rate_pct": 0.5
+   },
+   "env": {
+    "ambient_c": 22,
+    "load_rps": 200
+   }
+  }
+ ]
+}

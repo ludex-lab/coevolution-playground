@@ -313,10 +313,21 @@ class CommandLine(unittest.TestCase):
         self.assertEqual((rc, err), (0, ""))
         self.assertEqual(json.loads(out)["totals"]["collapse"]["poisoned"], 2)
 
-    def test_expired_fixture_exit_zero_with_deny_decisions(self):
-        rc, out, _ = self.cli(os.path.join("fixtures", "expired.json"))
-        self.assertEqual(rc, 0)
+    def test_expired_fixture_exit_two_with_deny_decisions(self):
+        rc, out, err = self.cli(os.path.join("fixtures", "expired.json"))
+        self.assertEqual((rc, err), (2, ""))
         self.assertEqual(json.loads(out)["totals"]["collapse"]["denied"], 2)
+
+    def test_main_fixture_has_no_deny_row(self):
+        rc, out, _ = self.cli(os.path.join("fixtures", "main.json"))
+        self.assertEqual(rc, 0)
+        self.assertNotIn("DENY", [r["decision"]["decision"] for r in json.loads(out)["rows"]])
+
+    def test_demo_exits_zero_on_purpose(self):
+        res = subprocess.run([sys.executable, "-B", os.path.join(HERE, "demo.py")],
+                             capture_output=True, text=True, cwd=HERE, timeout=60)
+        self.assertEqual((res.returncode, res.stderr), (0, ""))
+        self.assertIn("DENY", res.stdout)
 
     def test_every_bad_fixture_denies_exit_two(self):
         paths = sorted(glob.glob(os.path.join(FX, "bad_*.json")))

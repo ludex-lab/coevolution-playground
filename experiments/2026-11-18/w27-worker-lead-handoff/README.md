@@ -36,8 +36,9 @@ reproduced and appear only as UNVERIFIED entries under `on_unmeasured` in `evide
   `FAIL` with reason `handoff_failure`, never a pass. Retrieval alone is not a pass.
 - **on_expiry: DENY.** A worker with no packet (`null`) gives `DENY missing_packet`; a packet whose
   `expires_at` is before the fixture's `now` gives `DENY expired_packet` (no wall clock; a packet that
-  expires exactly at `now` is still valid). DENY rows still report the profiler's retrieval column. The CLI
-  exits 0 for them: the report holds the verdict.
+  expires exactly at `now` is still valid). DENY rows still report the profiler's retrieval column. The report
+  is still printed; the CLI exits 2 when any row is DENY, and `demo.py` exits 0 on purpose because it
+  demonstrates DENY rows.
 - Malformed input (duplicate JSON keys, missing or unknown keys, wrong types, unknown layout, rule or
   worker, duplicate ids, a packet missing for an assigned worker, a window that ends before it starts, a
   layout that does not match the assignment, claims with equal values, a filler that repeats the conflict,

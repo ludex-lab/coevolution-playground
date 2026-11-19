@@ -33,8 +33,8 @@ page was read for this draft. Paper figures are not reproduced and appear only a
 - The **scripted reader** is fixed. One distinct value: `ADOPT` it. Several distinct values:
   `ESCALATE` with the list of values; it never names a winner. No value: `HOLD`.
 - **on_expiry: DENY.** A query whose `read_at` is after its `deadline`, or a retrieved entry whose
-  `expires` is before `read_at`, gives the decision `DENY` (the CLI still exits 0: the report holds the
-  decision). A policy that returns more than k entries, or an entry outside the retrieved top-k, raises
+  `expires` is before `read_at`, gives the decision `DENY` (the report is still printed; the CLI exits 2 when any row is DENY, and
+  `demo.py` exits 0 on purpose because it demonstrates DENY rows). A policy that returns more than k entries, or an entry outside the retrieved top-k, raises
   `DENY budget_exceeded`.
 - Malformed input (missing or unknown keys, duplicate JSON keys, wrong types, bool or text as a score or
   time, empty or whitespace ids, duplicate ids, k below 1, unknown or repeated policy, on_expiry other

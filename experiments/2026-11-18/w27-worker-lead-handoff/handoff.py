@@ -14,7 +14,7 @@ The evidence-flow profiler reports (i) both claims retrieved anywhere and (ii) l
 Verdict: PASS only when the lead detected the conflict; "both retrieved, lead missed" is FAIL
 (handoff_failure), never a pass. on_expiry = DENY: a missing packet, or a packet whose expires_at
 is before the fixture's `now` (no wall clock), gives DENY.
-CLI: python3 -B handoff.py <fixture.json>; exit 2 with one line "DENY <code>: <detail>" on
+CLI: python3 -B handoff.py <fixture.json>; exit 2 when any row verdict is DENY (the report is still printed), and exit 2 with one line "DENY <code>: <detail>" on
 stderr for a bad fixture or usage.
 """
 
@@ -341,7 +341,7 @@ def main(argv, out=None, err=None):
         err.write("DENY %s: %s\n" % (exc.code, exc.detail))
         return 2
     out.write(json.dumps(report, sort_keys=True, indent=1) + "\n")
-    return 0
+    return 2 if any(r["verdict"] == "DENY" for r in report["rows"]) else 0
 
 
 if __name__ == "__main__":

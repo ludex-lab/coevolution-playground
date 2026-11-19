@@ -9,7 +9,7 @@ The scripted reader is fixed: one distinct value -> ADOPT it; several -> ESCALAT
 winner); none -> HOLD. Rank key (fixture-declared, deterministic): score descending, then id
 ascending. This is NOT the paper's provenance weighting.
 on_expiry = DENY: a passed deadline, or an expired entry among the retrieved ones, is DENY.
-CLI: python3 -B conflict_set.py <fixture.json>; exit 2 with one line "DENY <code>: <detail>"
+CLI: python3 -B conflict_set.py <fixture.json>; exit 2 when any row decision is DENY (the report is still printed), and exit 2 with one line "DENY <code>: <detail>"
 on stderr for a bad fixture or usage.
 """
 
@@ -306,7 +306,7 @@ def main(argv, out=None, err=None):
         err.write("DENY %s: %s\n" % (exc.code, exc.detail))
         return 2
     out.write(json.dumps(report, sort_keys=True, indent=1) + "\n")
-    return 0
+    return 2 if any(r["decision"]["decision"] == "DENY" for r in report["rows"]) else 0
 
 
 if __name__ == "__main__":

@@ -551,10 +551,27 @@ class Cli(unittest.TestCase):
         self.assertEqual((rc, err), (0, ""))
         self.assertEqual(json.loads(out)["totals"]["delegated_split"]["fail"], 2)
 
-    def test_expired_exits_zero_with_deny_rows(self):
+    def test_expired_exits_two_with_deny_rows(self):
         rc, out, err = self.call([os.path.join(FX, "expired.json")])
-        self.assertEqual(rc, 0)
+        self.assertEqual((rc, err), (2, ""))
         self.assertEqual(sum(1 for r in json.loads(out)["rows"] if r["verdict"] == "DENY"), 2)
+
+    def test_main_fixture_has_no_deny_row(self):
+        rc, out, _ = self.call([os.path.join(FX, "main.json")])
+        self.assertEqual(rc, 0)
+        self.assertNotIn("DENY", [r["verdict"] for r in json.loads(out)["rows"]])
+
+    def test_subprocess_expired_exit_two(self):
+        res = subprocess.run([sys.executable, "-B", os.path.join(HERE, "handoff.py"),
+                              os.path.join(FX, "expired.json")], capture_output=True, text=True)
+        self.assertEqual((res.returncode, res.stderr), (2, ""))
+        self.assertEqual(sum(1 for r in json.loads(res.stdout)["rows"] if r["verdict"] == "DENY"), 2)
+
+    def test_demo_exits_zero_on_purpose(self):
+        res = subprocess.run([sys.executable, "-B", os.path.join(HERE, "demo.py")],
+                             capture_output=True, text=True, cwd=HERE)
+        self.assertEqual((res.returncode, res.stderr), (0, ""))
+        self.assertIn("DENY", res.stdout)
 
     def test_usage(self):
         for argv in ([], ["a", "b"], ["-x"]):

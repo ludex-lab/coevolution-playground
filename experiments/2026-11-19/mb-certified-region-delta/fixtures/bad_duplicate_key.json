@@ -1,0 +1,221 @@
+{
+ "name": "main",
+ "name": "again",
+ "dims": [
+  {
+   "name": "core_temp_c",
+   "lo": 40,
+   "hi": 70,
+   "hard_lo": 0,
+   "hard_hi": 95,
+   "critical": false
+  },
+  {
+   "name": "sensor_agree_pct",
+   "lo": 90,
+   "hi": 100,
+   "hard_lo": 50,
+   "hard_hi": 100,
+   "critical": true
+  },
+  {
+   "name": "latency_ms",
+   "lo": 20,
+   "hi": 120,
+   "hard_lo": 0,
+   "hard_hi": 500,
+   "critical": false
+  },
+  {
+   "name": "error_rate_pct",
+   "lo": 0,
+   "hi": 2,
+   "hard_lo": 0,
+   "hard_hi": 20,
+   "critical": false
+  }
+ ],
+ "odd": [
+  {
+   "name": "ambient_c",
+   "lo": -10,
+   "hi": 40
+  },
+  {
+   "name": "load_rps",
+   "lo": 0,
+   "hi": 500
+  }
+ ],
+ "observations": [
+  {
+   "id": "o01",
+   "state": {
+    "core_temp_c": 55,
+    "sensor_agree_pct": 97,
+    "latency_ms": 70,
+    "error_rate_pct": 0.5
+   },
+   "env": {
+    "ambient_c": 22,
+    "load_rps": 200
+   }
+  },
+  {
+   "id": "o02",
+   "state": {
+    "core_temp_c": 55,
+    "sensor_agree_pct": 97,
+    "latency_ms": 118,
+    "error_rate_pct": 1.9
+   },
+   "env": {
+    "ambient_c": 22,
+    "load_rps": 200
+   }
+  },
+  {
+   "id": "o03",
+   "state": {
+    "core_temp_c": 55,
+    "sensor_agree_pct": 97,
+    "latency_ms": 140,
+    "error_rate_pct": 0.5
+   },
+   "env": {
+    "ambient_c": 22,
+    "load_rps": 200
+   }
+  },
+  {
+   "id": "o04",
+   "state": {
+    "core_temp_c": 55,
+    "sensor_agree_pct": 97,
+    "latency_ms": 145,
+    "error_rate_pct": 0.5
+   },
+   "env": {
+    "ambient_c": 22,
+    "load_rps": 200
+   }
+  },
+  {
+   "id": "o05",
+   "state": {
+    "core_temp_c": 55,
+    "sensor_agree_pct": 97,
+    "latency_ms": 135,
+    "error_rate_pct": 0.5
+   },
+   "env": {
+    "ambient_c": 22,
+    "load_rps": 200
+   }
+  },
+  {
+   "id": "o06",
+   "state": {
+    "core_temp_c": 55,
+    "sensor_agree_pct": 97,
+    "latency_ms": 100,
+    "error_rate_pct": 0.5
+   },
+   "env": {
+    "ambient_c": 22,
+    "load_rps": 200
+   }
+  },
+  {
+   "id": "o07",
+   "state": {
+    "core_temp_c": 55,
+    "sensor_agree_pct": 80,
+    "latency_ms": 70,
+    "error_rate_pct": 0.5
+   },
+   "env": {
+    "ambient_c": 22,
+    "load_rps": 200
+   }
+  },
+  {
+   "id": "o08",
+   "state": {
+    "core_temp_c": 75,
+    "sensor_agree_pct": 97,
+    "latency_ms": 70,
+    "error_rate_pct": 3
+   },
+   "env": {
+    "ambient_c": 22,
+    "load_rps": 200
+   }
+  },
+  {
+   "id": "o09",
+   "state": {
+    "core_temp_c": 100,
+    "sensor_agree_pct": 97,
+    "latency_ms": 70,
+    "error_rate_pct": 0.5
+   },
+   "env": {
+    "ambient_c": 22,
+    "load_rps": 200
+   }
+  },
+  {
+   "id": "o10",
+   "state": {
+    "core_temp_c": 55,
+    "sensor_agree_pct": 97,
+    "latency_ms": 70,
+    "error_rate_pct": 0.5
+   },
+   "env": {
+    "ambient_c": 48,
+    "load_rps": 200
+   }
+  },
+  {
+   "id": "o11",
+   "state": {
+    "core_temp_c": 55,
+    "sensor_agree_pct": 97,
+    "latency_ms": 150,
+    "error_rate_pct": 0.5
+   },
+   "env": {
+    "ambient_c": 50,
+    "load_rps": 200
+   }
+  },
+  {
+   "id": "o12",
+   "state": {
+    "core_temp_c": 55,
+    "sensor_agree_pct": 97,
+    "latency_ms": 70,
+    "error_rate_pct": 25
+   },
+   "env": {
+    "ambient_c": 50,
+    "load_rps": 200
+   }
+  },
+  {
+   "id": "o13",
+   "state": {
+    "core_temp_c": 55,
+    "sensor_agree_pct": 97,
+    "latency_ms": 70,
+    "error_rate_pct": 0.5
+   },
+   "env": {
+    "ambient_c": 22,
+    "load_rps": 600
+   }
+  }
+ ]
+}

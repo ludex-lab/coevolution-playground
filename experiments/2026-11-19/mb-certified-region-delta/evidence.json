@@ -1,0 +1,35 @@
+{
+  "status": "UNVERIFIED",
+  "note": "External claims live only under on_unmeasured. Nothing there was measured, re-run or reproduced here. The module reads no network source and no paper data.",
+  "paper": {
+    "title": "ARC-2: delta management after deployment against a certified region (title as listed in the research pack)",
+    "authors": "Eide and Holt",
+    "arxiv_id": "2611.21811",
+    "abs_url": "https://arxiv.org/abs/2611.21811",
+    "licence": "CC BY 4.0 (paper licence on the abstract page; not a code licence)",
+    "method_only": true,
+    "upstream_code": "none listed; nothing copied",
+    "read_here": "the abstract page only; the full paper was not read or run"
+  },
+  "responses": ["CONTINUE", "WITHDRAW_AUTHORIZATION", "SHUTDOWN", "RECERTIFY"],
+  "measured": {
+    "fixture": "fixtures/main.json (4 dims, 2 ODD variables, 13 observations)",
+    "arm_a_counts": {"CONTINUE": 5, "WITHDRAW_AUTHORIZATION": 4, "SHUTDOWN": 2, "RECERTIFY": 2},
+    "arm_b_counts": {"CONTINUE": 4, "WITHDRAW_AUTHORIZATION": 1, "SHUTDOWN": 8, "RECERTIFY": 0},
+    "arm_b_shutdowns_where_arm_a_does_not": ["o04", "o05", "o07", "o08", "o10", "o11"],
+    "arm_b_authority_cuts_on_odd_exit": ["o03"],
+    "note": "counts come from hand-written rules on an invented fixture and are not comparable with anything in the paper"
+  },
+  "on_unmeasured": {
+    "why": "Stated by the paper in prose; not reproduced and not comparable with this sketch's fixture counts.",
+    "claims": [
+      {"id": "P1", "what": "ARC 1 had three layers (model safety validation, cognitive certification, operational authorization) and did not address compliance after deployment", "status": "UNVERIFIED"},
+      {"id": "P2", "what": "the certified baseline is defined as a region rather than a fixed point and deviation is measured by continuous monitoring", "status": "UNVERIFIED"},
+      {"id": "P3", "what": "isolated outliers are quarantined pending confirmation before they enter the evaluation", "status": "UNVERIFIED"},
+      {"id": "P4", "what": "a layered trigger taxonomy: hard safety violations, critical single-dimension failures, correlated multi-system degradation, risk-weighted composites", "status": "UNVERIFIED"},
+      {"id": "P5", "what": "a graduated safe-transition protocol separates withdrawal of operational authorization from physical shutdown", "status": "UNVERIFIED"},
+      {"id": "P6", "what": "drift beyond the certified operational design domain triggers recertification or ODD revision rather than automatic authority contraction", "status": "UNVERIFIED"},
+      {"id": "P7", "what": "the framework addresses continuous-compliance obligations in EU AI Act Article 72(2)", "status": "UNVERIFIED"}
+    ]
+  }
+}
