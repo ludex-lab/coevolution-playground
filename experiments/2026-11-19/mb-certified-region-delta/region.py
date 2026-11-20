@@ -40,6 +40,10 @@ CLASSES = ("IN_REGION", "OUT_OF_REGION", "HARD_SAFETY", "ODD_EXIT")
 # Cc controls (newline, ESC, C1), Cf format (zero-width), Cs surrogates, Co private use, Zl and Zp separators.
 BAD_CATEGORIES = ("Cc", "Cf", "Cs", "Co", "Zl", "Zp")
 
+# Blank look-alikes outside those categories: HANGUL FILLER (category Lo) and BRAILLE PATTERN BLANK (So).
+# A short, explicit set, not a theory of invisible characters; other look-alikes stay accepted.
+BLANK_LOOKALIKES = ("\u3164", "\u2800")
+
 
 class FixtureError(Exception):
     def __init__(self, code, detail):
@@ -82,8 +86,8 @@ def _text(value, where):
         raise FixtureError("bad_text", "%s has leading or trailing whitespace" % where)
     for ch in value:
         cat = unicodedata.category(ch)
-        if cat in BAD_CATEGORIES or (cat == "Zs" and ch != " "):
-            raise FixtureError("bad_text", "%s has a control, format or special space character (U+%04X)"
+        if cat in BAD_CATEGORIES or (cat == "Zs" and ch != " ") or ch in BLANK_LOOKALIKES:
+            raise FixtureError("bad_text", "%s has a control, format, special space or blank look-alike character (U+%04X)"
                                % (where, ord(ch)))
     return value
 

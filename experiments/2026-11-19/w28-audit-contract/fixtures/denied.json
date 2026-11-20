@@ -1,0 +1,1616 @@
+{
+ "fixture_version": 1,
+ "on_expiry": "DENY",
+ "audits": [
+  {
+   "id": "d00_clean",
+   "declaration": {
+    "seq": 1,
+    "contracts": [
+     "ltr",
+     "rtl",
+     "lanes2",
+     "fsum"
+    ],
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "weights_text": "1.0,1.0,1.0",
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ]
+   },
+   "scoring": {
+    "seq": 2,
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ],
+    "runs": [
+     {
+      "contract": "ltr",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "rtl",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "lanes2",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "fsum",
+      "weights_text": "1.0,1.0,1.0"
+     }
+    ]
+   },
+   "records": [
+    {
+     "id": "c01",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c02",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c03",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c04",
+     "group": "g_a",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c05",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c06",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c07",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c08",
+     "group": "g_b",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d01_no_declaration",
+   "declaration": null,
+   "scoring": {
+    "seq": 2,
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ],
+    "runs": [
+     {
+      "contract": "ltr",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "rtl",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "lanes2",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "fsum",
+      "weights_text": "1.0,1.0,1.0"
+     }
+    ]
+   },
+   "records": [
+    {
+     "id": "c01",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c02",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c03",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c04",
+     "group": "g_a",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c05",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c06",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c07",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c08",
+     "group": "g_b",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d02_declared_after_scoring",
+   "declaration": {
+    "seq": 2,
+    "contracts": [
+     "ltr",
+     "rtl",
+     "lanes2",
+     "fsum"
+    ],
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "weights_text": "1.0,1.0,1.0",
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ]
+   },
+   "scoring": {
+    "seq": 2,
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ],
+    "runs": [
+     {
+      "contract": "ltr",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "rtl",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "lanes2",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "fsum",
+      "weights_text": "1.0,1.0,1.0"
+     }
+    ]
+   },
+   "records": [
+    {
+     "id": "c01",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c02",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c03",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c04",
+     "group": "g_a",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c05",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c06",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c07",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c08",
+     "group": "g_b",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d03_contract_missing",
+   "declaration": {
+    "seq": 1,
+    "contracts": [
+     "ltr",
+     "rtl",
+     "lanes2",
+     "fsum"
+    ],
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "weights_text": "1.0,1.0,1.0",
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ]
+   },
+   "scoring": {
+    "seq": 2,
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ],
+    "runs": [
+     {
+      "contract": "ltr",
+      "weights_text": "1.0,1.0,1.0"
+     }
+    ]
+   },
+   "records": [
+    {
+     "id": "c01",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c02",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c03",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c04",
+     "group": "g_a",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c05",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c06",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c07",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c08",
+     "group": "g_b",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d04_contract_not_declared",
+   "declaration": {
+    "seq": 1,
+    "contracts": [
+     "ltr",
+     "rtl"
+    ],
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "weights_text": "1.0,1.0,1.0",
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ]
+   },
+   "scoring": {
+    "seq": 2,
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ],
+    "runs": [
+     {
+      "contract": "ltr",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "rtl",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "lanes2",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "fsum",
+      "weights_text": "1.0,1.0,1.0"
+     }
+    ]
+   },
+   "records": [
+    {
+     "id": "c01",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c02",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c03",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c04",
+     "group": "g_a",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c05",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c06",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c07",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c08",
+     "group": "g_b",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d05_weights_changed",
+   "declaration": {
+    "seq": 1,
+    "contracts": [
+     "ltr",
+     "rtl",
+     "lanes2",
+     "fsum"
+    ],
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "weights_text": "1.0,1.0,1.0",
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ]
+   },
+   "scoring": {
+    "seq": 2,
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ],
+    "runs": [
+     {
+      "contract": "ltr",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "rtl",
+      "weights_text": "1.0,1.0,1.1"
+     },
+     {
+      "contract": "lanes2",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "fsum",
+      "weights_text": "1.0,1.0,1.0"
+     }
+    ]
+   },
+   "records": [
+    {
+     "id": "c01",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c02",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c03",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c04",
+     "group": "g_a",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c05",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c06",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c07",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c08",
+     "group": "g_b",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d06_weights_same_value_other_bytes",
+   "declaration": {
+    "seq": 1,
+    "contracts": [
+     "ltr",
+     "rtl",
+     "lanes2",
+     "fsum"
+    ],
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "weights_text": "1.0,1.0,1.0",
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ]
+   },
+   "scoring": {
+    "seq": 2,
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ],
+    "runs": [
+     {
+      "contract": "ltr",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "rtl",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "lanes2",
+      "weights_text": "1.00,1.0,1.0"
+     },
+     {
+      "contract": "fsum",
+      "weights_text": "1.0,1.0,1.0"
+     }
+    ]
+   },
+   "records": [
+    {
+     "id": "c01",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c02",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c03",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c04",
+     "group": "g_a",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c05",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c06",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c07",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c08",
+     "group": "g_b",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d07_threshold_changed",
+   "declaration": {
+    "seq": 1,
+    "contracts": [
+     "ltr",
+     "rtl",
+     "lanes2",
+     "fsum"
+    ],
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "weights_text": "1.0,1.0,1.0",
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ]
+   },
+   "scoring": {
+    "seq": 2,
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.55,
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ],
+    "runs": [
+     {
+      "contract": "ltr",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "rtl",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "lanes2",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "fsum",
+      "weights_text": "1.0,1.0,1.0"
+     }
+    ]
+   },
+   "records": [
+    {
+     "id": "c01",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c02",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c03",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c04",
+     "group": "g_a",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c05",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c06",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c07",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c08",
+     "group": "g_b",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d08_groups_changed",
+   "declaration": {
+    "seq": 1,
+    "contracts": [
+     "ltr",
+     "rtl",
+     "lanes2",
+     "fsum"
+    ],
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "weights_text": "1.0,1.0,1.0",
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ]
+   },
+   "scoring": {
+    "seq": 2,
+    "groups": [
+     "g_b",
+     "g_a"
+    ],
+    "threshold": 0.5,
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ],
+    "runs": [
+     {
+      "contract": "ltr",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "rtl",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "lanes2",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "fsum",
+      "weights_text": "1.0,1.0,1.0"
+     }
+    ]
+   },
+   "records": [
+    {
+     "id": "c01",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c02",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c03",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c04",
+     "group": "g_a",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c05",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c06",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c07",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c08",
+     "group": "g_b",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d09_post_hoc_test",
+   "declaration": {
+    "seq": 1,
+    "contracts": [
+     "ltr",
+     "rtl",
+     "lanes2",
+     "fsum"
+    ],
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "weights_text": "1.0,1.0,1.0",
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     }
+    ]
+   },
+   "scoring": {
+    "seq": 2,
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ],
+    "runs": [
+     {
+      "contract": "ltr",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "rtl",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "lanes2",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "fsum",
+      "weights_text": "1.0,1.0,1.0"
+     }
+    ]
+   },
+   "records": [
+    {
+     "id": "c01",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c02",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c03",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c04",
+     "group": "g_a",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c05",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c06",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c07",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c08",
+     "group": "g_b",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d10_test_missing",
+   "declaration": {
+    "seq": 1,
+    "contracts": [
+     "ltr",
+     "rtl",
+     "lanes2",
+     "fsum"
+    ],
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "weights_text": "1.0,1.0,1.0",
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ]
+   },
+   "scoring": {
+    "seq": 2,
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     }
+    ],
+    "runs": [
+     {
+      "contract": "ltr",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "rtl",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "lanes2",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "fsum",
+      "weights_text": "1.0,1.0,1.0"
+     }
+    ]
+   },
+   "records": [
+    {
+     "id": "c01",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c02",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c03",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c04",
+     "group": "g_a",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c05",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c06",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c07",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c08",
+     "group": "g_b",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  },
+  {
+   "id": "d11_test_changed",
+   "declaration": {
+    "seq": 1,
+    "contracts": [
+     "ltr",
+     "rtl",
+     "lanes2",
+     "fsum"
+    ],
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "weights_text": "1.0,1.0,1.0",
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.15
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ]
+   },
+   "scoring": {
+    "seq": 2,
+    "groups": [
+     "g_a",
+     "g_b"
+    ],
+    "threshold": 0.5,
+    "tests": [
+     {
+      "name": "dp_gap",
+      "bound": 0.3
+     },
+     {
+      "name": "rate_ratio",
+      "bound": 0.5
+     }
+    ],
+    "runs": [
+     {
+      "contract": "ltr",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "rtl",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "lanes2",
+      "weights_text": "1.0,1.0,1.0"
+     },
+     {
+      "contract": "fsum",
+      "weights_text": "1.0,1.0,1.0"
+     }
+    ]
+   },
+   "records": [
+    {
+     "id": "c01",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c02",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c03",
+     "group": "g_a",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c04",
+     "group": "g_a",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c05",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c06",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c07",
+     "group": "g_b",
+     "x": [
+      0.9,
+      0.0,
+      0.0
+     ]
+    },
+    {
+     "id": "c08",
+     "group": "g_b",
+     "x": [
+      0.1,
+      0.0,
+      0.0
+     ]
+    }
+   ]
+  }
+ ]
+}

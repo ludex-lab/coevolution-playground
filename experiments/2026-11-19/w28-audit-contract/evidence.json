@@ -1,0 +1,40 @@
+{
+  "status": "UNVERIFIED",
+  "note": "External claims live only under on_unmeasured. Nothing there was measured, re-run or reproduced here. The module reads no network source and no paper data.",
+  "paper": {
+    "title": "Same Model, Different People: Numerical Execution Contracts and the Reproducibility of Fairness Audits",
+    "authors": "Erzheng Zhang, Agnes Chu (as listed on the abstract page)",
+    "arxiv_id": "2611.23657",
+    "version": "v1 (submitted 18 Nov 2026)",
+    "abs_url": "https://arxiv.org/abs/2611.23657",
+    "licence": "CC BY 4.0 (paper licence on the abstract page; not a code licence)",
+    "method_only": true,
+    "upstream_code": "none listed; nothing copied",
+    "read_here": "the abstract page only; the full paper was not read or run"
+  },
+  "contracts": ["ltr", "rtl", "lanes2", "fsum"],
+  "measured": {
+    "fixture": "fixtures/main.json (3 audits, 3 weights, 2 groups, 2 tests)",
+    "verdict_flip_is_fixture_authored": true,
+    "flip_note": "The disagreement between contracts in audit a1 is authored into the fixture with cancellation records (1e16, 1.0, -1e16). It shows that the report format and the pre-declaration rules work; it does not show that any real audit flips.",
+    "decisions": {"a1_near_threshold": "CONTRACT_DEPENDENT", "a2_calm_pass": "STABLE_PASS", "a3_stable_fail": "STABLE_FAIL"},
+    "a1_single_contract_views": {"ltr": "FAIL", "rtl": "PASS", "lanes2": "PASS", "fsum": "FAIL"},
+    "a1_records_that_change_side": ["r04", "r05"],
+    "denied_fixture_deny_rows": 11,
+    "note": "counts come from hand-written records and are not comparable with anything in the paper"
+  },
+  "on_unmeasured": {
+    "why": "Stated in the paper's abstract; not reproduced and not comparable with this sketch's fixture counts.",
+    "claims": [
+      {"id": "P1", "what": "Tier 1 changes only how products and sums are computed, with the serialized weights byte-identical", "status": "UNVERIFIED"},
+      {"id": "P2", "what": "Tier 1 changed decisions near the threshold, and which ones depended on the GPU and its software stack, but no verdict under the prespecified, unweighted tests", "status": "UNVERIFIED"},
+      {"id": "P3", "what": "Tier 2 (BF16 compute, FP8 and 8-bit weights) changed more decisions and some diagnostic verdicts, but no four-fifths verdict", "status": "UNVERIFIED"},
+      {"id": "P4", "what": "three tabular model families and two open-weight language models (4B and 24B parameters) on four public tasks, on CPUs and GPUs from NVIDIA, AMD and Apple", "status": "UNVERIFIED"},
+      {"id": "P5", "what": "serving the 24B model with vLLM FP8 selected 54% of people rather than 45%", "status": "UNVERIFIED"},
+      {"id": "P6", "what": "that FP8 configuration passed an employment-status audit by sex that its strict FP32 reference failed, with the demographic-parity gap falling from 0.0567 to 0.0417 and the equalized-odds gap from 0.0515 to 0.0394, against a diagnostic tolerance of 0.05", "status": "UNVERIFIED"},
+      {"id": "P7", "what": "at the reference's selection count FP8 failed demographic parity, and no reading gave its equalized-odds change a paired interval excluding zero", "status": "UNVERIFIED"},
+      {"id": "P8", "what": "at the frozen thresholds every pass-fail verdict a configuration changed had a sampling interval containing its criterion", "status": "UNVERIFIED"},
+      {"id": "P9", "what": "an audit stability protocol in which the auditor declares contracts, groups, weights and tests before scoring and records each verdict's range over them apart from its sampling uncertainty", "status": "UNVERIFIED"}
+    ]
+  }
+}

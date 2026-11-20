@@ -1,0 +1,63 @@
+{
+  "status": "UNVERIFIED",
+  "note": "External claims live only under on_unmeasured. Nothing there was measured, re-run or reproduced here. The module reads no network source and no paper data.",
+  "paper": {
+    "title": "A level is not a rank: an empirical audit of quantile-to-index conversion in 10 released conformal-prediction libraries",
+    "authors": "Shivam Lalakiya (as listed on the abstract page)",
+    "arxiv_id": "2611.23329",
+    "version": "v1 (submitted 16 Nov 2026)",
+    "abs_url": "https://arxiv.org/abs/2611.23329",
+    "licence": "arXiv nonexclusive-distrib 1.0 (a licence to arXiv, not a grant to this repository); method-only",
+    "method_only": true,
+    "read_here": "the abstract page only; the full paper was not read or run"
+  },
+  "artifact": {
+    "what": "software archive linked from the abstract page",
+    "doi": "https://doi.org/10.5281/zenodo.21799203",
+    "licence": "MIT, per the review pack's reading of the archive's LICENSE file (not read, run or copied here)",
+    "nothing_copied": true,
+    "note": "This sketch is clean-room: no code, test, fixture or wording was taken from the archive."
+  },
+  "conventions": {
+    "q": {"one_sided": "q = 1 - alpha", "two_sided_upper": "q = 1 - alpha/2"},
+    "rank": "r = ceil((n + 1) * (1 - alpha)), guarantee r / (n + 1)",
+    "floor": "r <= n, the same as n >= 1/alpha - 1",
+    "position_base": "0-based indexes; the required index is r - 1; the linear helper lands at (n - 1) * q",
+    "reading_of_18_05": "18.05 is the linear 0-based position at q = 0.95 for n = 20. Pairing it with the rank required at level 0.90 is this sketch's reading of the abstract (the upper end of a two-sided interval is handed q = 0.95). UNVERIFIED: only the abstract was read."
+  },
+  "measured": {
+    "fixture": "fixtures/main.json (8 cases on synthetic integer scores)",
+    "n20_alpha010": {
+      "required_rank": 19,
+      "required_index_0based": 18,
+      "guarantee": "19/21",
+      "linear_position_0based": {"q=0.90": "17.1", "q=0.95": "18.05"},
+      "weibull_position_0based": {"q=0.90": "17.9"},
+      "higher_position_0based": {"q=0.90": "18"}
+    },
+    "float_ceil_disagreements_on_6000_grid": 4,
+    "float_ceil_disagreement_cases": [
+      {"n": 149, "alpha": "0.18", "exact": 123, "float": 124},
+      {"n": 249, "alpha": "0.18", "exact": 205, "float": 206},
+      {"n": 299, "alpha": "0.18", "exact": 246, "float": 247},
+      {"n": 299, "alpha": "0.19", "exact": 243, "float": 244}
+    ],
+    "grid": "n = 1..300 and alpha = 0.01..0.20 in steps of 0.01 (6000 cases)",
+    "denied_fixtures": {"below_floor.json": 4, "denied.json": 4},
+    "note": "counts come from hand-written helpers on an invented fixture and are not comparable with anything in the paper"
+  },
+  "on_unmeasured": {
+    "why": "Stated in the paper's abstract; not reproduced and not comparable with this sketch's fixture counts.",
+    "claims": [
+      {"id": "P1", "what": "a conformal interval at 0.90 carries its guarantee only at the right rank: a fresh score falls at or below the rth smallest of n with probability r/(n + 1)", "status": "UNVERIFIED"},
+      {"id": "P2", "what": "at n = 20 the upper end of statsforecast's interval sits at position 18.05 where rank 19 is required", "status": "UNVERIFIED"},
+      {"id": "P3", "what": "39 sites where a level becomes an index in 10 pinned packages, a named set rather than a systematic search; 12 classified by running them, 11 through their shared numpy method, the rest from source", "status": "UNVERIFIED"},
+      {"id": "P4", "what": "all 7 tabular implementations reach the required rank", "status": "UNVERIFIED"},
+      {"id": "P5", "what": "in darts, on one code path, coverage is unchanged (0.0000) where the ranks agree and 0.0280 to 0.0560 lower where they differ; a second archive repeats that split but not its range", "status": "UNVERIFIED"},
+      {"id": "P6", "what": "below the feasibility floor n < 1/alpha - 1, of 14 public call paths 5 silently return a finite number; the rest raise or warn", "status": "UNVERIFIED"},
+      {"id": "P7", "what": "statsforecast's default calibrates below its floor", "status": "UNVERIFIED"},
+      {"id": "P8", "what": "6 of 19 upstream filings have merged, one fixing a coverage shortfall", "status": "UNVERIFIED"},
+      {"id": "P9", "what": "a conformance suite classifies helpers by the rank they reach, and a checklist guides review", "status": "UNVERIFIED"}
+    ]
+  }
+}

@@ -22,7 +22,7 @@ experiments/
 
 원본 루트 README는 [`experiments/SOURCE_README.md`](experiments/SOURCE_README.md)에 있습니다.
 
-## 실험 인덱스 (150개)
+## 실험 인덱스 (153개)
 
 | Date | Folder | Summary |
 |------|--------|----------|
@@ -107,13 +107,13 @@ experiments/
 | 2026-11-04 | [`63-rally`](experiments/2026-11-04/63-rally/) | **Soft KEEP** — Castor Rally observed / declared / verified taxonomy (AGPL method-only; Soft→Top forbidden; code NONE) |
 | 2026-11-04 | [`64-attention-manifest`](experiments/2026-11-04/64-attention-manifest/) | **Soft KEEP** — Frame **`ignored`** + Receipt VoI method (DESIGN-NOTE; upstream sqlite **Soft UNVERIFIED** / **0 tests**; Soft→Top forbidden; code NONE) |
 | 2026-11-04 | [`65-handoff-patterns`](experiments/2026-11-04/65-handoff-patterns/) | **Soft UNVERIFIED** — product **handoff decision** checklist (5 decisions, 7 principles, Patterns 01–05); **≠#60**; AOD overlap Ask-only (DESIGN-NOTE; Soft→Top forbidden; code NONE) |
-| 2026-11-05 | [`01-coworkos-revision-checked-leases`](experiments/2026-11-05/01-coworkos-revision-checked-leases/) | CoworkOS **revision-checked shared resources**, **lease** vocabulary, **Inbox/Jobs** wake cites, **`ask_main`** bounded wait + fallback — Team OS handoff/claim lanes |
+| 2026-11-05 | [`01-coworkos-revision-checked-leases`](experiments/2026-11-05/01-coworkos-revision-checked-leases/) | 01-coworkos-revision-checked-leases |
 | 2026-11-05 | [`w14-arc-grammar`](experiments/2026-11-05/w14-arc-grammar/) | **Lab Dig Wave14 Top #3** · Team OS playground · **do not merge** without Ork review. |
 | 2026-11-05 | [`w14-phase-deadline`](experiments/2026-11-05/w14-phase-deadline/) | Clean-room phase budget + bounded extension helpers for Team OS runs. |
 | 2026-11-05 | [`w14-silence-expiry`](experiments/2026-11-05/w14-silence-expiry/) | **Track:** Top KEEP (clean-room day-sketch). **Not** Soft markdown-only work and **not** Top #2. |
-| 2026-11-05 | [`w14-sundial`](experiments/2026-11-05/w14-sundial/) | **Sundial** @ pin **`74ede107`** — unseen-time + wall ceiling + ≤3 pings + no-LLM watcher **method**; **doctrine-ban** vs informed non-objection → Top #1 `on_expiry` (PR #78) |
-| 2026-11-05 | [`w14-whose-turn`](experiments/2026-11-05/w14-whose-turn/) | **whose-turn** @ pin **`2919084`** — **P2** session exit, **P4** monitoring heartbeat, **snapshot board** label (**Soft KEEP**; not baton #59 / Brigade #73) |
-| 2026-11-05 | [`w14-yukh`](experiments/2026-11-05/w14-yukh/) | Yukh **13-type envelope lifecycle** checklist, **verdict-before-handoff**, **immutable evidence refs**, RFC-0016/0021 **reading pointers** — no relay port |
+| 2026-11-05 | [`w14-sundial`](experiments/2026-11-05/w14-sundial/) | **Lab Dig Wave14** · **Soft** (method-only) · **Do NOT merge as Top** · **Soft→Top forbidden** |
+| 2026-11-05 | [`w14-whose-turn`](experiments/2026-11-05/w14-whose-turn/) | **Lab Dig Wave14** · **Soft KEEP** · **Do not merge as Top** · **Soft→Top forbidden** |
+| 2026-11-05 | [`w14-yukh`](experiments/2026-11-05/w14-yukh/) | **Wave14 Soft KEEP** — checklist + reading pointers only. **No runnable port.** Soft→Top forbidden. |
 | 2026-11-06 | [`01-flyhash-agent-memory`](experiments/2026-11-06/01-flyhash-agent-memory/) | FlyHash vs SimHash vs HNSW recall@k on playground markdown corpus (upstream flyhash-agent-memory **v1.0** pin) |
 | 2026-11-06 | [`w15-evidence-gate`](experiments/2026-11-06/w15-evidence-gate/) | Evidence-Gated Authority **Layer B** day-sketch: disposition + mechanical certificate gate (arXiv:2611.05390, upstream **v2.0.0** @ `f232d437…`) |
 | 2026-11-06 | [`w15-handoff-gate`](experiments/2026-11-06/w15-handoff-gate/) | Wave15 Soft1 Agent Handoff Gate decision table (KEEP Soft; pin zsoXi/agent-handoff-gate @ dd4d590c) |
@@ -176,6 +176,9 @@ experiments/
 | 2026-11-18 | [`w27-ranked-conflict-set`](experiments/2026-11-18/w27-ranked-conflict-set/) | Pass the disagreement, not one winner: on a tiny synthetic shared store (12 entries from scripted writers, one adversarial; 7 queries; k=2) a collapse policy hands the reader one top-ranked value and... |
 | 2026-11-18 | [`w27-worker-lead-handoff`](experiments/2026-11-18/w27-worker-lead-handoff/) | The workers having seen both claims is not evidence the lead did: on a tiny synthetic fixture (12 documents, 3 planted conflicts, 9 cases) scripted workers write packets from their own context under... |
 | 2026-11-19 | [`mb-certified-region-delta`](experiments/2026-11-19/mb-certified-region-delta/) | Leaving the operating domain is a request to recertify, not an authority cut or a shutdown: on a tiny synthetic fixture (4 state dimensions with a certified region and hard-safety limits, 2... |
+| 2026-11-19 | [`w28-audit-contract`](experiments/2026-11-19/w28-audit-contract/) | A pass under one numerical execution contract is not evidence that an audit verdict belongs to the model: on tiny synthetic records an audit declares its contracts (four ways of summing the same... |
+| 2026-11-19 | [`w28-level-is-not-rank`](experiments/2026-11-19/w28-level-is-not-rank/) | Handing a conformal level to a quantile function is not evidence the required rank was reached: with exact arithmetic the required rank for n=20 at level 0.90 is 19 (guarantee 19/21), and a linear... |
+| 2026-11-20 | [`mb-answerability-pairs`](experiments/2026-11-20/mb-answerability-pairs/) | Overall accuracy can hide a policy that never reads the machine state: on a tiny synthetic controller fixture (3 systems, 6 rules, 12 pairs of the same command in two states that require opposite... |
 
 ## 미러 안내
 
@@ -198,7 +201,7 @@ This repository is a **read-only daily mirror** of merged experiments from the *
 
 See the Korean section above; structure is the same.
 
-## Experiment index (150 entries)
+## Experiment index (153 entries)
 
 | Date | Folder | Summary |
 |------|--------|----------|
@@ -283,13 +286,13 @@ See the Korean section above; structure is the same.
 | 2026-11-04 | [`63-rally`](experiments/2026-11-04/63-rally/) | **Soft KEEP** — Castor Rally observed / declared / verified taxonomy (AGPL method-only; Soft→Top forbidden; code NONE) |
 | 2026-11-04 | [`64-attention-manifest`](experiments/2026-11-04/64-attention-manifest/) | **Soft KEEP** — Frame **`ignored`** + Receipt VoI method (DESIGN-NOTE; upstream sqlite **Soft UNVERIFIED** / **0 tests**; Soft→Top forbidden; code NONE) |
 | 2026-11-04 | [`65-handoff-patterns`](experiments/2026-11-04/65-handoff-patterns/) | **Soft UNVERIFIED** — product **handoff decision** checklist (5 decisions, 7 principles, Patterns 01–05); **≠#60**; AOD overlap Ask-only (DESIGN-NOTE; Soft→Top forbidden; code NONE) |
-| 2026-11-05 | [`01-coworkos-revision-checked-leases`](experiments/2026-11-05/01-coworkos-revision-checked-leases/) | CoworkOS **revision-checked shared resources**, **lease** vocabulary, **Inbox/Jobs** wake cites, **`ask_main`** bounded wait + fallback — Team OS handoff/claim lanes |
+| 2026-11-05 | [`01-coworkos-revision-checked-leases`](experiments/2026-11-05/01-coworkos-revision-checked-leases/) | 01-coworkos-revision-checked-leases |
 | 2026-11-05 | [`w14-arc-grammar`](experiments/2026-11-05/w14-arc-grammar/) | **Lab Dig Wave14 Top #3** · Team OS playground · **do not merge** without Ork review. |
 | 2026-11-05 | [`w14-phase-deadline`](experiments/2026-11-05/w14-phase-deadline/) | Clean-room phase budget + bounded extension helpers for Team OS runs. |
 | 2026-11-05 | [`w14-silence-expiry`](experiments/2026-11-05/w14-silence-expiry/) | **Track:** Top KEEP (clean-room day-sketch). **Not** Soft markdown-only work and **not** Top #2. |
-| 2026-11-05 | [`w14-sundial`](experiments/2026-11-05/w14-sundial/) | **Sundial** @ pin **`74ede107`** — unseen-time + wall ceiling + ≤3 pings + no-LLM watcher **method**; **doctrine-ban** vs informed non-objection → Top #1 `on_expiry` (PR #78) |
-| 2026-11-05 | [`w14-whose-turn`](experiments/2026-11-05/w14-whose-turn/) | **whose-turn** @ pin **`2919084`** — **P2** session exit, **P4** monitoring heartbeat, **snapshot board** label (**Soft KEEP**; not baton #59 / Brigade #73) |
-| 2026-11-05 | [`w14-yukh`](experiments/2026-11-05/w14-yukh/) | Yukh **13-type envelope lifecycle** checklist, **verdict-before-handoff**, **immutable evidence refs**, RFC-0016/0021 **reading pointers** — no relay port |
+| 2026-11-05 | [`w14-sundial`](experiments/2026-11-05/w14-sundial/) | **Lab Dig Wave14** · **Soft** (method-only) · **Do NOT merge as Top** · **Soft→Top forbidden** |
+| 2026-11-05 | [`w14-whose-turn`](experiments/2026-11-05/w14-whose-turn/) | **Lab Dig Wave14** · **Soft KEEP** · **Do not merge as Top** · **Soft→Top forbidden** |
+| 2026-11-05 | [`w14-yukh`](experiments/2026-11-05/w14-yukh/) | **Wave14 Soft KEEP** — checklist + reading pointers only. **No runnable port.** Soft→Top forbidden. |
 | 2026-11-06 | [`01-flyhash-agent-memory`](experiments/2026-11-06/01-flyhash-agent-memory/) | FlyHash vs SimHash vs HNSW recall@k on playground markdown corpus (upstream flyhash-agent-memory **v1.0** pin) |
 | 2026-11-06 | [`w15-evidence-gate`](experiments/2026-11-06/w15-evidence-gate/) | Evidence-Gated Authority **Layer B** day-sketch: disposition + mechanical certificate gate (arXiv:2611.05390, upstream **v2.0.0** @ `f232d437…`) |
 | 2026-11-06 | [`w15-handoff-gate`](experiments/2026-11-06/w15-handoff-gate/) | Wave15 Soft1 Agent Handoff Gate decision table (KEEP Soft; pin zsoXi/agent-handoff-gate @ dd4d590c) |
@@ -352,6 +355,9 @@ See the Korean section above; structure is the same.
 | 2026-11-18 | [`w27-ranked-conflict-set`](experiments/2026-11-18/w27-ranked-conflict-set/) | Pass the disagreement, not one winner: on a tiny synthetic shared store (12 entries from scripted writers, one adversarial; 7 queries; k=2) a collapse policy hands the reader one top-ranked value and... |
 | 2026-11-18 | [`w27-worker-lead-handoff`](experiments/2026-11-18/w27-worker-lead-handoff/) | The workers having seen both claims is not evidence the lead did: on a tiny synthetic fixture (12 documents, 3 planted conflicts, 9 cases) scripted workers write packets from their own context under... |
 | 2026-11-19 | [`mb-certified-region-delta`](experiments/2026-11-19/mb-certified-region-delta/) | Leaving the operating domain is a request to recertify, not an authority cut or a shutdown: on a tiny synthetic fixture (4 state dimensions with a certified region and hard-safety limits, 2... |
+| 2026-11-19 | [`w28-audit-contract`](experiments/2026-11-19/w28-audit-contract/) | A pass under one numerical execution contract is not evidence that an audit verdict belongs to the model: on tiny synthetic records an audit declares its contracts (four ways of summing the same... |
+| 2026-11-19 | [`w28-level-is-not-rank`](experiments/2026-11-19/w28-level-is-not-rank/) | Handing a conformal level to a quantile function is not evidence the required rank was reached: with exact arithmetic the required rank for n=20 at level 0.90 is 19 (guarantee 19/21), and a linear... |
+| 2026-11-20 | [`mb-answerability-pairs`](experiments/2026-11-20/mb-answerability-pairs/) | Overall accuracy can hide a policy that never reads the machine state: on a tiny synthetic controller fixture (3 systems, 6 rules, 12 pairs of the same command in two states that require opposite... |
 
 ## Mirror notice
 

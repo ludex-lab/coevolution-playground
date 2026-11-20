@@ -326,6 +326,14 @@ class Quarantine(unittest.TestCase):
         self.assertEqual([r["reason"] for r in rows][1:], ["hard_safety_violation", "already_shut_down", "already_shut_down"])
         for row in rows[1:]:
             self.assertEqual((row["authority"], row["power"], row["recertify"]), ("withdrawn", "off", False))
+        # Withdrawal-class rows after the hard row: a critical failure, a correlated pair, and a confirmed
+        # outlier (pending, then confirmed) are all overridden to SHUTDOWN by the latch alone.
+        rows = a_of((15, 15, 2), (35, 15, 2), (15, 25, 2), (25, 15, 2, 5), (25, 15, 2), (25, 15, 2))
+        self.assertEqual([r["response"] for r in rows], ["CONTINUE"] + ["SHUTDOWN"] * 5)
+        self.assertEqual([r["reason"] for r in rows][1:], ["hard_safety_violation"] + ["already_shut_down"] * 4)
+        for row in rows[1:]:
+            self.assertEqual((row["authority"], row["power"], row["recertify"]), ("withdrawn", "off", False))
+        self.assertEqual([r["klass"] for r in rows][2:], ["OUT_OF_REGION"] * 4)
 
     def test_four_responses_stay_distinguishable_when_withdrawn(self):
         rows = a_of((15, 25, 2), (15, 15, 9), (35, 15, 2), (15, 15, 2))
@@ -396,7 +404,7 @@ class Validation(unittest.TestCase):
 
     def test_bad_characters_in_names_and_ids(self):
         chars = ["\n", "\r", "\t", "\x1b", "\x7f", "\u0085", "\u200b", "\u200d", "\ufeff", "\u2028",
-                 "\u2029", "\u00a0", "\u3000", "\ue000", "\ud800"]
+                 "\u2029", "\u00a0", "\u3000", "\ue000", "\ud800", "\u3164", "\u2800"]
         for ch in chars:
             for place in ("name", "dim", "odd", "id"):
                 data = json.loads(json.dumps(tiny((15, 15, 2))))
@@ -414,6 +422,15 @@ class Validation(unittest.TestCase):
                 with self.assertRaises(region.FixtureError, msg=(place, ch)) as ctx:
                     region.validate(data)
                 self.assertEqual(ctx.exception.code, "bad_text", (place, ch))
+
+    def test_korean_text_is_not_over_rejected(self):
+        data = json.loads(json.dumps(tiny((15, 15, 2))))
+        data["name"] = "\uc628\ub3c4 \uc810\uac80"
+        data["observations"][0]["id"] = "\ud589 1"
+        region.validate(data)
+        data["dims"][0]["name"] = "\u1112\u1161\u11ab"  # decomposed jamo, no filler
+        data["observations"][0]["state"]["\u1112\u1161\u11ab"] = data["observations"][0]["state"].pop("t")
+        region.validate(data)
 
     def test_leading_and_trailing_space_rejected(self):
         for bad in (" x0", "x0 "):
@@ -597,6 +614,13 @@ class Cli(unittest.TestCase):
         report = region.report(region.load_fixture(os.path.join(FIX, "main.json")))
         self.assertIn(report, proc.stdout)
         self.assertIn("RECERTIFY", proc.stdout)
+
+
+class Docs(unittest.TestCase):
+    def test_readme_names_every_state_arm_a_carries(self):
+        with open(os.path.join(HERE, "README.md"), encoding="utf-8") as handle:
+            text = handle.read()
+        self.assertIn("the one-step quarantine, the sticky withdrawal and the sticky shutdown; arm B is stateless", text)
 
 
 if __name__ == "__main__":

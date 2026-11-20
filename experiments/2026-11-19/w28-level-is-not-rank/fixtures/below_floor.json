@@ -1,0 +1,135 @@
+{
+ "fixture_version": 1,
+ "on_expiry": "DENY",
+ "cases": [
+  {
+   "id": "c05_n20_rank_helper",
+   "helper": "conformal_rank",
+   "convention": "one_sided",
+   "declared_n": 20,
+   "declared_alpha": "0.10",
+   "alpha": "0.10",
+   "scores": [
+    2,
+    3,
+    5,
+    8,
+    9,
+    12,
+    14,
+    15,
+    19,
+    21,
+    24,
+    26,
+    29,
+    31,
+    33,
+    38,
+    40,
+    45,
+    52,
+    90
+   ]
+  },
+  {
+   "id": "f01_n8_linear_finite_end",
+   "helper": "linear",
+   "convention": "one_sided",
+   "declared_n": 8,
+   "declared_alpha": "0.10",
+   "alpha": "0.10",
+   "scores": [
+    2,
+    3,
+    5,
+    8,
+    9,
+    12,
+    14,
+    15
+   ]
+  },
+  {
+   "id": "f02_n8_weibull_finite_end",
+   "helper": "weibull",
+   "convention": "one_sided",
+   "declared_n": 8,
+   "declared_alpha": "0.10",
+   "alpha": "0.10",
+   "scores": [
+    2,
+    3,
+    5,
+    8,
+    9,
+    12,
+    14,
+    15
+   ]
+  },
+  {
+   "id": "f03_n8_higher_finite_end",
+   "helper": "higher",
+   "convention": "two_sided_upper",
+   "declared_n": 8,
+   "declared_alpha": "0.10",
+   "alpha": "0.10",
+   "scores": [
+    2,
+    3,
+    5,
+    8,
+    9,
+    12,
+    14,
+    15
+   ]
+  },
+  {
+   "id": "f04_n8_rank_helper_refuses",
+   "helper": "conformal_rank",
+   "convention": "one_sided",
+   "declared_n": 8,
+   "declared_alpha": "0.10",
+   "alpha": "0.10",
+   "scores": [
+    2,
+    3,
+    5,
+    8,
+    9,
+    12,
+    14,
+    15
+   ]
+  },
+  {
+   "id": "f05_n4_boundary_linear",
+   "helper": "linear",
+   "convention": "one_sided",
+   "declared_n": 4,
+   "declared_alpha": "0.20",
+   "alpha": "0.20",
+   "scores": [
+    2,
+    3,
+    5,
+    8
+   ]
+  },
+  {
+   "id": "f06_n3_linear_finite_end",
+   "helper": "linear",
+   "convention": "one_sided",
+   "declared_n": 3,
+   "declared_alpha": "0.20",
+   "alpha": "0.20",
+   "scores": [
+    2,
+    3,
+    5
+   ]
+  }
+ ]
+}

@@ -103,6 +103,18 @@ MUTANTS = [
     ("validate", r'    if missing:@@        raise Deny("missing_key"', r'    if False:@@        raise Deny("missing_key"'),
     ("validate", r'    if len(set(ids)) != len(ids):', r'    if False:'),
     ("validate", r'    if not cases:', r'    if False:'),
+    # text rule (shared with the region experiment) and the both_retrieved total
+    ("text", r'BAD_CATEGORIES = ("Cc", "Cf", "Cs", "Co", "Zl", "Zp")', r'BAD_CATEGORIES = ("Cf", "Cs", "Co", "Zl", "Zp")'),
+    ("text", r'BAD_CATEGORIES = ("Cc", "Cf", "Cs", "Co", "Zl", "Zp")', r'BAD_CATEGORIES = ("Cc", "Cs", "Co", "Zl", "Zp")'),
+    ("text", r'BAD_CATEGORIES = ("Cc", "Cf", "Cs", "Co", "Zl", "Zp")', r'BAD_CATEGORIES = ("Cc", "Cf", "Co", "Zl", "Zp")'),
+    ("text", r'BAD_CATEGORIES = ("Cc", "Cf", "Cs", "Co", "Zl", "Zp")', r'BAD_CATEGORIES = ("Cc", "Cf", "Cs", "Zl", "Zp")'),
+    ("text", r'BAD_CATEGORIES = ("Cc", "Cf", "Cs", "Co", "Zl", "Zp")', r'BAD_CATEGORIES = ("Cc", "Cf", "Cs", "Co", "Zp")'),
+    ("text", r'BAD_CATEGORIES = ("Cc", "Cf", "Cs", "Co", "Zl", "Zp")', r'BAD_CATEGORIES = ("Cc", "Cf", "Cs", "Co", "Zl")'),
+    ("text", r'(cat == "Zs" and ch != " ")', r'False'),
+    ("text", r'BLANK_LOOKALIKES = ("\u3164", "\u2800")', r'BLANK_LOOKALIKES = ("\u3164",)'),
+    ("text", r'BLANK_LOOKALIKES = ("\u3164", "\u2800")', r'BLANK_LOOKALIKES = ("\u2800",)'),
+    ("text", r' or ch in BLANK_LOOKALIKES:', r':'),
+    ("totals", r'"both_retrieved": sum(1 for r in mine if r["both_retrieved"]),', r'"both_retrieved": sum(1 for r in mine if r["both_retrieved"] and r["verdict"] != "DENY"),'),
     # strict JSON and CLI
     ("json", r'        if key in out:', r'        if False:'),
     ("json", r'                          parse_constant=_reject_constant, parse_float=_parse_float)', r'                          parse_float=_parse_float)'),

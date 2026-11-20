@@ -39,6 +39,15 @@ page was read for this draft. Paper figures are not reproduced and appear only a
 - Malformed input (missing or unknown keys, duplicate JSON keys, wrong types, bool or text as a score or
   time, empty or whitespace ids, duplicate ids, k below 1, unknown or repeated policy, on_expiry other
   than DENY) prints one line `DENY <code>: <detail>` on stderr and exits 2.
+- The two exit-2 cases are told apart by stream, not by code: a DENY row exits 2 with the report on stdout and an empty stderr, while malformed
+  input exits 2 with an empty stdout and one `DENY <code>:` line on stderr (the same word as a DENY decision, so read the stream, not the
+  word). This is a README convention only; no test claims it is machine-checkable.
+- The scripted reader's `ESCALATE` and `HOLD` rows exit 0: only a DENY row (or malformed input) exits 2, matching the exit-code convention. A
+  script that must stop on a disagreement reads `decision` in the JSON report.
+- Text values share one text rule with `mb-certified-region-delta`: control (including C1), format (zero-width), surrogate,
+  private-use, line and paragraph separator characters are rejected, as is any space other than a plain space, and HANGUL FILLER U+3164 and
+  BRAILLE PATTERN BLANK U+2800 are rejected by code point (`DENY bad_text`). Korean text is accepted. Other look-alikes stay accepted: U+115F,
+  U+1160, U+FFA0, U+034F, U+17B4, variation selectors, U+180B, and Cyrillic or Greek letters that look Latin (for example Cyrillic `о`).
 
 ## Run
 

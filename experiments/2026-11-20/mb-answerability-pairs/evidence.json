@@ -1,0 +1,46 @@
+{
+  "status": "UNVERIFIED",
+  "note": "External claims live only under on_unmeasured. Nothing there was measured, re-run or reproduced here. The module reads no network source and no paper data.",
+  "network_used": false,
+  "paid_api_used": false,
+  "paper": {
+    "title": "The Limit Is in the Input, Not the Model: State-Dependent Command Safety in Natural-Language Interfaces to Industrial Controllers",
+    "authors": "Taukoor, Wang, Shankararaman (as listed on the abstract page)",
+    "arxiv_id": "2611.24682",
+    "version": "submitted 18 Nov 2026",
+    "abs_url": "https://arxiv.org/abs/2611.24682",
+    "licence": "arXiv nonexclusive-distrib 1.0 (paper licence on the abstract page; not a code licence)",
+    "method_only": true,
+    "upstream_code": "none listed; no code copied",
+    "read_here": "the abstract page only; the full paper was not read or run"
+  },
+  "arms": ["always_permit", "always_refuse", "command_heuristic", "answerability_aware", "rule_evaluator"],
+  "conditions": ["command_only", "command_rules", "command_rules_state"],
+  "measured": {
+    "fixture": {"systems": 3, "rules": 6, "pairs": 12, "extras": 11, "items": 35, "permit_items": 20, "refuse_items": 15},
+    "note": "counts come from a hand-written synthetic fixture and are not comparable with anything in the paper",
+    "raw_always_permit": "4/7",
+    "raw_always_refuse": "3/7",
+    "raw_gap": "1/7",
+    "balanced_always_permit": "1/2",
+    "balanced_always_refuse": "1/2",
+    "pairs_correct_without_state": 0,
+    "rule_evaluator_pairs_with_rules_and_state": "12/12",
+    "rule_evaluator_result_is_a_fixture_completeness_check": true,
+    "independent_safety_test": false,
+    "completeness_note": "The expected answers in the fixture were written from the same rules the evaluator applies, so a perfect evaluator score shows the fixture is complete. It is a fixture completeness check, not an independent safety test."
+  },
+  "on_unmeasured": {
+    "why": "Stated in the paper's abstract; not reproduced and not comparable with this sketch's fixture counts.",
+    "claims": [
+      {"id": "P1", "what": "the same command to an industrial controller can require opposite safety decisions in different machine states, so an incorrect answer may reflect missing information rather than poor reasoning", "status": "UNVERIFIED"},
+      {"id": "P2", "what": "proposed method: log exactly what each model was given, and test one command under two machine states that call for opposite decisions; a pair scores only if both decisions are right; rule text and then state values are supplied as extra input in steps", "status": "UNVERIFIED"},
+      {"id": "P3", "what": "the authors' own test set: 15 command pairs drawn from three systems, run on four language models", "status": "UNVERIFIED"},
+      {"id": "P4", "what": "none of the four models reliably distinguished the paired cases without state, even with rules", "status": "UNVERIFIED"},
+      {"id": "P5", "what": "once state was supplied, correct pairs per model spanned 0 to 13 of 15, with improvement for three of the four models", "status": "UNVERIFIED"},
+      {"id": "P6", "what": "with text alone, one model always permitted commands and another always refused them; their overall accuracies differed by 32 percentage points while both scored 50% balanced accuracy and no correct pairs", "status": "UNVERIFIED"},
+      {"id": "P7", "what": "a rule-based evaluator scored every one of the 15 pairs, but it used the rules that produced the expected answers, so the authors do not count it as an independent safety test", "status": "UNVERIFIED"},
+      {"id": "P8", "what": "the authors say the small-sample scores do not establish general model reliability", "status": "UNVERIFIED"}
+    ]
+  }
+}

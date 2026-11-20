@@ -278,6 +278,22 @@ class StrictInput(unittest.TestCase):
         for bad in ("", "  ", " x", "x ", "a\nb", "q" * 201):
             self.check(lambda r, b=bad: r["entries"][0].__setitem__("value", b), "bad_text")
 
+    def test_invisible_and_look_alike_characters_in_values_are_denied(self):
+        for ch in ("\u200b", "\u200d", "\ufeff", "\u00ad", "\u0080", "\u0085", "\u009f", "\u00a0", "\u3000", "\u2028",
+                   "\u2029", "\ue000", "\ud800", "\u3164", "\u2800", "\x1b", "\x7f"):
+            self.check(lambda r, c=ch: r["entries"][0].__setitem__("value", "Os%slo" % c), "bad_text")
+            self.check(lambda r, c=ch: r["entries"][0].__setitem__("value", "Oslo" + c + "x"), "bad_text")
+            self.check(lambda r, c=ch: r["queries"][0].__setitem__("gold", "Os%slo" % c), "bad_text")
+
+    def test_zero_width_look_alike_cannot_fake_a_conflict(self):
+        self.check(lambda r: r["entries"][0].__setitem__("value", "Oslo\u200b"), "bad_text")
+
+    def test_korean_and_plain_inner_space_values_are_accepted(self):
+        root = fixture("main.json")
+        root["entries"][0]["value"] = "\uc11c\uc6b8 \ud2b9\ubcc4\uc2dc"
+        root["queries"][0]["gold"] = "\uc11c\uc6b8 \ud2b9\ubcc4\uc2dc"
+        cs.run(root)
+
     def test_duplicate_ids(self):
         self.check(lambda r: r["entries"][1].__setitem__("id", r["entries"][0]["id"]), "duplicate_id")
         self.check(lambda r: r["queries"][1].__setitem__("id", r["queries"][0]["id"]), "duplicate_id")
@@ -312,11 +328,20 @@ class CommandLine(unittest.TestCase):
         rc, out, err = self.cli(os.path.join("fixtures", "main.json"))
         self.assertEqual((rc, err), (0, ""))
         self.assertEqual(json.loads(out)["totals"]["collapse"]["poisoned"], 2)
+        decisions = {r["decision"]["decision"] for r in json.loads(out)["rows"]}
+        self.assertTrue({"ESCALATE", "HOLD"} <= decisions)
 
     def test_expired_fixture_exit_two_with_deny_decisions(self):
         rc, out, err = self.cli(os.path.join("fixtures", "expired.json"))
         self.assertEqual((rc, err), (2, ""))
         self.assertEqual(json.loads(out)["totals"]["collapse"]["denied"], 2)
+
+    def test_deny_in_a_later_row_still_exits_two(self):
+        rc, out, err = self.cli(os.path.join("fixtures", "expired_later.json"))
+        self.assertEqual((rc, err), (2, ""))
+        decisions = [r["decision"]["decision"] for r in json.loads(out)["rows"]]
+        self.assertNotEqual(decisions[0], "DENY")
+        self.assertIn("DENY", decisions[1:])
 
     def test_main_fixture_has_no_deny_row(self):
         rc, out, _ = self.cli(os.path.join("fixtures", "main.json"))

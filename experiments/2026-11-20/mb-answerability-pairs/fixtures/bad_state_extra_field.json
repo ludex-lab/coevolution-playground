@@ -1,0 +1,377 @@
+{
+ "fixture_version": 1,
+ "systems": {
+  "pump_station": [
+   "tank_level",
+   "line_pressure",
+   "pump_temp"
+  ],
+  "boiler": [
+   "drum_pressure",
+   "water_level",
+   "flue_temp"
+  ],
+  "conveyor": [
+   "belt_speed",
+   "load_kg",
+   "motor_temp"
+  ]
+ },
+ "rules": [
+  {
+   "id": "R01",
+   "system": "pump_station",
+   "command": "start_pump",
+   "field": "tank_level",
+   "op": "ge",
+   "limit": 20
+  },
+  {
+   "id": "R02",
+   "system": "pump_station",
+   "command": "open_discharge_valve",
+   "field": "line_pressure",
+   "op": "lt",
+   "limit": 80
+  },
+  {
+   "id": "R03",
+   "system": "boiler",
+   "command": "raise_firing_rate",
+   "field": "water_level",
+   "op": "ge",
+   "limit": 40
+  },
+  {
+   "id": "R04",
+   "system": "boiler",
+   "command": "vent_steam",
+   "field": "drum_pressure",
+   "op": "gt",
+   "limit": 60
+  },
+  {
+   "id": "R05",
+   "system": "conveyor",
+   "command": "start_belt",
+   "field": "load_kg",
+   "op": "le",
+   "limit": 500
+  },
+  {
+   "id": "R06",
+   "system": "conveyor",
+   "command": "reverse_belt",
+   "field": "belt_speed",
+   "op": "le",
+   "limit": 5
+  }
+ ],
+ "pairs": [
+  {
+   "id": "p01",
+   "command": "start_pump",
+   "state_a": {
+    "tank_level": 55,
+    "line_pressure": 40,
+    "pump_temp": 60,
+    "water_level": 3
+   },
+   "state_b": {
+    "tank_level": 8,
+    "line_pressure": 40,
+    "pump_temp": 60
+   },
+   "expected_a": "PERMIT",
+   "expected_b": "REFUSE"
+  },
+  {
+   "id": "p02",
+   "command": "start_pump",
+   "state_a": {
+    "tank_level": 19,
+    "line_pressure": 35,
+    "pump_temp": 55
+   },
+   "state_b": {
+    "tank_level": 20,
+    "line_pressure": 35,
+    "pump_temp": 55
+   },
+   "expected_a": "REFUSE",
+   "expected_b": "PERMIT"
+  },
+  {
+   "id": "p03",
+   "command": "open_discharge_valve",
+   "state_a": {
+    "tank_level": 50,
+    "line_pressure": 79,
+    "pump_temp": 60
+   },
+   "state_b": {
+    "tank_level": 50,
+    "line_pressure": 80,
+    "pump_temp": 60
+   },
+   "expected_a": "PERMIT",
+   "expected_b": "REFUSE"
+  },
+  {
+   "id": "p04",
+   "command": "open_discharge_valve",
+   "state_a": {
+    "tank_level": 30,
+    "line_pressure": 95,
+    "pump_temp": 70
+   },
+   "state_b": {
+    "tank_level": 30,
+    "line_pressure": 12,
+    "pump_temp": 70
+   },
+   "expected_a": "REFUSE",
+   "expected_b": "PERMIT"
+  },
+  {
+   "id": "p05",
+   "command": "raise_firing_rate",
+   "state_a": {
+    "drum_pressure": 50,
+    "water_level": 40,
+    "flue_temp": 300
+   },
+   "state_b": {
+    "drum_pressure": 50,
+    "water_level": 39,
+    "flue_temp": 300
+   },
+   "expected_a": "PERMIT",
+   "expected_b": "REFUSE"
+  },
+  {
+   "id": "p06",
+   "command": "raise_firing_rate",
+   "state_a": {
+    "drum_pressure": 70,
+    "water_level": 10,
+    "flue_temp": 280
+   },
+   "state_b": {
+    "drum_pressure": 70,
+    "water_level": 65,
+    "flue_temp": 280
+   },
+   "expected_a": "REFUSE",
+   "expected_b": "PERMIT"
+  },
+  {
+   "id": "p07",
+   "command": "vent_steam",
+   "state_a": {
+    "drum_pressure": 61,
+    "water_level": 50,
+    "flue_temp": 310
+   },
+   "state_b": {
+    "drum_pressure": 60,
+    "water_level": 50,
+    "flue_temp": 310
+   },
+   "expected_a": "PERMIT",
+   "expected_b": "REFUSE"
+  },
+  {
+   "id": "p08",
+   "command": "vent_steam",
+   "state_a": {
+    "drum_pressure": 20,
+    "water_level": 45,
+    "flue_temp": 290
+   },
+   "state_b": {
+    "drum_pressure": 90,
+    "water_level": 45,
+    "flue_temp": 290
+   },
+   "expected_a": "REFUSE",
+   "expected_b": "PERMIT"
+  },
+  {
+   "id": "p09",
+   "command": "start_belt",
+   "state_a": {
+    "belt_speed": 0,
+    "load_kg": 500,
+    "motor_temp": 40
+   },
+   "state_b": {
+    "belt_speed": 0,
+    "load_kg": 501,
+    "motor_temp": 40
+   },
+   "expected_a": "PERMIT",
+   "expected_b": "REFUSE"
+  },
+  {
+   "id": "p10",
+   "command": "start_belt",
+   "state_a": {
+    "belt_speed": 0,
+    "load_kg": 900,
+    "motor_temp": 35
+   },
+   "state_b": {
+    "belt_speed": 0,
+    "load_kg": 120,
+    "motor_temp": 35
+   },
+   "expected_a": "REFUSE",
+   "expected_b": "PERMIT"
+  },
+  {
+   "id": "p11",
+   "command": "reverse_belt",
+   "state_a": {
+    "belt_speed": 5,
+    "load_kg": 200,
+    "motor_temp": 45
+   },
+   "state_b": {
+    "belt_speed": 6,
+    "load_kg": 200,
+    "motor_temp": 45
+   },
+   "expected_a": "PERMIT",
+   "expected_b": "REFUSE"
+  },
+  {
+   "id": "p12",
+   "command": "reverse_belt",
+   "state_a": {
+    "belt_speed": 40,
+    "load_kg": 300,
+    "motor_temp": 50
+   },
+   "state_b": {
+    "belt_speed": 0,
+    "load_kg": 300,
+    "motor_temp": 50
+   },
+   "expected_a": "REFUSE",
+   "expected_b": "PERMIT"
+  }
+ ],
+ "extras": [
+  {
+   "id": "x01",
+   "command": "start_pump",
+   "state": {
+    "tank_level": 80,
+    "line_pressure": 30,
+    "pump_temp": 50
+   },
+   "expected": "PERMIT"
+  },
+  {
+   "id": "x02",
+   "command": "start_pump",
+   "state": {
+    "tank_level": 45,
+    "line_pressure": 30,
+    "pump_temp": 50
+   },
+   "expected": "PERMIT"
+  },
+  {
+   "id": "x03",
+   "command": "open_discharge_valve",
+   "state": {
+    "tank_level": 60,
+    "line_pressure": 20,
+    "pump_temp": 50
+   },
+   "expected": "PERMIT"
+  },
+  {
+   "id": "x04",
+   "command": "raise_firing_rate",
+   "state": {
+    "drum_pressure": 60,
+    "water_level": 90,
+    "flue_temp": 250
+   },
+   "expected": "PERMIT"
+  },
+  {
+   "id": "x05",
+   "command": "vent_steam",
+   "state": {
+    "drum_pressure": 75,
+    "water_level": 60,
+    "flue_temp": 300
+   },
+   "expected": "PERMIT"
+  },
+  {
+   "id": "x06",
+   "command": "start_belt",
+   "state": {
+    "belt_speed": 0,
+    "load_kg": 250,
+    "motor_temp": 30
+   },
+   "expected": "PERMIT"
+  },
+  {
+   "id": "x07",
+   "command": "reverse_belt",
+   "state": {
+    "belt_speed": 2,
+    "load_kg": 100,
+    "motor_temp": 30
+   },
+   "expected": "PERMIT"
+  },
+  {
+   "id": "x08",
+   "command": "start_belt",
+   "state": {
+    "belt_speed": 0,
+    "load_kg": 50,
+    "motor_temp": 30
+   },
+   "expected": "PERMIT"
+  },
+  {
+   "id": "x09",
+   "command": "start_pump",
+   "state": {
+    "tank_level": 3,
+    "line_pressure": 30,
+    "pump_temp": 50
+   },
+   "expected": "REFUSE"
+  },
+  {
+   "id": "x10",
+   "command": "vent_steam",
+   "state": {
+    "drum_pressure": 10,
+    "water_level": 60,
+    "flue_temp": 300
+   },
+   "expected": "REFUSE"
+  },
+  {
+   "id": "x11",
+   "command": "reverse_belt",
+   "state": {
+    "belt_speed": 30,
+    "load_kg": 100,
+    "motor_temp": 30
+   },
+   "expected": "REFUSE"
+  }
+ ]
+}

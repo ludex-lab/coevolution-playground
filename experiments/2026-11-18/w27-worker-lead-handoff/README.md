@@ -43,6 +43,13 @@ reproduced and appear only as UNVERIFIED entries under `on_unmeasured` in `evide
   worker, duplicate ids, a packet missing for an assigned worker, a window that ends before it starts, a
   layout that does not match the assignment, claims with equal values, a filler that repeats the conflict,
   on_expiry other than DENY) prints one line `DENY <code>: <detail>` on stderr and exits 2.
+- The two exit-2 cases are told apart by stream, not by code: a DENY row exits 2 with the report on stdout and an empty stderr, while malformed
+  input exits 2 with an empty stdout and one `DENY <code>:` line on stderr (the same word as a DENY decision, so read the stream, not the
+  word). This is a README convention only; no test claims it is machine-checkable.
+- Text values share one text rule with `mb-certified-region-delta`: control (including C1), format (zero-width), surrogate,
+  private-use, line and paragraph separator characters are rejected, as is any space other than a plain space, and HANGUL FILLER U+3164 and
+  BRAILLE PATTERN BLANK U+2800 are rejected by code point (`DENY bad_text`). Korean text is accepted. Other look-alikes stay accepted: U+115F,
+  U+1160, U+FFA0, U+034F, U+17B4, variation selectors, U+180B, and Cyrillic or Greek letters that look Latin (for example Cyrillic `о`).
 - No network, no model call, no votes or ensembles, no hashing or signing, no pip or venv.
 
 ## Distinct from
@@ -95,3 +102,6 @@ detects. `fixtures/expired.json` (now=30) gives `DENY expired_packet` for one ca
 - Synthetic fixture, exact string equality for "same value", one conflict per case. No claim about any real
   model, dataset or the paper's numbers.
 - A missing or expired packet from an idle worker (one holding no claim) still gives DENY.
+- `totals.<arm>.both_retrieved` counts every case row where both claims were retrieved, DENY rows included, because retrieval is fixed by the
+  layout and DENY rows still report it. On `fixtures/expired.json` `delegated_same` shows cases 1, both_retrieved 1, deny 1 and
+  `delegated_split` shows cases 2, both_retrieved 2, deny 1. Read `deny` next to it. A test pins these totals.

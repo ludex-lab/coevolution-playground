@@ -266,6 +266,13 @@ class Fixtures(unittest.TestCase):
         self.assertEqual(got, {"e_single": ("PASS", "detected"), "e_same_expired": ("DENY", "expired_packet"),
                                "e_split_missing": ("DENY", "missing_packet"), "e_split_fresh": ("PASS", "detected")})
 
+    def test_expired_totals_count_deny_rows_in_both_retrieved(self):
+        t = expired_report()["totals"]
+        same = {k: t["delegated_same"][k] for k in ("cases", "both_retrieved", "deny")}
+        split = {k: t["delegated_split"][k] for k in ("cases", "both_retrieved", "deny")}
+        self.assertEqual(same, {"cases": 1, "both_retrieved": 1, "deny": 1})
+        self.assertEqual(split, {"cases": 2, "both_retrieved": 2, "deny": 1})
+
     def test_deterministic(self):
         a = json.dumps(main_report(), sort_keys=True)
         self.assertEqual(a, json.dumps(main_report(), sort_keys=True))
@@ -419,6 +426,29 @@ class Validation(unittest.TestCase):
         root = self.good()
         root["docs"][0]["value"] = " Oslo"
         denies(self, root, "bad_text")
+
+    def test_interior_invisible_characters_in_values_are_denied(self):
+        # "Oslo" vs "Oslo" plus a zero-width space must not be scored as a conflict: both are denied as text.
+        for ch in ("\u200b", "\u200d", "\ufeff", "\u00ad", "\u0080", "\u0085", "\u009f", "\u00a0", "\u3000", "\u2028",
+                   "\u2029", "\ue000", "\ud800", "\u3164", "\u2800", "\x1b", "\x7f"):
+            root = self.good()
+            root["docs"][0]["value"] = "Os%slo" % ch
+            denies(self, root, "bad_text")
+            root = self.good()
+            root["docs"][1]["value"] = "Oslo" + ch + "x"
+            denies(self, root, "bad_text")
+
+    def test_zero_width_look_alike_cannot_fake_a_conflict(self):
+        root = self.good()
+        root["docs"][0]["value"] = "Oslo"
+        root["docs"][1]["value"] = "Oslo\u200b"
+        denies(self, root, "bad_text")
+
+    def test_korean_and_plain_inner_space_values_are_accepted(self):
+        root = self.good()
+        root["docs"][0]["value"] = "\uc11c\uc6b8 \ud2b9\ubcc4\uc2dc"
+        root["docs"][1]["value"] = "\ubd80\uc0b0"
+        self.assertEqual(h.run(root)["docs"], len(root["docs"]))
 
     def test_bad_ids(self):
         root = self.good()
@@ -622,7 +652,7 @@ class Hygiene(unittest.TestCase):
 
     def test_stdlib_imports_only(self):
         mods = set(re.findall(r"^(?:import|from) (\w+)", self.source(), re.M))
-        self.assertEqual(mods, {"json", "math", "re", "sys"})
+        self.assertEqual(mods, {"json", "math", "re", "sys", "unicodedata"})
 
     def test_no_wall_clock_or_random(self):
         src = self.source()

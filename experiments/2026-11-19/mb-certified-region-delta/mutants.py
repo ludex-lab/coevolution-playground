@@ -98,7 +98,14 @@ MUTANTS = [
     ('            raise FixtureError("missing_value", "%s lacks %s" % (where, name))', '            continue'),
     ('        raise FixtureError("empty_list", "%s must not be empty" % where)', '        pass'),
     ('        _flag(dim["critical"], where + ".critical")', '        pass'),
-    # sticky shutdown
+    # sticky shutdown: withdrawal-class rows after a hard row (Z08 and Z18 survived on main before the extended test)
+    ('        if shut_down and response != "SHUTDOWN":', '        if shut_down and response not in ("SHUTDOWN", "WITHDRAW_AUTHORIZATION"):'),
+    ('        if shut_down and response != "SHUTDOWN":', '        if response == "WITHDRAW_AUTHORIZATION" and reason in ("critical_single_dim", "correlated_degradation"):\n            shut_down = False\n        if shut_down and response != "SHUTDOWN":'),
+    # blank look-alikes and the README sentence
+    (' or ch in BLANK_LOOKALIKES:', ':'),
+    ('BLANK_LOOKALIKES = ("\\u3164", "\\u2800")', 'BLANK_LOOKALIKES = ("\\u3164",)'),
+    ('BLANK_LOOKALIKES = ("\\u3164", "\\u2800")', 'BLANK_LOOKALIKES = ("\\u2800",)'),
+    ("the one-step quarantine, the sticky withdrawal and the sticky shutdown; arm B is stateless", "the one-step quarantine and the sticky withdrawal; arm B is stateless", "README.md"),
     ('        if shut_down and response != "SHUTDOWN":', '        if False:'),
     # sticky withdrawal
     ('        if withdrawn and response == "CONTINUE":', '        if False:'),
@@ -136,8 +143,10 @@ def run_suite(folder):
 def main():
     killed = 0
     survivors = []
-    for index, (old, new) in enumerate(MUTANTS, 1):
-        source = open(os.path.join(HERE, M), encoding="utf-8").read()
+    for index, entry in enumerate(MUTANTS, 1):
+        old, new = entry[0], entry[1]
+        target = entry[2] if len(entry) > 2 else M
+        source = open(os.path.join(HERE, target), encoding="utf-8").read()
         if source.count(old) != 1:
             print("mutant %02d: BAD FRAGMENT (occurs %d times)" % (index, source.count(old)))
             survivors.append(index)
@@ -151,7 +160,7 @@ def main():
                     shutil.copytree(src, dst, ignore=shutil.ignore_patterns("__pycache__"))
                 else:
                     shutil.copy(src, dst)
-            with open(os.path.join(work, M), "w", encoding="utf-8") as handle:
+            with open(os.path.join(work, target), "w", encoding="utf-8") as handle:
                 handle.write(source.replace(old, new))
             code = run_suite(work)
         finally:

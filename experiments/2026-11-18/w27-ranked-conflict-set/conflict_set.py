@@ -17,6 +17,7 @@ import json
 import math
 import re
 import sys
+import unicodedata
 
 FIXTURE_VERSION = 1
 ON_EXPIRY = "DENY"
@@ -28,6 +29,12 @@ MAX_SCORE = 1000000
 ENTRY_KEYS = ("id", "writer", "field", "value", "score", "poisoned", "expires")
 QUERY_KEYS = ("id", "field", "read_at", "deadline", "gold")
 ROOT_KEYS = ("fixture_version", "on_expiry", "k", "policies", "entries", "queries")
+
+# One text rule shared with mb-certified-region-delta: reject control (including C1), format (zero-width),
+# surrogate, private-use, line and paragraph separator characters, any space other than a plain space, and
+# two blank look-alikes (HANGUL FILLER U+3164, BRAILLE PATTERN BLANK U+2800). Other look-alikes stay accepted.
+BAD_CATEGORIES = ("Cc", "Cf", "Cs", "Co", "Zl", "Zp")
+BLANK_LOOKALIKES = ("\u3164", "\u2800")
 
 
 class Deny(Exception):
@@ -93,8 +100,11 @@ def _ident(value, where):
 def _text(value, where):
     if type(value) is not str or not value.strip() or value != value.strip() or len(value) > MAX_VALUE:
         raise Deny("bad_text", "%s must be a trimmed non-empty string, got %r" % (where, value))
-    if any(ord(ch) < 32 or ord(ch) == 127 for ch in value):
-        raise Deny("bad_text", "%s holds a control character" % where)
+    for ch in value:
+        cat = unicodedata.category(ch)
+        if cat in BAD_CATEGORIES or (cat == "Zs" and ch != " ") or ch in BLANK_LOOKALIKES:
+            raise Deny("bad_text", "%s holds a control, format, special space or blank look-alike character (U+%04X)"
+                       % (where, ord(ch)))
 
 
 def _time(value, where, nullable):

@@ -68,12 +68,12 @@ The paper's other claims (layered triggers, a graduated safe-transition protocol
   withdrawal, so `RECERTIFY` is seen retaining authority) shows all four responses in arm A, and the
   summary counts what arm B does differently: shutdowns where arm A does not shut down, authority cuts on
   ODD exit where arm A requests recertification, and shutdowns arm A has that arm B missed.
-- Arm A's state across rows is only the one-step quarantine and the sticky withdrawal; arm B is stateless.
+- Arm A's state across rows is only the one-step quarantine, the sticky withdrawal and the sticky shutdown; arm B is stateless.
   There is no timer, no resumption of authority and no risk-weighted composite trigger.
 - Malformed fixtures (duplicate JSON keys, missing or unknown keys, wrong types, non-finite numbers,
   inverted intervals, hard limits that do not contain the region, duplicate names or ids, observations
   with missing or extra names, integers too large for a float or for Python's digit limit, nesting too deep
-  to parse, and control, zero-width, special-space or surrogate characters in names and ids) print one
+  to parse, and control, zero-width, special-space, surrogate, HANGUL FILLER (U+3164) or BRAILLE BLANK (U+2800) characters in names and ids) print one
   `ERROR <code>: <detail>` line on stderr and exit 2, never a traceback. Names and ids that are the same
   after Unicode NFC normalization count as duplicates. A valid fixture exits 0.
 - No network, no model call, no votes or ensembles, no hashing or signing, no pip or venv.
@@ -106,6 +106,10 @@ The paper's other claims (layered triggers, a graduated safe-transition protocol
 - The thesis is shown by construction on a hand-written fixture: arm A distinguishes the four responses
   because the rules were written to. It says nothing about how often real systems exit their ODD.
 - Arm A has no recovery path: withdrawal and shutdown are permanent for the run.
+- Look-alike characters are only partly closed. Names and ids reject the blank look-alikes U+3164 and
+  U+2800, but still accept other invisible or confusable characters (for example U+115F, U+1160, U+FFA0,
+  U+034F, U+17B4, variation selectors, U+180B) and visually similar letters such as Cyrillic `о` next to
+  Latin `o`, so two ids that look the same can still be distinct.
 - During an ODD exit the baseline no longer applies, so a critical single-dimension failure or a
   correlated deviation seen at the same time gets `RECERTIFY` (not `WITHDRAW_AUTHORIZATION`); only a
   hard-safety violation overrides it.
