@@ -1,0 +1,46 @@
+{
+  "status": "UNVERIFIED",
+  "note": "Paper claims live only under on_unmeasured. Nothing there was measured, re-run or reproduced here. The module reads no network source, no SEC filing and no paper data.",
+  "network_used": false,
+  "paid_api_used": false,
+  "paper": {
+    "title": "Show Your Work: Can Small Open Models Read SEC Filings with Evidence a Machine Can Check?",
+    "authors": "Krishna Nandula (as listed on the abstract page)",
+    "arxiv_id": "2611.24990",
+    "submitted": "2026-11-18",
+    "abs_url": "https://arxiv.org/abs/2611.24990",
+    "paper_licence": "CC BY 4.0 (abstract page licence link)",
+    "upstream_code": "https://github.com/pramana-research/filing-evidence, Apache-2.0; not cloned, not run, nothing copied",
+    "licence_line": "paper CC BY 4.0; method only; upstream code Apache-2.0, not cloned or run; no code copied",
+    "read_here": "the abstract page; the full paper was not read"
+  },
+  "measured": {
+    "fixture": "fixtures/main.json: a synthetic filing with 6 tables on 6 pages, 6 lines, 2 periods, 5 units, 12 quotes, 6 questions, 18 planted answers",
+    "fixture_authored": true,
+    "authored_note": "The filing, its numbers and the three planted answers per question were written for this experiment. The counts show how the two tests behave on these plants; they are not an error rate of any model.",
+    "questions": 6,
+    "answers": 18,
+    "wrong_values": 12,
+    "loose_passes": 18,
+    "strict_passes": 6,
+    "loose_false_passes": "12/12",
+    "strict_false_passes": "0/12",
+    "strict_true_passes": "6/6",
+    "strict_reason_for_scale_error": "scale_mismatch",
+    "strict_reason_for_wrong_period": "wrong_period",
+    "strict_reason_counts": {"bound": 6, "scale_mismatch": 6, "wrong_period": 6}
+  },
+  "on_unmeasured": {
+    "why": "Reported in the paper's abstract; not reproduced, and not comparable with the planted counts above.",
+    "claims": [
+      {"id": "P1", "what": "a benchmark of 1,000 questions over 90 recent 10-K and 10-Q filings from 45 US companies, with answer keys taken from the filers' inline XBRL tags", "status": "UNVERIFIED"},
+      {"id": "P2", "what": "ten open instruct models of 7B to 21B parameters, each run on one consumer GPU, in three setups: plain, check then retry, and the model's own reasoning mode", "status": "UNVERIFIED"},
+      {"id": "P3", "what": "accuracy with machine-checkable evidence spans 17.1% to 82.7% in the plain setup, and the best result is 84.5% for one 9B model", "status": "UNVERIFIED"},
+      {"id": "P4", "what": "between 16 and 167 answers per 1,000 carry a wrong value for an answerable question yet pass every automatic check", "status": "UNVERIFIED"},
+      {"id": "P5", "what": "in the plain setup, 57% of those check-passing wrong answers are scale or unit errors and 30% take another period or column of the right line", "status": "UNVERIFIED"},
+      {"id": "P6", "what": "the reasoning mode significantly reduces such errors for 4 of the 5 models that offer it", "status": "UNVERIFIED"},
+      {"id": "P7", "what": "retrying after a failed check raises accuracy by up to 3.9 points but never reduces the check-passing wrong answers", "status": "UNVERIFIED"},
+      {"id": "P8", "what": "the upstream repository's tests, protocol and stored runs (described in its README, not executed here)", "status": "UNVERIFIED"}
+    ]
+  }
+}

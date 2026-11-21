@@ -1,0 +1,53 @@
+{
+  "status": "UNVERIFIED",
+  "note": "External claims live only under on_unmeasured. Nothing there was measured, re-run or reproduced here. The module reads no network source and no paper data.",
+  "network_used": false,
+  "paid_api_used": false,
+  "paper": {
+    "title": "PlayCraft: Designing Engaging Games from Agent Play Experience",
+    "authors": "Weihao Cheng (as listed on the abstract page)",
+    "arxiv_id": "2611.26624",
+    "version": "v1, submitted 19 Nov 2026",
+    "abs_url": "https://arxiv.org/abs/2611.26624",
+    "licence": "arXiv nonexclusive-distrib 1.0; method only; no code listed; none copied",
+    "method_only": true,
+    "upstream_code": "none listed; nothing copied",
+    "read_here": "the abstract page only; the full paper was not read or run"
+  },
+  "crafters": ["ladder", "noop", "overtune", "edits_target", "wild_knob", "out_of_range"],
+  "levels_in_fixture": ["novice", "skilled", "expert"],
+  "measured": {
+    "fixture": "fixtures/main.json (3 declared levels, 2 integer knobs, 6 episodes, band 3..4 for the novice)",
+    "improvement_is_fixture_authored": true,
+    "authored_note": "The knobs, their ranges, the player thresholds and the band were chosen so that the loop works. The result shows that the loop, its refusals and its controls behave as designed; it does not show that any revised game is engaging.",
+    "initial_knobs": {"signpost": 0, "budget": 3},
+    "revised_knobs": {"signpost": 1, "budget": 4},
+    "crafting_rounds_used": 3,
+    "round_changes": [{"budget": 4}, {"signpost": 1}, {}],
+    "novice_first_clear_before": null,
+    "novice_first_clear_after": 4,
+    "novice_gain_after": "1/1",
+    "novice_slope_after": "9/35",
+    "noop_verdict": "too_hard",
+    "overtune_verdict": "too_easy",
+    "leaky_contrast_first_clear": 1,
+    "revised_file_changed_paths": ["knobs.budget", "knobs.signpost"],
+    "improvement_claims_engagement": false,
+    "note": "counts come from a hand-written synthetic fixture and are not comparable with anything in the paper"
+  },
+  "on_unmeasured": {
+    "why": "Stated in the paper's abstract or beyond it; not reproduced and not comparable with this sketch's fixture counts.",
+    "claims": [
+      {"id": "P1", "what": "playable games from generators are not necessarily engaging; the paper treats mastery as a central route to engagement", "status": "UNVERIFIED"},
+      {"id": "P2", "what": "designing for mastery by hand needs extensive human play and tuning", "status": "UNVERIFIED"},
+      {"id": "P3", "what": "an automated framework alternates a playing stage and a crafting stage, starting from an initial game", "status": "UNVERIFIED"},
+      {"id": "P4", "what": "a vision-based player agent watches the game screen and uses the controls; this sketch has no screen and no vision player", "status": "UNVERIFIED"},
+      {"id": "P5", "what": "the player reports progress, outcomes, decisions and reflections after each episode; this sketch emits structured reports and no reflections", "status": "UNVERIFIED"},
+      {"id": "P6", "what": "the crafter estimates player abilities, predicts performance at several proficiency levels and compares the predictions with a target learning progression", "status": "UNVERIFIED"},
+      {"id": "P7", "what": "games are evaluated in fresh runs with player agents at three intelligence settings, scored by learning gain and learning slope", "status": "UNVERIFIED"},
+      {"id": "P8", "what": "compared with the initial games the framework yields larger learning gains and steeper slopes in most games", "status": "UNVERIFIED"},
+      {"id": "P9", "what": "the framework beats the baselines on the macro-average of each metric at every intelligence setting", "status": "UNVERIFIED"},
+      {"id": "P10", "what": "that the revised games are engaging", "status": "UNVERIFIED"}
+    ]
+  }
+}

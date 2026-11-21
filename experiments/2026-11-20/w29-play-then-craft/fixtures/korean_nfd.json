@@ -1,0 +1,56 @@
+{
+ "fixture_version": 1,
+ "label": "\u1100\u1161\u11af\u1105\u1175\u11b7\u1100\u1175\u11af",
+ "game": {
+  "long_cost": 9,
+  "short_cost": 4,
+  "step_cap": 12,
+  "episodes": 6,
+  "max_rounds": 4,
+  "no_report": []
+ },
+ "knobs": {
+  "\u1111\u116d\u110c\u1175\u1111\u1161\u11ab": {
+   "label": "\u110c\u1175\u1105\u1173\u11b7\u1100\u1175\u11af \u1111\u116d\u110c\u1175\u1111\u1161\u11ab",
+   "role": "cue",
+   "min": 0,
+   "max": 3,
+   "step": 1,
+   "initial": 0
+  },
+  "\u1100\u1165\u11af\u110b\u1173\u11b7\u1109\u116e": {
+   "label": "\u1100\u1165\u11af\u110b\u1173\u11b7 \u110b\u1168\u1109\u1161\u11ab",
+   "role": "reserve",
+   "min": 3,
+   "max": 12,
+   "step": 1,
+   "initial": 3
+  }
+ },
+ "levels": {
+  "\u110e\u1169\u1107\u1169": {
+   "label": "\u110e\u1169\u1107\u1169\u110c\u1161",
+   "patience": 4,
+   "sign_weight": 1
+  },
+  "\u1109\u116e\u11a8\u1105\u1167\u11ab": {
+   "label": "\u1109\u116e\u11a8\u1105\u1167\u11ab\u110c\u1161",
+   "patience": 2,
+   "sign_weight": 1
+  },
+  "\u1100\u1169\u1109\u116e": {
+   "label": "\u1100\u1169\u1109\u116e\u1102\u1175\u11b7",
+   "patience": 1,
+   "sign_weight": 2
+  }
+ },
+ "target": {
+  "level": "\u110e\u1169\u1107\u1169",
+  "band": {
+   "lo": 3,
+   "hi": 4
+  }
+ },
+ "on_expiry": "HOLD",
+ "crafter": "ladder"
+}

@@ -1,0 +1,56 @@
+{
+ "fixture_version": 1,
+ "label": "\uac08\ub9bc\uae38",
+ "game": {
+  "long_cost": 9,
+  "short_cost": 4,
+  "step_cap": 12,
+  "episodes": 6,
+  "max_rounds": 4,
+  "no_report": []
+ },
+ "knobs": {
+  "\ud45c\uc9c0\ud310": {
+   "label": "\uc9c0\ub984\uae38 \ud45c\uc9c0\ud310",
+   "role": "cue",
+   "min": 0,
+   "max": 3,
+   "step": 1,
+   "initial": 0
+  },
+  "\uac78\uc74c\uc218": {
+   "label": "\uac78\uc74c \uc608\uc0b0",
+   "role": "reserve",
+   "min": 3,
+   "max": 12,
+   "step": 1,
+   "initial": 3
+  }
+ },
+ "levels": {
+  "\ucd08\ubcf4": {
+   "label": "\ucd08\ubcf4\uc790",
+   "patience": 4,
+   "sign_weight": 1
+  },
+  "\uc219\ub828": {
+   "label": "\uc219\ub828\uc790",
+   "patience": 2,
+   "sign_weight": 1
+  },
+  "\uace0\uc218": {
+   "label": "\uace0\uc218\ub2d8",
+   "patience": 1,
+   "sign_weight": 2
+  }
+ },
+ "target": {
+  "level": "\ucd08\ubcf4",
+  "band": {
+   "lo": 3,
+   "hi": 4
+  }
+ },
+ "on_expiry": "HOLD",
+ "crafter": "ladder"
+}

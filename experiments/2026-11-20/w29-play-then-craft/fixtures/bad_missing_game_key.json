@@ -1,0 +1,55 @@
+{
+ "fixture_version": 1,
+ "label": "Fork in the road",
+ "game": {
+  "long_cost": 9,
+  "short_cost": 4,
+  "episodes": 6,
+  "max_rounds": 4,
+  "no_report": []
+ },
+ "knobs": {
+  "signpost": {
+   "label": "Signpost on the short path",
+   "role": "cue",
+   "min": 0,
+   "max": 3,
+   "step": 1,
+   "initial": 0
+  },
+  "budget": {
+   "label": "Steps in the budget",
+   "role": "reserve",
+   "min": 3,
+   "max": 12,
+   "step": 1,
+   "initial": 3
+  }
+ },
+ "levels": {
+  "novice": {
+   "label": "Novice",
+   "patience": 4,
+   "sign_weight": 1
+  },
+  "skilled": {
+   "label": "Skilled",
+   "patience": 2,
+   "sign_weight": 1
+  },
+  "expert": {
+   "label": "Expert",
+   "patience": 1,
+   "sign_weight": 2
+  }
+ },
+ "target": {
+  "level": "novice",
+  "band": {
+   "lo": 3,
+   "hi": 4
+  }
+ },
+ "on_expiry": "HOLD",
+ "crafter": "ladder"
+}
