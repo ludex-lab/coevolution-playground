@@ -1,0 +1,12 @@
+{
+ "fixture_version": 1,
+ "label": "malformed candidate",
+ "pairs": [
+  {
+   "id": "x",
+   "candidate": "1.0.0-aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "requirement": ">= 1.0.0",
+   "expected": "DOES_NOT_SATISFY"
+  }
+ ]
+}

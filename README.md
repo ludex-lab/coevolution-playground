@@ -22,7 +22,7 @@ experiments/
 
 원본 루트 README는 [`experiments/SOURCE_README.md`](experiments/SOURCE_README.md)에 있습니다.
 
-## 실험 인덱스 (155개)
+## 실험 인덱스 (160개)
 
 | Date | Folder | Summary |
 |------|--------|----------|
@@ -181,6 +181,11 @@ experiments/
 | 2026-11-20 | [`mb-answerability-pairs`](experiments/2026-11-20/mb-answerability-pairs/) | Overall accuracy can hide a policy that never reads the machine state: on a tiny synthetic controller fixture (3 systems, 6 rules, 12 pairs of the same command in two states that require opposite a... |
 | 2026-11-20 | [`w29-play-then-craft`](experiments/2026-11-20/w29-play-then-craft/) | A play-then-revise loop on one tiny deterministic two-path game (3 scripted player levels, 2 integer knobs, exact Fraction metrics): a crafter that reads only per-episode report objects may change ... |
 | 2026-11-21 | [`mb-evidence-binding`](experiments/2026-11-21/mb-evidence-binding/) | frozen synthetic filing with three planted answers per question (correctly bound, scale or unit error whose number string still appears in the cited quote, right line but wrong period); a loose bin... |
+| 2026-11-21 | [`w30-wave-chronicle`](experiments/2026-11-21/w30-wave-chronicle/) | A stdlib file-in/file-out wave chronicle of the experiments index: it turns the `- [slug](slug/): …` rows of the day READMEs dated 2026-11-09 or later into a dated timeline tagged with wave,... |
+| 2026-11-22 | [`mb-verify-the-verifier`](experiments/2026-11-22/mb-verify-the-verifier/) | a green scoreboard is not a met specification: on a fixture-authored toy 4-entry FIFO with five numbered spec clauses, a scoreboard that compares the design with a golden model passes three... |
+| 2026-11-22 | [`w31-prerelease-is-not-stable`](experiments/2026-11-22/w31-prerelease-is-not-stable/) | a pre-release is not the associated normal version: on fixture-authored {candidate, requirement} pairs, a strict SemVer 2.0.0 parser orders versions by spec §11 precedence, so 1.0.0-alpha and... |
+| 2026-11-23 | [`mb-occupancy-cap-per-bucket`](experiments/2026-11-23/mb-occupancy-cap-per-bucket/) | a burst should not take over a bounded memory: on synthetic village fixtures, a fixed-slot memory takes in timestamped items with salience scores; score-only eviction lets a fireworks burst fill 6... |
+| 2026-11-23 | [`w32-record-manifest-presence`](experiments/2026-11-23/w32-record-manifest-presence/) | does a record folder hold every file its cover names: on small hand-made fixtures that mirror the E1 and E2 measurement covers, a stdlib tool reads the cover's `## Files` table, a folder listing... |
 
 ## 미러 안내
 
@@ -203,7 +208,7 @@ This repository is a **read-only daily mirror** of merged experiments from the *
 
 See the Korean section above; structure is the same.
 
-## Experiment index (155 entries)
+## Experiment index (160 entries)
 
 | Date | Folder | Summary |
 |------|--------|----------|
@@ -362,6 +367,11 @@ See the Korean section above; structure is the same.
 | 2026-11-20 | [`mb-answerability-pairs`](experiments/2026-11-20/mb-answerability-pairs/) | Overall accuracy can hide a policy that never reads the machine state: on a tiny synthetic controller fixture (3 systems, 6 rules, 12 pairs of the same command in two states that require opposite a... |
 | 2026-11-20 | [`w29-play-then-craft`](experiments/2026-11-20/w29-play-then-craft/) | A play-then-revise loop on one tiny deterministic two-path game (3 scripted player levels, 2 integer knobs, exact Fraction metrics): a crafter that reads only per-episode report objects may change ... |
 | 2026-11-21 | [`mb-evidence-binding`](experiments/2026-11-21/mb-evidence-binding/) | frozen synthetic filing with three planted answers per question (correctly bound, scale or unit error whose number string still appears in the cited quote, right line but wrong period); a loose bin... |
+| 2026-11-21 | [`w30-wave-chronicle`](experiments/2026-11-21/w30-wave-chronicle/) | A stdlib file-in/file-out wave chronicle of the experiments index: it turns the `- [slug](slug/): …` rows of the day READMEs dated 2026-11-09 or later into a dated timeline tagged with wave,... |
+| 2026-11-22 | [`mb-verify-the-verifier`](experiments/2026-11-22/mb-verify-the-verifier/) | a green scoreboard is not a met specification: on a fixture-authored toy 4-entry FIFO with five numbered spec clauses, a scoreboard that compares the design with a golden model passes three... |
+| 2026-11-22 | [`w31-prerelease-is-not-stable`](experiments/2026-11-22/w31-prerelease-is-not-stable/) | a pre-release is not the associated normal version: on fixture-authored {candidate, requirement} pairs, a strict SemVer 2.0.0 parser orders versions by spec §11 precedence, so 1.0.0-alpha and... |
+| 2026-11-23 | [`mb-occupancy-cap-per-bucket`](experiments/2026-11-23/mb-occupancy-cap-per-bucket/) | a burst should not take over a bounded memory: on synthetic village fixtures, a fixed-slot memory takes in timestamped items with salience scores; score-only eviction lets a fireworks burst fill 6... |
+| 2026-11-23 | [`w32-record-manifest-presence`](experiments/2026-11-23/w32-record-manifest-presence/) | does a record folder hold every file its cover names: on small hand-made fixtures that mirror the E1 and E2 measurement covers, a stdlib tool reads the cover's `## Files` table, a folder listing... |
 
 ## Mirror notice
 

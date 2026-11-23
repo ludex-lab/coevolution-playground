@@ -1,0 +1,36 @@
+{
+ "fixture_version": 1,
+ "label": "안정 범위 >= 1.0.0 (픽스처 작성)",
+ "pairs": [
+  {
+   "id": "정식",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "다음_패치",
+   "candidate": "1.0.1",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "알파",
+   "candidate": "1.0.0-alpha",
+   "requirement": ">= 1.0.0",
+   "expected": "DOES_NOT_SATISFY"
+  },
+  {
+   "id": "후보1",
+   "candidate": "1.0.0-rc.1",
+   "requirement": ">= 1.0.0",
+   "expected": "DOES_NOT_SATISFY"
+  },
+  {
+   "id": "다음_패치_후보",
+   "candidate": "1.0.1-rc.1",
+   "requirement": ">= 1.0.0",
+   "expected": "DOES_NOT_SATISFY"
+  }
+ ]
+}

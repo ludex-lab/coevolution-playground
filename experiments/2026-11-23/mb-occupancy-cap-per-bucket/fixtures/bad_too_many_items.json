@@ -1,0 +1,1372 @@
+{
+ "fixture_version": 1,
+ "label": "Naru village day (synthetic): festival burst, quiet market, busy council",
+ "cases": [
+  {
+   "id": "festival_burst",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "e0",
+     "t": 0,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e1",
+     "t": 1,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e2",
+     "t": 2,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e3",
+     "t": 3,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e4",
+     "t": 4,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e5",
+     "t": 5,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e6",
+     "t": 6,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e7",
+     "t": 7,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e8",
+     "t": 8,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e9",
+     "t": 9,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e10",
+     "t": 10,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e11",
+     "t": 11,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e12",
+     "t": 12,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e13",
+     "t": 13,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e14",
+     "t": 14,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e15",
+     "t": 15,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e16",
+     "t": 16,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e17",
+     "t": 17,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e18",
+     "t": 18,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e19",
+     "t": 19,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e20",
+     "t": 20,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e21",
+     "t": 21,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e22",
+     "t": 22,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e23",
+     "t": 23,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e24",
+     "t": 24,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e25",
+     "t": 25,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e26",
+     "t": 26,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e27",
+     "t": 27,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e28",
+     "t": 28,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e29",
+     "t": 29,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e30",
+     "t": 30,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e31",
+     "t": 31,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e32",
+     "t": 32,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e33",
+     "t": 33,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e34",
+     "t": 34,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e35",
+     "t": 35,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e36",
+     "t": 36,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e37",
+     "t": 37,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e38",
+     "t": 38,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e39",
+     "t": 39,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e40",
+     "t": 40,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e41",
+     "t": 41,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e42",
+     "t": 42,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e43",
+     "t": 43,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e44",
+     "t": 44,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e45",
+     "t": 45,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e46",
+     "t": 46,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e47",
+     "t": 47,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e48",
+     "t": 48,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e49",
+     "t": 49,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e50",
+     "t": 50,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e51",
+     "t": 51,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e52",
+     "t": 52,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e53",
+     "t": 53,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e54",
+     "t": 54,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e55",
+     "t": 55,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e56",
+     "t": 56,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e57",
+     "t": 57,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e58",
+     "t": 58,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e59",
+     "t": 59,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e60",
+     "t": 60,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e61",
+     "t": 61,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e62",
+     "t": 62,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e63",
+     "t": 63,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e64",
+     "t": 64,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e65",
+     "t": 65,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e66",
+     "t": 66,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e67",
+     "t": 67,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e68",
+     "t": 68,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e69",
+     "t": 69,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e70",
+     "t": 70,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e71",
+     "t": 71,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e72",
+     "t": 72,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e73",
+     "t": 73,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e74",
+     "t": 74,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e75",
+     "t": 75,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e76",
+     "t": 76,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e77",
+     "t": 77,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e78",
+     "t": 78,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e79",
+     "t": 79,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e80",
+     "t": 80,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e81",
+     "t": 81,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e82",
+     "t": 82,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e83",
+     "t": 83,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e84",
+     "t": 84,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e85",
+     "t": 85,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e86",
+     "t": 86,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e87",
+     "t": 87,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e88",
+     "t": 88,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e89",
+     "t": 89,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e90",
+     "t": 90,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e91",
+     "t": 91,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e92",
+     "t": 92,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e93",
+     "t": 93,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e94",
+     "t": 94,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e95",
+     "t": 95,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e96",
+     "t": 96,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e97",
+     "t": 97,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e98",
+     "t": 98,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e99",
+     "t": 99,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e100",
+     "t": 100,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e101",
+     "t": 101,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e102",
+     "t": 102,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e103",
+     "t": 103,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e104",
+     "t": 104,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e105",
+     "t": 105,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e106",
+     "t": 106,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e107",
+     "t": 107,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e108",
+     "t": 108,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e109",
+     "t": 109,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e110",
+     "t": 110,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e111",
+     "t": 111,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e112",
+     "t": 112,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e113",
+     "t": 113,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e114",
+     "t": 114,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e115",
+     "t": 115,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e116",
+     "t": 116,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e117",
+     "t": 117,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e118",
+     "t": 118,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e119",
+     "t": 119,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e120",
+     "t": 120,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e121",
+     "t": 121,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e122",
+     "t": 122,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e123",
+     "t": 123,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e124",
+     "t": 124,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e125",
+     "t": 125,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e126",
+     "t": 126,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e127",
+     "t": 127,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e128",
+     "t": 128,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e129",
+     "t": 129,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e130",
+     "t": 130,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e131",
+     "t": 131,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e132",
+     "t": 132,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e133",
+     "t": 133,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e134",
+     "t": 134,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e135",
+     "t": 135,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e136",
+     "t": 136,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e137",
+     "t": 137,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e138",
+     "t": 138,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e139",
+     "t": 139,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e140",
+     "t": 140,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e141",
+     "t": 141,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e142",
+     "t": 142,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e143",
+     "t": 143,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e144",
+     "t": 144,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e145",
+     "t": 145,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e146",
+     "t": 146,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e147",
+     "t": 147,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e148",
+     "t": 148,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e149",
+     "t": 149,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e150",
+     "t": 150,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e151",
+     "t": 151,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e152",
+     "t": 152,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e153",
+     "t": 153,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e154",
+     "t": 154,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e155",
+     "t": 155,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e156",
+     "t": 156,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e157",
+     "t": 157,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e158",
+     "t": 158,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e159",
+     "t": 159,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e160",
+     "t": 160,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e161",
+     "t": 161,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e162",
+     "t": 162,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e163",
+     "t": 163,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e164",
+     "t": 164,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e165",
+     "t": 165,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e166",
+     "t": 166,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e167",
+     "t": 167,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e168",
+     "t": 168,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e169",
+     "t": 169,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e170",
+     "t": 170,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e171",
+     "t": 171,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e172",
+     "t": 172,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e173",
+     "t": 173,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e174",
+     "t": 174,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e175",
+     "t": 175,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e176",
+     "t": 176,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e177",
+     "t": 177,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e178",
+     "t": 178,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e179",
+     "t": 179,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e180",
+     "t": 180,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e181",
+     "t": 181,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e182",
+     "t": 182,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e183",
+     "t": 183,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e184",
+     "t": 184,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e185",
+     "t": 185,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e186",
+     "t": 186,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e187",
+     "t": 187,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e188",
+     "t": 188,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e189",
+     "t": 189,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e190",
+     "t": 190,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e191",
+     "t": 191,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e192",
+     "t": 192,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e193",
+     "t": 193,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e194",
+     "t": 194,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e195",
+     "t": 195,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e196",
+     "t": 196,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e197",
+     "t": 197,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e198",
+     "t": 198,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e199",
+     "t": 199,
+     "score": 1,
+     "note": "n"
+    },
+    {
+     "id": "e200",
+     "t": 200,
+     "score": 1,
+     "note": "n"
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quiet_market",
+   "planted": "none",
+   "label": "An ordinary market day: events arrive evenly, no burst.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "bread_sold",
+     "t": 5,
+     "score": 40,
+     "note": "The bakery sells out of bread."
+    },
+    {
+     "id": "cart_noise",
+     "t": 30,
+     "score": 5,
+     "note": "A cart rattles past."
+    },
+    {
+     "id": "fish_price",
+     "t": 70,
+     "score": 45,
+     "note": "Fish price rises to 3 coins."
+    },
+    {
+     "id": "dog_bark",
+     "t": 100,
+     "score": 4,
+     "note": "A dog barks at the well."
+    },
+    {
+     "id": "roof_leak",
+     "t": 130,
+     "score": 50,
+     "note": "The school roof leaks."
+    },
+    {
+     "id": "bell_toll",
+     "t": 160,
+     "score": 30,
+     "note": "The noon bell rings."
+    },
+    {
+     "id": "vote_set",
+     "t": 190,
+     "score": 55,
+     "note": "The council sets the vote for Friday."
+    },
+    {
+     "id": "wind_gust",
+     "t": 220,
+     "score": 20,
+     "note": "A gust of wind."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_bread",
+     "ask": "What sold out at the bakery?",
+     "needs": [
+      "bread_sold"
+     ]
+    },
+    {
+     "id": "q_fish",
+     "ask": "What does fish cost now?",
+     "needs": [
+      "fish_price"
+     ]
+    },
+    {
+     "id": "q_roof_vote",
+     "ask": "What needs fixing before the vote?",
+     "needs": [
+      "roof_leak",
+      "vote_set"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "busy_council",
+   "planted": "need_over_cap",
+   "label": "Three decisions in one council minute: more needed items than one bucket may hold.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "road_plan",
+     "t": 10,
+     "score": 40,
+     "note": "The council approves the road plan."
+    },
+    {
+     "id": "tax_cut",
+     "t": 20,
+     "score": 38,
+     "note": "Market tax is cut by one coin."
+    },
+    {
+     "id": "school_hours",
+     "t": 30,
+     "score": 36,
+     "note": "School starts an hour later."
+    },
+    {
+     "id": "rain_again",
+     "t": 90,
+     "score": 12,
+     "note": "Rain again in the afternoon."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_council",
+     "ask": "What did the council decide?",
+     "needs": [
+      "road_plan",
+      "tax_cut",
+      "school_hours"
+     ]
+    }
+   ]
+  }
+ ]
+}

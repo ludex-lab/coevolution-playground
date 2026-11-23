@@ -1,0 +1,2642 @@
+{
+ "fixture_version": 1,
+ "label": "Toy 4-entry FIFO with a golden reference model (fixture-authored, synthetic)",
+ "design": {
+  "name": "toy_fifo4",
+  "depth": 4
+ },
+ "spec": {
+  "title": "Toy FIFO specification (fixture-authored)",
+  "clauses": [
+   {
+    "id": "S1",
+    "rule": "capacity",
+    "depth": 4,
+    "text": "The FIFO holds at most 4 entries. A push while it holds 4 is refused (ok is false); a push while it holds fewer is accepted."
+   },
+   {
+    "id": "S2",
+    "rule": "order",
+    "text": "A pop while the FIFO is not empty is served and returns the oldest accepted value still held."
+   },
+   {
+    "id": "S3",
+    "rule": "underflow",
+    "text": "A pop while the FIFO is empty is not served and returns no value."
+   },
+   {
+    "id": "S4",
+    "rule": "count",
+    "text": "After every operation, count equals the number of entries held."
+   },
+   {
+    "id": "S5",
+    "rule": "flags",
+    "text": "After every operation, full is true exactly when 4 entries are held and empty is true exactly when none are held."
+   }
+  ]
+ },
+ "cases": [
+  {
+   "id": "c0",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c8",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c14",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c15",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c16",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c17",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c18",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c19",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c20",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c21",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c22",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c23",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c24",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c25",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c26",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c27",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c28",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c29",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c30",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c31",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c32",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c33",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c34",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c35",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c36",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c37",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c38",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c39",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c40",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c41",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c42",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c43",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c44",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c45",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c46",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c47",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c48",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c49",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "c50",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  }
+ ]
+}

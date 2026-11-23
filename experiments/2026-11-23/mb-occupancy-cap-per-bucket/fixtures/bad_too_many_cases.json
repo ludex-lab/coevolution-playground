@@ -1,0 +1,2085 @@
+{
+ "fixture_version": 1,
+ "label": "Naru village day (synthetic): festival burst, quiet market, busy council",
+ "cases": [
+  {
+   "id": "c0",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c1",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c2",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c3",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c4",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c5",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c6",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c7",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c8",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c9",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c10",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c11",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c12",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c13",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c14",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c15",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c16",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c17",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c18",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c19",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "c20",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  }
+ ]
+}

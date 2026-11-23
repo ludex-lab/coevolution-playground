@@ -1,0 +1,85 @@
+{
+ "experiment": "mb-occupancy-cap-per-bucket",
+ "kind": "method sketch (Morning Brief 2026-11-23, Track C, pick #1); not a reproduction",
+ "clean_room": true,
+ "code_copied": false,
+ "network_used": false,
+ "paid_api_used": false,
+ "model_calls": false,
+ "stdlib_only": true,
+ "key_sampler_implemented": false,
+ "source": {
+  "arxiv": "2611.25649",
+  "url": "https://arxiv.org/abs/2611.25649",
+  "citation_title": "KeyMem: Temporal Occupancy Control for Robust Streaming VideoLLM Memory",
+  "authors_as_listed": "Wei Song, Yuxin Cao, Xiao Cheng, Christy Jie Liang, Xi Zheng, Leo Yu Zhang",
+  "licence": "CC BY 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+  "repository": "none listed on the abstract page",
+  "use": "method only, paraphrased: fixed-duration time buckets with a hard per-bucket slot cap over a bounded memory; the optional secret-key sampler, rank normalisation of base scores and every model component are left out"
+ },
+ "declared_choices_not_from_the_paper": [
+  "rank order (score, t, id): lower score leaves first, then the older item, then the smaller id",
+  "when the whole memory is over capacity, the most crowded bucket gives up its lowest-ranked item; a tie among equally crowded buckets goes to the lowest-ranked of their lowest items",
+  "the recency arm (plain FIFO with global capacity only) as a second weak baseline",
+  "the gate: a planted burst must crowd out an earlier needed item under score_only while bucket_cap holds the cap and every needed item"
+ ],
+ "measured": {
+  "village": {
+   "closed": 3,
+   "total": 3,
+   "planted_bursts": 1,
+   "weak_failures_in_planted_bursts": {"score_only": 1, "recency": 1},
+   "arm_gates": {"score_only": "FAIL", "recency": "FAIL", "bucket_cap": "PASS"}
+  },
+  "more": {
+   "closed": 3,
+   "total": 3,
+   "planted_bursts": 2,
+   "weak_failures_in_planted_bursts": {"score_only": 2, "recency": 2},
+   "arm_gates": {"score_only": "FAIL", "recency": "FAIL", "bucket_cap": "PASS"}
+  },
+  "note": "counts of synthetic planted cases, not rates; they say nothing about video models"
+ },
+ "on_expiry": "DENY",
+ "timeouts": {
+  "tool": "none",
+  "mutants": {
+   "seconds": 300,
+   "on_expiry": "DENY",
+   "rule": "a timed-out mutant is reported TIMEOUT and is never counted as a kill"
+  }
+ },
+ "on_unmeasured": [
+  {
+   "id": "paper_caption_burst_figures",
+   "what": "author-reported: 20 s of burned-in captions occupy 84% of an 8 s memory and lower accuracy over all clips from 79.4% to 58.3% (Qwen2.5-VL-7B)",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "paper_quota_figures",
+   "what": "author-reported: temporal quotas raise the worst accuracy of attention-based retention at the smaller budget from 42.2% to 73.3-76.1%",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "key_sampler",
+   "what": "the paper's optional secret-key sampling of survivors and its behaviour under an adaptive adversary; not implemented",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "rank_normalisation",
+   "what": "rank normalisation of an arbitrary base score; fixture scores are already one integer scale",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "video_tokens",
+   "what": "visual tokens, frames, attention scores or any model; items here are synthetic village notes",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "choice_of_bucket_size_and_cap",
+   "what": "how to pick bucket_seconds and bucket_cap for a real village memory; fixtures declare them",
+   "status": "UNVERIFIED"
+  }
+ ]
+}

@@ -1,0 +1,2 @@
+*.jsonl
+!research/uptake-e2/e2_telemetry.jsonl

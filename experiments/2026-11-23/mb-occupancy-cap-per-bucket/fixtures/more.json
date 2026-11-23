@@ -1,0 +1,173 @@
+{
+ "fixture_version": 1,
+ "label": "More cases (synthetic): two bursts, ties, Korean text",
+ "cases": [
+  {
+   "id": "two_bursts",
+   "planted": "burst",
+   "label": "A bell-ringing burst and a parade burst in different minutes.",
+   "capacity": 5,
+   "bucket_seconds": 30,
+   "bucket_cap": 1,
+   "items": [
+    {
+     "id": "well_water",
+     "t": 0,
+     "score": 10,
+     "note": "The well water tastes of iron."
+    },
+    {
+     "id": "bell_1",
+     "t": 31,
+     "score": 80,
+     "note": "Bells ring for the wedding."
+    },
+    {
+     "id": "bell_2",
+     "t": 32,
+     "score": 81,
+     "note": "More bells."
+    },
+    {
+     "id": "bell_3",
+     "t": 33,
+     "score": 82,
+     "note": "Bells again."
+    },
+    {
+     "id": "parade_1",
+     "t": 61,
+     "score": 85,
+     "note": "The parade starts."
+    },
+    {
+     "id": "parade_2",
+     "t": 62,
+     "score": 86,
+     "note": "Drums in the parade."
+    },
+    {
+     "id": "parade_3",
+     "t": 63,
+     "score": 84,
+     "note": "Dancers in the parade."
+    },
+    {
+     "id": "ox_sick",
+     "t": 95,
+     "score": 15,
+     "note": "Farmer Lee's ox is sick."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_water",
+     "ask": "What is wrong with the well water?",
+     "needs": [
+      "well_water"
+     ]
+    },
+    {
+     "id": "q_ox",
+     "ask": "Whose ox is sick?",
+     "needs": [
+      "ox_sick"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "equal_scores",
+   "planted": "none",
+   "label": "Equal scores everywhere: the tie-break alone picks who leaves.",
+   "capacity": 3,
+   "bucket_seconds": 10,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "a_note",
+     "t": 0,
+     "score": 7,
+     "note": "Note a."
+    },
+    {
+     "id": "b_note",
+     "t": 0,
+     "score": 7,
+     "note": "Note b."
+    },
+    {
+     "id": "c_note",
+     "t": 12,
+     "score": 7,
+     "note": "Note c."
+    },
+    {
+     "id": "d_note",
+     "t": 25,
+     "score": 7,
+     "note": "Note d."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_last",
+     "ask": "What were the latest notes?",
+     "needs": [
+      "c_note",
+      "d_note"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "hangul_burst",
+   "planted": "burst",
+   "label": "마을 축제 불꽃놀이가 기억을 가득 채운다.",
+   "capacity": 4,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 20,
+     "note": "미나가 우물을 고쳤다."
+    },
+    {
+     "id": "fire_1",
+     "t": 70,
+     "score": 90,
+     "note": "불꽃놀이 시작."
+    },
+    {
+     "id": "fire_2",
+     "t": 71,
+     "score": 91,
+     "note": "두 번째 불꽃."
+    },
+    {
+     "id": "fire_3",
+     "t": 72,
+     "score": 92,
+     "note": "세 번째 불꽃."
+    },
+    {
+     "id": "fire_4",
+     "t": 73,
+     "score": 93,
+     "note": "마지막 불꽃."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "누가 우물을 고쳤나?",
+     "needs": [
+      "well_fixed"
+     ]
+    }
+   ]
+  }
+ ]
+}

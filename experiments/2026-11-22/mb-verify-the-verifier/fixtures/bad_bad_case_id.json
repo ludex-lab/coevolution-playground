@@ -1,0 +1,386 @@
+{
+ "fixture_version": 1,
+ "label": "Toy 4-entry FIFO with a golden reference model (fixture-authored, synthetic)",
+ "design": {
+  "name": "toy_fifo4",
+  "depth": 4
+ },
+ "spec": {
+  "title": "Toy FIFO specification (fixture-authored)",
+  "clauses": [
+   {
+    "id": "S1",
+    "rule": "capacity",
+    "depth": 4,
+    "text": "The FIFO holds at most 4 entries. A push while it holds 4 is refused (ok is false); a push while it holds fewer is accepted."
+   },
+   {
+    "id": "S2",
+    "rule": "order",
+    "text": "A pop while the FIFO is not empty is served and returns the oldest accepted value still held."
+   },
+   {
+    "id": "S3",
+    "rule": "underflow",
+    "text": "A pop while the FIFO is empty is not served and returns no value."
+   },
+   {
+    "id": "S4",
+    "rule": "count",
+    "text": "After every operation, count equals the number of entries held."
+   },
+   {
+    "id": "S5",
+    "rule": "flags",
+    "text": "After every operation, full is true exactly when 4 entries are held and empty is true exactly when none are held."
+   }
+  ]
+ },
+ "cases": [
+  {
+   "id": "clean fill",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "clean_interleaved",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 1
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "push",
+     "value": 2
+    },
+    {
+     "op": "push",
+     "value": 3
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "push",
+     "value": 4
+    }
+   ]
+  },
+  {
+   "id": "escape_shared_overwrite",
+   "planted": "escape",
+   "dut": "overwrite_when_full",
+   "golden": "overwrite_when_full",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ],
+   "note": "The golden model shares the design's overwrite-when-full bug, so every compared field agrees."
+  },
+  {
+   "id": "escape_shared_lifo",
+   "planted": "escape",
+   "dut": "lifo",
+   "golden": "lifo",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ],
+   "note": "The golden model shares the design's last-in-first-out bug."
+  },
+  {
+   "id": "escape_unwatched_flag",
+   "planted": "escape",
+   "dut": "full_flag_early",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ],
+   "note": "The scoreboard compares data and handshakes only, so the early full flag is never compared."
+  },
+  {
+   "id": "real_fail_underflow",
+   "planted": "real_fail",
+   "dut": "underflow_returns_data",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "real_fail_lifo",
+   "planted": "real_fail",
+   "dut": "lifo",
+   "golden": "correct",
+   "compare": [
+    "value"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  }
+ ]
+}

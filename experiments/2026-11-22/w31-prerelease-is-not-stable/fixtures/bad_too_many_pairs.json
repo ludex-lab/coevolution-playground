@@ -1,0 +1,1212 @@
+{
+ "fixture_version": 1,
+ "label": "stable range >= 1.0.0 (fixture-authored)",
+ "pairs": [
+  {
+   "id": "p0",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p1",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p2",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p3",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p4",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p5",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p6",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p7",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p8",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p9",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p10",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p11",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p12",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p13",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p14",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p15",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p16",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p17",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p18",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p19",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p20",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p21",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p22",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p23",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p24",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p25",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p26",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p27",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p28",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p29",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p30",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p31",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p32",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p33",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p34",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p35",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p36",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p37",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p38",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p39",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p40",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p41",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p42",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p43",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p44",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p45",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p46",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p47",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p48",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p49",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p50",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p51",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p52",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p53",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p54",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p55",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p56",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p57",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p58",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p59",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p60",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p61",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p62",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p63",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p64",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p65",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p66",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p67",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p68",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p69",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p70",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p71",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p72",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p73",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p74",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p75",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p76",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p77",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p78",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p79",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p80",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p81",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p82",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p83",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p84",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p85",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p86",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p87",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p88",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p89",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p90",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p91",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p92",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p93",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p94",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p95",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p96",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p97",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p98",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p99",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p100",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p101",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p102",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p103",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p104",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p105",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p106",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p107",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p108",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p109",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p110",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p111",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p112",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p113",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p114",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p115",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p116",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p117",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p118",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p119",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p120",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p121",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p122",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p123",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p124",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p125",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p126",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p127",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p128",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p129",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p130",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p131",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p132",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p133",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p134",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p135",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p136",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p137",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p138",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p139",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p140",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p141",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p142",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p143",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p144",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p145",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p146",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p147",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p148",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p149",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p150",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p151",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p152",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p153",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p154",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p155",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p156",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p157",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p158",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p159",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p160",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p161",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p162",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p163",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p164",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p165",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p166",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p167",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p168",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p169",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p170",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p171",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p172",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p173",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p174",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p175",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p176",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p177",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p178",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p179",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p180",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p181",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p182",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p183",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p184",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p185",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p186",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p187",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p188",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p189",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p190",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p191",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p192",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p193",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p194",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p195",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p196",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p197",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p198",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p199",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  },
+  {
+   "id": "p200",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0",
+   "expected": "SATISFIES"
+  }
+ ]
+}

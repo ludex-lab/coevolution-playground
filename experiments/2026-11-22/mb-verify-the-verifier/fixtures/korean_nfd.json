@@ -1,0 +1,386 @@
+{
+ "fixture_version": 1,
+ "label": "4칸 FIFO 장난감 설계와 골든 모델 (픽스처 작성, 합성)",
+ "design": {
+  "name": "toy_fifo4",
+  "depth": 4
+ },
+ "spec": {
+  "title": "장난감 FIFO 명세",
+  "clauses": [
+   {
+    "id": "S1",
+    "rule": "capacity",
+    "depth": 4,
+    "text": "FIFO는 최대 4개를 담는다. 4개일 때의 push는 거부된다."
+   },
+   {
+    "id": "S2",
+    "rule": "order",
+    "text": "비어 있지 않을 때의 pop은 가장 오래된 값을 돌려준다."
+   },
+   {
+    "id": "S3",
+    "rule": "underflow",
+    "text": "비어 있을 때의 pop은 처리되지 않고 값을 돌려주지 않는다."
+   },
+   {
+    "id": "S4",
+    "rule": "count",
+    "text": "매 연산 뒤 count는 담긴 개수와 같다."
+   },
+   {
+    "id": "S5",
+    "rule": "flags",
+    "text": "full과 empty 플래그는 담긴 개수와 맞아야 한다."
+   }
+  ]
+ },
+ "cases": [
+  {
+   "id": "깨끗한_채우고_비우기",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "clean_interleaved",
+   "planted": "clean",
+   "dut": "correct",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 1
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "push",
+     "value": 2
+    },
+    {
+     "op": "push",
+     "value": 3
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "push",
+     "value": 4
+    }
+   ]
+  },
+  {
+   "id": "escape_shared_overwrite",
+   "planted": "escape",
+   "dut": "overwrite_when_full",
+   "golden": "overwrite_when_full",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ],
+   "note": "골든 모델이 같은 버그를 공유한다."
+  },
+  {
+   "id": "escape_shared_lifo",
+   "planted": "escape",
+   "dut": "lifo",
+   "golden": "lifo",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ],
+   "note": "The golden model shares the design's last-in-first-out bug."
+  },
+  {
+   "id": "escape_unwatched_flag",
+   "planted": "escape",
+   "dut": "full_flag_early",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ],
+   "note": "The scoreboard compares data and handshakes only, so the early full flag is never compared."
+  },
+  {
+   "id": "real_fail_underflow",
+   "planted": "real_fail",
+   "dut": "underflow_returns_data",
+   "golden": "correct",
+   "compare": [
+    "ok",
+    "served",
+    "value",
+    "count",
+    "full",
+    "empty"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  },
+  {
+   "id": "real_fail_lifo",
+   "planted": "real_fail",
+   "dut": "lifo",
+   "golden": "correct",
+   "compare": [
+    "value"
+   ],
+   "stimulus": [
+    {
+     "op": "push",
+     "value": 10
+    },
+    {
+     "op": "push",
+     "value": 20
+    },
+    {
+     "op": "push",
+     "value": 30
+    },
+    {
+     "op": "push",
+     "value": 40
+    },
+    {
+     "op": "push",
+     "value": 50
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    },
+    {
+     "op": "pop"
+    }
+   ]
+  }
+ ]
+}

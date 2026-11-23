@@ -1,0 +1,53 @@
+{
+ "experiment": "w32-record-manifest-presence",
+ "kind": "Lab Dig 2 Wave32 Top build; clean-room stdlib presence check",
+ "clean_room": true,
+ "code_copied": false,
+ "network_used": false,
+ "github_api_used": false,
+ "upstream_code_run": false,
+ "stdlib_only": true,
+ "hashes_data": false,
+ "writes_or_restores_files": false,
+ "source": {
+  "need": "the public Naru measurements page and the E1 and E2 record covers in ludex-lab/ludex at main 199dd04dc7382a4aab5173cd3d7c37f9021bebf1",
+  "repository_licence": "MIT",
+  "use": "file names and the shape of the cover Files tables only; the fixtures are hand-made, the prose in them is new, and no site page or upstream file is vendored"
+ },
+ "measured": {
+  "note": "on the hand-made fixtures with fixtures/ignore_rules.txt; this is the fixture's listing, not a live tree",
+  "e1": {"named": 20, "listed": 20, "missing": 4, "unparsed": 2, "missing_ignored_by_pattern": 4},
+  "e2": {"named": 13, "listed": 12, "missing": 2, "unparsed": 0, "missing_ignored_by_pattern": 2}
+ },
+ "on_expiry": "DENY",
+ "timeouts": {
+  "tool": "none",
+  "mutants": {
+   "seconds": 300,
+   "on_expiry": "DENY",
+   "rule": "a timed-out mutant is TIMEOUT and a mutant that does not import or only errors is CRASH; neither is a kill"
+  }
+ },
+ "caps": {
+  "input_bytes": {"limit": 65536, "on_expiry": "DENY"},
+  "table_rows": {"limit": 50, "on_expiry": "DENY"},
+  "named_files": {"limit": 500, "on_expiry": "DENY"},
+  "listing_names": {"limit": 2000, "on_expiry": "DENY"},
+  "ignore_lines": {"limit": 1000, "on_expiry": "DENY"},
+  "name_chars": {"limit": 255, "on_expiry": "DENY"}
+ },
+ "does_not_claim": [
+  "that a missing file never existed",
+  "that any E1 or E2 result is wrong",
+  "anything about what a missing file contains",
+  "that gate time stamps are a battery's first run"
+ ],
+ "on_unmeasured": [
+  {"id": "later_commits", "what": "presence of a named file in a commit after the pinned tree", "status": "UNVERIFIED"},
+  {"id": "private_copies", "what": "copies on a caretaker's private disk or any non-public store", "status": "UNVERIFIED"},
+  {"id": "file_contents", "what": "the contents and numbers inside the missing files", "status": "UNVERIFIED"},
+  {"id": "live_tree", "what": "the live repository listing today; the fixtures mirror the pinned tree", "status": "UNVERIFIED"},
+  {"id": "full_gitignore_semantics", "what": "git's parent-folder exclusion rule, escapes and trailing-space escapes; the matcher covers basename, anchored, '*', '?', '[...]', '**' and '!' rules only", "status": "UNVERIFIED"},
+  {"id": "other_records", "what": "research folders other than E1 and E2, which the page does not present as records", "status": "UNVERIFIED"}
+ ]
+}

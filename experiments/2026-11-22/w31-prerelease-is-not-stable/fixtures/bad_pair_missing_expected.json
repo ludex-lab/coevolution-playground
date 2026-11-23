@@ -1,0 +1,11 @@
+{
+ "fixture_version": 1,
+ "label": "stable range >= 1.0.0 (fixture-authored)",
+ "pairs": [
+  {
+   "id": "normal",
+   "candidate": "1.0.0",
+   "requirement": ">= 1.0.0"
+  }
+ ]
+}

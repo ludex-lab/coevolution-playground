@@ -1,0 +1,231 @@
+{
+ "fixture_version": 1,
+ "label": "Naru village day (synthetic): festival burst, quiet market, busy council",
+ "cases": [
+  {
+   "id": "festival_burst",
+   "planted": "burst",
+   "label": "A fireworks burst at the harvest festival floods the memory with bright frames.",
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "well_fixed",
+     "t": 10,
+     "score": 30,
+     "note": "Mina repairs the village well."
+    },
+    {
+     "id": "seed_swap",
+     "t": 40,
+     "score": 22,
+     "note": "Joon and Ara swap bean seeds at the gate."
+    },
+    {
+     "id": "rain_note",
+     "t": 75,
+     "score": 18,
+     "note": "Light rain over the east field."
+    },
+    {
+     "id": "bridge_crack",
+     "t": 100,
+     "score": 26,
+     "note": "A crack is seen on the north bridge."
+    },
+    {
+     "id": "fireworks_1",
+     "t": 125,
+     "score": 90,
+     "note": "Fireworks open over the square."
+    },
+    {
+     "id": "fireworks_2",
+     "t": 128,
+     "score": 92,
+     "note": "A second volley of fireworks."
+    },
+    {
+     "id": "fireworks_3",
+     "t": 131,
+     "score": 95,
+     "note": "Gold fireworks, the crowd cheers."
+    },
+    {
+     "id": "fireworks_4",
+     "t": 134,
+     "score": 91,
+     "note": "Red fireworks over the pond."
+    },
+    {
+     "id": "fireworks_5",
+     "t": 137,
+     "score": 94,
+     "note": "Fireworks finale."
+    },
+    {
+     "id": "fireworks_6",
+     "t": 140,
+     "score": 93,
+     "note": "Smoke drifts after the fireworks."
+    },
+    {
+     "id": "lost_cat",
+     "t": 200,
+     "score": 35,
+     "note": "Grandma Oh reports her cat missing."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_well",
+     "ask": "Who repaired the well?",
+     "needs": [
+      "well_fixed"
+     ]
+    },
+    {
+     "id": "q_bridge",
+     "ask": "Is anything wrong with the north bridge?",
+     "needs": [
+      "bridge_crack"
+     ]
+    },
+    {
+     "id": "q_cat",
+     "ask": "Whose cat went missing?",
+     "needs": [
+      "lost_cat"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "quiet_market",
+   "planted": "none",
+   "label": "An ordinary market day: events arrive evenly, no burst.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "bread_sold",
+     "t": 5,
+     "score": 40,
+     "note": "The bakery sells out of bread."
+    },
+    {
+     "id": "cart_noise",
+     "t": 30,
+     "score": 5,
+     "note": "A cart rattles past."
+    },
+    {
+     "id": "fish_price",
+     "t": 70,
+     "score": 45,
+     "note": "Fish price rises to 3 coins."
+    },
+    {
+     "id": "dog_bark",
+     "t": 100,
+     "score": 4,
+     "note": "A dog barks at the well."
+    },
+    {
+     "id": "roof_leak",
+     "t": 130,
+     "score": 50,
+     "note": "The school roof leaks."
+    },
+    {
+     "id": "bell_toll",
+     "t": 160,
+     "score": 30,
+     "note": "The noon bell rings."
+    },
+    {
+     "id": "vote_set",
+     "t": 190,
+     "score": 55,
+     "note": "The council sets the vote for Friday."
+    },
+    {
+     "id": "wind_gust",
+     "t": 220,
+     "score": 20,
+     "note": "A gust of wind."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_bread",
+     "ask": "What sold out at the bakery?",
+     "needs": [
+      "bread_sold"
+     ]
+    },
+    {
+     "id": "q_fish",
+     "ask": "What does fish cost now?",
+     "needs": [
+      "fish_price"
+     ]
+    },
+    {
+     "id": "q_roof_vote",
+     "ask": "What needs fixing before the vote?",
+     "needs": [
+      "roof_leak",
+      "vote_set"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "busy_council",
+   "planted": "need_over_cap",
+   "label": "Three decisions in one council minute: more needed items than one bucket may hold.",
+   "capacity": 6,
+   "bucket_seconds": 60,
+   "bucket_cap": 2,
+   "items": [
+    {
+     "id": "road_plan",
+     "t": 10,
+     "score": 40,
+     "note": "The council approves the road plan."
+    },
+    {
+     "id": "tax_cut",
+     "t": 20,
+     "score": 38,
+     "note": "Market tax is cut by one coin."
+    },
+    {
+     "id": "school_hours",
+     "t": 30,
+     "score": 36,
+     "note": "School starts an hour later."
+    },
+    {
+     "id": "rain_again",
+     "t": 90,
+     "score": 12,
+     "note": "Rain again in the afternoon."
+    }
+   ],
+   "queries": [
+    {
+     "id": "q_council",
+     "ask": "What did the council decide?",
+     "needs": [
+      "road_plan",
+      "tax_cut",
+      "school_hours"
+     ]
+    }
+   ]
+  }
+ ]
+}

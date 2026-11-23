@@ -1,0 +1,13 @@
+BUNDLE_README.md
+PREREG_PUBLISH_RECEIPT.json
+PREREG_uptake_e2.md
+VERDICT_uptake_e2.md
+analysis_uptake_e2.py
+driver_uptake_e2.py
+e2_drift_restamp.json
+e2_gate_battery.json
+e2_pool.json
+e2_result.json
+e2_selftest_agy.json
+test_uptake_e2_units.py
+sub/e2_battery.jsonl

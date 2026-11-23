@@ -1,0 +1,8 @@
+# Hand-made ignore rules in .gitignore syntax, mirroring the rule that covers the record folders.
+__pycache__/
+*.pyc
+*.jsonl
+# one tracked exception elsewhere in the repository
+!creatures/Comet/store/*.jsonl
+.env
+fields/*/*.json

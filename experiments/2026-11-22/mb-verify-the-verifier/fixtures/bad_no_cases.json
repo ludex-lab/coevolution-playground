@@ -1,0 +1,40 @@
+{
+ "fixture_version": 1,
+ "label": "Toy 4-entry FIFO with a golden reference model (fixture-authored, synthetic)",
+ "design": {
+  "name": "toy_fifo4",
+  "depth": 4
+ },
+ "spec": {
+  "title": "Toy FIFO specification (fixture-authored)",
+  "clauses": [
+   {
+    "id": "S1",
+    "rule": "capacity",
+    "depth": 4,
+    "text": "The FIFO holds at most 4 entries. A push while it holds 4 is refused (ok is false); a push while it holds fewer is accepted."
+   },
+   {
+    "id": "S2",
+    "rule": "order",
+    "text": "A pop while the FIFO is not empty is served and returns the oldest accepted value still held."
+   },
+   {
+    "id": "S3",
+    "rule": "underflow",
+    "text": "A pop while the FIFO is empty is not served and returns no value."
+   },
+   {
+    "id": "S4",
+    "rule": "count",
+    "text": "After every operation, count equals the number of entries held."
+   },
+   {
+    "id": "S5",
+    "rule": "flags",
+    "text": "After every operation, full is true exactly when 4 entries are held and empty is true exactly when none are held."
+   }
+  ]
+ },
+ "cases": []
+}

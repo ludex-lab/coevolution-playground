@@ -1,0 +1,103 @@
+{
+ "experiment": "w31-prerelease-is-not-stable",
+ "kind": "clean-room method sketch (Lab Dig 2 Wave31 build #1)",
+ "clean_room": true,
+ "code_copied": false,
+ "network_used": false,
+ "paid_api_used": false,
+ "stdlib_only": true,
+ "source": {
+  "title": "Semantic Versioning 2.0.0",
+  "url": "https://semver.org/spec/v2.0.0.html",
+  "author_as_shown": "originally authored by Tom Preston-Werner (the page's About section)",
+  "licence": "CC BY 3.0",
+  "licence_url": "https://creativecommons.org/licenses/by/3.0/",
+  "use": "method only: the precedence rules of section 11 and the version grammar; no text or code copied beyond the short quotes below",
+  "short_quotes": [
+   "have a lower precedence",
+   "compared numerically",
+   "Numeric identifiers MUST NOT include leading zeroes",
+   "ignored when determining version precedence",
+   "might not satisfy the intended compatibility requirements"
+  ]
+ },
+ "range_semantics": {
+  "operators": [
+   ">=",
+   "=="
+  ],
+  "status": "declared policy, not a SemVer rule",
+  "rule": "'>=' and '==' use section 11 precedence; a stable range also rejects every candidate with pre-release identifiers"
+ },
+ "measured": {
+  "main": {
+   "closed": 5,
+   "total": 5,
+   "weak_wrong": 3
+  },
+  "more": {
+   "closed": 11,
+   "total": 11,
+   "weak_wrong": 5
+  }
+ },
+ "on_expiry": "DENY",
+ "timeouts": {
+  "tool": "none",
+  "mutants": {
+   "seconds": 300,
+   "on_expiry": "DENY",
+   "rule": "a timed-out mutant is reported TIMEOUT and is never counted as a kill"
+  }
+ },
+ "caps": {
+  "file_bytes": {
+   "limit": 65536,
+   "on_expiry": "DENY"
+  },
+  "pairs": {
+   "limit": 200,
+   "on_expiry": "DENY"
+  },
+  "version_chars": {
+   "limit": 128,
+   "on_expiry": "DENY"
+  },
+  "text_chars": {
+   "limit": 200,
+   "on_expiry": "DENY"
+  }
+ },
+ "on_unmeasured": [
+  {
+   "id": "other_operators",
+   "what": "range operators other than '>=' and '==' (such as <, >, ~, ^, unions); they are refused, not evaluated",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "ecosystem_solvers",
+   "what": "agreement with npm, PEP 440 or any package index resolver",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "pre_release_ranges",
+   "what": "ranges that name a pre-release (refused as bad_requirement)",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "build_metadata_order",
+   "what": "ordering among build metadata values; only equality of precedence is tested",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "very_large_numbers",
+   "what": "numeric identifiers beyond the 128-character version cap",
+   "status": "UNVERIFIED"
+  },
+  {
+   "id": "live_spec",
+   "what": "the live semver.org page after the saved copy used for this sketch",
+   "status": "UNVERIFIED"
+  }
+ ]
+}

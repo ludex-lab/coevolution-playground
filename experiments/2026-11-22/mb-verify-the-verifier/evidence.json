@@ -1,0 +1,82 @@
+{
+ "experiment": "mb-verify-the-verifier",
+ "paper": {
+  "arxiv": "2611.26588",
+  "title": "Verify the Verifier: Specification-Grounded LLM Cross-Checking for Bugs That Escape UVM Scoreboards",
+  "title_source": "citation_title meta of the saved abstract page",
+  "licence": "arXiv nonexclusive-distrib 1.0",
+  "code": null
+ },
+ "licence_line": "paper arXiv nonexclusive-distrib 1.0; method only; no upstream repository exists; clean-room stdlib code",
+ "clean_room": true,
+ "network_used": false,
+ "paid_api_used": false,
+ "model_calls": 0,
+ "stdlib_only": true,
+ "model_role": "the paper's model-based cross-check is stood in for by a rule-based clause evaluator (clause_audit); no model is called",
+ "fixture": "fixtures/main.json (fixture-authored toy 4-entry FIFO, five spec clauses, five design models, seven planted cases)",
+ "measured": {
+  "summary": {
+   "cases": 7,
+   "escapes_passed_by_scoreboard": "3/3",
+   "escapes_failed_by_clause_audit": "3/3",
+   "clean_failed_by_clause_audit": "0/2",
+   "real_fails_failed_by_scoreboard": "2/2",
+   "real_fails_failed_by_clause_audit": "2/2",
+   "all_cases_match_their_plant": true
+  },
+  "checks": {
+   "a_escapes_pass_scoreboard_and_fail_a_clause": true,
+   "b_clean_cases_pass_both": true,
+   "c_real_fails_fail_both": true,
+   "d_offline": true
+  },
+  "note": "planted counts on a fixture-authored fixture; not model or real-world rates"
+ },
+ "timeouts": {
+  "tool": "none",
+  "mutants": {
+   "seconds": 300,
+   "on_expiry": "DENY",
+   "rule": "a timed-out mutant is reported TIMEOUT and is not counted as killed"
+  }
+ },
+ "caps": {
+  "file_bytes": {
+   "limit": 100000,
+   "on_expiry": "DENY"
+  },
+  "cases": {
+   "limit": 50,
+   "on_expiry": "DENY"
+  },
+  "steps": {
+   "limit": 64,
+   "on_expiry": "DENY"
+  },
+  "text_chars": {
+   "limit": 300,
+   "on_expiry": "DENY"
+  }
+ },
+ "on_unmeasured": {
+  "why": "Author-reported on the abstract page; not reproduced here and not comparable with the planted counts.",
+  "claims": [
+   {
+    "id": "P1",
+    "what": "564 bugs inserted into four OpenTitan IPs",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "P2",
+    "what": "68 of them are candidate scoreboard escapes (non-equivalent, exercised by the tests, yet passing)",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "P3",
+    "what": "41 confirmed as scoreboard escapes, with assertions failing on the buggy design and proven on the original",
+    "status": "UNVERIFIED"
+   }
+  ]
+ }
+}

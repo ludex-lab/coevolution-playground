@@ -1,0 +1,227 @@
+{
+ "experiment": "w30-wave-chronicle",
+ "kind": "clean-room team sketch (Lab Dig 2 Wave30 build #1); no paper, no upstream repository",
+ "clean_room": true,
+ "paper": null,
+ "upstream_code": null,
+ "network_used": false,
+ "paid_api_used": false,
+ "subprocess_network": false,
+ "stdlib_only": true,
+ "snapshot": {
+  "main": "f2fa1e5d341f2f022d5b4a61d7563a6560db0212",
+  "folder": "fixtures/snapshot-f2fa1e5d",
+  "pins_file": "fixtures/snapshot-f2fa1e5d/pins.txt",
+  "note": "13 day READMEs 2026-11-09..2026-11-21 copied byte-exact; each git blob SHA1 matched the blob index before use and is re-verified on every run",
+  "blobs": {
+   "2026-11-09": "8bbf7cd5ea399b604703b410490e671dbdcc6f7d",
+   "2026-11-10": "fbbb8e35eea5582f29ceff159ccf2bf50ae070b2",
+   "2026-11-11": "ecdcbc5fb46ca3ebd2ec9b521ed899b94d7503b7",
+   "2026-11-12": "36b0ad9d07458193cacab4197adc34e8dd8e32f5",
+   "2026-11-13": "2418287a218324b8e6d23c340974a719ee3c2303",
+   "2026-11-14": "2416cb030cb393c488dc6130607dc2a4622c71e2",
+   "2026-11-15": "dbc65da1e8d58aa80d1180a8f66b083247a912e7",
+   "2026-11-16": "5a2116fc02f93cf7a86d9d70b22d211c54d67fac",
+   "2026-11-17": "1065b30776462f2b58ddd95d9e792840a0fda28a",
+   "2026-11-18": "0e05012d8719559149c1aadf309355715f8942f2",
+   "2026-11-19": "624a682be3dbe1e70e9d529e145f596301bc05a1",
+   "2026-11-20": "a067f73a9223802c3034b52afc8bef83f49e302a",
+   "2026-11-21": "6a3b18f6a57c6b5c5d7c1ca179b8845de016d9b7"
+  }
+ },
+ "scope": {
+  "from_date": "2026-11-09",
+  "before_scope": "on_unmeasured: legacy_table_format (listed, never opened)",
+  "inside_scope_malformed": "DENY"
+ },
+ "measured": {
+  "full": {
+   "days": 13,
+   "entries": 49,
+   "by_date": {
+    "2026-11-09": 7,
+    "2026-11-10": 4,
+    "2026-11-11": 5,
+    "2026-11-12": 7,
+    "2026-11-13": 4,
+    "2026-11-14": 4,
+    "2026-11-15": 4,
+    "2026-11-16": 3,
+    "2026-11-17": 2,
+    "2026-11-18": 3,
+    "2026-11-19": 3,
+    "2026-11-20": 2,
+    "2026-11-21": 1
+   },
+   "by_track": {
+    "(no track)": 31,
+    "morning-brief": 10,
+    "검증": 3,
+    "빌리지 생활 도구": 2,
+    "에이전트 사이 협업": 2,
+    "창작·놀이": 1
+   },
+   "by_family": {
+    "01": 1,
+    "mb": 10,
+    "w18": 6,
+    "w19": 4,
+    "w20": 5,
+    "w21": 6,
+    "w22": 3,
+    "w23": 3,
+    "w24": 3,
+    "w25": 2,
+    "w26": 1,
+    "w27": 2,
+    "w28": 2,
+    "w29": 1
+   },
+   "by_wave": {
+    "w18": 6,
+    "w19": 4,
+    "w20": 5,
+    "w21": 6,
+    "w22": 3,
+    "w23": 3,
+    "w24": 3,
+    "w25": 2,
+    "w26": 1,
+    "w27": 2,
+    "w28": 2,
+    "w29": 1
+   }
+  },
+  "week": {
+   "window": [
+    "2026-11-15",
+    "2026-11-21"
+   ],
+   "base_to": "2026-11-20",
+   "counts": {
+    "days": 7,
+    "entries": 18,
+    "by_date": {
+     "2026-11-15": 4,
+     "2026-11-16": 3,
+     "2026-11-17": 2,
+     "2026-11-18": 3,
+     "2026-11-19": 3,
+     "2026-11-20": 2,
+     "2026-11-21": 1
+    },
+    "by_track": {
+     "(no track)": 3,
+     "morning-brief": 7,
+     "검증": 3,
+     "빌리지 생활 도구": 2,
+     "에이전트 사이 협업": 2,
+     "창작·놀이": 1
+    },
+    "by_family": {
+     "mb": 7,
+     "w24": 3,
+     "w25": 2,
+     "w26": 1,
+     "w27": 2,
+     "w28": 2,
+     "w29": 1
+    },
+    "by_wave": {
+     "w24": 3,
+     "w25": 2,
+     "w26": 1,
+     "w27": 2,
+     "w28": 2,
+     "w29": 1
+    }
+   },
+   "added": [
+    "experiments/2026-11-21/mb-evidence-binding"
+   ],
+   "removed": [],
+   "changed": []
+  }
+ },
+ "timeouts": {
+  "tool": "none",
+  "mutants": {
+   "seconds": 300,
+   "on_expiry": "DENY",
+   "rule": "a suite run that reaches the timeout is not counted as killed"
+  }
+ },
+ "caps": {
+  "readme_bytes": {
+   "limit": 65536,
+   "on_expiry": "DENY"
+  },
+  "entries_per_day": {
+   "limit": 60,
+   "on_expiry": "DENY"
+  },
+  "days": {
+   "limit": 400,
+   "on_expiry": "DENY"
+  },
+  "row_chars": {
+   "limit": 4000,
+   "on_expiry": "DENY"
+  },
+  "slug_chars": {
+   "limit": 80,
+   "on_expiry": "DENY"
+  },
+  "side_file_bytes": {
+   "limit": 65536,
+   "on_expiry": "DENY"
+  },
+  "tracks": {
+   "limit": 100,
+   "on_expiry": "DENY"
+  },
+  "track_name_chars": {
+   "limit": 40,
+   "on_expiry": "DENY"
+  },
+  "args_file_bytes": {
+   "limit": 1024,
+   "on_expiry": "DENY"
+  }
+ },
+ "on_unmeasured": {
+  "why": "Facts outside the frozen snapshot; not measured by this tool.",
+  "items": [
+   {
+    "id": "legacy_table_format",
+    "what": "day READMEs 2026-10-29 and 2026-10-31 to 2026-11-08 on main use other headings and table rows; v1 does not parse them, and they are not in the snapshot",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "legacy_folder_links",
+    "what": "roughly 36 more experiment folder links before 2026-11-09 (approximate regex count from the planning probe)",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "live_git_log",
+    "what": "commit history and merge times; v1 reads README rows only",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "tree_after_pin",
+    "what": "any day README or row added to main after f2fa1e5d",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "tracks_w18_to_w24",
+    "what": "track names for waves 18 to 24; w24 is not sourced, so those entries are listed as unknown_track",
+    "status": "UNVERIFIED"
+   },
+   {
+    "id": "village_pages",
+    "what": "Naru Daily or annals folders as a second corpus; no village page was opened",
+    "status": "UNVERIFIED"
+   }
+  ]
+ }
+}
