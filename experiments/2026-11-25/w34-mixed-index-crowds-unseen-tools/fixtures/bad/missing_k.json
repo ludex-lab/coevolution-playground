@@ -1,0 +1,196 @@
+{
+ "fixture_version": 1,
+ "on_expiry": "DENY",
+ "catalog": [
+  {
+   "id": "weather",
+   "name": "weather",
+   "description": "forecast rain wind temperature for a city"
+  },
+  {
+   "id": "flights",
+   "name": "flights",
+   "description": "book flights airline airport departure"
+  },
+  {
+   "id": "hotels",
+   "name": "hotels",
+   "description": "hotel rooms booking stay night"
+  },
+  {
+   "id": "trains",
+   "name": "trains",
+   "description": "train tickets railway station schedule"
+  },
+  {
+   "id": "maps",
+   "name": "maps",
+   "description": "map route directions distance"
+  },
+  {
+   "id": "tide",
+   "name": "tide",
+   "description": "sea level high water low water times coast harbour"
+  }
+ ],
+ "heldout_ids": [
+  "tide"
+ ],
+ "pools": [
+  {
+   "id": "shared_heldout",
+   "split": "heldout",
+   "experience": [
+    {
+     "id": "e1",
+     "text": "is the weather at the coast this weekend good for sailing when wind is high",
+     "gold_tool_id": "weather",
+     "client_id": "c1"
+    },
+    {
+     "id": "e2",
+     "text": "the weather when sailing at the coast this weekend is it high wind",
+     "gold_tool_id": "weather",
+     "client_id": "c2"
+    },
+    {
+     "id": "e3",
+     "text": "when is the flight at the coast airport this weekend for sailing trip",
+     "gold_tool_id": "flights",
+     "client_id": "c3"
+    },
+    {
+     "id": "e4",
+     "text": "hotel at the coast this weekend for sailing when is checkin",
+     "gold_tool_id": "hotels",
+     "client_id": "c4"
+    },
+    {
+     "id": "e5",
+     "text": "route to the coast this weekend for sailing when is it shortest",
+     "gold_tool_id": "maps",
+     "client_id": "c5"
+    }
+   ]
+  },
+  {
+   "id": "empty",
+   "split": "heldout",
+   "experience": []
+  },
+  {
+   "id": "far_away",
+   "split": "heldout",
+   "experience": [
+    {
+     "id": "f1",
+     "text": "cheap room downtown tonight",
+     "gold_tool_id": "hotels",
+     "client_id": "c1"
+    },
+    {
+     "id": "f2",
+     "text": "train to busan tomorrow morning",
+     "gold_tool_id": "trains",
+     "client_id": "c2"
+    },
+    {
+     "id": "f3",
+     "text": "rain in seoul",
+     "gold_tool_id": "weather",
+     "client_id": "c3"
+    }
+   ]
+  },
+  {
+   "id": "shared_leaky",
+   "split": "leaky",
+   "experience": [
+    {
+     "id": "e1",
+     "text": "is the weather at the coast this weekend good for sailing when wind is high",
+     "gold_tool_id": "weather",
+     "client_id": "c1"
+    },
+    {
+     "id": "e2",
+     "text": "the weather when sailing at the coast this weekend is it high wind",
+     "gold_tool_id": "weather",
+     "client_id": "c2"
+    },
+    {
+     "id": "e3",
+     "text": "when is the flight at the coast airport this weekend for sailing trip",
+     "gold_tool_id": "flights",
+     "client_id": "c3"
+    },
+    {
+     "id": "e4",
+     "text": "hotel at the coast this weekend for sailing when is checkin",
+     "gold_tool_id": "hotels",
+     "client_id": "c4"
+    },
+    {
+     "id": "e5",
+     "text": "route to the coast this weekend for sailing when is it shortest",
+     "gold_tool_id": "maps",
+     "client_id": "c5"
+    },
+    {
+     "id": "e6",
+     "text": "tide check when is high water at the harbour this weekend for sailing",
+     "gold_tool_id": "tide",
+     "client_id": "c5"
+    }
+   ]
+  }
+ ],
+ "queries": [
+  {
+   "id": "q_crowd",
+   "role": "crowding",
+   "text": "when is high water at the harbour on the coast this weekend for sailing",
+   "gold_tool_id": "tide",
+   "pool": "shared_heldout"
+  },
+  {
+   "id": "q_n1",
+   "role": "n1_empty",
+   "text": "when is high water at the harbour on the coast this weekend for sailing",
+   "gold_tool_id": "tide",
+   "pool": "empty"
+  },
+  {
+   "id": "q_n2",
+   "role": "n2_nonoverlap",
+   "text": "when is high water at the harbour on the coast this weekend for sailing",
+   "gold_tool_id": "tide",
+   "pool": "far_away"
+  },
+  {
+   "id": "q_n3",
+   "role": "n3_labeled",
+   "text": "will the wind be high when sailing this weekend",
+   "gold_tool_id": "weather",
+   "pool": "shared_heldout"
+  },
+  {
+   "id": "q_leaky",
+   "role": "leaky",
+   "text": "when is high water at the harbour on the coast this weekend for sailing",
+   "gold_tool_id": "tide",
+   "pool": "shared_leaky"
+  }
+ ],
+ "sweep": {
+  "query": "q_crowd",
+  "clients": [
+   "c1",
+   "c2",
+   "c3",
+   "c4",
+   "c5"
+  ],
+  "flip_at": 4
+ }
+}

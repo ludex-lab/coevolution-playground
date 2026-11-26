@@ -1,0 +1,108 @@
+{
+ "experiment": "mb-error-propagation-trace",
+ "kind": "method sketch (Morning Brief 2026-11-25, candidate #2): outcome-only score vs a per-hop error trace on synthetic agent chains; not a reproduction",
+ "clean_room": true,
+ "code_copied": false,
+ "figures_copied": false,
+ "text_copied": "no paper text in code or fixtures; the README quotes one short attributed abstract phrase (disclosed as a quote) and the paper title",
+ "network_used": "read-only fetch of the abstract page for citation metadata; the experiment itself uses no network",
+ "model_calls": false,
+ "paid_api_used": false,
+ "stdlib_only": true,
+ "randomness": "none",
+ "source": {
+  "arxiv": "2611.31063",
+  "url": "https://arxiv.org/abs/2611.31063",
+  "citation_title": "From Local Errors to System Failures: Modeling and Benchmarking Error Propagation in Multi-Agent LLM Systems",
+  "authors_as_listed": "Wenlong Yu, Bingxu Lu, Qilong Wang, Qinghua Hu, Qianru Sun",
+  "citation_date": "2026/11/23",
+  "licence": "arXiv nonexclusive-distrib 1.0",
+  "licence_url": "https://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "licence_use": "method only; no code, text or figures copied",
+  "repository": "none listed on the abstract page",
+  "use": "the idea that an outcome-only score hides whether agents introduced, amplified, attenuated or corrected an error on the way"
+ },
+ "declared_rule": {
+  "hop_error": "e_k = |message_k - reference_k|; p = e_(k-1), with p = 0 for the first hop",
+  "classes": {
+   "clean": "p <= tol and e <= tol",
+   "introduced": "p <= tol and e > tol",
+   "corrected": "p > tol and e <= tol",
+   "amplified": "p > tol and e >= p (equal magnitude is amplified: not reduced)",
+   "attenuated": "p > tol and tol < e < p"
+  },
+  "tolerance_edge": "an error exactly equal to the tolerance is within it",
+  "trace": "reached_end if the final error > tol; corrected if some hop error > tol and the final error <= tol; clean otherwise",
+  "arm_a": "PASS iff the final error <= tol",
+  "empty_chain": "bad input, DENY empty_chain (exit 2)",
+  "numbers": "exact decimals: <= 32 characters, |value| <= 1000000 by copy_abs, <= 12 decimal places, no positive exponent, NaN/Infinity bad_number, bool bad_type, -0 read as 0; steps exact at 700 significant digits with Inexact trapped (DENY computed_out_of_range); computed |value| > 1E+15 is DENY computed_out_of_range; a computed -0 is reported as 0"
+ },
+ "measured": {
+  "main": {
+   "total": 3,
+   "closed_a": 3,
+   "closed_b": 3,
+   "a_passes": 2,
+   "errors_hidden_by_a": 1
+  },
+  "more": {
+   "total": 10,
+   "closed_a": 10,
+   "closed_b": 10,
+   "a_passes": 4,
+   "errors_hidden_by_a": 1
+  },
+  "note": "counts of hand-made planted chains, not rates"
+ },
+ "on_expiry": "DENY",
+ "timeouts": {
+  "tool": "none",
+  "mutants": {
+   "seconds": 300,
+   "on_expiry": "DENY"
+  }
+ },
+ "caps": {
+  "file_bytes": 65536,
+  "cases": 100,
+  "hops": 50,
+  "abs_value": 1000000,
+  "computed_abs": "1E+15",
+  "number_chars": 32,
+  "decimal_places": 12,
+  "text_chars": 200,
+  "on_expiry": "DENY"
+ },
+ "on_unmeasured": [
+  {
+   "id": "repa_spearman",
+   "what": "author-reported: the paper's structural model reaches a mean condition-level Spearman correlation of 0.84 across base models, against 0.47 for direct regression",
+   "status": "UNVERIFIED",
+   "reproduced": false
+  },
+  {
+   "id": "repa_rag",
+   "what": "author-reported: model-guided retrieval improves accuracy over no retrieval by an average of 19 percentage points with 16% additional tokens",
+   "status": "UNVERIFIED",
+   "reproduced": false
+  },
+  {
+   "id": "benchmark_scope",
+   "what": "author-reported scope: three Qwen base models, six multi-agent workflows and ten knowledge and reasoning settings in the paper's benchmark",
+   "status": "UNVERIFIED",
+   "reproduced": false
+  },
+  {
+   "id": "structural_model",
+   "what": "the paper's structural model (separate input assembly and agent processing across error channels) is not implemented; agents here are fixed arithmetic steps",
+   "status": "UNVERIFIED",
+   "reproduced": false
+  },
+  {
+   "id": "real_agents",
+   "what": "any LLM agent, real workflow or benchmark data; all chains are synthetic",
+   "status": "UNVERIFIED",
+   "reproduced": false
+  }
+ ]
+}

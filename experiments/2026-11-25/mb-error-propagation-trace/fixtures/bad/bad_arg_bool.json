@@ -1,0 +1,105 @@
+{
+ "fixture_version": 1,
+ "label": "Three planted chains (synthetic): an error that reaches the end, one a later agent corrects, a clean run",
+ "cases": [
+  {
+   "id": "reaches_end",
+   "label": "a planted error is carried and doubled to the final answer",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": false,
+     "fault": 2
+    },
+    {
+     "agent": "scaler",
+     "op": "mul",
+     "arg": 2
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 1
+    }
+   ],
+   "expect": {
+    "outcome": "FAIL",
+    "trace": "reached_end",
+    "hops": [
+     "introduced",
+     "amplified",
+     "amplified"
+    ]
+   }
+  },
+  {
+   "id": "corrected_later",
+   "label": "the same error is halved, then a rechecking agent recomputes from the source",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5,
+     "fault": 2
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "verifier",
+     "op": "add",
+     "arg": 3,
+     "recheck": true
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "corrected",
+    "hops": [
+     "introduced",
+     "attenuated",
+     "corrected"
+    ]
+   }
+  },
+  {
+   "id": "clean_run",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,16 @@
+{
+ "fixture_version": 1,
+ "label": "Three planted contrasts (synthetic, hand-made; effects in SD units)",
+ "contrasts": [
+  {
+   "id": "reminder_letter",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 1E-999999999,
+   "planted": "real_response"
+  }
+ ]
+}

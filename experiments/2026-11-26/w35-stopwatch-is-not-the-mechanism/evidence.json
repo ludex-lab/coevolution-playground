@@ -1,0 +1,100 @@
+{
+ "experiment": "w35-stopwatch-is-not-the-mechanism",
+ "source": {
+  "arxiv": "2611.31460",
+  "citation_title": "Below the Stopwatch: Checking the Performance Claims of Coding Agents in the Kernel",
+  "authors": [
+   "Yuvraj Sehgal",
+   "Sneh Patel",
+   "Mahsa Panahandeh",
+   "Naser Ezzati-Jivan"
+  ],
+  "arxiv_v1": "Tue 24 Nov 2026 04:31:41 KST (from Mon 23 Nov 2026 19:31:41 UTC)",
+  "paper_licence": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "code": "no repository URL on the abs page; none used",
+  "relation": "method sketch only; no copied code or text beyond the attributed quotes in README; not a reproduction"
+ },
+ "wording": "Synthetic lookup and declarative op lists with planted versions. The result shows the mechanism (a cheaper scripted work-cost can coexist with an unmoved claimed counter, a changed output, or a mixed-cause saving), not any rate.",
+ "declared_table": {
+  "cheaper_wrong": [
+   "PASS",
+   "FAIL"
+  ],
+  "faster_other_reason": [
+   "PASS",
+   "FAIL"
+  ],
+  "replayed_output": [
+   "PASS",
+   "FAIL"
+  ],
+  "genuine_cache": [
+   "PASS",
+   "PASS"
+  ],
+  "no_faster": [
+   "FAIL",
+   "FAIL"
+  ],
+  "cache_plus_skip": [
+   "PASS",
+   "FAIL"
+  ],
+  "fabricated_counter": "DENY exit 2, self_reported_measure"
+ },
+ "measured_here": {
+  "fixture": "fixtures/main.json",
+  "table_matches": true,
+  "gate": "PASS",
+  "before_cost": 135,
+  "before_hits": 0,
+  "saving_per_unit": 9,
+  "after": {
+   "cheaper_wrong": {
+    "cost": 63,
+    "hits": 0,
+    "digest_same": false
+   },
+   "faster_other_reason": {
+    "cost": 90,
+    "hits": 0,
+    "digest_same": true
+   },
+   "replayed_output": {
+    "cost": 108,
+    "hits": 3,
+    "digest_same": false
+   },
+   "genuine_cache": {
+    "cost": 108,
+    "hits": 3,
+    "digest_same": true,
+    "cost_saved": 27,
+    "bound": 27
+   },
+   "no_faster": {
+    "cost": 135,
+    "hits": 0,
+    "digest_same": true
+   },
+   "cache_plus_skip": {
+    "cost": 63,
+    "hits": 3,
+    "digest_same": true,
+    "cost_saved": 72,
+    "bound": 27
+   }
+  },
+  "fabricated_counter": "standalone fixtures/bad/fabricated_counter.json: DENY self_reported_measure, exit 2, empty stdout, one stderr line",
+  "demo_stdout_sha256": "bd2e1012ffbb648f466115a5afa5c4906116cb1fe6bcb00fccc6df777a7e1a40"
+ },
+ "on_unmeasured": {
+  "status": "UNVERIFIED",
+  "items": [
+   "paper-reported figures from 1,343 runtime-performance PRs in the AIDev dataset: 57.3% of the PRs offer only reasoning or no evidence, and only 31.4% state an effect size; of 82 analyzed PRs, 32 ran faster, 28 showed no clear change and 22 ran slower; the expected signal of the claimed mechanism appeared in 34 PRs (20 in kernel-trace signals alone), and 42 PRs also changed their output; author-reported speed-ups 1.7\u00d7 and 1.15\u00d7 (UNVERIFIED)",
+   "real wall-clock, hardware counters, and LTTng kernel traces on kernel PRs (UNVERIFIED; not used here)"
+  ]
+ },
+ "on_expiry": "DENY",
+ "bad_input": "DENY: exit 2, empty stdout, one stderr line DENY <code>: <detail>"
+}

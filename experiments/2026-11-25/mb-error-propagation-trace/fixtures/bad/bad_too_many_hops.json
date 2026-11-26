@@ -1,0 +1,392 @@
+{
+ "fixture_version": 1,
+ "label": "Three planted chains (synthetic): an error that reaches the end, one a later agent corrects, a clean run",
+ "cases": [
+  {
+   "id": "reaches_end",
+   "label": "a planted error is carried and doubled to the final answer",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "a0",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a1",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a2",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a3",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a4",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a5",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a6",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a7",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a8",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a9",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a10",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a11",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a12",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a13",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a14",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a15",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a16",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a17",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a18",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a19",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a20",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a21",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a22",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a23",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a24",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a25",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a26",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a27",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a28",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a29",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a30",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a31",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a32",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a33",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a34",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a35",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a36",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a37",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a38",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a39",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a40",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a41",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a42",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a43",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a44",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a45",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a46",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a47",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a48",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a49",
+     "op": "add",
+     "arg": 1
+    },
+    {
+     "agent": "a50",
+     "op": "add",
+     "arg": 1
+    }
+   ],
+   "expect": {
+    "outcome": "FAIL",
+    "trace": "reached_end",
+    "hops": [
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "corrected_later",
+   "label": "the same error is halved, then a rechecking agent recomputes from the source",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5,
+     "fault": 2
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "verifier",
+     "op": "add",
+     "arg": 3,
+     "recheck": true
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "corrected",
+    "hops": [
+     "introduced",
+     "attenuated",
+     "corrected"
+    ]
+   }
+  },
+  {
+   "id": "clean_run",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  }
+ ]
+}

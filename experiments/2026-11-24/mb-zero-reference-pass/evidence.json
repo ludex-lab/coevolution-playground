@@ -1,0 +1,48 @@
+{
+ "experiment": "mb-zero-reference-pass",
+ "kind": "method sketch (Morning Brief 2026-11-24, Track C, candidate #2); not a reproduction",
+ "clean_room": true,
+ "code_copied": false,
+ "text_copied": "abstract figures quoted with attribution (fragments of up to 14 words, CC BY 4.0)",
+ "network_used": false,
+ "model_calls": false,
+ "paid_api_used": false,
+ "stdlib_only": true,
+ "source": {
+  "arxiv": "2611.27186",
+  "url": "https://arxiv.org/abs/2611.27186",
+  "citation_title": "What Does Matching a Human Intervention Effect Establish? Benchmark Checks for LLM Simulations",
+  "authors_as_listed": "Tengfei Shao, Asma Rezaei, Ali Reza Kamali",
+  "licence": "CC BY 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+  "repository": "none listed on the abstract page",
+  "use": "method only: report whether a zero reference (no response, effect 0) would also pass beside each equivalence decision"
+ },
+ "declared_rule": {
+  "equivalence": "inclusive: human_hi - margin <= candidate <= human_lo + margin (the candidate is within the margin of every point of the human 90 percent interval)",
+  "zero_reference": "the same rule with candidate = 0; passes exactly when the human interval lies inside [-margin, margin]",
+  "zero_threshold": "max(|human_lo|, |human_hi|), the smallest margin at which the zero reference passes",
+  "arithmetic": "exact decimals parsed from the fixture text, at most 30 decimal places, rule evaluated at 80 significant digits",
+  "status": "a declared choice for this sketch; the paper's own test statistics are not reimplemented"
+ },
+ "measured": {
+  "main": {"closed": 3, "total": 3, "equivalence_passes": 2, "responses": 1, "zero_reference_passes": 1, "fails": 1},
+  "more": {"closed": 8, "total": 8, "equivalence_passes": 4, "responses": 3, "zero_reference_passes": 1, "fails": 4},
+  "note": "counts of hand-made planted contrasts, not rates; they say nothing about any model or study"
+ },
+ "on_expiry": "DENY",
+ "timeouts": {
+  "tool": "none",
+  "mutants": {"seconds": 300, "on_expiry": "DENY"}
+ },
+ "on_unmeasured": [
+  {"id": "reanalysis_share", "what": "author-reported: in an exploratory 70-experiment reanalysis, 72 percent of GPT-4's passes at a +-0.20 SD margin were zero-reference passes", "status": "UNVERIFIED", "reproduced": false},
+  {"id": "contrasts_beyond_zero", "what": "author-reported: GPT-4 passed 16 contrasts the zero reference failed, against 1.58 expected without a response", "status": "UNVERIFIED", "reproduced": false},
+  {"id": "planned_precision", "what": "author-reported: when the zero reference fails, planned precision gives the margin up to which passing is a 5 percent test of response; no such margin is computed here", "status": "UNVERIFIED", "reproduced": false},
+  {"id": "preregistered_audit", "what": "author-reported preregistered audit: three intention targets passed, all zero-reference passes, plus the registered belief-gradient control; norm beliefs changed 0.065 SD against the human 0.351 SD (zero-reference check added after unblinding)", "status": "UNVERIFIED", "reproduced": false},
+  {"id": "overestimation_bound", "what": "author-reported: registered tests detected no overestimation; average-effect intervals excluded overestimation above 0.08 SD", "status": "UNVERIFIED", "reproduced": false},
+  {"id": "group_audit_floor", "what": "author-reported: a group audit's precision floor of 1.33 facts against a 2.9-fact effect", "status": "UNVERIFIED", "reproduced": false},
+  {"id": "candidate_uncertainty", "what": "candidate effects are point estimates here; candidate intervals and sampling error are not modelled", "status": "UNVERIFIED", "reproduced": false},
+  {"id": "real_studies", "what": "any real study, simulation or model output; all contrasts are synthetic", "status": "UNVERIFIED", "reproduced": false}
+ ]
+}

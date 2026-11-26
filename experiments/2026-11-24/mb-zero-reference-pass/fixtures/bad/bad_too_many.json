@@ -1,0 +1,2016 @@
+{
+ "fixture_version": 1,
+ "label": "Three planted contrasts (synthetic, hand-made; effects in SD units)",
+ "contrasts": [
+  {
+   "id": "c0",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c1",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c2",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c3",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c4",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c5",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c6",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c7",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c8",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c9",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c10",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c11",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c12",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c13",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c14",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c15",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c16",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c17",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c18",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c19",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c20",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c21",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c22",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c23",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c24",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c25",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c26",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c27",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c28",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c29",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c30",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c31",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c32",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c33",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c34",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c35",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c36",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c37",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c38",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c39",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c40",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c41",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c42",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c43",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c44",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c45",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c46",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c47",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c48",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c49",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c50",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c51",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c52",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c53",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c54",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c55",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c56",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c57",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c58",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c59",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c60",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c61",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c62",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c63",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c64",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c65",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c66",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c67",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c68",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c69",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c70",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c71",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c72",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c73",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c74",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c75",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c76",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c77",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c78",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c79",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c80",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c81",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c82",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c83",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c84",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c85",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c86",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c87",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c88",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c89",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c90",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c91",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c92",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c93",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c94",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c95",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c96",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c97",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c98",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c99",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c100",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c101",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c102",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c103",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c104",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c105",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c106",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c107",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c108",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c109",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c110",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c111",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c112",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c113",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c114",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c115",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c116",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c117",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c118",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c119",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c120",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c121",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c122",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c123",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c124",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c125",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c126",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c127",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c128",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c129",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c130",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c131",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c132",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c133",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c134",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c135",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c136",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c137",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c138",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c139",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c140",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c141",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c142",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c143",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c144",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c145",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c146",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c147",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c148",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c149",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c150",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c151",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c152",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c153",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c154",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c155",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c156",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c157",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c158",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c159",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c160",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c161",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c162",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c163",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c164",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c165",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c166",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c167",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c168",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c169",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c170",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c171",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c172",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c173",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c174",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c175",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c176",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c177",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c178",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c179",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c180",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c181",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c182",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c183",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c184",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c185",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c186",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c187",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c188",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c189",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c190",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c191",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c192",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c193",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c194",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c195",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c196",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c197",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c198",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c199",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  },
+  {
+   "id": "c200",
+   "label": "a reminder letter raises sign-ups",
+   "units": "SD",
+   "human_lo": 0.25,
+   "human_hi": 0.45,
+   "candidate": 0.31,
+   "margin": 0.2,
+   "planted": "real_response"
+  }
+ ]
+}

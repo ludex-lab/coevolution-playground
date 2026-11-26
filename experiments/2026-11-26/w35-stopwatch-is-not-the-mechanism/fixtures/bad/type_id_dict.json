@@ -1,0 +1,116 @@
+{
+ "fixture_version": 1,
+ "on_expiry": "DENY",
+ "claim": {
+  "mechanism": "cache_hits",
+  "direction": "up",
+  "saving_per_unit": 9
+ },
+ "input_sets": [
+  {
+   "id": "repeats",
+   "keys": [
+    3,
+    1,
+    3,
+    3,
+    2
+   ]
+  },
+  {
+   "id": "pair",
+   "keys": [
+    4,
+    4,
+    5
+   ]
+  },
+  {
+   "id": "single",
+   "keys": [
+    7
+   ]
+  }
+ ],
+ "versions": [
+  {
+   "id": "before",
+   "ops": [
+    "square",
+    "pad"
+   ]
+  },
+  {
+   "id": {
+    "name": "cheaper_wrong"
+   },
+   "ops": [
+    "wrong",
+    "pad"
+   ]
+  },
+  {
+   "id": "faster_other_reason",
+   "ops": [
+    "square"
+   ]
+  },
+  {
+   "id": "replayed_output",
+   "ops": [
+    "square",
+    "pad",
+    "cache",
+    "replay"
+   ]
+  },
+  {
+   "id": "genuine_cache",
+   "ops": [
+    "square",
+    "pad",
+    "cache"
+   ]
+  },
+  {
+   "id": "no_faster",
+   "ops": [
+    "square",
+    "pad"
+   ]
+  },
+  {
+   "id": "cache_plus_skip",
+   "ops": [
+    "square",
+    "cache"
+   ]
+  }
+ ],
+ "expected": {
+  "cheaper_wrong": {
+   "arm_a": "PASS",
+   "arm_b": "FAIL"
+  },
+  "faster_other_reason": {
+   "arm_a": "PASS",
+   "arm_b": "FAIL"
+  },
+  "replayed_output": {
+   "arm_a": "PASS",
+   "arm_b": "FAIL"
+  },
+  "genuine_cache": {
+   "arm_a": "PASS",
+   "arm_b": "PASS"
+  },
+  "no_faster": {
+   "arm_a": "FAIL",
+   "arm_b": "FAIL"
+  },
+  "cache_plus_skip": {
+   "arm_a": "PASS",
+   "arm_b": "FAIL"
+  }
+ }
+}

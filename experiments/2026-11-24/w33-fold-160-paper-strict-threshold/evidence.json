@@ -1,0 +1,128 @@
+{
+ "experiment": "w33-fold-160-paper-strict-threshold",
+ "kind": "fold of experiments/2026-11-24/mb-zero-reference-pass (#160): a paper-strict zero-reference reading beside the inclusive one; not a new experiment and not a reproduction",
+ "clean_room": true,
+ "code_copied": false,
+ "code_note": "the module is adapted from this lab's own #160 code (no paper code exists); it does not import the #160 folder",
+ "text_copied": "short attributed quotes only: the paper's two strict inequalities in the README and author-reported figures from the abstract under on_unmeasured (fragments of up to about 14 words, CC BY 4.0)",
+ "network_used": false,
+ "model_calls": false,
+ "paid_api_used": false,
+ "stdlib_only": true,
+ "source": {
+  "arxiv": "2611.27186",
+  "url": "https://arxiv.org/abs/2611.27186",
+  "citation_title": "What Does Matching a Human Intervention Effect Establish? Benchmark Checks for LLM Simulations",
+  "authors_as_listed": "Tengfei Shao, Asma Rezaei, Ali Reza Kamali",
+  "citation_date": "2026/11/20",
+  "licence": "CC BY 4.0",
+  "licence_url": "https://creativecommons.org/licenses/by/4.0/",
+  "repository": "none listed on the abstract page"
+ },
+ "declared_rule": {
+  "equivalence": "inclusive, unchanged from #160: human_hi - m <= candidate <= human_lo + m",
+  "critical_value": "T = max(|human_lo|, |human_hi|); under the strict rule no least passing margin exists, so T is the infimum, not a smallest margin",
+  "zero_reference_inclusive": "passes when T <= m (#160 reading; drives the verdict and the planted gate)",
+  "zero_reference_paper_strict": "passes only when T < m (the paper's condition (1) is strict); reported beside the inclusive reading on every row",
+  "at_m_equal_T": "inclusive PASS, paper-strict FAIL (fixture more.json zero_on_edge)",
+  "numbers": "exact decimals: at most 32 characters, |value| <= 100 compared with copy_abs() before any rounding, at most 30 decimal places, no positive exponent (so 0E+999999999 is DENY bad_number), rule at 80 significant digits"
+ },
+ "measured": {
+  "main": {
+   "closed": 3,
+   "total": 3,
+   "weak_passes": 2,
+   "responses": 1,
+   "zero_reference_passes": 1,
+   "readings_differ": 0
+  },
+  "more": {
+   "closed": 9,
+   "total": 9,
+   "weak_passes": 5,
+   "responses": 4,
+   "zero_reference_passes": 1,
+   "readings_differ": 1
+  },
+  "note": "counts of hand-made planted contrasts, not rates"
+ },
+ "on_expiry": "DENY",
+ "timeouts": {
+  "tool": "none",
+  "mutants": {
+   "seconds": 300,
+   "on_expiry": "DENY"
+  }
+ },
+ "caps": {
+  "file_bytes": 65536,
+  "contrasts": 200,
+  "abs_value": 100,
+  "text_chars": 200,
+  "number_chars": 32,
+  "decimal_places": 30,
+  "on_expiry": "DENY"
+ },
+ "on_unmeasured": [
+  {
+   "id": "reanalysis_share",
+   "what": "author-reported: in an exploratory 70-experiment reanalysis, 72 percent of GPT-4's passes at a +-0.20 SD margin were zero-reference passes",
+   "status": "UNVERIFIED",
+   "reproduced": false
+  },
+  {
+   "id": "contrasts_beyond_zero",
+   "what": "author-reported: GPT-4 passed 16 contrasts the zero reference failed, against 1.58 expected without a response",
+   "status": "UNVERIFIED",
+   "reproduced": false
+  },
+  {
+   "id": "planned_precision",
+   "what": "author-reported: when the zero reference fails, planned precision gives the margin up to which passing is a 5 percent test of response; no such margin is computed here",
+   "status": "UNVERIFIED",
+   "reproduced": false
+  },
+  {
+   "id": "preregistered_audit",
+   "what": "author-reported preregistered audit: three intention targets passed, all zero-reference passes, plus the registered belief-gradient control; norm beliefs changed 0.065 SD against the human 0.351 SD (zero-reference check added after unblinding)",
+   "status": "UNVERIFIED",
+   "reproduced": false
+  },
+  {
+   "id": "overestimation_bound",
+   "what": "author-reported: registered tests detected no overestimation; average-effect intervals excluded overestimation above 0.08 SD",
+   "status": "UNVERIFIED",
+   "reproduced": false
+  },
+  {
+   "id": "group_audit_floor",
+   "what": "author-reported: a group audit's precision floor of 1.33 facts against a 2.9-fact effect",
+   "status": "UNVERIFIED",
+   "reproduced": false
+  },
+  {
+   "id": "paper_test_statistics",
+   "what": "the paper's own TOST statistics (bH, SEH, E, SEE) are not computed; the fixtures give only [human_lo, human_hi] and m, and T = max(|human_lo|, |human_hi|) equals |bH| + 1.645 SEH only for a symmetric 90 percent interval",
+   "status": "UNVERIFIED",
+   "reproduced": false
+  },
+  {
+   "id": "pdf_line_numbers",
+   "what": "the PDF line numbers l.254 and l.260 for the two strict inequalities come from the review's pdftotext extraction; the PDF was not opened for this fold",
+   "status": "UNVERIFIED",
+   "reproduced": false
+  },
+  {
+   "id": "candidate_uncertainty",
+   "what": "candidate effects are point estimates here; candidate intervals and sampling error are not modelled",
+   "status": "UNVERIFIED",
+   "reproduced": false
+  },
+  {
+   "id": "real_studies",
+   "what": "any real study, simulation or model output; all contrasts are synthetic",
+   "status": "UNVERIFIED",
+   "reproduced": false
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "fixture_version": 1,
+ "label": "Edge cases (synthetic): exact boundaries, negative effects, a fail where zero passes, a too-wide interval",
+ "contrasts": [
+  {"id": "edge_upper", "label": "candidate exactly on the upper edge", "units": "SD",
+   "human_lo": 0.25, "human_hi": 0.45, "candidate": 0.45, "margin": 0.20, "planted": "real_response"},
+  {"id": "edge_lower", "label": "candidate exactly on the lower edge", "units": "SD",
+   "human_lo": 0.25, "human_hi": 0.45, "candidate": 0.25, "margin": 0.20, "planted": "real_response"},
+  {"id": "just_outside", "label": "candidate one step past the edge", "units": "SD",
+   "human_lo": 0.25, "human_hi": 0.45, "candidate": 0.4500001, "margin": 0.20, "planted": "genuine_fail"},
+  {"id": "zero_on_edge", "label": "human interval touches the margin", "units": "SD",
+   "human_lo": -0.20, "human_hi": 0.20, "candidate": 0, "margin": 0.20, "planted": "zero_reference"},
+  {"id": "negative_effect", "label": "a warning lowers risky choices", "units": "SD",
+   "human_lo": -0.60, "human_hi": -0.35, "candidate": -0.42, "margin": 0.20, "planted": "real_response"},
+  {"id": "far_candidate", "label": "candidate far off while zero would pass", "units": "SD",
+   "human_lo": -0.08, "human_hi": 0.10, "candidate": 0.55, "margin": 0.20, "planted": "fail_zero_passes"},
+  {"id": "too_wide", "label": "human interval wider than twice the margin", "units": "SD",
+   "human_lo": 0.10, "human_hi": 0.60, "candidate": 0.35, "margin": 0.20, "planted": "genuine_fail"},
+  {"id": "hangul_label", "label": "마을 공지 문구 변경", "units": "SD",
+   "human_lo": -0.02, "human_hi": 0.09, "candidate": 0.30, "margin": 0.25, "planted": "fail_zero_passes"}
+ ]
+}

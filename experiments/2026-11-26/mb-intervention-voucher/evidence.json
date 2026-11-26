@@ -1,0 +1,63 @@
+{
+ "experiment": "mb-intervention-voucher",
+ "source": {
+  "arxiv": "2611.31736",
+  "citation_title": "Reproducing History Is Not Enough: Intervention-Level Assurance for LLM-Generated Simulators",
+  "authors": [
+   "Ashraf Abdul-Muumin",
+   "Aniruddha Chattopadhyay",
+   "Noorbakhsh Golilarz",
+   "Kaushik Roy"
+  ],
+  "submitted": "2026-11-24",
+  "paper_licence": "CC BY 4.0",
+  "code": "no repository URL on the abs page; none used",
+  "relation": "method sketch only; no copied code or text beyond one short attributed quote in README; not a reproduction"
+ },
+ "wording": "Synthetic records and scripted simulators with planted faults. The result shows the mechanism (a replay pass can coexist with a wrong-record or wrong-operator what-if), not any rate.",
+ "declared_table": {
+  "sim_correct": [
+   "PASS",
+   "PASS"
+  ],
+  "sim_wrong_record": [
+   "PASS",
+   "FAIL"
+  ],
+  "sim_wrong_operator": [
+   "PASS",
+   "FAIL"
+  ],
+  "sim_drop_last_event": [
+   "FAIL",
+   "FAIL"
+  ]
+ },
+ "measured_here": {
+  "fixture": "fixtures/main.json",
+  "table_matches": true,
+  "gate": "PASS",
+  "failing_questions": {
+   "sim_wrong_record": [
+    "q_rice"
+   ],
+   "sim_wrong_operator": [
+    "q_oil"
+   ],
+   "sim_drop_last_event": [
+    "q_barley"
+   ]
+  },
+  "null_control": "q_null is NO_INTERVENTION for every simulator: not a FAIL, not a trusted answer",
+  "demo_stdout_sha256": "cd11c0644951bca967216b80b6bdbf4c172f0c776ade1034d2be519102c8abfc"
+ },
+ "on_unmeasured": {
+  "status": "UNVERIFIED",
+  "items": [
+   "paper-reported, on programs written by Haiku and Sonnet in one platform: the method removes 97.6% of wrong answers while still trusting 80.1% of all answers (UNVERIFIED)",
+   "behaviour of LLM-generated simulators on any real platform (UNVERIFIED; no model used here)"
+  ]
+ },
+ "on_expiry": "DENY",
+ "bad_input": "DENY: exit 2, empty stdout, one stderr line DENY <code>: <detail>"
+}

@@ -1,0 +1,87 @@
+{
+ "experiment": "w34-mixed-index-crowds-unseen-tools",
+ "source": {
+  "arxiv": "2611.30034",
+  "citation_title": "STUN-Bench: Truly Unseen Tools for Evaluating Shared Tool Experience",
+  "paper_licence": "CC BY 4.0",
+  "upstream_repo": "github.com/Abhijit85/STUN-Bench",
+  "upstream_pin": "816dc77221297716e78fb27a81aec8cbdeff3a21",
+  "upstream_licence": "Apache-2.0",
+  "relation": "method sketch only; no upstream code, data or text copied; not a reproduction"
+ },
+ "wording": "The fixture is planted. The result shows the mechanism (mixed-index crowding of an unused tool under an equal budget of k distinct tools), not the paper's rate.",
+ "measured_here": {
+  "fixture": "fixtures/main.json",
+  "k": 3,
+  "scorer": "shared distinct lowercase [a-z0-9]+ tokens",
+  "order": "(-score, kind, id); description before experience",
+  "rows_heldout": {
+   "q_crowd": {
+    "arm_a": [
+     "weather",
+     "flights",
+     "hotels"
+    ],
+    "arm_b": [
+     "tide",
+     "weather",
+     "flights"
+    ],
+    "gold_in_a": false,
+    "gold_in_b": true
+   },
+   "q_n1": {
+    "arm_a_equals_arm_b": true
+   },
+   "q_n2": {
+    "gold_in_a": true
+   },
+   "q_n3": {
+    "gold_in_a": true
+   }
+  },
+  "rows_leaky": {
+   "q_leaky": {
+    "arm_a": [
+     "tide",
+     "weather",
+     "flights"
+    ],
+    "gold_in_a": true
+   }
+  },
+  "sweep": {
+   "clients": [
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "gold_in_a": [
+    true,
+    true,
+    true,
+    false,
+    false
+   ],
+   "preregistered_flip": 4,
+   "observed_flip": 4,
+   "rule_flip": 4
+  },
+  "gate": "PASS",
+  "demo_stdout_sha256": "02c79f9a064281fca8fe894c4cf6112539151f9eea1eaf29dc665150331e026d"
+ },
+ "on_unmeasured": {
+  "status": "UNVERIFIED",
+  "items": [
+   "paper-reported held-out routing accuracy 0.534 falling to 0.278 under Jina-v2 (UNVERIFIED)",
+   "Jina-v2 retriever behaviour (UNVERIFIED; no embeddings used here)",
+   "five simulated clients in the paper (UNVERIFIED; the five scripted clients here are synthetic)",
+   "90704 pool items after filters (UNVERIFIED; metadata only, not counted)",
+   "the 172 held-out tool ids and 729 queries of the release (UNVERIFIED here; not imported)"
+  ]
+ },
+ "on_expiry": "DENY",
+ "bad_input": "DENY: exit 2, empty stdout, one stderr line DENY <code>: <detail>"
+}

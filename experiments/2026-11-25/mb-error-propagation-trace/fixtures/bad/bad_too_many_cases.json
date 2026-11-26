@@ -1,0 +1,3238 @@
+{
+ "fixture_version": 1,
+ "label": "Three planted chains (synthetic): an error that reaches the end, one a later agent corrects, a clean run",
+ "cases": [
+  {
+   "id": "c0",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c1",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c2",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c3",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c4",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c5",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c6",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c7",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c8",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c9",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c10",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c11",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c12",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c13",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c14",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c15",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c16",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c17",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c18",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c19",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c20",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c21",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c22",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c23",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c24",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c25",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c26",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c27",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c28",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c29",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c30",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c31",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c32",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c33",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c34",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c35",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c36",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c37",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c38",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c39",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c40",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c41",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c42",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c43",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c44",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c45",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c46",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c47",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c48",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c49",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c50",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c51",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c52",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c53",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c54",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c55",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c56",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c57",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c58",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c59",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c60",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c61",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c62",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c63",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c64",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c65",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c66",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c67",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c68",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c69",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c70",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c71",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c72",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c73",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c74",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c75",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c76",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c77",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c78",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c79",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c80",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c81",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c82",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c83",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c84",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c85",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c86",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c87",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c88",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c89",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c90",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c91",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c92",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c93",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c94",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c95",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c96",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c97",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c98",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c99",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  },
+  {
+   "id": "c100",
+   "label": "no planted fault",
+   "start": 10,
+   "tolerance": 0.5,
+   "hops": [
+    {
+     "agent": "drafter",
+     "op": "add",
+     "arg": 5
+    },
+    {
+     "agent": "summarizer",
+     "op": "mul",
+     "arg": 0.5
+    },
+    {
+     "agent": "finisher",
+     "op": "add",
+     "arg": 3
+    }
+   ],
+   "expect": {
+    "outcome": "PASS",
+    "trace": "clean",
+    "hops": [
+     "clean",
+     "clean",
+     "clean"
+    ]
+   }
+  }
+ ]
+}

@@ -22,7 +22,7 @@ experiments/
 
 원본 루트 README는 [`experiments/SOURCE_README.md`](experiments/SOURCE_README.md)에 있습니다.
 
-## 실험 인덱스 (160개)
+## 실험 인덱스 (166개)
 
 | Date | Folder | Summary |
 |------|--------|----------|
@@ -186,6 +186,12 @@ experiments/
 | 2026-11-22 | [`w31-prerelease-is-not-stable`](experiments/2026-11-22/w31-prerelease-is-not-stable/) | a pre-release is not the associated normal version: on fixture-authored {candidate, requirement} pairs, a strict SemVer 2.0.0 parser orders versions by spec §11 precedence, so 1.0.0-alpha and... |
 | 2026-11-23 | [`mb-occupancy-cap-per-bucket`](experiments/2026-11-23/mb-occupancy-cap-per-bucket/) | a burst should not take over a bounded memory: on synthetic village fixtures, a fixed-slot memory takes in timestamped items with salience scores; score-only eviction lets a fireworks burst fill 6... |
 | 2026-11-23 | [`w32-record-manifest-presence`](experiments/2026-11-23/w32-record-manifest-presence/) | does a record folder hold every file its cover names: on small hand-made fixtures that mirror the E1 and E2 measurement covers, a stdlib tool reads the cover's `## Files` table, a folder listing... |
+| 2026-11-24 | [`mb-zero-reference-pass`](experiments/2026-11-24/mb-zero-reference-pass/) | an equivalence pass shows a response only if a zero reference would fail the same check: on hand-made synthetic contrasts, each candidate effect is checked against a human 90 percent interval with ... |
+| 2026-11-24 | [`w33-fold-160-paper-strict-threshold`](experiments/2026-11-24/w33-fold-160-paper-strict-threshold/) | a fold of mb-zero-reference-pass, not a new experiment: beside #160's inclusive zero-reference reading (zero passes when the critical value T = max(|human_lo|, |human_hi|) is at most the margin) it... |
+| 2026-11-25 | [`mb-error-propagation-trace`](experiments/2026-11-25/mb-error-propagation-trace/) | a green final answer can hide an error that passed from one agent to the next: on synthetic chains of deterministic agents with a known reference value at every hop, an outcome-only arm scores just... |
+| 2026-11-25 | [`w34-mixed-index-crowds-unseen-tools`](experiments/2026-11-25/w34-mixed-index-crowds-unseen-tools/) | shared tool experience mixed into the same index as tool descriptions crowds a held-out tool out of an equal budget of k = 3 distinct candidates, while a separate description index still offers it;... |
+| 2026-11-26 | [`mb-intervention-voucher`](experiments/2026-11-26/mb-intervention-voucher/) | a simulator that replays recorded history perfectly can still apply a what-if change to the wrong named record or with the wrong operator; replay-only passes it, a per-question intervention voucher... |
+| 2026-11-26 | [`w35-stopwatch-is-not-the-mechanism`](experiments/2026-11-26/w35-stopwatch-is-not-the-mechanism/) | a lower scripted work-cost is not proof of the claimed mechanism and is not proof that the output was unchanged; stopwatch-only passes planted cheaper-wrong, other-cause, and replayed-output versio... |
 
 ## 미러 안내
 
@@ -208,7 +214,7 @@ This repository is a **read-only daily mirror** of merged experiments from the *
 
 See the Korean section above; structure is the same.
 
-## Experiment index (160 entries)
+## Experiment index (166 entries)
 
 | Date | Folder | Summary |
 |------|--------|----------|
@@ -372,6 +378,12 @@ See the Korean section above; structure is the same.
 | 2026-11-22 | [`w31-prerelease-is-not-stable`](experiments/2026-11-22/w31-prerelease-is-not-stable/) | a pre-release is not the associated normal version: on fixture-authored {candidate, requirement} pairs, a strict SemVer 2.0.0 parser orders versions by spec §11 precedence, so 1.0.0-alpha and... |
 | 2026-11-23 | [`mb-occupancy-cap-per-bucket`](experiments/2026-11-23/mb-occupancy-cap-per-bucket/) | a burst should not take over a bounded memory: on synthetic village fixtures, a fixed-slot memory takes in timestamped items with salience scores; score-only eviction lets a fireworks burst fill 6... |
 | 2026-11-23 | [`w32-record-manifest-presence`](experiments/2026-11-23/w32-record-manifest-presence/) | does a record folder hold every file its cover names: on small hand-made fixtures that mirror the E1 and E2 measurement covers, a stdlib tool reads the cover's `## Files` table, a folder listing... |
+| 2026-11-24 | [`mb-zero-reference-pass`](experiments/2026-11-24/mb-zero-reference-pass/) | an equivalence pass shows a response only if a zero reference would fail the same check: on hand-made synthetic contrasts, each candidate effect is checked against a human 90 percent interval with ... |
+| 2026-11-24 | [`w33-fold-160-paper-strict-threshold`](experiments/2026-11-24/w33-fold-160-paper-strict-threshold/) | a fold of mb-zero-reference-pass, not a new experiment: beside #160's inclusive zero-reference reading (zero passes when the critical value T = max(|human_lo|, |human_hi|) is at most the margin) it... |
+| 2026-11-25 | [`mb-error-propagation-trace`](experiments/2026-11-25/mb-error-propagation-trace/) | a green final answer can hide an error that passed from one agent to the next: on synthetic chains of deterministic agents with a known reference value at every hop, an outcome-only arm scores just... |
+| 2026-11-25 | [`w34-mixed-index-crowds-unseen-tools`](experiments/2026-11-25/w34-mixed-index-crowds-unseen-tools/) | shared tool experience mixed into the same index as tool descriptions crowds a held-out tool out of an equal budget of k = 3 distinct candidates, while a separate description index still offers it;... |
+| 2026-11-26 | [`mb-intervention-voucher`](experiments/2026-11-26/mb-intervention-voucher/) | a simulator that replays recorded history perfectly can still apply a what-if change to the wrong named record or with the wrong operator; replay-only passes it, a per-question intervention voucher... |
+| 2026-11-26 | [`w35-stopwatch-is-not-the-mechanism`](experiments/2026-11-26/w35-stopwatch-is-not-the-mechanism/) | a lower scripted work-cost is not proof of the claimed mechanism and is not proof that the output was unchanged; stopwatch-only passes planted cheaper-wrong, other-cause, and replayed-output versio... |
 
 ## Mirror notice
 
