@@ -1,0 +1,28 @@
+{
+  "fixture_version": 1,
+  "on_expiry": "DENY",
+  "horse_count": 1,
+  "take_c_shortcut": false,
+  "join_stack": false,
+  "sessions": [
+    {
+      "id": "opening_to_to_r1",
+      "throws": [
+        "kdi"
+      ],
+      "moves": [
+        {
+          "horse": "p1"
+        }
+      ]
+    }
+  ],
+  "expected": {
+    "opening_to_to_r1": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "p1": "r1"
+      }
+    }
+  }
+}

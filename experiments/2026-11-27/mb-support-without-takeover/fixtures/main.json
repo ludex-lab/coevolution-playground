@@ -1,0 +1,171 @@
+{
+ "fixture_version": 1,
+ "on_expiry": "DENY",
+ "min_ownership": {
+  "num": 3,
+  "den": 4
+ },
+ "min_help": 1,
+ "sessions": [
+  {
+   "id": "heavy_cowrite",
+   "mode": "cowrite",
+   "events": [
+    {
+     "op": "human_insert",
+     "id": "h0",
+     "text": "Thanks."
+    },
+    {
+     "op": "offer",
+     "id": "a1",
+     "text": " Today I feel lucky."
+    },
+    {
+     "op": "accept",
+     "id": "a1"
+    },
+    {
+     "op": "offer",
+     "id": "a2",
+     "text": " The air is gentle."
+    },
+    {
+     "op": "accept",
+     "id": "a2"
+    },
+    {
+     "op": "offer",
+     "id": "a3",
+     "text": " I smile at the sky."
+    },
+    {
+     "op": "accept",
+     "id": "a3"
+    }
+   ]
+  },
+  {
+   "id": "scaffold_with_human_expansion",
+   "mode": "scaffold",
+   "events": [
+    {
+     "op": "human_insert",
+     "id": "h0",
+     "text": "Thanks."
+    },
+    {
+     "op": "scaffold",
+     "id": "p1",
+     "text": "What moment felt most meaningful?"
+    },
+    {
+     "op": "scaffold",
+     "id": "p2",
+     "text": "Who was this gratitude for?"
+    },
+    {
+     "op": "human_expand",
+     "id": "h1",
+     "text": " I am grateful for the walk with my sister."
+    }
+   ]
+  },
+  {
+   "id": "cowrite_all_rejected",
+   "mode": "cowrite",
+   "events": [
+    {
+     "op": "human_insert",
+     "id": "h0",
+     "text": "Thanks."
+    },
+    {
+     "op": "offer",
+     "id": "a1",
+     "text": " Today I feel lucky."
+    },
+    {
+     "op": "reject",
+     "id": "a1"
+    },
+    {
+     "op": "offer",
+     "id": "a2",
+     "text": " The air is gentle."
+    },
+    {
+     "op": "reject",
+     "id": "a2"
+    }
+   ]
+  },
+  {
+   "id": "partial_cowrite_within_cap",
+   "mode": "cowrite",
+   "events": [
+    {
+     "op": "human_insert",
+     "id": "h0",
+     "text": "Thank you so much."
+    },
+    {
+     "op": "offer",
+     "id": "a1",
+     "text": " Amen."
+    },
+    {
+     "op": "accept",
+     "id": "a1"
+    }
+   ]
+  },
+  {
+   "id": "human_rewrite_restores_ownership",
+   "mode": "cowrite",
+   "events": [
+    {
+     "op": "human_insert",
+     "id": "h0",
+     "text": "Thank you so much."
+    },
+    {
+     "op": "offer",
+     "id": "a1",
+     "text": " I could not have done any of this without such constant assistance."
+    },
+    {
+     "op": "accept",
+     "id": "a1"
+    },
+    {
+     "op": "replace",
+     "id": "a1",
+     "text": " I chose these words."
+    }
+   ]
+  }
+ ],
+ "expected": {
+  "heavy_cowrite": {
+   "arm_a": "PASS",
+   "arm_b": "FAIL"
+  },
+  "scaffold_with_human_expansion": {
+   "arm_a": "FAIL",
+   "arm_b": "PASS"
+  },
+  "cowrite_all_rejected": {
+   "arm_a": "FAIL",
+   "arm_b": "PASS"
+  },
+  "partial_cowrite_within_cap": {
+   "arm_a": "PASS",
+   "arm_b": "PASS"
+  },
+  "human_rewrite_restores_ownership": {
+   "arm_a": "PASS",
+   "arm_b": "PASS"
+  }
+ }
+}

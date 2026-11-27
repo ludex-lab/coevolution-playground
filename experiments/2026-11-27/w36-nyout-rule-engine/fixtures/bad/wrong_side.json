@@ -1,0 +1,29 @@
+{
+  "fixture_version": 1,
+  "on_expiry": "DENY",
+  "horse_count": 1,
+  "take_c_shortcut": false,
+  "join_stack": false,
+  "sessions": [
+    {
+      "id": "nyout_bonus_spent_by_q",
+      "throws": [
+        "nyout",
+        "to"
+      ],
+      "moves": [
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "q1"
+        }
+      ]
+    }
+  ],
+  "expected": {
+    "nyout_bonus_spent_by_q": {
+      "arm_a": "PASS"
+    }
+  }
+}

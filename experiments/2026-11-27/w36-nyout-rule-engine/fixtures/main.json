@@ -1,0 +1,791 @@
+{
+  "fixture_version": 1,
+  "on_expiry": "DENY",
+  "horse_count": 4,
+  "take_c_shortcut": true,
+  "join_stack": true,
+  "board": {
+    "stations": [
+      "r1",
+      "r2",
+      "r3",
+      "r4",
+      "r5",
+      "r6",
+      "r7",
+      "r8",
+      "r9",
+      "r10",
+      "r11",
+      "r12",
+      "r13",
+      "r14",
+      "r15",
+      "r16",
+      "r17",
+      "r18",
+      "r19",
+      "r20",
+      "b1",
+      "b2",
+      "c1",
+      "c2",
+      "d1",
+      "d2",
+      "a1",
+      "a2",
+      "E"
+    ],
+    "edges": [
+      [
+        "r1",
+        "r2"
+      ],
+      [
+        "r2",
+        "r3"
+      ],
+      [
+        "r3",
+        "r4"
+      ],
+      [
+        "r4",
+        "r5"
+      ],
+      [
+        "r5",
+        "r6"
+      ],
+      [
+        "r6",
+        "r7"
+      ],
+      [
+        "r7",
+        "r8"
+      ],
+      [
+        "r8",
+        "r9"
+      ],
+      [
+        "r9",
+        "r10"
+      ],
+      [
+        "r10",
+        "r11"
+      ],
+      [
+        "r11",
+        "r12"
+      ],
+      [
+        "r12",
+        "r13"
+      ],
+      [
+        "r13",
+        "r14"
+      ],
+      [
+        "r14",
+        "r15"
+      ],
+      [
+        "r15",
+        "r16"
+      ],
+      [
+        "r16",
+        "r17"
+      ],
+      [
+        "r17",
+        "r18"
+      ],
+      [
+        "r18",
+        "r19"
+      ],
+      [
+        "r19",
+        "r20"
+      ],
+      [
+        "r5",
+        "b1"
+      ],
+      [
+        "b1",
+        "b2"
+      ],
+      [
+        "b2",
+        "E"
+      ],
+      [
+        "r10",
+        "c1"
+      ],
+      [
+        "c1",
+        "c2"
+      ],
+      [
+        "c2",
+        "E"
+      ],
+      [
+        "E",
+        "a1"
+      ],
+      [
+        "a1",
+        "a2"
+      ],
+      [
+        "a2",
+        "r20"
+      ]
+    ]
+  },
+  "sessions": [
+    {
+      "id": "opening_mo_to_B",
+      "throws": [
+        "mo"
+      ],
+      "moves": [
+        {
+          "horse": "p1"
+        }
+      ]
+    },
+    {
+      "id": "opening_to_to_r1",
+      "throws": [
+        "to"
+      ],
+      "moves": [
+        {
+          "horse": "p1"
+        }
+      ]
+    },
+    {
+      "id": "overrun_C_no_shortcut",
+      "throws": [
+        "kel",
+        "kel",
+        "kel",
+        "kai"
+      ],
+      "moves": [
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        }
+      ],
+      "overrun_mark": "C"
+    },
+    {
+      "id": "overrun_B_no_shortcut",
+      "throws": [
+        "kai",
+        "kai",
+        "kai"
+      ],
+      "moves": [
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        }
+      ],
+      "overrun_mark": "B"
+    },
+    {
+      "id": "mo_then_kel_sequential",
+      "throws": [
+        "mo",
+        "kel"
+      ],
+      "moves": [
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        }
+      ]
+    },
+    {
+      "id": "split_buffered_throws",
+      "throws": [
+        "mo",
+        "kel"
+      ],
+      "moves": [
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p2"
+        }
+      ]
+    },
+    {
+      "id": "nyout_extra_throw_before_move",
+      "throws": [
+        "nyout",
+        "to"
+      ],
+      "moves": [
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        }
+      ]
+    },
+    {
+      "id": "capture_sends_home",
+      "throws": [
+        "to",
+        "to",
+        "kai"
+      ],
+      "moves": [
+        {
+          "horse": "q1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        }
+      ]
+    },
+    {
+      "id": "capture_with_buffered_throw",
+      "throws": [
+        "kai",
+        "kel",
+        "mo",
+        "to",
+        "to"
+      ],
+      "moves": [
+        {
+          "horse": "q1"
+        },
+        {
+          "horse": "q1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        }
+      ]
+    },
+    {
+      "id": "capture_on_nyout",
+      "throws": [
+        "kai",
+        "kai",
+        "nyout",
+        "to",
+        "kai"
+      ],
+      "moves": [
+        {
+          "horse": "q1"
+        },
+        {
+          "horse": "q1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        }
+      ]
+    },
+    {
+      "id": "chained_nyout_mo",
+      "throws": [
+        "nyout",
+        "nyout",
+        "to"
+      ],
+      "moves": [
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        }
+      ]
+    },
+    {
+      "id": "b_radius_is_mandatory",
+      "throws": [
+        "mo",
+        "to"
+      ],
+      "moves": [
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        }
+      ]
+    },
+    {
+      "id": "c_shortcut_taken",
+      "throws": [
+        "kai",
+        "kai",
+        "kai",
+        "kai",
+        "kai",
+        "to"
+      ],
+      "moves": [
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        }
+      ]
+    },
+    {
+      "id": "c_shortcut_declined",
+      "throws": [
+        "kai",
+        "kai",
+        "kai",
+        "kai",
+        "kai",
+        "to"
+      ],
+      "moves": [
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        }
+      ],
+      "take_c_shortcut": false
+    },
+    {
+      "id": "exit_needs_one_more",
+      "throws": [
+        "kel",
+        "kel",
+        "kel",
+        "kel",
+        "kel",
+        "kel",
+        "kai",
+        "to"
+      ],
+      "moves": [
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        }
+      ]
+    },
+    {
+      "id": "exit_via_b",
+      "throws": [
+        "mo",
+        "mo",
+        "to",
+        "to"
+      ],
+      "moves": [
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        }
+      ]
+    },
+    {
+      "id": "exit_via_c",
+      "throws": [
+        "kai",
+        "kai",
+        "kai",
+        "kai",
+        "kai",
+        "kai",
+        "kai",
+        "kai",
+        "to"
+      ],
+      "moves": [
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        }
+      ]
+    },
+    {
+      "id": "stack_join_and_move",
+      "throws": [
+        "to",
+        "to",
+        "to"
+      ],
+      "moves": [
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p2"
+        },
+        {
+          "horse": "p1"
+        }
+      ]
+    },
+    {
+      "id": "stack_counts_at_win",
+      "throws": [
+        "to",
+        "to",
+        "to",
+        "to",
+        "kel",
+        "kel",
+        "kel",
+        "kel",
+        "kel",
+        "kel",
+        "to",
+        "to"
+      ],
+      "moves": [
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p2"
+        },
+        {
+          "horse": "p3"
+        },
+        {
+          "horse": "p4"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p1"
+        }
+      ],
+      "take_c_shortcut": false
+    },
+    {
+      "id": "captured_stack_returns_whole",
+      "throws": [
+        "to",
+        "to",
+        "to",
+        "kai"
+      ],
+      "moves": [
+        {
+          "horse": "p1"
+        },
+        {
+          "horse": "p2"
+        },
+        {
+          "horse": "q1"
+        },
+        {
+          "horse": "q1"
+        }
+      ]
+    },
+    {
+      "id": "throws_exhausted_after_mo",
+      "throws": [
+        "mo"
+      ],
+      "moves": [
+        {
+          "horse": "p1"
+        }
+      ]
+    }
+  ],
+  "expected": {
+    "opening_mo_to_B": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "p1": "r5"
+      }
+    },
+    "opening_to_to_r1": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "p1": "r1"
+      }
+    },
+    "overrun_C_no_shortcut": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "p1": "r11"
+      },
+      "arm_b": "FAIL"
+    },
+    "overrun_B_no_shortcut": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "p1": "r6"
+      },
+      "arm_b": "FAIL"
+    },
+    "mo_then_kel_sequential": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "p1": "E"
+      }
+    },
+    "split_buffered_throws": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "p1": "r5",
+        "p2": "r3"
+      }
+    },
+    "nyout_extra_throw_before_move": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "p1": "r5"
+      }
+    },
+    "capture_sends_home": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "q1": "start",
+        "p1": "r3"
+      }
+    },
+    "capture_with_buffered_throw": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "q1": "start",
+        "p1": "b2"
+      }
+    },
+    "capture_on_nyout": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "q1": "start",
+        "p1": "b2"
+      }
+    },
+    "chained_nyout_mo": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "p1": "r9"
+      }
+    },
+    "b_radius_is_mandatory": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "p1": "b1"
+      }
+    },
+    "c_shortcut_taken": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "p1": "c1"
+      }
+    },
+    "c_shortcut_declined": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "p1": "r11"
+      }
+    },
+    "exit_needs_one_more": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "p1": "out"
+      }
+    },
+    "exit_via_b": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "p1": "out"
+      }
+    },
+    "exit_via_c": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "p1": "out"
+      }
+    },
+    "stack_join_and_move": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "p1": "r2",
+        "p2": "r2"
+      }
+    },
+    "stack_counts_at_win": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "p1": "out",
+        "p2": "out",
+        "p3": "out",
+        "p4": "out"
+      }
+    },
+    "captured_stack_returns_whole": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "p1": "start",
+        "p2": "start",
+        "q1": "r3"
+      }
+    },
+    "throws_exhausted_after_mo": {
+      "arm_a": "PASS",
+      "pos_a": {
+        "p1": "r5"
+      }
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+ "fixture_version": 1,
+ "on_expiry": "DENY",
+ "min_ownership": {
+  "num": 3,
+  "den": 4
+ },
+ "min_help": 1,
+ "sessions": [
+  {
+   "id": "s0",
+   "mode": "cowrite",
+   "events": [
+    {
+     "op": "human_insert",
+     "id": "h0",
+     "text": "Thank you so much."
+    }
+   ]
+  },
+  {
+   "id": "s1",
+   "mode": "cowrite",
+   "events": [
+    {
+     "op": "human_insert",
+     "id": "h0",
+     "text": "Thank you so much."
+    }
+   ]
+  },
+  {
+   "id": "s2",
+   "mode": "cowrite",
+   "events": [
+    {
+     "op": "human_insert",
+     "id": "h0",
+     "text": "Thank you so much."
+    }
+   ]
+  },
+  {
+   "id": "s3",
+   "mode": "cowrite",
+   "events": [
+    {
+     "op": "human_insert",
+     "id": "h0",
+     "text": "Thank you so much."
+    }
+   ]
+  },
+  {
+   "id": "s4",
+   "mode": "cowrite",
+   "events": [
+    {
+     "op": "human_insert",
+     "id": "h0",
+     "text": "Thank you so much."
+    }
+   ]
+  },
+  {
+   "id": "s5",
+   "mode": "cowrite",
+   "events": [
+    {
+     "op": "human_insert",
+     "id": "h0",
+     "text": "Thank you so much."
+    }
+   ]
+  },
+  {
+   "id": "s6",
+   "mode": "cowrite",
+   "events": [
+    {
+     "op": "human_insert",
+     "id": "h0",
+     "text": "Thank you so much."
+    }
+   ]
+  },
+  {
+   "id": "s7",
+   "mode": "cowrite",
+   "events": [
+    {
+     "op": "human_insert",
+     "id": "h0",
+     "text": "Thank you so much."
+    }
+   ]
+  },
+  {
+   "id": "s8",
+   "mode": "cowrite",
+   "events": [
+    {
+     "op": "human_insert",
+     "id": "h0",
+     "text": "Thank you so much."
+    }
+   ]
+  }
+ ],
+ "expected": {
+  "s0": {
+   "arm_a": "FAIL",
+   "arm_b": "PASS"
+  },
+  "s1": {
+   "arm_a": "FAIL",
+   "arm_b": "PASS"
+  },
+  "s2": {
+   "arm_a": "FAIL",
+   "arm_b": "PASS"
+  },
+  "s3": {
+   "arm_a": "FAIL",
+   "arm_b": "PASS"
+  },
+  "s4": {
+   "arm_a": "FAIL",
+   "arm_b": "PASS"
+  },
+  "s5": {
+   "arm_a": "FAIL",
+   "arm_b": "PASS"
+  },
+  "s6": {
+   "arm_a": "FAIL",
+   "arm_b": "PASS"
+  },
+  "s7": {
+   "arm_a": "FAIL",
+   "arm_b": "PASS"
+  },
+  "s8": {
+   "arm_a": "FAIL",
+   "arm_b": "PASS"
+  }
+ }
+}

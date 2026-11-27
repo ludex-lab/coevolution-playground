@@ -1,0 +1,6 @@
+# experiments/2026-11-27
+
+- [mb-support-without-takeover](mb-support-without-takeover/): a high accepted-suggestion count can still leave surviving text mostly written by the assistant; help-count-only passes a heavy co-write, while an ownership-preserving gate fails it; a scaffold plus human expansion and a co-write that rejects every suggestion both stay at 1/1 ownership; a tiny accepted span at the 3/4 bound still passes the gate; a later human replace of a large accepted span restores ownership on surviving text, not on cumulative accepts; a self-reported ownership or help score is DENY with exit 2 (method sketch of [arXiv 2611.34673](https://arxiv.org/abs/2611.34673); not a reproduction)
+- [w36-nyout-rule-engine](w36-nyout-rule-engine/): a scripted Nyout (윷놀이) rule engine from Stewart Culin 1895 *Korean Games* chapter LXX (public domain); an opening mo lands on B and the next step uses radius BE; a move that only passes B or C does not enter a radius, and Arm B of those sessions is FAIL; landing exactly on A stays on the board and one extra step goes out; buffered nyout or mo throws apply one at a time and may be split across horses; Fig. 75, Fig. 76 and Plate XV were not used
+
+Do not merge experiment PRs without Ork review.

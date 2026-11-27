@@ -1,0 +1,148 @@
+{
+ "fixture_version": 1,
+ "on_expiry": "DENY",
+ "min_ownership": {
+  "num": 3,
+  "den": 4
+ },
+ "min_help": 1,
+ "sessions": [
+  {
+   "id": "s",
+   "mode": "cowrite",
+   "events": [
+    {
+     "op": "human_insert",
+     "id": "h0",
+     "text": "Thank you so much."
+    },
+    {
+     "op": "offer",
+     "id": "o0",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o1",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o2",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o3",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o4",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o5",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o6",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o7",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o8",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o9",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o10",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o11",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o12",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o13",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o14",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o15",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o16",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o17",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o18",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o19",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o20",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o21",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o22",
+     "text": " x"
+    },
+    {
+     "op": "offer",
+     "id": "o23",
+     "text": " x"
+    }
+   ]
+  }
+ ],
+ "expected": {
+  "s": {
+   "arm_a": "PASS",
+   "arm_b": "PASS"
+  }
+ }
+}

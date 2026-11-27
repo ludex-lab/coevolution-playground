@@ -1,0 +1,101 @@
+{
+ "experiment": "mb-support-without-takeover",
+ "source": {
+  "arxiv": "2611.34673",
+  "citation_title": "Supporting Without Taking Over: AI Support in Gratitude Writing",
+  "authors": [
+   "Thu Bui",
+   "Shashi Salavath",
+   "Hillary Merzdorf",
+   "Louis Tay",
+   "Sooyeon Jeong"
+  ],
+  "arxiv_v1": "Thu 26 Nov 2026 01:38:14 KST (from Wed 25 Nov 2026 16:38:14 UTC)",
+  "paper_licence": "http://arxiv.org/licenses/nonexclusive-distrib/1.0/",
+  "code": "no repository URL on the abs page; none used",
+  "relation": "method sketch only; no copied code or text beyond the attributed quotes in README; not a reproduction"
+ },
+ "wording": "Synthetic drafts and declarative edit events with planted sessions. The result shows the mechanism (a high accepted-help count can coexist with low surviving ownership, and a later human replace can restore surviving ownership), not any rate.",
+ "declared_table": {
+  "heavy_cowrite": [
+   "PASS",
+   "FAIL"
+  ],
+  "scaffold_with_human_expansion": [
+   "FAIL",
+   "PASS"
+  ],
+  "cowrite_all_rejected": [
+   "FAIL",
+   "PASS"
+  ],
+  "partial_cowrite_within_cap": [
+   "PASS",
+   "PASS"
+  ],
+  "human_rewrite_restores_ownership": [
+   "PASS",
+   "PASS"
+  ],
+  "self_reported_ownership": "DENY exit 2, self_reported_measure"
+ },
+ "measured_here": {
+  "fixture": "fixtures/main.json",
+  "table_matches": true,
+  "gate": "PASS",
+  "min_help": 1,
+  "min_ownership": "3/4",
+  "sessions": {
+   "heavy_cowrite": {
+    "accepted_help_count": 3,
+    "ownership": "7/66",
+    "human_chars": 7,
+    "total_chars": 66,
+    "text_grew": true
+   },
+   "scaffold_with_human_expansion": {
+    "accepted_help_count": 0,
+    "scaffold_shown": 2,
+    "ownership": "1/1",
+    "human_chars": 50,
+    "total_chars": 50,
+    "start_chars": 7,
+    "text_grew": true
+   },
+   "cowrite_all_rejected": {
+    "accepted_help_count": 0,
+    "ownership": "1/1",
+    "human_chars": 7,
+    "total_chars": 7,
+    "text_grew": false
+   },
+   "partial_cowrite_within_cap": {
+    "accepted_help_count": 1,
+    "ownership": "3/4",
+    "human_chars": 18,
+    "total_chars": 24,
+    "text_grew": true
+   },
+   "human_rewrite_restores_ownership": {
+    "accepted_help_count": 1,
+    "ownership": "1/1",
+    "human_chars": 39,
+    "total_chars": 39,
+    "text_grew": true
+   }
+  },
+  "self_reported_ownership": "standalone fixtures/bad/self_reported_ownership.json: DENY self_reported_measure, exit 2, empty stdout, one stderr line",
+  "demo_stdout_sha256": "e074838d7a48e906be94b2a45181be21408a949bac33662391f1ded22f4b5f8b"
+ },
+ "on_unmeasured": {
+  "status": "UNVERIFIED",
+  "items": [
+   "paper-reported 2x2 between-subjects study (N=401) (UNVERIFIED)",
+   "author-reported claim that participants' well-being improved after using the AI-assisted gratitude-writing system (UNVERIFIED)",
+   "author-reported claim that co-writing received higher usability ratings, that greater suggestion acceptance was associated with weaker perceived agency, and that scaffolding supported stronger perceived human ownership (UNVERIFIED)",
+   "psychological perceived agency and perceived ownership (UNVERIFIED; the harness uses a structural span-level proxy only)"
+  ]
+ },
+ "on_expiry": "DENY",
+ "bad_input": "DENY: exit 2, empty stdout, one stderr line DENY <code>: <detail>"
+}

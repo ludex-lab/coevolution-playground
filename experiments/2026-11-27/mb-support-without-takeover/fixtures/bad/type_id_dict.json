@@ -1,0 +1,39 @@
+{
+ "fixture_version": 1,
+ "on_expiry": "DENY",
+ "min_ownership": {
+  "num": 3,
+  "den": 4
+ },
+ "min_help": 1,
+ "sessions": [
+  {
+   "id": {
+    "x": "s"
+   },
+   "mode": "cowrite",
+   "events": [
+    {
+     "op": "human_insert",
+     "id": "h0",
+     "text": "Thank you so much."
+    },
+    {
+     "op": "offer",
+     "id": "a1",
+     "text": " Amen."
+    },
+    {
+     "op": "accept",
+     "id": "a1"
+    }
+   ]
+  }
+ ],
+ "expected": {
+  "s": {
+   "arm_a": "PASS",
+   "arm_b": "PASS"
+  }
+ }
+}

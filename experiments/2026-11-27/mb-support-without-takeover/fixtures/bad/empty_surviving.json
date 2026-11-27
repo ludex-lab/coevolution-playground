@@ -1,0 +1,32 @@
+{
+ "fixture_version": 1,
+ "on_expiry": "DENY",
+ "min_ownership": {
+  "num": 3,
+  "den": 4
+ },
+ "min_help": 1,
+ "sessions": [
+  {
+   "id": "s",
+   "mode": "cowrite",
+   "events": [
+    {
+     "op": "human_insert",
+     "id": "h0",
+     "text": "Thanks."
+    },
+    {
+     "op": "delete",
+     "id": "h0"
+    }
+   ]
+  }
+ ],
+ "expected": {
+  "s": {
+   "arm_a": "FAIL",
+   "arm_b": "PASS"
+  }
+ }
+}
