@@ -1,0 +1,336 @@
+{
+ "fixture_version": 1,
+ "on_expiry": "DENY",
+ "cutoff": "2024-12-31",
+ "cases": [
+  {
+   "id": "own_edge",
+   "events": [
+    {
+     "id": "ev_pad_00",
+     "name": "pad_event_00",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_01",
+     "name": "pad_event_01",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_02",
+     "name": "pad_event_02",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_03",
+     "name": "pad_event_03",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_04",
+     "name": "pad_event_04",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_05",
+     "name": "pad_event_05",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_06",
+     "name": "pad_event_06",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_07",
+     "name": "pad_event_07",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_08",
+     "name": "pad_event_08",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_09",
+     "name": "pad_event_09",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_10",
+     "name": "pad_event_10",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_11",
+     "name": "pad_event_11",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_12",
+     "name": "pad_event_12",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_13",
+     "name": "pad_event_13",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_14",
+     "name": "pad_event_14",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_15",
+     "name": "pad_event_15",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_16",
+     "name": "pad_event_16",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_17",
+     "name": "pad_event_17",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_18",
+     "name": "pad_event_18",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_19",
+     "name": "pad_event_19",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_20",
+     "name": "pad_event_20",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_21",
+     "name": "pad_event_21",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_22",
+     "name": "pad_event_22",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_23",
+     "name": "pad_event_23",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_24",
+     "name": "pad_event_24",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_25",
+     "name": "pad_event_25",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_26",
+     "name": "pad_event_26",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_27",
+     "name": "pad_event_27",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_28",
+     "name": "pad_event_28",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_29",
+     "name": "pad_event_29",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_30",
+     "name": "pad_event_30",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_31",
+     "name": "pad_event_31",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_pad_32",
+     "name": "pad_event_32",
+     "date": "2024-01-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_weak_alpha",
+     "name": "prior_mention_alpha",
+     "date": "2024-07-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_out_alpha",
+     "name": "first_trial_alpha",
+     "date": "2025-04-01",
+     "role": "outcome",
+     "weight": "strong"
+    }
+   ]
+  },
+  {
+   "id": "pre_t_support",
+   "events": [
+    {
+     "id": "ev_str_beta",
+     "name": "prior_link_beta",
+     "date": "2024-06-01",
+     "role": "evidence",
+     "weight": "strong"
+    },
+    {
+     "id": "ev_out_beta",
+     "name": "first_trial_beta",
+     "date": "2025-04-01",
+     "role": "outcome",
+     "weight": "strong"
+    }
+   ]
+  },
+  {
+   "id": "evidence_on_cutoff",
+   "events": [
+    {
+     "id": "ev_str_gamma",
+     "name": "link_on_cutoff_gamma",
+     "date": "2024-12-31",
+     "role": "evidence",
+     "weight": "strong"
+    },
+    {
+     "id": "ev_out_gamma",
+     "name": "first_trial_gamma",
+     "date": "2025-04-01",
+     "role": "outcome",
+     "weight": "strong"
+    }
+   ]
+  },
+  {
+   "id": "outcome_on_cutoff",
+   "events": [
+    {
+     "id": "ev_str_delta",
+     "name": "prior_link_delta",
+     "date": "2024-06-01",
+     "role": "evidence",
+     "weight": "strong"
+    },
+    {
+     "id": "ev_out_delta",
+     "name": "same_day_outcome_delta",
+     "date": "2024-12-31",
+     "role": "outcome",
+     "weight": "strong"
+    }
+   ]
+  }
+ ],
+ "expected": {
+  "own_edge": {
+   "arm_a": "HIT",
+   "arm_b": "MISS",
+   "class": "recall_not_forecast"
+  },
+  "pre_t_support": {
+   "arm_a": "HIT",
+   "arm_b": "HIT",
+   "class": "forecast"
+  },
+  "evidence_on_cutoff": {
+   "arm_a": "HIT",
+   "arm_b": "HIT",
+   "class": "forecast"
+  },
+  "outcome_on_cutoff": {
+   "arm_a": "not_scorable",
+   "arm_b": "not_scorable",
+   "class": "not_scorable"
+  }
+ }
+}

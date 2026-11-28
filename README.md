@@ -22,7 +22,7 @@ experiments/
 
 원본 루트 README는 [`experiments/SOURCE_README.md`](experiments/SOURCE_README.md)에 있습니다.
 
-## 실험 인덱스 (168개)
+## 실험 인덱스 (169개)
 
 | Date | Folder | Summary |
 |------|--------|----------|
@@ -194,6 +194,7 @@ experiments/
 | 2026-11-26 | [`w35-stopwatch-is-not-the-mechanism`](experiments/2026-11-26/w35-stopwatch-is-not-the-mechanism/) | a lower scripted work-cost is not proof of the claimed mechanism and is not proof that the output was unchanged; stopwatch-only passes planted cheaper-wrong, other-cause, and replayed-output versio... |
 | 2026-11-27 | [`mb-support-without-takeover`](experiments/2026-11-27/mb-support-without-takeover/) | a high accepted-suggestion count can still leave surviving text mostly written by the assistant; help-count-only passes a heavy co-write, while an ownership-preserving gate fails it; a scaffold plu... |
 | 2026-11-27 | [`w36-nyout-rule-engine`](experiments/2026-11-27/w36-nyout-rule-engine/) | a scripted Nyout (윷놀이) rule engine from Stewart Culin 1895 *Korean Games* chapter LXX (public domain); an opening mo lands on B and the next step uses radius BE; a move that only passes B or C does ... |
+| 2026-11-28 | [`mb-forecast-or-already-known`](experiments/2026-11-28/mb-forecast-or-already-known/) | a score that uses a post-cutoff outcome edge is recall, not a forecast; arm A hits a planted own-edge case and arm B does not, while a case with only pre-cutoff evidence is a forecast on both arms (m... |
 
 ## 미러 안내
 
@@ -216,7 +217,7 @@ This repository is a **read-only daily mirror** of merged experiments from the *
 
 See the Korean section above; structure is the same.
 
-## Experiment index (168 entries)
+## Experiment index (169 entries)
 
 | Date | Folder | Summary |
 |------|--------|----------|
@@ -388,6 +389,7 @@ See the Korean section above; structure is the same.
 | 2026-11-26 | [`w35-stopwatch-is-not-the-mechanism`](experiments/2026-11-26/w35-stopwatch-is-not-the-mechanism/) | a lower scripted work-cost is not proof of the claimed mechanism and is not proof that the output was unchanged; stopwatch-only passes planted cheaper-wrong, other-cause, and replayed-output versio... |
 | 2026-11-27 | [`mb-support-without-takeover`](experiments/2026-11-27/mb-support-without-takeover/) | a high accepted-suggestion count can still leave surviving text mostly written by the assistant; help-count-only passes a heavy co-write, while an ownership-preserving gate fails it; a scaffold plu... |
 | 2026-11-27 | [`w36-nyout-rule-engine`](experiments/2026-11-27/w36-nyout-rule-engine/) | a scripted Nyout (윷놀이) rule engine from Stewart Culin 1895 *Korean Games* chapter LXX (public domain); an opening mo lands on B and the next step uses radius BE; a move that only passes B or C does ... |
+| 2026-11-28 | [`mb-forecast-or-already-known`](experiments/2026-11-28/mb-forecast-or-already-known/) | a score that uses a post-cutoff outcome edge is recall, not a forecast; arm A hits a planted own-edge case and arm B does not, while a case with only pre-cutoff evidence is a forecast on both arms (m... |
 
 ## Mirror notice
 

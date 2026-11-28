@@ -1,0 +1,105 @@
+{
+ "fixture_version": 2,
+ "on_expiry": "DENY",
+ "cutoff": "2024-12-31",
+ "cases": [
+  {
+   "id": "own_edge",
+   "events": [
+    {
+     "id": "ev_weak_alpha",
+     "name": "prior_mention_alpha",
+     "date": "2024-07-01",
+     "role": "evidence",
+     "weight": "weak"
+    },
+    {
+     "id": "ev_out_alpha",
+     "name": "first_trial_alpha",
+     "date": "2025-04-01",
+     "role": "outcome",
+     "weight": "strong"
+    }
+   ]
+  },
+  {
+   "id": "pre_t_support",
+   "events": [
+    {
+     "id": "ev_str_beta",
+     "name": "prior_link_beta",
+     "date": "2024-06-01",
+     "role": "evidence",
+     "weight": "strong"
+    },
+    {
+     "id": "ev_out_beta",
+     "name": "first_trial_beta",
+     "date": "2025-04-01",
+     "role": "outcome",
+     "weight": "strong"
+    }
+   ]
+  },
+  {
+   "id": "evidence_on_cutoff",
+   "events": [
+    {
+     "id": "ev_str_gamma",
+     "name": "link_on_cutoff_gamma",
+     "date": "2024-12-31",
+     "role": "evidence",
+     "weight": "strong"
+    },
+    {
+     "id": "ev_out_gamma",
+     "name": "first_trial_gamma",
+     "date": "2025-04-01",
+     "role": "outcome",
+     "weight": "strong"
+    }
+   ]
+  },
+  {
+   "id": "outcome_on_cutoff",
+   "events": [
+    {
+     "id": "ev_str_delta",
+     "name": "prior_link_delta",
+     "date": "2024-06-01",
+     "role": "evidence",
+     "weight": "strong"
+    },
+    {
+     "id": "ev_out_delta",
+     "name": "same_day_outcome_delta",
+     "date": "2024-12-31",
+     "role": "outcome",
+     "weight": "strong"
+    }
+   ]
+  }
+ ],
+ "expected": {
+  "own_edge": {
+   "arm_a": "HIT",
+   "arm_b": "MISS",
+   "class": "recall_not_forecast"
+  },
+  "pre_t_support": {
+   "arm_a": "HIT",
+   "arm_b": "HIT",
+   "class": "forecast"
+  },
+  "evidence_on_cutoff": {
+   "arm_a": "HIT",
+   "arm_b": "HIT",
+   "class": "forecast"
+  },
+  "outcome_on_cutoff": {
+   "arm_a": "not_scorable",
+   "arm_b": "not_scorable",
+   "class": "not_scorable"
+  }
+ }
+}
